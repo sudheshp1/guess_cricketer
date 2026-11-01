@@ -14,20 +14,15 @@ interface Props {
 /** Segmented control choosing which players can be the answer (applies from the next round). */
 export function PoolPicker({ pool, onChange }: Props) {
   return (
-    <fieldset className="flex flex-wrap items-center justify-center gap-2 text-sm">
-      <legend className="sr-only">Mystery player pool</legend>
-      <span className="text-gray-600 dark:text-gray-400" aria-hidden="true">
-        Players:
-      </span>
-      <div className="inline-flex rounded-full border border-gray-300 p-0.5 dark:border-gray-700">
+    <fieldset>
+      <legend className="eyebrow mb-2">Mystery player pool</legend>
+      <div className="grid grid-cols-3 gap-1 rounded-full border border-line bg-surface-2 p-1">
         {OPTIONS.map((o) => (
           <label
             key={o.value}
             title={o.hint}
-            className={`cursor-pointer rounded-full px-3 py-1 font-medium has-[:focus-visible]:outline-2 has-[:focus-visible]:outline-green-700 ${
-              pool === o.value
-                ? 'bg-gray-900 text-white dark:bg-gray-100 dark:text-gray-900'
-                : 'text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-800'
+            className={`cursor-pointer rounded-full px-3 py-1.5 text-center text-sm font-semibold transition-colors has-[:focus-visible]:outline-3 has-[:focus-visible]:outline-gold-fill ${
+              pool === o.value ? 'bg-brand text-on-brand shadow' : 'text-muted hover:text-ink'
             }`}
           >
             <input
@@ -42,6 +37,7 @@ export function PoolPicker({ pool, onChange }: Props) {
           </label>
         ))}
       </div>
+      <p className="mt-1.5 text-xs text-muted">Applies from the next player.</p>
     </fieldset>
   )
 }

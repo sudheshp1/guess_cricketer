@@ -1,3 +1,4 @@
+import { Search } from 'lucide-react'
 import { useId, useMemo, useRef, useState, type KeyboardEvent } from 'react'
 import { searchPlayers } from '../lib/search'
 import type { Player } from '../types'
@@ -67,40 +68,46 @@ export function GuessInput({
       <label htmlFor={inputId} className="sr-only">
         Guess a cricketer
       </label>
-      <input
-        ref={inputRef}
-        id={inputId}
-        type="text"
-        role="combobox"
-        aria-expanded={showList}
-        aria-controls={listId}
-        aria-autocomplete="list"
-        aria-activedescendant={showList ? `${listId}-${active}` : undefined}
-        autoComplete="off"
-        autoCorrect="off"
-        autoCapitalize="words"
-        spellCheck={false}
-        enterKeyHint="go"
-        disabled={disabled}
-        value={query}
-        placeholder={placeholder}
-        autoFocus={autoFocus}
-        onChange={(e) => {
-          setQuery(e.target.value)
-          setOpen(true)
-          setActive(0)
-        }}
-        onFocus={() => setOpen(true)}
-        onBlur={() => setOpen(false)}
-        onKeyDown={onKeyDown}
-        className="w-full rounded-xl border border-gray-300 bg-white px-4 py-3 text-base text-gray-900 shadow-sm outline-none placeholder:text-gray-500 focus:border-green-700 focus:ring-2 focus:ring-green-700/30 disabled:cursor-not-allowed disabled:bg-gray-100 dark:border-gray-600 dark:bg-gray-900 dark:text-gray-100 dark:placeholder:text-gray-400 dark:disabled:bg-gray-800"
-      />
+      <div className="relative">
+        <Search
+          className="pointer-events-none absolute top-1/2 left-4 h-5 w-5 -translate-y-1/2 text-muted"
+          aria-hidden="true"
+        />
+        <input
+          ref={inputRef}
+          id={inputId}
+          type="text"
+          role="combobox"
+          aria-expanded={showList}
+          aria-controls={listId}
+          aria-autocomplete="list"
+          aria-activedescendant={showList ? `${listId}-${active}` : undefined}
+          autoComplete="off"
+          autoCorrect="off"
+          autoCapitalize="words"
+          spellCheck={false}
+          enterKeyHint="go"
+          disabled={disabled}
+          value={query}
+          placeholder={placeholder}
+          autoFocus={autoFocus}
+          onChange={(e) => {
+            setQuery(e.target.value)
+            setOpen(true)
+            setActive(0)
+          }}
+          onFocus={() => setOpen(true)}
+          onBlur={() => setOpen(false)}
+          onKeyDown={onKeyDown}
+          className="w-full rounded-2xl border-2 border-line-strong bg-surface py-3.5 pr-4 pl-12 text-base font-medium text-ink outline-none transition-[border-color,box-shadow] placeholder:font-normal placeholder:text-muted focus:border-brand focus:shadow-[0_0_0_4px_rgb(34_197_94/0.18)] disabled:cursor-not-allowed disabled:opacity-60 sm:text-lg"
+        />
+      </div>
       <ul
         id={listId}
         role="listbox"
         aria-label="Matching players"
         hidden={!showList}
-        className="absolute z-20 mt-1 max-h-80 w-full overflow-y-auto rounded-xl border border-gray-200 bg-white py-1 shadow-lg dark:border-gray-700 dark:bg-gray-900"
+        className="absolute z-20 mt-2 max-h-80 w-full overflow-y-auto rounded-2xl border border-line bg-elevated p-1.5 shadow-2xl"
       >
         {results.map((p, i) => (
           <li
@@ -114,17 +121,19 @@ export function GuessInput({
               choose(p)
             }}
             onMouseEnter={() => setActive(i)}
-            className={`flex cursor-pointer items-baseline justify-between gap-3 px-4 py-2.5 ${
-              i === active ? 'bg-green-50 dark:bg-green-950' : ''
+            className={`flex cursor-pointer items-center justify-between gap-3 rounded-xl px-3.5 py-2.5 ${
+              i === active ? 'bg-brand-soft' : ''
             }`}
           >
-            <span className="font-medium text-gray-900 dark:text-gray-100">{p.name}</span>
-            <span className="shrink-0 text-xs text-gray-600 dark:text-gray-400">{p.country}</span>
+            <span className="font-semibold text-ink">{p.name}</span>
+            <span className="shrink-0 rounded-full border border-line bg-surface-2 px-2.5 py-0.5 text-xs font-medium text-muted">
+              {p.country}
+            </span>
           </li>
         ))}
       </ul>
       {noMatches && (
-        <p className="mt-1 px-1 text-sm text-gray-600 dark:text-gray-400" role="status">
+        <p className="mt-2 px-1 text-sm text-muted" role="status">
           No matching players{guessedIds.length ? " (or you've already guessed them)" : ''}.
         </p>
       )}
