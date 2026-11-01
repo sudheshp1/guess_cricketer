@@ -1,8 +1,9 @@
 @import 'tailwindcss';
 
 @theme {
-  --color-correct: #16a34a;
-  --color-close: #d97706;
+  /* Feedback colours. Text on each passes WCAG AA: white on correct/wrong, dark on close. */
+  --color-correct: #15803d;
+  --color-close: #fbbf24;
   --color-wrong: #6b7280;
 }
 
@@ -13,4 +14,27 @@
 body {
   margin: 0;
   min-height: 100dvh;
+  @apply bg-white text-gray-900 antialiased dark:bg-gray-950 dark:text-gray-100;
+}
+
+/* Cells flip in one by one; the delay is set inline per cell. */
+@keyframes cell-flip {
+  from {
+    transform: rotateX(90deg);
+    opacity: 0.2;
+  }
+  to {
+    transform: rotateX(0deg);
+    opacity: 1;
+  }
+}
+
+.cell-flip {
+  animation: cell-flip 400ms ease-out both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cell-flip {
+    animation: none;
+  }
 }

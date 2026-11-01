@@ -6,3 +6,4 @@ CLAUDE.md
 scripts/sources/*.json
 scripts/sources/report.md
 coverage
+.playwright-mcp
