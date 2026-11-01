@@ -13,7 +13,8 @@
     "format": "prettier --write .",
     "data": "tsx scripts/build-players.ts && tsx scripts/validate-players.ts && tsx scripts/build-schedule.ts --allow-short",
     "typecheck": "tsc -b",
-    "data:fetch": "tsx scripts/fetch-sources.ts"
+    "data:fetch": "tsx scripts/fetch-sources.ts",
+    "test:coverage": "vitest run --coverage"
   },
   "dependencies": {
     "react": "^19.3.1",
@@ -28,6 +29,7 @@
     "@types/react": "^19.3.0",
     "@types/react-dom": "^19.3.0",
     "@vitejs/plugin-react": "^6.1.2",
+    "@vitest/coverage-v8": "^5.0.5",
     "fflate": "^0.8.3",
     "jsdom": "^30.1.3",
     "oxlint": "^1.89.0",

@@ -5,3 +5,4 @@ package-lock.json
 CLAUDE.md
 scripts/sources/*.json
 scripts/sources/report.md
+coverage
