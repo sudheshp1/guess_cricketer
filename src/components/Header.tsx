@@ -21,7 +21,9 @@ export function Header({ subtitle, onHelp, onStats }: Props) {
         )}
       </div>
       <h1 className="text-center">
-        <span className="block text-2xl font-extrabold tracking-tight">{GAME_NAME}</span>
+        <span className="block text-2xl font-extrabold tracking-tight sm:text-3xl">
+          {GAME_NAME}
+        </span>
         <span className="block text-xs text-gray-600 dark:text-gray-400">{subtitle}</span>
       </h1>
       <div className="flex w-20 justify-end">

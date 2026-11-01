@@ -24,14 +24,14 @@ export function ClueList({
 }: Props) {
   const locked = clues.length - to
   return (
-    <ol className="flex flex-col gap-2" aria-label={label}>
+    <ol className="grid grid-cols-1 gap-2 sm:gap-3 2xl:grid-cols-2" aria-label={label}>
       {clues.slice(from, to).map((clue, offset) => {
         const i = from + offset
         const latest = highlightLatest && i === to - 1
         return (
           <li
             key={clue.key}
-            className={`clue-in flex gap-3 rounded-xl border px-3 py-2.5 ${
+            className={`clue-in flex gap-3 rounded-xl border px-3 py-2.5 sm:px-4 sm:py-3 ${
               latest
                 ? 'border-green-700 bg-green-50 dark:border-green-600 dark:bg-green-950'
                 : 'border-gray-200 bg-white dark:border-gray-800 dark:bg-gray-900'
@@ -49,7 +49,7 @@ export function ClueList({
                 {clue.title}
               </p>
               <p
-                className={`font-medium text-gray-900 dark:text-gray-100 ${clue.key === 'initials' ? 'font-mono tracking-wider' : ''}`}
+                className={`font-medium text-gray-900 sm:text-lg dark:text-gray-100 ${clue.key === 'initials' ? 'font-mono tracking-wider' : ''}`}
               >
                 {clue.text}
               </p>
@@ -61,7 +61,7 @@ export function ClueList({
         )
       })}
       {showLocked && locked > 0 && (
-        <li className="rounded-xl border border-dashed border-gray-300 px-3 py-2 text-center text-sm text-gray-600 dark:border-gray-700 dark:text-gray-400">
+        <li className="col-span-full rounded-xl border border-dashed border-gray-300 px-3 py-2 text-center text-sm text-gray-600 dark:border-gray-700 dark:text-gray-400">
           {locked} more {locked === 1 ? 'clue' : 'clues'} locked
         </li>
       )}

@@ -59,3 +59,16 @@ body {
     animation: none;
   }
 }
+
+/* Scale everything up a little on large displays so the layout fills them comfortably. */
+@media (min-width: 1536px) {
+  html {
+    font-size: 106.25%;
+  }
+}
+
+@media (min-width: 1920px) {
+  html {
+    font-size: 112.5%;
+  }
+}
