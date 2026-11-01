@@ -1,4 +1,5 @@
 import { GAME_NAME } from '../config'
+import { HelpIcon, StatsIcon } from './Icons'
 
 interface Props {
   puzzleNumber: number
@@ -8,13 +9,13 @@ interface Props {
 
 export function Header({ puzzleNumber, onHelp, onStats }: Props) {
   const button =
-    'flex h-10 w-10 items-center justify-center rounded-full text-xl hover:bg-gray-100 focus-visible:outline-2 focus-visible:outline-green-700 dark:hover:bg-gray-800'
+    'flex h-11 w-11 items-center justify-center rounded-full text-gray-700 hover:bg-gray-100 dark:text-gray-300 focus-visible:outline-2 focus-visible:outline-green-700 dark:hover:bg-gray-800'
   return (
     <header className="flex items-center justify-between border-b border-gray-200 py-2 dark:border-gray-800">
       <div className="w-20">
         {onHelp && (
           <button type="button" className={button} onClick={onHelp} aria-label="How to play">
-            <span aria-hidden="true">?</span>
+            <HelpIcon />
           </button>
         )}
       </div>
@@ -27,7 +28,7 @@ export function Header({ puzzleNumber, onHelp, onStats }: Props) {
       <div className="flex w-20 justify-end">
         {onStats && (
           <button type="button" className={button} onClick={onStats} aria-label="Statistics">
-            <span aria-hidden="true">📊</span>
+            <StatsIcon />
           </button>
         )}
       </div>

@@ -24,7 +24,7 @@ export function FeedbackCell({ cell, revealDelayMs }: Props) {
     <div
       title={full}
       style={style}
-      className={`flex aspect-square min-w-0 flex-col items-center justify-center rounded-md px-0.5 text-center leading-tight font-semibold ${COLORS[cell.match]} ${animate ? 'cell-flip' : ''}`}
+      className={`flex aspect-square min-w-0 flex-col sm:aspect-auto sm:h-16 items-center justify-center rounded-md px-0.5 text-center leading-tight font-semibold ${COLORS[cell.match]} ${animate ? 'cell-flip' : ''}`}
       data-match={cell.match}
     >
       <span className="sr-only">{describeCell(cell)}</span>

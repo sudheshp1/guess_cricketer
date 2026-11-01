@@ -10,6 +10,8 @@ export default defineConfig({
     environment: 'jsdom',
     globals: false,
     setupFiles: ['./src/test/setup.ts'],
+    // Full-game UI tests type dozens of keystrokes; give them room on slower or busy machines.
+    testTimeout: 15_000,
     include: ['src/**/*.test.{ts,tsx}', 'scripts/**/*.test.ts'],
     coverage: { include: ['src/lib/**'] },
   },

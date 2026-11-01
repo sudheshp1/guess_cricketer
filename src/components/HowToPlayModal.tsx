@@ -10,12 +10,13 @@ interface Props {
   onClose: () => void
   /** Two real players for the worked example (guess, then answer). */
   example: [Player, Player] | null
+  animate?: boolean
 }
 
-export function HowToPlayModal({ open, onClose, example }: Props) {
+export function HowToPlayModal({ open, onClose, example, animate }: Props) {
   const exampleResult = example ? compare(example[0], example[1]) : null
   return (
-    <Modal title="How to play" open={open} onClose={onClose}>
+    <Modal title="How to play" open={open} onClose={onClose} animate={animate}>
       <div className="space-y-3 text-sm">
         <p>
           Guess the mystery international cricketer in {MAX_GUESSES} tries. Everyone gets the same

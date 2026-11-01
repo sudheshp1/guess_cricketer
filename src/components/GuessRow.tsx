@@ -1,6 +1,7 @@
 import { FLIP_STAGGER_MS } from '../config'
 import type { GuessResult, Player } from '../types'
 import { FeedbackCell } from './FeedbackCell'
+import { BallIcon } from './Icons'
 
 interface Props {
   player: Player
@@ -18,7 +19,7 @@ export function GuessRow({ player, result, guessNumber, animate }: Props) {
           {guessNumber}.
         </span>
         <span className="font-semibold text-gray-900 dark:text-gray-100">{player.name}</span>
-        {result.isCorrect && <span aria-hidden="true">🏏</span>}
+        {result.isCorrect && <BallIcon className="h-4 w-4 self-center" />}
       </div>
       <div className="grid grid-cols-7 gap-1">
         {result.cells.map((cell, i) => (
