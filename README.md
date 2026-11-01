@@ -55,3 +55,10 @@ npx vercel --prod          # first run links the project, later runs redeploy
 
 If the production domain is not `https://guess-cricketer.vercel.app`, set `VITE_SITE_URL` in
 `.env` (used in share text and Open Graph tags) and redeploy.
+
+### Speed Insights
+
+`@vercel/speed-insights` (React component, rendered in `src/main.tsx`) reports Core Web Vitals.
+Enable it in the Vercel dashboard (**Project → Speed Insights → Enable**); data appears after the
+next deploy once people visit. It only runs on Vercel deployments: locally the script at
+`/_vercel/speed-insights/script.js` doesn't exist, which is expected.

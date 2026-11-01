@@ -145,6 +145,7 @@ Fail the build if:
 - **Tailwind CSS** for styling
 - **Vitest** + **React Testing Library** for tests
 - **localStorage** for game state and stats (wrapped in try/catch; the game must still work if storage fails)
+- **Vercel Speed Insights** (`@vercel/speed-insights/react`, rendered in `src/main.tsx`)
 - **No backend** in v1
 - Hosting: Vercel, Netlify, or Cloudflare Pages (static build)
 
