@@ -93,66 +93,120 @@ function App(props: UseGameOptions = {}) {
   const subtitle = streak > 0 ? `Win streak: ${streak}` : 'Endless mode'
 
   return (
-    <div className="mx-auto flex min-h-dvh max-w-[640px] flex-col px-4">
+    <div className="flex min-h-dvh w-full flex-col px-4 sm:px-6 lg:px-10 2xl:px-16">
       <Header
         subtitle={subtitle}
         onHelp={() => openModal('help')}
         onStats={() => openModal('stats')}
       />
-      <main className="flex flex-1 flex-col gap-4 py-4">
-        <div className="flex items-baseline justify-between gap-2">
-          <h2 className="text-lg font-bold">Who is this cricketer?</h2>
-          <p className="text-sm text-gray-600 tabular-nums dark:text-gray-400">
-            Clue {round.cluesRevealed} of {MAX_CLUES}
-          </p>
-        </div>
-
-        <ClueList
-          clues={game.clues}
-          to={round.cluesRevealed}
-          highlightLatest={playing}
-          showLocked={playing}
-        />
-
-        {playing ? (
-          <div className="flex flex-col gap-2">
-            <GuessInput
-              key={game.roundKey}
-              players={PLAYERS}
-              guessedIds={guessedIds}
-              placeholder="Type a player's name"
-              autoFocus={roundsStarted > 0}
-              onGuess={handleGuess}
-            />
-            <div className="flex gap-2">
-              <button
-                type="button"
-                onClick={handleNextClue}
-                disabled={round.cluesRevealed >= MAX_CLUES}
-                className="flex-1 rounded-full border border-gray-300 px-4 py-2.5 text-sm font-semibold hover:bg-gray-100 focus-visible:outline-2 focus-visible:outline-green-700 disabled:cursor-not-allowed disabled:opacity-50 dark:border-gray-600 dark:hover:bg-gray-800"
-              >
-                Another clue
-              </button>
-              <button
-                type="button"
-                onClick={handleGiveUp}
-                className="rounded-full border border-gray-300 px-4 py-2.5 text-sm font-semibold text-gray-700 hover:bg-gray-100 focus-visible:outline-2 focus-visible:outline-green-700 dark:border-gray-600 dark:text-gray-300 dark:hover:bg-gray-800"
-              >
-                Give up
-              </button>
-            </div>
+      {/*
+        Phones/tablets: one full-width column (clues, then controls, then leftover clues).
+        lg+: clues on the left, a sticky control panel on the right, filling the window.
+      */}
+      <main className="flex flex-1 flex-col gap-4 py-4 sm:gap-5 sm:py-6 lg:grid lg:grid-cols-[minmax(0,3fr)_minmax(340px,2fr)] lg:content-start lg:items-start lg:gap-x-10 lg:gap-y-6 2xl:grid-cols-[minmax(0,2fr)_minmax(420px,1fr)]">
+        <section
+          aria-labelledby="clues-heading"
+          className="flex min-w-0 flex-col gap-3 lg:col-start-1 lg:row-start-1"
+        >
+          <div className="flex items-baseline justify-between gap-2">
+            <h2 id="clues-heading" className="text-lg font-bold sm:text-xl lg:text-2xl">
+              Who is this cricketer?
+            </h2>
+            <p className="text-sm text-gray-600 tabular-nums sm:text-base dark:text-gray-400">
+              Clue {round.cluesRevealed} of {MAX_CLUES}
+            </p>
           </div>
-        ) : (
-          <RoundResult
-            round={round}
-            answer={game.answer}
-            onNext={handleNextRound}
-            onShare={() => void handleShare()}
+          <ClueList
+            clues={game.clues}
+            to={round.cluesRevealed}
+            highlightLatest={playing}
+            showLocked={playing}
           />
-        )}
+        </section>
+
+        <aside
+          aria-label="Your answer"
+          className="flex min-w-0 flex-col gap-4 lg:sticky lg:top-6 lg:col-start-2 lg:row-span-2 lg:row-start-1"
+        >
+          {playing ? (
+            <div className="flex flex-col gap-2">
+              <GuessInput
+                key={game.roundKey}
+                players={PLAYERS}
+                guessedIds={guessedIds}
+                placeholder="Type a player's name"
+                autoFocus={roundsStarted > 0}
+                onGuess={handleGuess}
+              />
+              <div className="flex gap-2">
+                <button
+                  type="button"
+                  onClick={handleNextClue}
+                  disabled={round.cluesRevealed >= MAX_CLUES}
+                  className="flex-1 rounded-full border border-gray-300 px-4 py-2.5 text-sm font-semibold hover:bg-gray-100 focus-visible:outline-2 focus-visible:outline-green-700 disabled:cursor-not-allowed disabled:opacity-50 sm:text-base dark:border-gray-600 dark:hover:bg-gray-800"
+                >
+                  Another clue
+                </button>
+                <button
+                  type="button"
+                  onClick={handleGiveUp}
+                  className="rounded-full border border-gray-300 px-4 py-2.5 text-sm font-semibold text-gray-700 hover:bg-gray-100 focus-visible:outline-2 focus-visible:outline-green-700 sm:text-base dark:border-gray-600 dark:text-gray-300 dark:hover:bg-gray-800"
+                >
+                  Give up
+                </button>
+              </div>
+            </div>
+          ) : (
+            <RoundResult
+              round={round}
+              answer={game.answer}
+              onNext={handleNextRound}
+              onShare={() => void handleShare()}
+            />
+          )}
+
+          {game.guesses.length > 0 && (
+            <section aria-labelledby="guesses-heading">
+              <h3
+                id="guesses-heading"
+                className="mb-1.5 text-xs font-semibold tracking-wide text-gray-600 uppercase dark:text-gray-400"
+              >
+                Your guesses
+              </h3>
+              <ul className="flex flex-wrap gap-1.5">
+                {game.guesses.map((p) => {
+                  const correct = p.id === round.answerId
+                  return (
+                    <li
+                      key={p.id}
+                      className={`rounded-full px-3 py-1 text-sm font-medium ${
+                        correct
+                          ? 'bg-correct text-white'
+                          : 'bg-gray-100 text-gray-800 line-through decoration-red-600 dark:bg-gray-800 dark:text-gray-200'
+                      }`}
+                    >
+                      {p.name}
+                      <span className="sr-only">{correct ? ' (correct)' : ' (wrong)'}</span>
+                    </li>
+                  )
+                })}
+              </ul>
+            </section>
+          )}
+
+          <div className="mt-2 lg:mt-0 lg:rounded-2xl lg:border lg:border-gray-200 lg:p-4 lg:dark:border-gray-800">
+            <PoolPicker pool={game.pool} onChange={game.setPool} />
+            <p className="mt-1 text-center text-xs text-gray-600 dark:text-gray-400">
+              Applies from the next player.
+            </p>
+          </div>
+        </aside>
 
         {!playing && round.cluesRevealed < game.clues.length && (
-          <section aria-labelledby="other-clues-heading">
+          <section
+            aria-labelledby="other-clues-heading"
+            className="min-w-0 lg:col-start-1 lg:row-start-2"
+          >
             <h3
               id="other-clues-heading"
               className="mb-1.5 text-xs font-semibold tracking-wide text-gray-600 uppercase dark:text-gray-400"
@@ -167,42 +221,6 @@ function App(props: UseGameOptions = {}) {
             />
           </section>
         )}
-
-        {game.guesses.length > 0 && (
-          <section aria-labelledby="guesses-heading">
-            <h3
-              id="guesses-heading"
-              className="mb-1.5 text-xs font-semibold tracking-wide text-gray-600 uppercase dark:text-gray-400"
-            >
-              Your guesses
-            </h3>
-            <ul className="flex flex-wrap gap-1.5">
-              {game.guesses.map((p) => {
-                const correct = p.id === round.answerId
-                return (
-                  <li
-                    key={p.id}
-                    className={`rounded-full px-3 py-1 text-sm font-medium ${
-                      correct
-                        ? 'bg-correct text-white'
-                        : 'bg-gray-100 text-gray-800 line-through decoration-red-600 dark:bg-gray-800 dark:text-gray-200'
-                    }`}
-                  >
-                    {p.name}
-                    <span className="sr-only">{correct ? ' (correct)' : ' (wrong)'}</span>
-                  </li>
-                )
-              })}
-            </ul>
-          </section>
-        )}
-
-        <div className="mt-2">
-          <PoolPicker pool={game.pool} onChange={game.setPool} />
-          <p className="mt-1 text-center text-xs text-gray-600 dark:text-gray-400">
-            Applies from the next player.
-          </p>
-        </div>
 
         <p className="sr-only" aria-live="polite" aria-atomic="true">
           {announcement}

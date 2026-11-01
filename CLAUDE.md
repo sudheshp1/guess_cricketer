@@ -239,11 +239,16 @@ https://your-domain.com
 
 ## 8. UI and UX
 
-- **Layout:** single column, max width ~640px, centred. Header (title, ? help, stats), "Who is this
-  cricketer?" with "Clue N of 10", revealed clues (newest highlighted), then the guess input with
-  **Another clue** / **Give up**, the player's wrong guesses, and the player-pool picker.
+- **Layout:** fills the whole window on every device; no fixed max width, no horizontal scroll.
+  - Phones and tablets (< 1024px): one full-width column: header, "Who is this cricketer?" with
+    "Clue N of 10", revealed clues (newest highlighted), then the guess input with **Another clue**
+    / **Give up**, the player's wrong guesses, and the player-pool picker.
+  - Laptops/desktops (>= 1024px): two columns across the full width: clues on the left, a sticky
+    control panel (input or result card, guesses, pool picker) on the right.
+  - Very wide screens (>= 1536px): clue cards flow into two columns and the root font size scales
+    up slightly (106%, then 112.5% at >= 1920px).
 - **Round over:** the result card replaces the input (so it stays on screen on phones); clues that
-  weren't revealed are listed below it.
+  weren't revealed are listed after the controls on small screens and under the clues on large ones.
 - **Animation:** each new clue slides in. Respect `prefers-reduced-motion`. Modals shown on page
   load don't animate.
 - **Dark mode:** follow system preference.

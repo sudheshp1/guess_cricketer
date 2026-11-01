@@ -80,7 +80,7 @@ export function Modal({ title, open, onClose, children, animate = true }: Props)
         aria-modal="true"
         aria-labelledby={titleId}
         tabIndex={-1}
-        className={`${animate ? 'modal-in ' : ''}max-h-[90dvh] w-full max-w-md overflow-y-auto rounded-t-2xl bg-white p-5 text-gray-900 shadow-xl outline-none sm:rounded-2xl dark:bg-gray-900 dark:text-gray-100`}
+        className={`${animate ? 'modal-in ' : ''}max-h-[90dvh] w-full max-w-md sm:max-w-lg overflow-y-auto rounded-t-2xl bg-white p-5 text-gray-900 shadow-xl outline-none sm:rounded-2xl dark:bg-gray-900 dark:text-gray-100`}
       >
         <div className="mb-3 flex items-start justify-between gap-4">
           <h2 id={titleId} className="text-xl font-bold">
