@@ -1,11 +1,11 @@
 export function Footer() {
   return (
-    <footer className="mt-auto border-t border-gray-200 py-4 text-center text-xs text-gray-600 dark:border-gray-800 dark:text-gray-400">
+    <footer className="mt-auto border-t border-line py-5 text-center text-xs text-muted">
       <p>
         Match data from{' '}
         <a
           href="https://cricsheet.org"
-          className="underline hover:text-gray-900 dark:hover:text-gray-200"
+          className="font-medium underline decoration-line-strong underline-offset-2 hover:text-ink"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -14,7 +14,7 @@ export function Footer() {
         and{' '}
         <a
           href="https://en.wikipedia.org"
-          className="underline hover:text-gray-900 dark:hover:text-gray-200"
+          className="font-medium underline decoration-line-strong underline-offset-2 hover:text-ink"
           target="_blank"
           rel="noopener noreferrer"
         >

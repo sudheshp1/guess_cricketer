@@ -1,4 +1,5 @@
 import { useEffect, useId, useRef, type ReactNode } from 'react'
+import { X } from 'lucide-react'
 import { createPortal } from 'react-dom'
 
 interface Props {
@@ -69,7 +70,7 @@ export function Modal({ title, open, onClose, children, animate = true }: Props)
   // Portalled to <body> so that making #root inert doesn't disable the dialog itself.
   return createPortal(
     <div
-      className="fixed inset-0 z-50 flex items-end justify-center bg-black/50 p-0 sm:items-center sm:p-4"
+      className="fixed inset-0 z-50 flex items-end justify-center bg-black/60 p-0 backdrop-blur-sm sm:items-center sm:p-4"
       onMouseDown={(e) => {
         if (e.target === e.currentTarget) onClose()
       }}
@@ -80,19 +81,19 @@ export function Modal({ title, open, onClose, children, animate = true }: Props)
         aria-modal="true"
         aria-labelledby={titleId}
         tabIndex={-1}
-        className={`${animate ? 'modal-in ' : ''}max-h-[90dvh] w-full max-w-md sm:max-w-lg overflow-y-auto rounded-t-2xl bg-white p-5 text-gray-900 shadow-xl outline-none sm:rounded-2xl dark:bg-gray-900 dark:text-gray-100`}
+        className={`${animate ? 'modal-in ' : ''}max-h-[90dvh] w-full max-w-md overflow-y-auto rounded-t-3xl border border-line bg-elevated p-5 text-ink shadow-2xl outline-none sm:max-w-lg sm:rounded-3xl sm:p-6`}
       >
-        <div className="mb-3 flex items-start justify-between gap-4">
-          <h2 id={titleId} className="text-xl font-bold">
+        <div className="mb-4 flex items-start justify-between gap-4">
+          <h2 id={titleId} className="text-2xl font-extrabold tracking-tight">
             {title}
           </h2>
           <button
             type="button"
             onClick={onClose}
             aria-label="Close"
-            className="-m-2 flex h-10 w-10 shrink-0 items-center justify-center rounded-full text-2xl leading-none text-gray-600 hover:bg-gray-100 focus-visible:outline-2 focus-visible:outline-green-700 dark:text-gray-300 dark:hover:bg-gray-800"
+            className="icon-btn -m-1 shrink-0"
           >
-            <span aria-hidden="true">×</span>
+            <X className="h-5 w-5" aria-hidden="true" />
           </button>
         </div>
         {children}

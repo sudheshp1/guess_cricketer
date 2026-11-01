@@ -1,3 +1,4 @@
+import { Check, Flag, Lightbulb, X } from 'lucide-react'
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { ClueList } from './components/ClueList'
 import { Footer } from './components/Footer'
@@ -5,6 +6,7 @@ import { GuessInput } from './components/GuessInput'
 import { Header } from './components/Header'
 import { HowToPlayModal } from './components/HowToPlayModal'
 import { PoolPicker } from './components/PoolPicker'
+import { RoundHero } from './components/RoundHero'
 import { RoundResult } from './components/RoundResult'
 import { StatsModal } from './components/StatsModal'
 import { Toast } from './components/Toast'
@@ -89,33 +91,23 @@ function App(props: UseGameOptions = {}) {
     else if (outcome === 'failed') showToast("Couldn't share. Try copying manually.")
   }
 
-  const streak = game.stats.currentStreak
-  const subtitle = streak > 0 ? `Win streak: ${streak}` : 'Endless mode'
-
   return (
     <div className="flex min-h-dvh w-full flex-col px-4 sm:px-6 lg:px-10 2xl:px-16">
       <Header
-        subtitle={subtitle}
+        streak={game.stats.currentStreak}
         onHelp={() => openModal('help')}
         onStats={() => openModal('stats')}
       />
       {/*
-        Phones/tablets: one full-width column (clues, then controls, then leftover clues).
-        lg+: clues on the left, a sticky control panel on the right, filling the window.
+        Phones/tablets: one full-width column (clues, then the panel, then leftover clues).
+        lg+: clues on the left, a sticky panel on the right, filling the window.
       */}
-      <main className="flex flex-1 flex-col gap-4 py-4 sm:gap-5 sm:py-6 lg:grid lg:grid-cols-[minmax(0,3fr)_minmax(340px,2fr)] lg:content-start lg:items-start lg:gap-x-10 lg:gap-y-6 2xl:grid-cols-[minmax(0,2fr)_minmax(420px,1fr)]">
+      <main className="flex flex-1 flex-col gap-5 pt-2 pb-6 sm:gap-6 lg:grid lg:grid-cols-[minmax(0,3fr)_minmax(360px,2fr)] lg:content-start lg:items-start lg:gap-x-10 lg:gap-y-8 2xl:grid-cols-[minmax(0,2fr)_minmax(440px,1fr)]">
         <section
           aria-labelledby="clues-heading"
-          className="flex min-w-0 flex-col gap-3 lg:col-start-1 lg:row-start-1"
+          className="flex min-w-0 flex-col gap-4 sm:gap-5 lg:col-start-1 lg:row-start-1"
         >
-          <div className="flex items-baseline justify-between gap-2">
-            <h2 id="clues-heading" className="text-lg font-bold sm:text-xl lg:text-2xl">
-              Who is this cricketer?
-            </h2>
-            <p className="text-sm text-gray-600 tabular-nums sm:text-base dark:text-gray-400">
-              Clue {round.cluesRevealed} of {MAX_CLUES}
-            </p>
-          </div>
+          <RoundHero round={round} answer={game.answer} />
           <ClueList
             clues={game.clues}
             to={round.cluesRevealed}
@@ -129,7 +121,8 @@ function App(props: UseGameOptions = {}) {
           className="flex min-w-0 flex-col gap-4 lg:sticky lg:top-6 lg:col-start-2 lg:row-span-2 lg:row-start-1"
         >
           {playing ? (
-            <div className="flex flex-col gap-2">
+            <div className="card flex flex-col gap-3 p-4 sm:p-5">
+              <p className="eyebrow">Your guess</p>
               <GuessInput
                 key={game.roundKey}
                 players={PLAYERS}
@@ -143,15 +136,13 @@ function App(props: UseGameOptions = {}) {
                   type="button"
                   onClick={handleNextClue}
                   disabled={round.cluesRevealed >= MAX_CLUES}
-                  className="flex-1 rounded-full border border-gray-300 px-4 py-2.5 text-sm font-semibold hover:bg-gray-100 focus-visible:outline-2 focus-visible:outline-green-700 disabled:cursor-not-allowed disabled:opacity-50 sm:text-base dark:border-gray-600 dark:hover:bg-gray-800"
+                  className="btn btn-ghost flex-1"
                 >
+                  <Lightbulb className="h-4.5 w-4.5 text-gold" aria-hidden="true" />
                   Another clue
                 </button>
-                <button
-                  type="button"
-                  onClick={handleGiveUp}
-                  className="rounded-full border border-gray-300 px-4 py-2.5 text-sm font-semibold text-gray-700 hover:bg-gray-100 focus-visible:outline-2 focus-visible:outline-green-700 sm:text-base dark:border-gray-600 dark:text-gray-300 dark:hover:bg-gray-800"
-                >
+                <button type="button" onClick={handleGiveUp} className="btn btn-ghost">
+                  <Flag className="h-4.5 w-4.5 text-muted" aria-hidden="true" />
                   Give up
                 </button>
               </div>
@@ -166,25 +157,27 @@ function App(props: UseGameOptions = {}) {
           )}
 
           {game.guesses.length > 0 && (
-            <section aria-labelledby="guesses-heading">
-              <h3
-                id="guesses-heading"
-                className="mb-1.5 text-xs font-semibold tracking-wide text-gray-600 uppercase dark:text-gray-400"
-              >
+            <section aria-labelledby="guesses-heading" className="card p-4 sm:p-5">
+              <h3 id="guesses-heading" className="eyebrow mb-2.5">
                 Your guesses
               </h3>
-              <ul className="flex flex-wrap gap-1.5">
+              <ul className="flex flex-wrap gap-2">
                 {game.guesses.map((p) => {
                   const correct = p.id === round.answerId
                   return (
                     <li
                       key={p.id}
-                      className={`rounded-full px-3 py-1 text-sm font-medium ${
+                      className={`inline-flex items-center gap-1.5 rounded-full px-3 py-1.5 text-sm font-semibold ${
                         correct
-                          ? 'bg-correct text-white'
-                          : 'bg-gray-100 text-gray-800 line-through decoration-red-600 dark:bg-gray-800 dark:text-gray-200'
+                          ? 'bg-brand text-on-brand'
+                          : 'border border-line bg-surface-2 text-ink'
                       }`}
                     >
+                      {correct ? (
+                        <Check className="h-4 w-4" aria-hidden="true" />
+                      ) : (
+                        <X className="h-4 w-4 text-danger" aria-hidden="true" />
+                      )}
                       {p.name}
                       <span className="sr-only">{correct ? ' (correct)' : ' (wrong)'}</span>
                     </li>
@@ -194,11 +187,8 @@ function App(props: UseGameOptions = {}) {
             </section>
           )}
 
-          <div className="mt-2 lg:mt-0 lg:rounded-2xl lg:border lg:border-gray-200 lg:p-4 lg:dark:border-gray-800">
+          <div className="card p-4 sm:p-5">
             <PoolPicker pool={game.pool} onChange={game.setPool} />
-            <p className="mt-1 text-center text-xs text-gray-600 dark:text-gray-400">
-              Applies from the next player.
-            </p>
           </div>
         </aside>
 
@@ -207,11 +197,8 @@ function App(props: UseGameOptions = {}) {
             aria-labelledby="other-clues-heading"
             className="min-w-0 lg:col-start-1 lg:row-start-2"
           >
-            <h3
-              id="other-clues-heading"
-              className="mb-1.5 text-xs font-semibold tracking-wide text-gray-600 uppercase dark:text-gray-400"
-            >
-              {round.status === 'won' ? 'Clues you didn’t need' : 'The other clues'}
+            <h3 id="other-clues-heading" className="eyebrow mb-3">
+              {round.status === 'won' ? 'Clues you didn\u2019t need' : 'The other clues'}
             </h3>
             <ClueList
               clues={game.clues}

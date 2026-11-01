@@ -247,6 +247,15 @@ https://your-domain.com
     control panel (input or result card, guesses, pool picker) on the right.
   - Very wide screens (>= 1536px): clue cards flow into two columns and the root font size scales
     up slightly (106%, then 112.5% at >= 1920px).
+- **Visual design ("night match"):** colour tokens live in `src/index.css` (`--bg`, `--surface`,
+  `--ink`, `--muted`, `--brand`, `--gold`, `--ball`, …) with a light "day match" theme (cream
+  whites) and a dark "night match" theme (floodlit deep green), switched by system preference.
+  Use the semantic Tailwind colours (`bg-surface`, `text-muted`, `border-line`, `text-brand`, …)
+  and the component classes `.card`, `.btn`, `.btn-primary`, `.btn-ghost`, `.icon-btn`,
+  `.eyebrow`, never raw palette colours. Font: Outfit (self-hosted via
+  `@fontsource-variable/outfit`). Icons: `lucide-react`; the cricket ball (logo, mystery badge) is
+  `CricketBall` in `components/Icons.tsx`; per-clue icons are in `components/clueIcons.ts`.
+  Keep every text/background pair at WCAG AA in both themes.
 - **Round over:** the result card replaces the input (so it stays on screen on phones); clues that
   weren't revealed are listed after the controls on small screens and under the clues on large ones.
 - **Animation:** each new clue slides in. Respect `prefers-reduced-motion`. Modals shown on page

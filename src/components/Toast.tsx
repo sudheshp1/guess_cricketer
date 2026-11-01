@@ -11,10 +11,10 @@ export function Toast({ message }: Props) {
     <div
       role="status"
       aria-live="polite"
-      className="pointer-events-none fixed inset-x-0 top-16 z-[60] flex justify-center px-4"
+      className="pointer-events-none fixed inset-x-0 top-20 z-[60] flex justify-center px-4"
     >
       {message && (
-        <div className="rounded-lg bg-gray-900 px-4 py-2 text-sm font-semibold text-white shadow-lg dark:bg-gray-100 dark:text-gray-900">
+        <div className="pop rounded-full bg-ink px-5 py-2.5 text-sm font-semibold text-bg shadow-2xl">
           {message}
         </div>
       )}

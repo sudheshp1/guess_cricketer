@@ -1,26 +1,197 @@
 @import 'tailwindcss';
 
-@theme {
-  /* Feedback colours. Text on each passes WCAG AA: white on correct/wrong, dark on close. */
-  --color-correct: #15803d;
-  --color-close: #fbbf24;
-  --color-wrong: #6b7280;
+/*
+  Design tokens. Light = "day match" (cream whites, pitch green), dark = "night match" (floodlit
+  deep green, gold accents). Text/background pairs are chosen to pass WCAG AA in both themes.
+*/
+:root {
+  color-scheme: light;
+  --bg: #f4f1e8;
+  --glow-1: rgb(22 163 74 / 0.14);
+  --glow-2: rgb(245 158 11 / 0.12);
+  --stripe: rgb(21 128 61 / 0.018);
+  --surface: #ffffff;
+  --surface-2: #f8f6f0;
+  --elevated: #ffffff;
+  --line: #e4ddcc;
+  --line-strong: #cfc6b0;
+  --ink: #0f2419;
+  --muted: #536459;
+  --brand: #15803d;
+  --brand-strong: #166534;
+  --brand-soft: #e6f4eb;
+  --on-brand: #ffffff;
+  --gold: #a35208;
+  --gold-fill: #f5a524;
+  --gold-soft: #fff3d6;
+  --on-gold: #1c1404;
+  --ball: #c81e1e;
+  --ball-seam: #fde2e2;
+  --danger: #b91c1c;
+  --shadow: 0 1px 2px rgb(15 36 25 / 0.06), 0 8px 24px -12px rgb(15 36 25 / 0.18);
 }
 
-:root {
-  color-scheme: light dark;
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+    --bg: #05110b;
+    --glow-1: rgb(34 197 94 / 0.16);
+    --glow-2: rgb(251 191 36 / 0.09);
+    --stripe: rgb(255 255 255 / 0.011);
+    --surface: #0d1c14;
+    --surface-2: #12261b;
+    --elevated: #10221a;
+    --line: #1e3528;
+    --line-strong: #2c4a39;
+    --ink: #ecf7f0;
+    --muted: #9cb5a7;
+    --brand: #22c55e;
+    --brand-strong: #4ade80;
+    --brand-soft: #0f2e1d;
+    --on-brand: #03200e;
+    --gold: #fbbf24;
+    --gold-fill: #fbbf24;
+    --gold-soft: #2b2410;
+    --on-gold: #1c1404;
+    --ball: #ef4444;
+    --ball-seam: #fecaca;
+    --danger: #f87171;
+    --shadow: 0 1px 2px rgb(0 0 0 / 0.4), 0 12px 32px -16px rgb(0 0 0 / 0.7);
+  }
+}
+
+@theme inline {
+  --font-sans: 'Outfit Variable', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-elevated: var(--elevated);
+  --color-line: var(--line);
+  --color-line-strong: var(--line-strong);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-brand: var(--brand);
+  --color-brand-strong: var(--brand-strong);
+  --color-brand-soft: var(--brand-soft);
+  --color-on-brand: var(--on-brand);
+  --color-gold: var(--gold);
+  --color-gold-fill: var(--gold-fill);
+  --color-gold-soft: var(--gold-soft);
+  --color-on-gold: var(--on-gold);
+  --color-ball: var(--ball);
+  --color-danger: var(--danger);
+  /* Used by the stats chart and share colours. */
+  --color-correct: var(--brand);
+  --color-wrong: var(--muted);
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
   margin: 0;
   min-height: 100dvh;
-  @apply bg-white text-gray-900 antialiased dark:bg-gray-950 dark:text-gray-100;
+  font-family: var(--font-sans);
+  color: var(--ink);
+  background-color: var(--bg);
+  /* Floodlight glows over faint mowing stripes. */
+  background-image:
+    radial-gradient(60rem 30rem at 15% -10%, var(--glow-1), transparent 70%),
+    radial-gradient(50rem 26rem at 95% 0%, var(--glow-2), transparent 70%),
+    repeating-linear-gradient(90deg, var(--stripe) 0 80px, transparent 80px 160px);
+  background-attachment: fixed;
+  -webkit-font-smoothing: antialiased;
 }
 
-/* Each newly revealed clue fades and slides in. */
+@layer components {
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 1.25rem;
+    box-shadow: var(--shadow);
+  }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    border-radius: 9999px;
+    padding: 0.7rem 1.25rem;
+    font-weight: 600;
+    line-height: 1.2;
+    transition:
+      transform 120ms ease,
+      background-color 150ms ease,
+      border-color 150ms ease,
+      box-shadow 150ms ease;
+  }
+  .btn:active:not(:disabled) {
+    transform: translateY(1px) scale(0.99);
+  }
+  .btn:focus-visible {
+    outline: 3px solid var(--gold-fill);
+    outline-offset: 2px;
+  }
+  .btn:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+
+  .btn-primary {
+    background: var(--brand);
+    color: var(--on-brand);
+    box-shadow: 0 6px 18px -8px var(--brand);
+  }
+  .btn-primary:hover:not(:disabled) {
+    background: var(--brand-strong);
+  }
+
+  .btn-ghost {
+    background: var(--surface);
+    color: var(--ink);
+    border: 1px solid var(--line-strong);
+  }
+  .btn-ghost:hover:not(:disabled) {
+    background: var(--surface-2);
+    border-color: var(--muted);
+  }
+
+  .icon-btn {
+    display: inline-flex;
+    height: 2.75rem;
+    width: 2.75rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 9999px;
+    color: var(--ink);
+    border: 1px solid var(--line);
+    background: var(--surface);
+    transition: background-color 150ms ease;
+  }
+  .icon-btn:hover {
+    background: var(--surface-2);
+  }
+  .icon-btn:focus-visible {
+    outline: 3px solid var(--gold-fill);
+    outline-offset: 2px;
+  }
+
+  .eyebrow {
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+}
+
+/* ---- Motion (all disabled under prefers-reduced-motion) ---- */
+
 @keyframes clue-in {
   from {
-    transform: translateY(6px);
+    transform: translateY(10px) scale(0.98);
     opacity: 0;
   }
   to {
@@ -28,15 +199,71 @@ body {
     opacity: 1;
   }
 }
-
 .clue-in {
-  animation: clue-in 250ms ease-out both;
+  animation: clue-in 320ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .clue-in {
-    animation: none;
+@keyframes glow {
+  0%,
+  100% {
+    box-shadow:
+      0 0 0 1px var(--gold-fill),
+      0 0 0 0 rgb(251 191 36 / 0.35);
   }
+  50% {
+    box-shadow:
+      0 0 0 1px var(--gold-fill),
+      0 0 0 6px rgb(251 191 36 / 0);
+  }
+}
+.clue-latest {
+  animation: glow 2.4s ease-in-out infinite;
+}
+
+@keyframes ball-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.ball-spin {
+  animation: ball-spin 18s linear infinite;
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(0.6);
+    opacity: 0;
+  }
+  70% {
+    transform: scale(1.08);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.pop {
+  animation: pop 420ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+
+@keyframes confetti {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(var(--dx), var(--dy)) rotate(var(--rot));
+    opacity: 0;
+  }
+}
+.confetti-piece {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  width: 8px;
+  height: 12px;
+  border-radius: 2px;
+  animation: confetti 1100ms cubic-bezier(0.15, 0.6, 0.3, 1) forwards;
 }
 
 @keyframes modal-in {
@@ -49,14 +276,20 @@ body {
     opacity: 1;
   }
 }
-
 .modal-in {
-  animation: modal-in 180ms ease-out;
+  animation: modal-in 200ms ease-out;
 }
 
 @media (prefers-reduced-motion: reduce) {
+  .clue-in,
+  .clue-latest,
+  .ball-spin,
+  .pop,
   .modal-in {
     animation: none;
+  }
+  .confetti-piece {
+    display: none;
   }
 }
 

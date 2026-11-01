@@ -1,3 +1,5 @@
+import { ArrowRight, Share2 } from 'lucide-react'
+import type { CSSProperties } from 'react'
 import { MAX_CLUES } from '../config'
 import type { Player, Round } from '../types'
 
@@ -8,7 +10,35 @@ interface Props {
   onShare: () => void
 }
 
-/** Shown when a round ends: the answer plus next/share actions. */
+const CONFETTI_COLORS = ['#22c55e', '#fbbf24', '#ef4444', '#38bdf8', '#f472b6', '#ffffff']
+
+/** A short, deterministic confetti burst (hidden under reduced motion). */
+function Confetti() {
+  return (
+    <div className="pointer-events-none absolute inset-0 overflow-hidden" aria-hidden="true">
+      {Array.from({ length: 22 }, (_, i) => {
+        const angle = (i / 22) * Math.PI * 2
+        const distance = 110 + (i % 4) * 30
+        const style = {
+          background: CONFETTI_COLORS[i % CONFETTI_COLORS.length],
+          '--dx': `${Math.cos(angle) * distance}px`,
+          '--dy': `${Math.sin(angle) * distance * 0.7 + 40}px`,
+          '--rot': `${(i % 2 ? 1 : -1) * (180 + i * 25)}deg`,
+          animationDelay: `${(i % 5) * 25}ms`,
+        } as CSSProperties
+        return <span key={i} className="confetti-piece" style={style} />
+      })}
+    </div>
+  )
+}
+
+function total(player: Player, key: 'runs' | 'wickets'): string {
+  const values = Object.values(player.stats).map((s) => s[key])
+  if (values.every((v) => v === null)) return '–'
+  return values.reduce<number>((sum, v) => sum + (v ?? 0), 0).toLocaleString('en-US')
+}
+
+/** Shown when a round ends: the answer, a mini scorecard, and next/share actions. */
 export function RoundResult({ round, answer, onNext, onShare }: Props) {
   const won = round.status === 'won'
   const heading = won
@@ -18,38 +48,60 @@ export function RoundResult({ round, answer, onNext, onShare }: Props) {
     : round.gaveUp
       ? 'You gave up'
       : 'Out of clues'
+  const scorecard = [
+    { label: 'Matches', value: answer.intlMatches.toLocaleString('en-US') },
+    { label: 'Runs', value: total(answer, 'runs') },
+    { label: 'Wickets', value: total(answer, 'wickets') },
+  ]
+
   return (
     <section
       aria-labelledby="round-result-heading"
-      className={`rounded-2xl border p-4 ${
-        won
-          ? 'border-green-700 bg-green-50 dark:border-green-600 dark:bg-green-950'
-          : 'border-gray-300 bg-gray-50 dark:border-gray-700 dark:bg-gray-900'
+      className={`relative overflow-hidden rounded-2xl border p-5 ${
+        won ? 'border-brand bg-brand-soft' : 'border-line bg-surface-2'
       }`}
     >
-      <h2 id="round-result-heading" className="text-lg font-bold">
+      {won && <Confetti />}
+      <h2
+        id="round-result-heading"
+        className={`relative text-sm font-bold tracking-wide uppercase ${won ? 'text-brand' : 'text-muted'}`}
+      >
         {heading}
       </h2>
-      <p className="mt-1">
-        The player was <strong className="text-xl">{answer.name}</strong>
+      <p className="relative mt-2 text-muted">The player was</p>
+      <p className="relative pop">
+        <strong className="text-3xl leading-tight font-extrabold tracking-tight sm:text-4xl">
+          {answer.name}
+        </strong>
       </p>
-      <p className="text-sm text-gray-700 dark:text-gray-300">
-        {answer.country} · {answer.role} · {answer.intlMatches} international matches
+      <p className="relative mt-1 text-sm font-medium text-muted">
+        {answer.country} · {answer.role} · {answer.active ? 'Active' : 'Retired'}
       </p>
-      <div className="mt-4 flex gap-2">
+
+      <dl className="relative mt-4 grid grid-cols-3 gap-2">
+        {scorecard.map((s) => (
+          <div
+            key={s.label}
+            className="rounded-xl border border-line bg-surface px-3 py-2 text-center"
+          >
+            <dt className="eyebrow">{s.label}</dt>
+            <dd className="text-lg font-extrabold tabular-nums">{s.value}</dd>
+          </div>
+        ))}
+      </dl>
+
+      <div className="relative mt-5 flex gap-2">
         <button
           type="button"
           onClick={onNext}
           autoFocus
-          className="flex-1 rounded-full bg-correct px-5 py-3 font-bold text-white shadow hover:brightness-110 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-700"
+          className="btn btn-primary flex-1 text-base"
         >
           Next player
+          <ArrowRight className="h-5 w-5" aria-hidden="true" />
         </button>
-        <button
-          type="button"
-          onClick={onShare}
-          className="rounded-full border border-gray-300 bg-white px-5 py-3 font-semibold text-gray-900 hover:bg-gray-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-700 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-100 dark:hover:bg-gray-700"
-        >
+        <button type="button" onClick={onShare} className="btn btn-ghost">
+          <Share2 className="h-4.5 w-4.5" aria-hidden="true" />
           Share
         </button>
       </div>
