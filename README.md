@@ -62,3 +62,9 @@ If the production domain is not `https://guess-cricketer.vercel.app`, set `VITE_
 Enable it in the Vercel dashboard (**Project → Speed Insights → Enable**); data appears after the
 next deploy once people visit. It only runs on Vercel deployments: locally the script at
 `/_vercel/speed-insights/script.js` doesn't exist, which is expected.
+
+### Web Analytics
+
+`@vercel/analytics` (React component, rendered in `src/main.tsx`) records page views and visitors
+without cookies. Enable it in the Vercel dashboard (**Project → Analytics → Enable**); like Speed
+Insights it only reports from Vercel deployments (`/_vercel/insights/script.js`).
