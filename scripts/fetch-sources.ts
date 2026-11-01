@@ -13,10 +13,12 @@ import { join } from 'node:path'
 import { unzipSync } from 'fflate'
 import {
   extractInfobox,
+  extractLead,
   findCricinfoId,
   findListRowMatches,
   parseInfoboxFields,
   readInfobox,
+  type FormatKey,
 } from './lib/infobox.ts'
 import {
   CACHE_DIR,
@@ -88,12 +90,13 @@ async function fetchWikipedia(): Promise<void> {
         revid: rev.revid,
         infobox,
         cricinfoId: findCricinfoId(content),
+        lead: extractLead(content),
       }
     }
     await new Promise((r) => setTimeout(r, 500))
   }
 
-  await fillT20iFromLists(pages, refresh ? null : new Set(todo.map((r) => r.id)))
+  await fillFromLists(pages, refresh ? null : new Set(todo.map((r) => r.id)))
 
   // Drop pages for players no longer in the seed.
   const ids = new Set(seed.map((r) => r.id))
@@ -131,33 +134,50 @@ async function fetchPage(
   return { title: page.title, revid: rev.revid, content: rev.slots.main.content }
 }
 
+const LIST_PAGE: Record<FormatKey, (country: string) => string> = {
+  test: (c) => `List of ${c} Test cricketers`,
+  odi: (c) => `List of ${c} ODI cricketers`,
+  t20i: (c) => `List of ${c} Twenty20 International cricketers`,
+}
+
 /**
- * For players whose infobox lacks a T20I column, read their T20I match count from the
- * country's list page. `onlyIds` limits this to freshly fetched players (null = all).
+ * The infobox shows at most four stat columns, so a format the player played can be missing.
+ * For those, read the match count from the country's "List of ... cricketers" page.
+ * `onlyIds` limits this to freshly fetched players (null = all).
  */
-async function fillT20iFromLists(
+async function fillFromLists(
   pages: Record<string, WikipediaPage>,
   onlyIds: Set<string> | null,
 ): Promise<void> {
-  const byCountry = new Map<string, string[]>()
+  const wanted = new Map<string, string[]>() // list title -> player ids
+  const formatOf = new Map<string, FormatKey>()
   for (const [id, page] of Object.entries(pages)) {
     if (onlyIds && !onlyIds.has(id)) continue
     const facts = readInfobox(parseInfoboxFields(page.infobox))
-    if (facts.matches.t20i !== undefined || facts.debutYears.t20i === undefined) continue
-    const country = facts.country ?? ''
-    byCountry.set(country, [...(byCountry.get(country) ?? []), id])
+    for (const f of ['test', 'odi', 't20i'] as const) {
+      if (facts.matches[f] !== undefined || facts.debutYears[f] === undefined) continue
+      const title = LIST_PAGE[f](facts.country ?? '')
+      wanted.set(title, [...(wanted.get(title) ?? []), id])
+      formatOf.set(title, f)
+    }
   }
-  for (const [country, ids] of byCountry) {
-    const listTitle = `List of ${country} Twenty20 International cricketers`
-    const list = await fetchPage(listTitle)
+  for (const [listTitle, ids] of wanted) {
+    const f = formatOf.get(listTitle)!
+    let list: { title: string; revid: number; content: string }
+    try {
+      list = await fetchPage(listTitle)
+    } catch {
+      console.warn(`  list page missing: "${listTitle}"`)
+      continue
+    }
     for (const id of ids) {
       const page = pages[id]!
-      const matches = page.cricinfoId ? findListRowMatches(list.content, page.cricinfoId) : null
+      const matches = findListRowMatches(list.content, page)
       if (matches === null) {
         console.warn(`  ${id}: not found in "${listTitle}"`)
         continue
       }
-      page.t20iFromList = { page: list.title, revid: list.revid, matches }
+      page.fromLists = { ...page.fromLists, [f]: { page: list.title, revid: list.revid, matches } }
     }
     await new Promise((r) => setTimeout(r, 300))
   }

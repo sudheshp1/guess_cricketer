@@ -15,6 +15,12 @@ export const REPORT_PATH = join(SOURCES_DIR, 'report.md')
 export const PLAYERS_PATH = join(ROOT_DIR, 'src', 'data', 'players.json')
 export const SCHEDULE_PATH = join(ROOT_DIR, 'src', 'data', 'schedule.json')
 
+export interface ListCount {
+  page: string
+  revid: number
+  matches: number
+}
+
 export interface WikipediaPage {
   /** Title as written in the seed CSV. */
   requested: string
@@ -23,11 +29,13 @@ export interface WikipediaPage {
   revid: number
   infobox: string
   cricinfoId: string | null
+  /** Plain text of the article's first paragraph, used when the infobox lacks a role. */
+  lead: string
   /**
-   * T20I match count from "List of <country> Twenty20 International cricketers", fetched only
-   * when the infobox has no T20I column (it shows at most four columns).
+   * Match counts from "List of <country> <format> cricketers" pages, fetched only for formats the
+   * player played but the infobox omits (it shows at most four stat columns).
    */
-  t20iFromList?: { page: string; revid: number; matches: number }
+  fromLists?: Partial<Record<'test' | 'odi' | 't20i', ListCount>>
 }
 
 export interface WikipediaSnapshot {

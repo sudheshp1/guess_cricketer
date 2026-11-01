@@ -25,3 +25,4 @@ dist-ssr
 scripts/.cache
 coverage
 .playwright-mcp
+.vercel
