@@ -7,6 +7,7 @@ import { StatsPanel } from './StatsPanel'
 
 interface Props {
   open: boolean
+  animate?: boolean
   onClose: () => void
   won: boolean
   answer: Player
@@ -19,6 +20,7 @@ interface Props {
 
 export function ResultModal({
   open,
+  animate,
   onClose,
   won,
   answer,
@@ -39,7 +41,12 @@ export function ResultModal({
   ]
 
   return (
-    <Modal title={won ? 'Well played!' : 'Stumped!'} open={open} onClose={onClose}>
+    <Modal
+      title={won ? 'Well played!' : 'Stumped!'}
+      open={open}
+      onClose={onClose}
+      animate={animate}
+    >
       <p className="text-sm">
         {won
           ? `You found the cricketer in ${results.length}/${MAX_GUESSES} ${results.length === 1 ? 'guess' : 'guesses'}.`

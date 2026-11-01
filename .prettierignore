@@ -7,3 +7,4 @@ scripts/sources/*.json
 scripts/sources/report.md
 coverage
 .playwright-mcp
+scripts/assets

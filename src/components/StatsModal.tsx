@@ -4,15 +4,23 @@ import { StatsPanel } from './StatsPanel'
 
 interface Props {
   open: boolean
+  animate?: boolean
   onClose: () => void
   stats: Stats
   puzzleNumber: number
   highlightGuesses?: number
 }
 
-export function StatsModal({ open, onClose, stats, puzzleNumber, highlightGuesses }: Props) {
+export function StatsModal({
+  open,
+  animate,
+  onClose,
+  stats,
+  puzzleNumber,
+  highlightGuesses,
+}: Props) {
   return (
-    <Modal title="Statistics" open={open} onClose={onClose}>
+    <Modal title="Statistics" open={open} onClose={onClose} animate={animate}>
       <StatsPanel stats={stats} puzzleNumber={puzzleNumber} highlightGuesses={highlightGuesses} />
       <p className="mt-4 text-xs text-gray-600 dark:text-gray-400">
         Stats are saved in this browser only.

@@ -3,8 +3,9 @@
 /** Name shown in the UI and share text. */
 export const GAME_NAME = 'Cricdle'
 
-/** Public URL appended to the share text. */
-export const SITE_URL = 'https://guess-cricketer.vercel.app'
+/** Public URL appended to the share text. Set VITE_SITE_URL in .env (also used in index.html). */
+export const SITE_URL: string =
+  (import.meta.env.VITE_SITE_URL as string | undefined) ?? 'https://guess-cricketer.vercel.app'
 
 /** Puzzle #1 is played on this IST calendar date (YYYY-MM-DD). */
 export const LAUNCH_DATE = '2026-11-01'

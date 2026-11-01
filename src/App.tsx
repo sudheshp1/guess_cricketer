@@ -38,10 +38,17 @@ function App(props: UseGameOptions = {}) {
   const over = game.status !== 'playing'
   const [announcement, setAnnouncement] = useState('')
   const [toast, setToast] = useState<string | null>(null)
-  const [modal, setModal] = useState<ModalName>(() => {
+  const [modal, setModalState] = useState<ModalName>(() => {
     if (game.status !== 'playing') return 'result'
     return hasSeenHelp() ? null : 'help'
   })
+  // A modal shown on page load is part of the first paint, so it doesn't slide in; modals opened
+  // later (by the player, or when a game ends) do.
+  const [animateModal, setAnimateModal] = useState(false)
+  const openModal = useCallback((name: ModalName) => {
+    setAnimateModal(true)
+    setModalState(name)
+  }, [])
   const guessedIds = useMemo(() => game.guesses.map((g) => g.id), [game.guesses])
   const toastTimer = useRef<number | undefined>(undefined)
 
@@ -65,7 +72,7 @@ function App(props: UseGameOptions = {}) {
     setAnnouncement(`${verdict}${name}. ${result.cells.map(describeCell).join('. ')}.`)
     const finished = result.isCorrect || game.guesses.length + 1 >= MAX_GUESSES
     if (finished) {
-      window.setTimeout(() => setModal('result'), prefersReducedMotion() ? 0 : REVEAL_MS)
+      window.setTimeout(() => openModal('result'), prefersReducedMotion() ? 0 : REVEAL_MS)
     }
   }
 
@@ -80,14 +87,14 @@ function App(props: UseGameOptions = {}) {
     else if (outcome === 'failed') showToast("Couldn't share. Try copying manually.")
   }
 
-  const close = () => setModal(null)
+  const close = () => setModalState(null)
 
   return (
     <div className="mx-auto flex min-h-dvh max-w-[640px] flex-col px-4">
       <Header
         puzzleNumber={game.puzzleNumber}
-        onHelp={() => setModal('help')}
-        onStats={() => setModal('stats')}
+        onHelp={() => openModal('help')}
+        onStats={() => openModal('stats')}
       />
       <main className="flex flex-1 flex-col gap-4 py-4">
         <GuessInput
@@ -115,7 +122,7 @@ function App(props: UseGameOptions = {}) {
             </div>
             <button
               type="button"
-              onClick={() => setModal('result')}
+              onClick={() => openModal('result')}
               className="shrink-0 rounded-full bg-correct px-4 py-2 text-sm font-bold text-white hover:brightness-110 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-700"
             >
               See results
@@ -129,13 +136,19 @@ function App(props: UseGameOptions = {}) {
       </main>
       <Footer />
 
-      <HowToPlayModal open={modal === 'help'} onClose={close} example={EXAMPLE} />
+      <HowToPlayModal
+        open={modal === 'help'}
+        onClose={close}
+        example={EXAMPLE}
+        animate={animateModal}
+      />
       <StatsModal
         open={modal === 'stats'}
         onClose={close}
         stats={game.stats}
         puzzleNumber={game.puzzleNumber}
         highlightGuesses={game.status === 'won' ? game.guesses.length : undefined}
+        animate={animateModal}
       />
       {over && (
         <ResultModal
@@ -148,6 +161,7 @@ function App(props: UseGameOptions = {}) {
           puzzleNumber={game.puzzleNumber}
           onShare={() => void handleShare()}
           now={props.now}
+          animate={animateModal}
         />
       )}
       <Toast message={toast} />
