@@ -34,6 +34,8 @@ const guessNames = () =>
 
 beforeEach(() => {
   window.localStorage.clear()
+  // Skip the first-visit help modal; it has its own tests.
+  window.localStorage.setItem(STORAGE_KEYS.seenHelp, 'true')
 })
 
 describe('App', () => {
@@ -127,6 +129,8 @@ describe('App', () => {
     first.unmount()
     renderApp()
     expect(screen.getByRole('heading', { name: /you got it in 1\/8/i })).toBeInTheDocument()
+    // The results modal reopens on reload.
+    expect(screen.getByRole('dialog', { name: /well played/i })).toBeInTheDocument()
     const stats = JSON.parse(window.localStorage.getItem(STORAGE_KEYS.stats)!)
     expect(stats.played).toBe(1)
     expect(stats.wins).toBe(1)
