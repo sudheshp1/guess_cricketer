@@ -279,8 +279,12 @@ export function mapBowlingType(bowling: string | null): BowlingType | null {
   if (/unorthodox|chinaman|wrist/.test(s) && s.includes('left')) return 'Left-arm wrist-spin'
   if (/orthodox|slow left[ -]arm/.test(s)) return 'Left-arm orthodox'
 
+  // "Slow left-arm" (no orthodox/wrist qualifier) is finger spin; "slow seam"/"slow medium" is pace.
+  if (/\bslow\b/.test(s) && !/seam|medium/.test(s)) {
+    return s.includes('left') ? 'Left-arm orthodox' : 'Right-arm off-spin'
+  }
   const arm = s.includes('left') ? 'Left' : s.includes('right') ? 'Right' : null
-  const speed = s.match(/\b(fast|medium)\b/)?.[1]
+  const speed = s.match(/\b(fast|medium)\b/)?.[1] ?? (/\bslow\b/.test(s) ? 'medium' : undefined)
   if (!arm || !speed) return null
   return `${arm}-arm ${speed}` as BowlingType
 }
@@ -305,12 +309,12 @@ export function spanIsOpen(span: string | null): boolean | null {
 /** Find the player's ESPNcricinfo id: infobox source first, then the {{Cricinfo}} template. */
 export function findCricinfoId(wikitext: string): string | null {
   const profile =
-    /cricinfo\.com\/(?:[a-z]+\/)*(?:cricketers\/[a-z0-9-]+-|content\/player\/|player\/)(\d+)/i
+    /cricinfo\.com\/(?:[a-z0-9-]+\/)*?(?:cricketers\/[a-z0-9-]+-|content\/player\/|player\/)(\d+)/i
   const infobox = extractInfobox(wikitext)
   const source = infobox ? parseInfoboxFields(infobox)['source'] : undefined
   const fromSource = source?.match(profile)?.[1]
   if (fromSource) return fromSource
-  const template = wikitext.match(/\{\{\s*cricinfo\s*\|\s*(?:id\s*=\s*)?(\d+)/i)?.[1]
+  const template = wikitext.match(/\{\{\s*(?:espn)?cricinfo\s*\|\s*(?:id\s*=\s*)?(\d+)/i)?.[1]
   if (template) return template
   return wikitext.match(profile)?.[1] ?? null
 }
@@ -331,15 +335,35 @@ export function tableRowCells(row: string): string[] {
   })
 }
 
+const escapeRegExp = (s: string) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
+
 /**
- * In a "List of <country> ... cricketers" table, find the row whose reference links to the given
- * ESPNcricinfo id and return its match count (the cell after the first/last year columns).
+ * In a "List of <country> ... cricketers" table, find the player's row and return its match
+ * count (the cell after the first/last year columns). A row is the player's if its reference
+ * links to their ESPNcricinfo id, or if it links to their Wikipedia article.
  */
-export function findListRowMatches(wikitext: string, cricinfoId: string): number | null {
-  const idPattern = new RegExp(String.raw`(?:player/|-)${cricinfoId}(?:\.html|\b)`)
+export function findListRowMatches(
+  wikitext: string,
+  player: { cricinfoId?: string | null; title?: string },
+): number | null {
+  const idPattern = player.cricinfoId
+    ? new RegExp(String.raw`(?:player/|-)${player.cricinfoId}(?:\.html|\b)`)
+    : null
+  const titlePattern = player.title
+    ? new RegExp(String.raw`\[\[\s*${escapeRegExp(player.title).replace(/ /g, '[ _]')}\s*[|\]]`)
+    : null
   const isYear = (c: string | undefined) => !!c && /^(1[89]\d{2}|20\d{2})$/.test(c)
+  // {{sortname|First|Last}} links to "First Last"; {{sortname|First|Last|Article}} to Article.
+  const sortnameLinks = (row: string): string[] =>
+    [...row.matchAll(/\{\{\s*sortname\s*\|([^|{}]*)\|([^|{}]*)(?:\|([^|{}]*))?[^{}]*\}\}/gi)].map(
+      (m) => (m[3]?.trim() || `${m[1]!.trim()} ${m[2]!.trim()}`).trim(),
+    )
   for (const row of wikitext.split(/\n\|-/)) {
-    if (!idPattern.test(row)) continue
+    const byId = idPattern?.test(row) ?? false
+    const byTitle =
+      (titlePattern?.test(row) ?? false) ||
+      (!!player.title && sortnameLinks(row).includes(player.title))
+    if (!byId && !byTitle) continue
     const cells = tableRowCells(row)
     for (let i = 0; i + 2 < cells.length; i++) {
       const last = cells[i + 1]
@@ -350,4 +374,38 @@ export function findListRowMatches(wikitext: string, cricinfoId: string): number
     }
   }
   return null
+}
+
+/** Plain text of the article's opening paragraph (after the infobox), for fallbacks. */
+export function extractLead(wikitext: string): string {
+  const box = extractInfobox(wikitext)
+  let rest = box ? wikitext.slice(wikitext.indexOf(box) + box.length) : wikitext
+  // Drop templates and files that sit between the infobox and the first sentence.
+  for (let guard = 0; guard < 5; guard++) rest = rest.replace(/\{\{[^{}]*\}\}/g, '')
+  rest = rest.replace(/\[\[(?:File|Image):[^\]]*\]\]/gi, '')
+  const para = rest
+    .split(/\n\s*\n/)
+    .map((p) => p.trim())
+    .find((p) => /'{3}/.test(p) || p.length > 80)
+  return para ? stripMarkup(para).slice(0, 600) : ''
+}
+
+/**
+ * Role from free text such as an article lead: the earliest role phrase wins, so "an opening
+ * batsman and occasional bowler" is a Batter.
+ */
+export function mapRoleFromText(text: string): Role | null {
+  const s = text.toLowerCase()
+  const patterns: [RegExp, Role][] = [
+    [/wicket[ -]?keeper/, 'Wicketkeeper-Batter'],
+    [/all[ -]?rounder/, 'All-rounder'],
+    [/\b(?:bowler|spinner|seamer|paceman)\b/, 'Bowler'],
+    [/\b(?:batter|batsman|batsmen|opener)\b/, 'Batter'],
+  ]
+  let best: { index: number; role: Role } | null = null
+  for (const [re, role] of patterns) {
+    const m = re.exec(s)
+    if (m && (!best || m.index < best.index)) best = { index: m.index, role }
+  }
+  return best?.role ?? null
 }

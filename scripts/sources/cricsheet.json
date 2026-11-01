@@ -2,6 +2,17 @@
  "fetchedAt": "2026-11-01",
  "latestMatch": "2026-10-25",
  "players": {
+  "aaron-finch": {
+   "cricsheetId": "b8d490fd",
+   "tests": 5,
+   "odis": 143,
+   "t20is": 103,
+   "firstDate": "2011-01-12",
+   "lastDate": "2022-10-31",
+   "teams": [
+    "Australia"
+   ]
+  },
   "ab-de-villiers": {
    "cricsheetId": "c4487b84",
    "tests": 106,
@@ -14,6 +25,51 @@
     "South Africa"
    ]
   },
+  "abdul-razzaq": {
+   "cricsheetId": "390ff45b",
+   "tests": 10,
+   "odis": 116,
+   "t20is": 31,
+   "firstDate": "2002-12-26",
+   "lastDate": "2013-11-15",
+   "teams": [
+    "Asia XI",
+    "Pakistan"
+   ]
+  },
+  "abdullah-shafique": {
+   "cricsheetId": "fc2fffb5",
+   "tests": 28,
+   "odis": 26,
+   "t20is": 3,
+   "firstDate": "2020-11-10",
+   "lastDate": "2026-09-09",
+   "teams": [
+    "Pakistan"
+   ]
+  },
+  "abdur-razzak": {
+   "cricsheetId": "888e32bf",
+   "tests": 11,
+   "odis": 122,
+   "t20is": 29,
+   "firstDate": "2004-07-17",
+   "lastDate": "2018-02-08",
+   "teams": [
+    "Bangladesh"
+   ]
+  },
+  "abhishek-sharma": {
+   "cricsheetId": "f29185a1",
+   "tests": 0,
+   "odis": 0,
+   "t20is": 66,
+   "firstDate": "2024-07-06",
+   "lastDate": "2026-10-24",
+   "teams": [
+    "India"
+   ]
+  },
   "adam-gilchrist": {
    "cricsheetId": "2b6e6dec",
    "tests": 39,
@@ -23,6 +79,238 @@
    "lastDate": "2008-03-04",
    "teams": [
     "Australia"
+   ]
+  },
+  "adam-zampa": {
+   "cricsheetId": "14f96089",
+   "tests": 0,
+   "odis": 124,
+   "t20is": 116,
+   "firstDate": "2016-02-06",
+   "lastDate": "2026-09-30",
+   "teams": [
+    "Australia"
+   ]
+  },
+  "adil-rashid": {
+   "cricsheetId": "249d60c9",
+   "tests": 19,
+   "odis": 160,
+   "t20is": 151,
+   "firstDate": "2009-06-05",
+   "lastDate": "2026-10-20",
+   "teams": [
+    "England"
+   ]
+  },
+  "ahmed-shehzad": {
+   "cricsheetId": "f8fd6e3f",
+   "tests": 13,
+   "odis": 80,
+   "t20is": 58,
+   "firstDate": "2009-04-24",
+   "lastDate": "2019-10-07",
+   "teams": [
+    "Pakistan"
+   ]
+  },
+  "aiden-markram": {
+   "cricsheetId": "6a26221c",
+   "tests": 52,
+   "odis": 82,
+   "t20is": 75,
+   "firstDate": "2017-09-28",
+   "lastDate": "2026-10-18",
+   "teams": [
+    "South Africa"
+   ]
+  },
+  "ajantha-mendis": {
+   "cricsheetId": "ea0cdc12",
+   "tests": 19,
+   "odis": 82,
+   "t20is": 37,
+   "firstDate": "2008-04-10",
+   "lastDate": "2015-12-26",
+   "teams": [
+    "Sri Lanka"
+   ]
+  },
+  "ajinkya-rahane": {
+   "cricsheetId": "29e95537",
+   "tests": 84,
+   "odis": 89,
+   "t20is": 20,
+   "firstDate": "2011-08-31",
+   "lastDate": "2023-07-20",
+   "teams": [
+    "India"
+   ]
+  },
+  "ajit-agarkar": {
+   "cricsheetId": "fa463154",
+   "tests": 3,
+   "odis": 68,
+   "t20is": 3,
+   "firstDate": "2002-06-29",
+   "lastDate": "2007-09-16",
+   "teams": [
+    "India"
+   ]
+  },
+  "akeal-hosein": {
+   "cricsheetId": "4d7f517e",
+   "tests": 0,
+   "odis": 40,
+   "t20is": 100,
+   "firstDate": "2021-01-20",
+   "lastDate": "2026-10-09",
+   "teams": [
+    "West Indies"
+   ]
+  },
+  "alastair-cook": {
+   "cricsheetId": "f41598c1",
+   "tests": 161,
+   "odis": 91,
+   "t20is": 4,
+   "firstDate": "2006-03-01",
+   "lastDate": "2018-09-07",
+   "teams": [
+    "England"
+   ]
+  },
+  "albie-morkel": {
+   "cricsheetId": "c3d35165",
+   "tests": 1,
+   "odis": 52,
+   "t20is": 48,
+   "firstDate": "2005-02-25",
+   "lastDate": "2015-10-05",
+   "teams": [
+    "Africa XI",
+    "South Africa"
+   ]
+  },
+  "alec-stewart": {
+   "cricsheetId": "a8ce3491",
+   "tests": 5,
+   "odis": 13,
+   "t20is": 0,
+   "firstDate": "2002-06-27",
+   "lastDate": "2003-09-04",
+   "teams": [
+    "England"
+   ]
+  },
+  "alex-carey": {
+   "cricsheetId": "69d03465",
+   "tests": 52,
+   "odis": 94,
+   "t20is": 42,
+   "firstDate": "2018-01-19",
+   "lastDate": "2026-10-18",
+   "teams": [
+    "Australia"
+   ]
+  },
+  "alex-hales": {
+   "cricsheetId": "92aeac25",
+   "tests": 11,
+   "odis": 67,
+   "t20is": 73,
+   "firstDate": "2011-08-31",
+   "lastDate": "2022-11-13",
+   "teams": [
+    "England"
+   ]
+  },
+  "alistair-campbell": {
+   "cricsheetId": "134ba8ae",
+   "tests": 0,
+   "odis": 1,
+   "t20is": 0,
+   "firstDate": "2003-03-12",
+   "lastDate": "2003-03-12",
+   "teams": [
+    "Zimbabwe"
+   ]
+  },
+  "allan-donald": {
+   "cricsheetId": "4c931d56",
+   "tests": 0,
+   "odis": 3,
+   "t20is": 0,
+   "firstDate": "2003-02-09",
+   "lastDate": "2003-02-27",
+   "teams": [
+    "South Africa"
+   ]
+  },
+  "alzarri-joseph": {
+   "cricsheetId": "b0946605",
+   "tests": 42,
+   "odis": 84,
+   "t20is": 44,
+   "firstDate": "2016-08-09",
+   "lastDate": "2026-10-03",
+   "teams": [
+    "West Indies"
+   ]
+  },
+  "ambati-rayudu": {
+   "cricsheetId": "70d205c9",
+   "tests": 0,
+   "odis": 53,
+   "t20is": 6,
+   "firstDate": "2013-07-24",
+   "lastDate": "2019-03-08",
+   "teams": [
+    "India"
+   ]
+  },
+  "amit-mishra": {
+   "cricsheetId": "6b19d823",
+   "tests": 22,
+   "odis": 33,
+   "t20is": 10,
+   "firstDate": "2003-04-21",
+   "lastDate": "2017-02-01",
+   "teams": [
+    "India"
+   ]
+  },
+  "andre-russell": {
+   "cricsheetId": "bbd41817",
+   "tests": 1,
+   "odis": 55,
+   "t20is": 84,
+   "firstDate": "2010-11-15",
+   "lastDate": "2025-07-22",
+   "teams": [
+    "West Indies"
+   ]
+  },
+  "andrew-balbirnie": {
+   "cricsheetId": "6ef13460",
+   "tests": 11,
+   "odis": 90,
+   "t20is": 91,
+   "firstDate": "2010-07-07",
+   "lastDate": "2026-10-24",
+   "teams": [
+    "Ireland"
+   ]
+  },
+  "andrew-caddick": {
+   "cricsheetId": "25020f9d",
+   "tests": 2,
+   "odis": 11,
+   "t20is": 0,
+   "firstDate": "2002-12-26",
+   "lastDate": "2003-03-02",
+   "teams": [
+    "England"
    ]
   },
   "andrew-flintoff": {
@@ -37,6 +325,50 @@
     "ICC World XI"
    ]
   },
+  "andrew-strauss": {
+   "cricsheetId": "b68d14a9",
+   "tests": 88,
+   "odis": 114,
+   "t20is": 4,
+   "firstDate": "2003-11-18",
+   "lastDate": "2012-08-16",
+   "teams": [
+    "England"
+   ]
+  },
+  "andrew-symonds": {
+   "cricsheetId": "bd77eb62",
+   "tests": 23,
+   "odis": 126,
+   "t20is": 14,
+   "firstDate": "2003-01-09",
+   "lastDate": "2009-05-07",
+   "teams": [
+    "Australia"
+   ]
+  },
+  "andy-flower": {
+   "cricsheetId": "35aa26af",
+   "tests": 0,
+   "odis": 8,
+   "t20is": 0,
+   "firstDate": "2003-02-10",
+   "lastDate": "2003-03-15",
+   "teams": [
+    "Zimbabwe"
+   ]
+  },
+  "angelo-mathews": {
+   "cricsheetId": "896d78ad",
+   "tests": 118,
+   "odis": 216,
+   "t20is": 86,
+   "firstDate": "2008-11-30",
+   "lastDate": "2025-06-17",
+   "teams": [
+    "Sri Lanka"
+   ]
+  },
   "anil-kumble": {
    "cricsheetId": "0c2730df",
    "tests": 41,
@@ -47,6 +379,84 @@
    "teams": [
     "Asia XI",
     "India"
+   ]
+  },
+  "anrich-nortje": {
+   "cricsheetId": "acdc62f5",
+   "tests": 21,
+   "odis": 22,
+   "t20is": 46,
+   "firstDate": "2019-03-03",
+   "lastDate": "2026-10-18",
+   "teams": [
+    "South Africa"
+   ]
+  },
+  "aravinda-de-silva": {
+   "cricsheetId": "34ff9e07",
+   "tests": 0,
+   "odis": 14,
+   "t20is": 0,
+   "firstDate": "2003-01-09",
+   "lastDate": "2003-03-18",
+   "teams": [
+    "Sri Lanka"
+   ]
+  },
+  "arshdeep-singh": {
+   "cricsheetId": "244048f6",
+   "tests": 0,
+   "odis": 16,
+   "t20is": 94,
+   "firstDate": "2022-07-07",
+   "lastDate": "2026-10-24",
+   "teams": [
+    "India"
+   ]
+  },
+  "asad-shafiq": {
+   "cricsheetId": "50250426",
+   "tests": 77,
+   "odis": 58,
+   "t20is": 10,
+   "firstDate": "2010-06-21",
+   "lastDate": "2020-08-21",
+   "teams": [
+    "Pakistan"
+   ]
+  },
+  "ashish-nehra": {
+   "cricsheetId": "96fd40ae",
+   "tests": 2,
+   "odis": 79,
+   "t20is": 26,
+   "firstDate": "2002-12-29",
+   "lastDate": "2017-11-01",
+   "teams": [
+    "Asia XI",
+    "India"
+   ]
+  },
+  "axar-patel": {
+   "cricsheetId": "2e171977",
+   "tests": 15,
+   "odis": 74,
+   "t20is": 107,
+   "firstDate": "2014-06-15",
+   "lastDate": "2026-10-24",
+   "teams": [
+    "India"
+   ]
+  },
+  "azhar-ali": {
+   "cricsheetId": "211de69f",
+   "tests": 97,
+   "odis": 52,
+   "t20is": 0,
+   "firstDate": "2010-07-13",
+   "lastDate": "2022-12-17",
+   "teams": [
+    "Pakistan"
    ]
   },
   "babar-azam": {
@@ -60,6 +470,28 @@
     "Pakistan"
    ]
   },
+  "bas-de-leede": {
+   "cricsheetId": "fc4375ef",
+   "tests": 0,
+   "odis": 55,
+   "t20is": 49,
+   "firstDate": "2018-06-12",
+   "lastDate": "2026-10-25",
+   "teams": [
+    "Netherlands"
+   ]
+  },
+  "ben-duckett": {
+   "cricsheetId": "5f26f677",
+   "tests": 49,
+   "odis": 42,
+   "t20is": 21,
+   "firstDate": "2016-10-07",
+   "lastDate": "2026-10-25",
+   "teams": [
+    "England"
+   ]
+  },
   "ben-stokes": {
    "cricsheetId": "e087956b",
    "tests": 122,
@@ -69,6 +501,95 @@
    "lastDate": "2026-06-25",
    "teams": [
     "England"
+   ]
+  },
+  "bhuvneshwar-kumar": {
+   "cricsheetId": "2e81a32d",
+   "tests": 21,
+   "odis": 120,
+   "t20is": 89,
+   "firstDate": "2012-12-25",
+   "lastDate": "2026-10-24",
+   "teams": [
+    "India"
+   ]
+  },
+  "bj-watling": {
+   "cricsheetId": "928670cc",
+   "tests": 75,
+   "odis": 28,
+   "t20is": 5,
+   "firstDate": "2009-11-12",
+   "lastDate": "2021-06-18",
+   "teams": [
+    "New Zealand"
+   ]
+  },
+  "blessing-muzarabani": {
+   "cricsheetId": "449f4e3c",
+   "tests": 14,
+   "odis": 54,
+   "t20is": 89,
+   "firstDate": "2017-12-26",
+   "lastDate": "2026-10-17",
+   "teams": [
+    "Zimbabwe"
+   ]
+  },
+  "boyd-rankin": {
+   "cricsheetId": "29b89ae8",
+   "tests": 3,
+   "odis": 49,
+   "t20is": 41,
+   "firstDate": "2007-03-15",
+   "lastDate": "2020-01-09",
+   "teams": [
+    "England",
+    "Ireland"
+   ]
+  },
+  "brad-haddin": {
+   "cricsheetId": "b0c772ee",
+   "tests": 66,
+   "odis": 118,
+   "t20is": 34,
+   "firstDate": "2004-01-29",
+   "lastDate": "2015-07-08",
+   "teams": [
+    "Australia"
+   ]
+  },
+  "brad-hogg": {
+   "cricsheetId": "f708a0bc",
+   "tests": 4,
+   "odis": 97,
+   "t20is": 15,
+   "firstDate": "2003-01-09",
+   "lastDate": "2014-03-23",
+   "teams": [
+    "Australia"
+   ]
+  },
+  "brandon-king": {
+   "cricsheetId": "7fca84b7",
+   "tests": 10,
+   "odis": 57,
+   "t20is": 80,
+   "firstDate": "2019-12-06",
+   "lastDate": "2026-08-02",
+   "teams": [
+    "West Indies"
+   ]
+  },
+  "brendan-taylor": {
+   "cricsheetId": "53597be1",
+   "tests": 31,
+   "odis": 167,
+   "t20is": 51,
+   "firstDate": "2004-04-20",
+   "lastDate": "2026-10-17",
+   "teams": [
+    "Zimbabwe"
    ]
   },
   "brendon-mccullum": {
@@ -105,6 +626,83 @@
     "West Indies"
    ]
   },
+  "calum-macleod": {
+   "cricsheetId": "9c376401",
+   "tests": 0,
+   "odis": 62,
+   "t20is": 51,
+   "firstDate": "2009-04-01",
+   "lastDate": "2022-10-21",
+   "teams": [
+    "Scotland"
+   ]
+  },
+  "cameron-green": {
+   "cricsheetId": "eaa76d3c",
+   "tests": 39,
+   "odis": 40,
+   "t20is": 27,
+   "firstDate": "2020-12-02",
+   "lastDate": "2026-09-30",
+   "teams": [
+    "Australia"
+   ]
+  },
+  "carl-hooper": {
+   "cricsheetId": "61dab16a",
+   "tests": 0,
+   "odis": 5,
+   "t20is": 0,
+   "firstDate": "2003-02-09",
+   "lastDate": "2003-02-28",
+   "teams": [
+    "West Indies"
+   ]
+  },
+  "chaminda-vaas": {
+   "cricsheetId": "bcce309e",
+   "tests": 25,
+   "odis": 95,
+   "t20is": 6,
+   "firstDate": "2002-06-27",
+   "lastDate": "2009-07-20",
+   "teams": [
+    "Sri Lanka"
+   ]
+  },
+  "charith-asalanka": {
+   "cricsheetId": "732c038e",
+   "tests": 3,
+   "odis": 76,
+   "t20is": 73,
+   "firstDate": "2021-06-29",
+   "lastDate": "2026-09-27",
+   "teams": [
+    "Sri Lanka"
+   ]
+  },
+  "cheteshwar-pujara": {
+   "cricsheetId": "d4f9dbd4",
+   "tests": 102,
+   "odis": 5,
+   "t20is": 0,
+   "firstDate": "2010-10-09",
+   "lastDate": "2023-06-07",
+   "teams": [
+    "India"
+   ]
+  },
+  "chris-cairns": {
+   "cricsheetId": "0b130202",
+   "tests": 2,
+   "odis": 35,
+   "t20is": 2,
+   "firstDate": "2003-01-08",
+   "lastDate": "2006-02-16",
+   "teams": [
+    "New Zealand"
+   ]
+  },
   "chris-gayle": {
    "cricsheetId": "db584dad",
    "tests": 53,
@@ -115,6 +713,95 @@
    "teams": [
     "ICC World XI",
     "West Indies"
+   ]
+  },
+  "chris-jordan": {
+   "cricsheetId": "ffe699c0",
+   "tests": 8,
+   "odis": 34,
+   "t20is": 94,
+   "firstDate": "2013-09-16",
+   "lastDate": "2024-06-27",
+   "teams": [
+    "England"
+   ]
+  },
+  "chris-rogers": {
+   "cricsheetId": "d8360178",
+   "tests": 25,
+   "odis": 0,
+   "t20is": 0,
+   "firstDate": "2008-01-16",
+   "lastDate": "2015-08-20",
+   "teams": [
+    "Australia"
+   ]
+  },
+  "chris-woakes": {
+   "cricsheetId": "4c5d73db",
+   "tests": 62,
+   "odis": 119,
+   "t20is": 32,
+   "firstDate": "2011-01-12",
+   "lastDate": "2025-07-31",
+   "teams": [
+    "England"
+   ]
+  },
+  "colin-de-grandhomme": {
+   "cricsheetId": "94d7f855",
+   "tests": 29,
+   "odis": 44,
+   "t20is": 41,
+   "firstDate": "2012-02-11",
+   "lastDate": "2022-06-02",
+   "teams": [
+    "New Zealand"
+   ]
+  },
+  "colin-munro": {
+   "cricsheetId": "af2c687b",
+   "tests": 1,
+   "odis": 56,
+   "t20is": 65,
+   "firstDate": "2012-12-21",
+   "lastDate": "2020-02-02",
+   "teams": [
+    "New Zealand"
+   ]
+  },
+  "corey-anderson": {
+   "cricsheetId": "8abdf100",
+   "tests": 13,
+   "odis": 48,
+   "t20is": 42,
+   "firstDate": "2012-12-21",
+   "lastDate": "2024-06-23",
+   "teams": [
+    "New Zealand",
+    "United States of America"
+   ]
+  },
+  "craig-ervine": {
+   "cricsheetId": "c96311d4",
+   "tests": 29,
+   "odis": 106,
+   "t20is": 65,
+   "firstDate": "2010-05-03",
+   "lastDate": "2026-10-17",
+   "teams": [
+    "Zimbabwe"
+   ]
+  },
+  "craig-mcmillan": {
+   "cricsheetId": "f5390243",
+   "tests": 5,
+   "odis": 50,
+   "t20is": 8,
+   "firstDate": "2002-12-29",
+   "lastDate": "2007-09-22",
+   "teams": [
+    "New Zealand"
    ]
   },
   "dale-steyn": {
@@ -129,6 +816,108 @@
     "South Africa"
    ]
   },
+  "damien-martyn": {
+   "cricsheetId": "69762509",
+   "tests": 24,
+   "odis": 82,
+   "t20is": 4,
+   "firstDate": "2002-12-26",
+   "lastDate": "2006-12-01",
+   "teams": [
+    "Australia"
+   ]
+  },
+  "daniel-vettori": {
+   "cricsheetId": "d7c6af50",
+   "tests": 54,
+   "odis": 159,
+   "t20is": 34,
+   "firstDate": "2002-12-29",
+   "lastDate": "2015-03-29",
+   "teams": [
+    "ICC World XI",
+    "New Zealand"
+   ]
+  },
+  "danish-kaneria": {
+   "cricsheetId": "0be1b885",
+   "tests": 32,
+   "odis": 13,
+   "t20is": 0,
+   "firstDate": "2003-04-03",
+   "lastDate": "2010-07-29",
+   "teams": [
+    "Pakistan"
+   ]
+  },
+  "darren-gough": {
+   "cricsheetId": "fcbf5a30",
+   "tests": 1,
+   "odis": 39,
+   "t20is": 2,
+   "firstDate": "2003-06-17",
+   "lastDate": "2006-09-02",
+   "teams": [
+    "England"
+   ]
+  },
+  "darren-lehmann": {
+   "cricsheetId": "53fe6ee4",
+   "tests": 8,
+   "odis": 28,
+   "t20is": 0,
+   "firstDate": "2003-01-15",
+   "lastDate": "2005-02-04",
+   "teams": [
+    "Australia"
+   ]
+  },
+  "darren-sammy": {
+   "cricsheetId": "c03c6200",
+   "tests": 38,
+   "odis": 121,
+   "t20is": 67,
+   "firstDate": "2004-09-15",
+   "lastDate": "2017-09-15",
+   "teams": [
+    "ICC World XI",
+    "West Indies"
+   ]
+  },
+  "daryl-mitchell": {
+   "cricsheetId": "eade4650",
+   "tests": 39,
+   "odis": 61,
+   "t20is": 102,
+   "firstDate": "2019-02-06",
+   "lastDate": "2026-10-24",
+   "teams": [
+    "New Zealand"
+   ]
+  },
+  "dasun-shanaka": {
+   "cricsheetId": "3ff033bb",
+   "tests": 6,
+   "odis": 64,
+   "t20is": 132,
+   "firstDate": "2015-08-01",
+   "lastDate": "2026-10-22",
+   "teams": [
+    "Sri Lanka"
+   ]
+  },
+  "david-miller": {
+   "cricsheetId": "d67d5f00",
+   "tests": 0,
+   "odis": 177,
+   "t20is": 137,
+   "firstDate": "2010-05-20",
+   "lastDate": "2026-09-27",
+   "teams": [
+    "ICC World XI",
+    "South Africa"
+   ]
+  },
   "david-warner": {
    "cricsheetId": "dcce6f09",
    "tests": 112,
@@ -138,6 +927,309 @@
    "lastDate": "2024-06-24",
    "teams": [
     "Australia"
+   ]
+  },
+  "dawid-malan": {
+   "cricsheetId": "ad9c32a2",
+   "tests": 22,
+   "odis": 29,
+   "t20is": 61,
+   "firstDate": "2017-06-25",
+   "lastDate": "2023-11-11",
+   "teams": [
+    "England"
+   ]
+  },
+  "dean-elgar": {
+   "cricsheetId": "33085ffb",
+   "tests": 86,
+   "odis": 8,
+   "t20is": 0,
+   "firstDate": "2012-08-24",
+   "lastDate": "2024-01-03",
+   "teams": [
+    "South Africa"
+   ]
+  },
+  "deepak-chahar": {
+   "cricsheetId": "23eeb873",
+   "tests": 0,
+   "odis": 12,
+   "t20is": 24,
+   "firstDate": "2018-07-08",
+   "lastDate": "2023-12-01",
+   "teams": [
+    "India"
+   ]
+  },
+  "denesh-ramdin": {
+   "cricsheetId": "d1523761",
+   "tests": 65,
+   "odis": 128,
+   "t20is": 68,
+   "firstDate": "2005-07-31",
+   "lastDate": "2019-12-06",
+   "teams": [
+    "West Indies"
+   ]
+  },
+  "devon-conway": {
+   "cricsheetId": "df5a6881",
+   "tests": 36,
+   "odis": 42,
+   "t20is": 67,
+   "firstDate": "2020-11-27",
+   "lastDate": "2026-06-25",
+   "teams": [
+    "New Zealand"
+   ]
+  },
+  "dhananjaya-de-silva": {
+   "cricsheetId": "7d608e12",
+   "tests": 68,
+   "odis": 82,
+   "t20is": 44,
+   "firstDate": "2015-07-30",
+   "lastDate": "2026-08-23",
+   "teams": [
+    "Sri Lanka"
+   ]
+  },
+  "dhruv-jurel": {
+   "cricsheetId": "bcf325d2",
+   "tests": 11,
+   "odis": 0,
+   "t20is": 4,
+   "firstDate": "2024-02-15",
+   "lastDate": "2026-08-23",
+   "teams": [
+    "India"
+   ]
+  },
+  "dilhara-fernando": {
+   "cricsheetId": "342d8ade",
+   "tests": 22,
+   "odis": 89,
+   "t20is": 16,
+   "firstDate": "2002-06-27",
+   "lastDate": "2016-02-14",
+   "teams": [
+    "Asia XI",
+    "Sri Lanka"
+   ]
+  },
+  "dimuth-karunaratne": {
+   "cricsheetId": "400e2d4d",
+   "tests": 99,
+   "odis": 42,
+   "t20is": 0,
+   "firstDate": "2011-07-09",
+   "lastDate": "2025-02-06",
+   "teams": [
+    "Sri Lanka"
+   ]
+  },
+  "dinesh-chandimal": {
+   "cricsheetId": "8dd02a98",
+   "tests": 92,
+   "odis": 151,
+   "t20is": 68,
+   "firstDate": "2010-04-30",
+   "lastDate": "2026-08-15",
+   "teams": [
+    "Sri Lanka"
+   ]
+  },
+  "dinesh-karthik": {
+   "cricsheetId": "c03f1114",
+   "tests": 20,
+   "odis": 90,
+   "t20is": 58,
+   "firstDate": "2004-09-05",
+   "lastDate": "2022-11-02",
+   "teams": [
+    "ICC World XI",
+    "India"
+   ]
+  },
+  "dinesh-mongia": {
+   "cricsheetId": "99663fa5",
+   "tests": 0,
+   "odis": 24,
+   "t20is": 1,
+   "firstDate": "2002-06-29",
+   "lastDate": "2007-05-12",
+   "teams": [
+    "India"
+   ]
+  },
+  "dushmantha-chameera": {
+   "cricsheetId": "327b58d3",
+   "tests": 12,
+   "odis": 55,
+   "t20is": 81,
+   "firstDate": "2015-01-29",
+   "lastDate": "2026-10-09",
+   "teams": [
+    "Sri Lanka"
+   ]
+  },
+  "dwayne-bravo": {
+   "cricsheetId": "87e562a9",
+   "tests": 33,
+   "odis": 146,
+   "t20is": 90,
+   "firstDate": "2004-04-24",
+   "lastDate": "2021-11-06",
+   "teams": [
+    "West Indies"
+   ]
+  },
+  "ed-joyce": {
+   "cricsheetId": "a48fc79d",
+   "tests": 1,
+   "odis": 60,
+   "t20is": 16,
+   "firstDate": "2006-06-13",
+   "lastDate": "2018-05-11",
+   "teams": [
+    "England",
+    "Ireland"
+   ]
+  },
+  "elton-chigumbura": {
+   "cricsheetId": "d2babdd5",
+   "tests": 10,
+   "odis": 160,
+   "t20is": 47,
+   "firstDate": "2004-04-20",
+   "lastDate": "2020-11-10",
+   "teams": [
+    "Africa XI",
+    "Zimbabwe"
+   ]
+  },
+  "eoin-morgan": {
+   "cricsheetId": "d2a6c0e6",
+   "tests": 16,
+   "odis": 231,
+   "t20is": 113,
+   "firstDate": "2007-03-15",
+   "lastDate": "2022-06-19",
+   "teams": [
+    "England",
+    "Ireland"
+   ]
+  },
+  "evin-lewis": {
+   "cricsheetId": "0ebfb1ad",
+   "tests": 0,
+   "odis": 61,
+   "t20is": 58,
+   "firstDate": "2016-08-27",
+   "lastDate": "2025-08-12",
+   "teams": [
+    "West Indies"
+   ]
+  },
+  "faf-du-plessis": {
+   "cricsheetId": "3355b542",
+   "tests": 69,
+   "odis": 141,
+   "t20is": 49,
+   "firstDate": "2011-01-18",
+   "lastDate": "2021-02-04",
+   "teams": [
+    "ICC World XI",
+    "South Africa"
+   ]
+  },
+  "fakhar-zaman": {
+   "cricsheetId": "1777c020",
+   "tests": 3,
+   "odis": 90,
+   "t20is": 117,
+   "firstDate": "2017-03-30",
+   "lastDate": "2026-10-25",
+   "teams": [
+    "Pakistan"
+   ]
+  },
+  "farveez-maharoof": {
+   "cricsheetId": "ab89348d",
+   "tests": 17,
+   "odis": 89,
+   "t20is": 7,
+   "firstDate": "2004-04-27",
+   "lastDate": "2016-07-05",
+   "teams": [
+    "Sri Lanka"
+   ]
+  },
+  "fidel-edwards": {
+   "cricsheetId": "a7c226e1",
+   "tests": 37,
+   "odis": 41,
+   "t20is": 26,
+   "firstDate": "2003-11-12",
+   "lastDate": "2021-07-10",
+   "teams": [
+    "West Indies"
+   ]
+  },
+  "gary-kirsten": {
+   "cricsheetId": "ad48eb56",
+   "tests": 9,
+   "odis": 6,
+   "t20is": 0,
+   "firstDate": "2002-12-26",
+   "lastDate": "2004-03-26",
+   "teams": [
+    "South Africa"
+   ]
+  },
+  "gautam-gambhir": {
+   "cricsheetId": "bb345e0b",
+   "tests": 51,
+   "odis": 138,
+   "t20is": 34,
+   "firstDate": "2003-04-21",
+   "lastDate": "2016-11-09",
+   "teams": [
+    "India"
+   ]
+  },
+  "george-dockrell": {
+   "cricsheetId": "99cddc5e",
+   "tests": 1,
+   "odis": 100,
+   "t20is": 129,
+   "firstDate": "2010-02-11",
+   "lastDate": "2026-10-24",
+   "teams": [
+    "Ireland"
+   ]
+  },
+  "george-munsey": {
+   "cricsheetId": "ff014c34",
+   "tests": 0,
+   "odis": 71,
+   "t20is": 81,
+   "firstDate": "2015-06-20",
+   "lastDate": "2026-08-09",
+   "teams": [
+    "Scotland"
+   ]
+  },
+  "gerald-coetzee": {
+   "cricsheetId": "3204c99f",
+   "tests": 4,
+   "odis": 15,
+   "t20is": 18,
+   "firstDate": "2023-02-28",
+   "lastDate": "2026-09-30",
+   "teams": [
+    "South Africa"
    ]
   },
   "glenn-maxwell": {
@@ -160,6 +1252,94 @@
    "lastDate": "2007-04-28",
    "teams": [
     "Australia"
+   ]
+  },
+  "glenn-phillips": {
+   "cricsheetId": "9a46c4e5",
+   "tests": 19,
+   "odis": 46,
+   "t20is": 95,
+   "firstDate": "2017-02-17",
+   "lastDate": "2026-10-24",
+   "teams": [
+    "New Zealand"
+   ]
+  },
+  "graeme-swann": {
+   "cricsheetId": "221ad9d9",
+   "tests": 60,
+   "odis": 76,
+   "t20is": 38,
+   "firstDate": "2007-10-01",
+   "lastDate": "2013-12-13",
+   "teams": [
+    "England"
+   ]
+  },
+  "graham-thorpe": {
+   "cricsheetId": "53fcbbfb",
+   "tests": 8,
+   "odis": 2,
+   "t20is": 0,
+   "firstDate": "2002-06-27",
+   "lastDate": "2005-06-03",
+   "teams": [
+    "England"
+   ]
+  },
+  "grant-flower": {
+   "cricsheetId": "348195ea",
+   "tests": 0,
+   "odis": 24,
+   "t20is": 0,
+   "firstDate": "2003-02-10",
+   "lastDate": "2010-10-17",
+   "teams": [
+    "Zimbabwe"
+   ]
+  },
+  "gus-atkinson": {
+   "cricsheetId": "70d57519",
+   "tests": 21,
+   "odis": 19,
+   "t20is": 4,
+   "firstDate": "2023-09-01",
+   "lastDate": "2026-10-25",
+   "teams": [
+    "England"
+   ]
+  },
+  "habibul-bashar": {
+   "cricsheetId": "e74ad9ea",
+   "tests": 19,
+   "odis": 51,
+   "t20is": 0,
+   "firstDate": "2003-02-11",
+   "lastDate": "2008-02-22",
+   "teams": [
+    "Bangladesh"
+   ]
+  },
+  "hamilton-masakadza": {
+   "cricsheetId": "31fbf891",
+   "tests": 28,
+   "odis": 156,
+   "t20is": 54,
+   "firstDate": "2004-12-01",
+   "lastDate": "2019-09-18",
+   "teams": [
+    "Zimbabwe"
+   ]
+  },
+  "hanuma-vihari": {
+   "cricsheetId": "94253925",
+   "tests": 16,
+   "odis": 0,
+   "t20is": 0,
+   "firstDate": "2018-09-07",
+   "lastDate": "2022-07-01",
+   "teams": [
+    "India"
    ]
   },
   "harbhajan-singh": {
@@ -185,6 +1365,286 @@
     "India"
    ]
   },
+  "haris-rauf": {
+   "cricsheetId": "24bb1c2f",
+   "tests": 1,
+   "odis": 59,
+   "t20is": 90,
+   "firstDate": "2020-01-24",
+   "lastDate": "2026-10-25",
+   "teams": [
+    "Pakistan"
+   ]
+  },
+  "harry-brook": {
+   "cricsheetId": "4ae1755b",
+   "tests": 41,
+   "odis": 45,
+   "t20is": 70,
+   "firstDate": "2022-01-26",
+   "lastDate": "2026-10-25",
+   "teams": [
+    "England"
+   ]
+  },
+  "harry-tector": {
+   "cricsheetId": "59ea70a4",
+   "tests": 9,
+   "odis": 51,
+   "t20is": 89,
+   "firstDate": "2019-09-17",
+   "lastDate": "2026-10-24",
+   "teams": [
+    "Ireland"
+   ]
+  },
+  "harshit-rana": {
+   "cricsheetId": "77b1aa15",
+   "tests": 2,
+   "odis": 14,
+   "t20is": 14,
+   "firstDate": "2024-11-22",
+   "lastDate": "2026-07-07",
+   "teams": [
+    "India"
+   ]
+  },
+  "hasan-ali": {
+   "cricsheetId": "2911de16",
+   "tests": 27,
+   "odis": 66,
+   "t20is": 56,
+   "firstDate": "2016-08-18",
+   "lastDate": "2026-05-16",
+   "teams": [
+    "Pakistan"
+   ]
+  },
+  "hashan-tillakaratne": {
+   "cricsheetId": "00ea9791",
+   "tests": 2,
+   "odis": 16,
+   "t20is": 0,
+   "firstDate": "2003-01-09",
+   "lastDate": "2004-03-08",
+   "teams": [
+    "Sri Lanka"
+   ]
+  },
+  "hashim-amla": {
+   "cricsheetId": "e798611a",
+   "tests": 122,
+   "odis": 177,
+   "t20is": 43,
+   "firstDate": "2004-11-28",
+   "lastDate": "2019-06-28",
+   "teams": [
+    "ICC World XI",
+    "South Africa"
+   ]
+  },
+  "heath-streak": {
+   "cricsheetId": "37f501d7",
+   "tests": 8,
+   "odis": 31,
+   "t20is": 0,
+   "firstDate": "2003-02-10",
+   "lastDate": "2005-09-13",
+   "teams": [
+    "Africa XI",
+    "Zimbabwe"
+   ]
+  },
+  "heinrich-klaasen": {
+   "cricsheetId": "235c2bb6",
+   "tests": 4,
+   "odis": 59,
+   "t20is": 57,
+   "firstDate": "2018-02-07",
+   "lastDate": "2025-03-05",
+   "teams": [
+    "South Africa"
+   ]
+  },
+  "hemang-badani": {
+   "cricsheetId": "5cb078d6",
+   "tests": 0,
+   "odis": 7,
+   "t20is": 0,
+   "firstDate": "2003-11-06",
+   "lastDate": "2004-02-08",
+   "teams": [
+    "India"
+   ]
+  },
+  "henry-nicholls": {
+   "cricsheetId": "03521fd3",
+   "tests": 60,
+   "odis": 92,
+   "t20is": 10,
+   "firstDate": "2015-12-26",
+   "lastDate": "2026-07-21",
+   "teams": [
+    "New Zealand"
+   ]
+  },
+  "henry-olonga": {
+   "cricsheetId": "7f82b4fb",
+   "tests": 0,
+   "odis": 2,
+   "t20is": 0,
+   "firstDate": "2003-02-10",
+   "lastDate": "2003-03-12",
+   "teams": [
+    "Zimbabwe"
+   ]
+  },
+  "herschelle-gibbs": {
+   "cricsheetId": "e1d1b294",
+   "tests": 34,
+   "odis": 110,
+   "t20is": 23,
+   "firstDate": "2002-12-26",
+   "lastDate": "2010-05-10",
+   "teams": [
+    "South Africa"
+   ]
+  },
+  "ian-bell": {
+   "cricsheetId": "33155d1b",
+   "tests": 114,
+   "odis": 156,
+   "t20is": 8,
+   "firstDate": "2004-08-19",
+   "lastDate": "2015-11-01",
+   "teams": [
+    "England"
+   ]
+  },
+  "iftikhar-ahmed": {
+   "cricsheetId": "29e253dd",
+   "tests": 4,
+   "odis": 25,
+   "t20is": 64,
+   "firstDate": "2015-11-13",
+   "lastDate": "2024-06-09",
+   "teams": [
+    "Pakistan"
+   ]
+  },
+  "imam-ul-haq": {
+   "cricsheetId": "40c041ea",
+   "tests": 31,
+   "odis": 69,
+   "t20is": 2,
+   "firstDate": "2017-10-18",
+   "lastDate": "2026-08-27",
+   "teams": [
+    "Pakistan"
+   ]
+  },
+  "imran-tahir": {
+   "cricsheetId": "acee4cc4",
+   "tests": 20,
+   "odis": 106,
+   "t20is": 37,
+   "firstDate": "2011-02-24",
+   "lastDate": "2019-07-06",
+   "teams": [
+    "ICC World XI",
+    "South Africa"
+   ]
+  },
+  "imrul-kayes": {
+   "cricsheetId": "5fbe14fc",
+   "tests": 38,
+   "odis": 72,
+   "t20is": 14,
+   "firstDate": "2008-11-07",
+   "lastDate": "2019-11-22",
+   "teams": [
+    "Bangladesh"
+   ]
+  },
+  "inzamam-ul-haq": {
+   "cricsheetId": "b9a3d8c6",
+   "tests": 20,
+   "odis": 69,
+   "t20is": 1,
+   "firstDate": "2002-12-26",
+   "lastDate": "2007-10-08",
+   "teams": [
+    "Asia XI",
+    "ICC World XI",
+    "Pakistan"
+   ]
+  },
+  "irfan-pathan": {
+   "cricsheetId": "5fa06777",
+   "tests": 16,
+   "odis": 100,
+   "t20is": 22,
+   "firstDate": "2004-01-02",
+   "lastDate": "2012-10-02",
+   "teams": [
+    "India"
+   ]
+  },
+  "ish-sodhi": {
+   "cricsheetId": "641ac5ff",
+   "tests": 21,
+   "odis": 54,
+   "t20is": 140,
+   "firstDate": "2013-10-09",
+   "lastDate": "2026-05-02",
+   "teams": [
+    "New Zealand"
+   ]
+  },
+  "ishan-kishan": {
+   "cricsheetId": "752f7486",
+   "tests": 2,
+   "odis": 28,
+   "t20is": 64,
+   "firstDate": "2021-03-14",
+   "lastDate": "2026-10-22",
+   "teams": [
+    "India"
+   ]
+  },
+  "ishant-sharma": {
+   "cricsheetId": "5bb1a1c4",
+   "tests": 104,
+   "odis": 79,
+   "t20is": 14,
+   "firstDate": "2007-05-25",
+   "lastDate": "2021-11-25",
+   "teams": [
+    "India"
+   ]
+  },
+  "jack-leach": {
+   "cricsheetId": "3987e390",
+   "tests": 39,
+   "odis": 0,
+   "t20is": 0,
+   "firstDate": "2018-03-30",
+   "lastDate": "2024-10-24",
+   "teams": [
+    "England"
+   ]
+  },
+  "jacob-oram": {
+   "cricsheetId": "3eac9d95",
+   "tests": 20,
+   "odis": 106,
+   "t20is": 36,
+   "firstDate": "2002-12-29",
+   "lastDate": "2012-11-06",
+   "teams": [
+    "New Zealand"
+   ]
+  },
   "jacques-kallis": {
    "cricsheetId": "86dc8f2e",
    "tests": 89,
@@ -198,6 +1658,29 @@
     "South Africa"
    ]
   },
+  "jacques-rudolph": {
+   "cricsheetId": "42537f07",
+   "tests": 32,
+   "odis": 28,
+   "t20is": 1,
+   "firstDate": "2003-04-21",
+   "lastDate": "2012-11-22",
+   "teams": [
+    "Africa XI",
+    "South Africa"
+   ]
+  },
+  "jake-fraser-mcgurk": {
+   "cricsheetId": "9b6e1b3f",
+   "tests": 0,
+   "odis": 7,
+   "t20is": 8,
+   "firstDate": "2024-02-04",
+   "lastDate": "2025-07-20",
+   "teams": [
+    "Australia"
+   ]
+  },
   "james-anderson": {
    "cricsheetId": "d12143bf",
    "tests": 182,
@@ -205,6 +1688,61 @@
    "t20is": 19,
    "firstDate": "2003-01-11",
    "lastDate": "2024-07-10",
+   "teams": [
+    "England"
+   ]
+  },
+  "james-faulkner": {
+   "cricsheetId": "808f425a",
+   "tests": 1,
+   "odis": 67,
+   "t20is": 24,
+   "firstDate": "2012-02-01",
+   "lastDate": "2017-10-01",
+   "teams": [
+    "Australia"
+   ]
+  },
+  "james-vince": {
+   "cricsheetId": "a15618fe",
+   "tests": 13,
+   "odis": 24,
+   "t20is": 16,
+   "firstDate": "2015-05-08",
+   "lastDate": "2023-03-06",
+   "teams": [
+    "England"
+   ]
+  },
+  "jason-gillespie": {
+   "cricsheetId": "74234d66",
+   "tests": 18,
+   "odis": 38,
+   "t20is": 1,
+   "firstDate": "2002-12-26",
+   "lastDate": "2006-04-09",
+   "teams": [
+    "Australia"
+   ]
+  },
+  "jason-holder": {
+   "cricsheetId": "0f721006",
+   "tests": 68,
+   "odis": 129,
+   "t20is": 95,
+   "firstDate": "2013-02-01",
+   "lastDate": "2026-06-14",
+   "teams": [
+    "West Indies"
+   ]
+  },
+  "jason-roy": {
+   "cricsheetId": "d1c36f5c",
+   "tests": 5,
+   "odis": 114,
+   "t20is": 63,
+   "firstDate": "2014-09-07",
+   "lastDate": "2023-03-06",
    "teams": [
     "England"
    ]
@@ -220,6 +1758,50 @@
     "India"
    ]
   },
+  "javagal-srinath": {
+   "cricsheetId": "bad31fac",
+   "tests": 1,
+   "odis": 16,
+   "t20is": 0,
+   "firstDate": "2001-12-19",
+   "lastDate": "2003-03-23",
+   "teams": [
+    "India"
+   ]
+  },
+  "jerome-taylor": {
+   "cricsheetId": "4180d897",
+   "tests": 40,
+   "odis": 80,
+   "t20is": 27,
+   "firstDate": "2003-06-11",
+   "lastDate": "2018-01-03",
+   "teams": [
+    "West Indies"
+   ]
+  },
+  "jesse-ryder": {
+   "cricsheetId": "91ffa6c6",
+   "tests": 15,
+   "odis": 43,
+   "t20is": 22,
+   "firstDate": "2008-02-05",
+   "lastDate": "2014-01-31",
+   "teams": [
+    "New Zealand"
+   ]
+  },
+  "jimmy-neesham": {
+   "cricsheetId": "9219eff0",
+   "tests": 12,
+   "odis": 75,
+   "t20is": 102,
+   "firstDate": "2012-12-21",
+   "lastDate": "2026-03-25",
+   "teams": [
+    "New Zealand"
+   ]
+  },
   "joe-root": {
    "cricsheetId": "a343262c",
    "tests": 169,
@@ -229,6 +1811,39 @@
    "lastDate": "2026-10-25",
    "teams": [
     "England"
+   ]
+  },
+  "jofra-archer": {
+   "cricsheetId": "5574750c",
+   "tests": 23,
+   "odis": 40,
+   "t20is": 51,
+   "firstDate": "2019-05-03",
+   "lastDate": "2026-09-27",
+   "teams": [
+    "England"
+   ]
+  },
+  "jonny-bairstow": {
+   "cricsheetId": "abb83e27",
+   "tests": 100,
+   "odis": 103,
+   "t20is": 79,
+   "firstDate": "2011-09-16",
+   "lastDate": "2024-06-27",
+   "teams": [
+    "England"
+   ]
+  },
+  "jonty-rhodes": {
+   "cricsheetId": "97edbfb1",
+   "tests": 0,
+   "odis": 2,
+   "t20is": 0,
+   "firstDate": "2003-02-09",
+   "lastDate": "2003-02-12",
+   "teams": [
+    "South Africa"
    ]
   },
   "jos-buttler": {
@@ -242,6 +1857,61 @@
     "England"
    ]
   },
+  "josh-hazlewood": {
+   "cricsheetId": "03806cf8",
+   "tests": 80,
+   "odis": 97,
+   "t20is": 58,
+   "firstDate": "2010-06-22",
+   "lastDate": "2026-10-18",
+   "teams": [
+    "Australia"
+   ]
+  },
+  "josh-inglis": {
+   "cricsheetId": "989889ff",
+   "tests": 5,
+   "odis": 41,
+   "t20is": 49,
+   "firstDate": "2022-02-11",
+   "lastDate": "2026-09-24",
+   "teams": [
+    "Australia"
+   ]
+  },
+  "josh-little": {
+   "cricsheetId": "9061a703",
+   "tests": 0,
+   "odis": 41,
+   "t20is": 60,
+   "firstDate": "2016-09-05",
+   "lastDate": "2026-02-14",
+   "teams": [
+    "Ireland"
+   ]
+  },
+  "jp-duminy": {
+   "cricsheetId": "2e8994e7",
+   "tests": 46,
+   "odis": 193,
+   "t20is": 79,
+   "firstDate": "2004-08-28",
+   "lastDate": "2019-07-06",
+   "teams": [
+    "South Africa"
+   ]
+  },
+  "justin-langer": {
+   "cricsheetId": "94198ef4",
+   "tests": 30,
+   "odis": 0,
+   "t20is": 0,
+   "firstDate": "2002-12-26",
+   "lastDate": "2007-01-02",
+   "teams": [
+    "Australia"
+   ]
+  },
   "kagiso-rabada": {
    "cricsheetId": "e62dd25d",
    "tests": 74,
@@ -251,6 +1921,39 @@
    "lastDate": "2026-10-18",
    "teams": [
     "South Africa"
+   ]
+  },
+  "kamindu-mendis": {
+   "cricsheetId": "08548b13",
+   "tests": 18,
+   "odis": 33,
+   "t20is": 50,
+   "firstDate": "2018-10-27",
+   "lastDate": "2026-10-22",
+   "teams": [
+    "Sri Lanka"
+   ]
+  },
+  "kamran-akmal": {
+   "cricsheetId": "ff077124",
+   "tests": 37,
+   "odis": 134,
+   "t20is": 55,
+   "firstDate": "2002-12-26",
+   "lastDate": "2017-04-11",
+   "teams": [
+    "Pakistan"
+   ]
+  },
+  "kane-richardson": {
+   "cricsheetId": "dfc4d8b5",
+   "tests": 0,
+   "odis": 25,
+   "t20is": 35,
+   "firstDate": "2013-01-13",
+   "lastDate": "2023-11-28",
+   "teams": [
+    "Australia"
    ]
   },
   "kane-williamson": {
@@ -264,6 +1967,50 @@
     "New Zealand"
    ]
   },
+  "kedar-jadhav": {
+   "cricsheetId": "99d63244",
+   "tests": 0,
+   "odis": 71,
+   "t20is": 9,
+   "firstDate": "2014-11-16",
+   "lastDate": "2020-02-08",
+   "teams": [
+    "India"
+   ]
+  },
+  "kemar-roach": {
+   "cricsheetId": "78eb4223",
+   "tests": 90,
+   "odis": 90,
+   "t20is": 11,
+   "firstDate": "2008-06-20",
+   "lastDate": "2026-08-02",
+   "teams": [
+    "West Indies"
+   ]
+  },
+  "keshav-maharaj": {
+   "cricsheetId": "0b60eb09",
+   "tests": 63,
+   "odis": 56,
+   "t20is": 52,
+   "firstDate": "2016-11-03",
+   "lastDate": "2026-10-09",
+   "teams": [
+    "South Africa"
+   ]
+  },
+  "kevin-o-brien": {
+   "cricsheetId": "243431b5",
+   "tests": 2,
+   "odis": 90,
+   "t20is": 81,
+   "firstDate": "2006-06-13",
+   "lastDate": "2021-10-22",
+   "teams": [
+    "Ireland"
+   ]
+  },
   "kevin-pietersen": {
    "cricsheetId": "39f01cdb",
    "tests": 101,
@@ -274,6 +2021,72 @@
    "teams": [
     "England",
     "ICC World XI"
+   ]
+  },
+  "khaled-mashud": {
+   "cricsheetId": "ade071c5",
+   "tests": 15,
+   "odis": 45,
+   "t20is": 0,
+   "firstDate": "2003-02-11",
+   "lastDate": "2007-06-25",
+   "teams": [
+    "Bangladesh"
+   ]
+  },
+  "kieron-pollard": {
+   "cricsheetId": "a757b0d8",
+   "tests": 0,
+   "odis": 117,
+   "t20is": 98,
+   "firstDate": "2007-04-10",
+   "lastDate": "2022-02-20",
+   "teams": [
+    "West Indies"
+   ]
+  },
+  "kraigg-brathwaite": {
+   "cricsheetId": "7d5af2ea",
+   "tests": 99,
+   "odis": 10,
+   "t20is": 0,
+   "firstDate": "2011-05-20",
+   "lastDate": "2025-07-03",
+   "teams": [
+    "West Indies"
+   ]
+  },
+  "krunal-pandya": {
+   "cricsheetId": "5b8c830e",
+   "tests": 0,
+   "odis": 5,
+   "t20is": 19,
+   "firstDate": "2018-11-04",
+   "lastDate": "2021-07-25",
+   "teams": [
+    "India"
+   ]
+  },
+  "kuldeep-yadav": {
+   "cricsheetId": "8d2c70ad",
+   "tests": 18,
+   "odis": 120,
+   "t20is": 53,
+   "firstDate": "2017-03-25",
+   "lastDate": "2026-10-09",
+   "teams": [
+    "India"
+   ]
+  },
+  "kumar-dharmasena": {
+   "cricsheetId": "323e4c16",
+   "tests": 1,
+   "odis": 8,
+   "t20is": 0,
+   "firstDate": "2003-04-04",
+   "lastDate": "2004-03-08",
+   "teams": [
+    "Sri Lanka"
    ]
   },
   "kumar-sangakkara": {
@@ -289,6 +2102,72 @@
     "Sri Lanka"
    ]
   },
+  "kusal-mendis": {
+   "cricsheetId": "5d1e7582",
+   "tests": 74,
+   "odis": 146,
+   "t20is": 105,
+   "firstDate": "2015-10-22",
+   "lastDate": "2026-10-22",
+   "teams": [
+    "Sri Lanka"
+   ]
+  },
+  "kusal-perera": {
+   "cricsheetId": "f21043a5",
+   "tests": 22,
+   "odis": 112,
+   "t20is": 92,
+   "firstDate": "2013-01-13",
+   "lastDate": "2026-02-19",
+   "teams": [
+    "Sri Lanka"
+   ]
+  },
+  "kyle-coetzer": {
+   "cricsheetId": "85d8110a",
+   "tests": 0,
+   "odis": 63,
+   "t20is": 52,
+   "firstDate": "2008-08-04",
+   "lastDate": "2023-02-21",
+   "teams": [
+    "Scotland"
+   ]
+  },
+  "kyle-jamieson": {
+   "cricsheetId": "68c56d09",
+   "tests": 21,
+   "odis": 23,
+   "t20is": 32,
+   "firstDate": "2020-02-08",
+   "lastDate": "2026-06-17",
+   "teams": [
+    "New Zealand"
+   ]
+  },
+  "lahiru-thirimanne": {
+   "cricsheetId": "c5928dec",
+   "tests": 44,
+   "odis": 124,
+   "t20is": 25,
+   "firstDate": "2010-01-05",
+   "lastDate": "2022-03-12",
+   "teams": [
+    "Sri Lanka"
+   ]
+  },
+  "lance-klusener": {
+   "cricsheetId": "c0790f82",
+   "tests": 0,
+   "odis": 12,
+   "t20is": 0,
+   "firstDate": "2003-02-09",
+   "lastDate": "2004-09-18",
+   "teams": [
+    "South Africa"
+   ]
+  },
   "lasith-malinga": {
    "cricsheetId": "a12e1d51",
    "tests": 22,
@@ -296,6 +2175,94 @@
    "t20is": 83,
    "firstDate": "2004-07-23",
    "lastDate": "2020-03-06",
+   "teams": [
+    "Sri Lanka"
+   ]
+  },
+  "lendl-simmons": {
+   "cricsheetId": "89f64c19",
+   "tests": 8,
+   "odis": 67,
+   "t20is": 64,
+   "firstDate": "2006-12-07",
+   "lastDate": "2021-10-26",
+   "teams": [
+    "West Indies"
+   ]
+  },
+  "liam-livingstone": {
+   "cricsheetId": "50c6bc2b",
+   "tests": 1,
+   "odis": 37,
+   "t20is": 59,
+   "firstDate": "2017-06-23",
+   "lastDate": "2025-03-01",
+   "teams": [
+    "England"
+   ]
+  },
+  "litton-das": {
+   "cricsheetId": "0404d43c",
+   "tests": 54,
+   "odis": 94,
+   "t20is": 113,
+   "firstDate": "2015-06-10",
+   "lastDate": "2026-10-03",
+   "teams": [
+    "Bangladesh"
+   ]
+  },
+  "lockie-ferguson": {
+   "cricsheetId": "2f9d0389",
+   "tests": 1,
+   "odis": 63,
+   "t20is": 53,
+   "firstDate": "2016-12-04",
+   "lastDate": "2026-10-24",
+   "teams": [
+    "New Zealand"
+   ]
+  },
+  "logan-van-beek": {
+   "cricsheetId": "782fb776",
+   "tests": 0,
+   "odis": 37,
+   "t20is": 35,
+   "firstDate": "2014-03-17",
+   "lastDate": "2026-07-29",
+   "teams": [
+    "Netherlands"
+   ]
+  },
+  "lou-vincent": {
+   "cricsheetId": "2764133a",
+   "tests": 7,
+   "odis": 48,
+   "t20is": 9,
+   "firstDate": "2002-12-29",
+   "lastDate": "2007-12-16",
+   "teams": [
+    "New Zealand"
+   ]
+  },
+  "lungi-ngidi": {
+   "cricsheetId": "f834dcfc",
+   "tests": 20,
+   "odis": 70,
+   "t20is": 63,
+   "firstDate": "2017-01-20",
+   "lastDate": "2026-03-04",
+   "teams": [
+    "South Africa"
+   ]
+  },
+  "maheesh-theekshana": {
+   "cricsheetId": "f24c6701",
+   "tests": 2,
+   "odis": 51,
+   "t20is": 84,
+   "firstDate": "2021-09-07",
+   "lastDate": "2026-10-11",
    "teams": [
     "Sri Lanka"
    ]
@@ -312,6 +2279,197 @@
     "Sri Lanka"
    ]
   },
+  "mahmudullah": {
+   "cricsheetId": "bf1d7d3e",
+   "tests": 49,
+   "odis": 215,
+   "t20is": 128,
+   "firstDate": "2007-07-25",
+   "lastDate": "2025-02-24",
+   "teams": [
+    "Bangladesh"
+   ]
+  },
+  "makhaya-ntini": {
+   "cricsheetId": "20a941bb",
+   "tests": 57,
+   "odis": 89,
+   "t20is": 10,
+   "firstDate": "2002-12-26",
+   "lastDate": "2011-01-09",
+   "teams": [
+    "ICC World XI",
+    "South Africa"
+   ]
+  },
+  "manish-pandey": {
+   "cricsheetId": "93b4fc78",
+   "tests": 0,
+   "odis": 28,
+   "t20is": 39,
+   "firstDate": "2015-07-14",
+   "lastDate": "2021-07-23",
+   "teams": [
+    "India"
+   ]
+  },
+  "marco-jansen": {
+   "cricsheetId": "81c36ee9",
+   "tests": 23,
+   "odis": 33,
+   "t20is": 28,
+   "firstDate": "2021-12-26",
+   "lastDate": "2026-10-18",
+   "teams": [
+    "South Africa"
+   ]
+  },
+  "marcus-stoinis": {
+   "cricsheetId": "d9273ee7",
+   "tests": 0,
+   "odis": 69,
+   "t20is": 85,
+   "firstDate": "2015-08-31",
+   "lastDate": "2026-02-20",
+   "teams": [
+    "Australia"
+   ]
+  },
+  "marcus-trescothick": {
+   "cricsheetId": "ea42ddb9",
+   "tests": 28,
+   "odis": 64,
+   "t20is": 3,
+   "firstDate": "2001-12-19",
+   "lastDate": "2006-09-05",
+   "teams": [
+    "England"
+   ]
+  },
+  "mark-boucher": {
+   "cricsheetId": "f3cb53a1",
+   "tests": 76,
+   "odis": 132,
+   "t20is": 24,
+   "firstDate": "2002-12-26",
+   "lastDate": "2012-03-23",
+   "teams": [
+    "Africa XI",
+    "ICC World XI",
+    "South Africa"
+   ]
+  },
+  "mark-watt": {
+   "cricsheetId": "1252f71a",
+   "tests": 0,
+   "odis": 84,
+   "t20is": 76,
+   "firstDate": "2015-06-20",
+   "lastDate": "2026-08-13",
+   "teams": [
+    "Scotland"
+   ]
+  },
+  "mark-wood": {
+   "cricsheetId": "8d92a2c3",
+   "tests": 38,
+   "odis": 65,
+   "t20is": 37,
+   "firstDate": "2015-05-08",
+   "lastDate": "2025-11-21",
+   "teams": [
+    "England"
+   ]
+  },
+  "marlon-samuels": {
+   "cricsheetId": "f846de6a",
+   "tests": 51,
+   "odis": 152,
+   "t20is": 63,
+   "firstDate": "2003-05-17",
+   "lastDate": "2018-12-14",
+   "teams": [
+    "West Indies"
+   ]
+  },
+  "marnus-labuschagne": {
+   "cricsheetId": "fa433be6",
+   "tests": 67,
+   "odis": 70,
+   "t20is": 1,
+   "firstDate": "2018-10-07",
+   "lastDate": "2026-10-18",
+   "teams": [
+    "Australia"
+   ]
+  },
+  "martin-guptill": {
+   "cricsheetId": "2be41edb",
+   "tests": 47,
+   "odis": 194,
+   "t20is": 121,
+   "firstDate": "2009-02-01",
+   "lastDate": "2022-10-12",
+   "teams": [
+    "New Zealand"
+   ]
+  },
+  "marvan-atapattu": {
+   "cricsheetId": "8a686d30",
+   "tests": 8,
+   "odis": 70,
+   "t20is": 2,
+   "firstDate": "2002-06-27",
+   "lastDate": "2007-11-16",
+   "teams": [
+    "Sri Lanka"
+   ]
+  },
+  "mashrafe-mortaza": {
+   "cricsheetId": "e186f49c",
+   "tests": 20,
+   "odis": 175,
+   "t20is": 49,
+   "firstDate": "2003-02-11",
+   "lastDate": "2020-03-06",
+   "teams": [
+    "Asia XI",
+    "Bangladesh"
+   ]
+  },
+  "matheesha-pathirana": {
+   "cricsheetId": "64839cb3",
+   "tests": 0,
+   "odis": 10,
+   "t20is": 24,
+   "firstDate": "2023-07-02",
+   "lastDate": "2026-02-16",
+   "teams": [
+    "Sri Lanka"
+   ]
+  },
+  "matt-henry": {
+   "cricsheetId": "e84ac20c",
+   "tests": 35,
+   "odis": 93,
+   "t20is": 42,
+   "firstDate": "2014-01-31",
+   "lastDate": "2026-10-24",
+   "teams": [
+    "New Zealand"
+   ]
+  },
+  "matt-prior": {
+   "cricsheetId": "1200550f",
+   "tests": 79,
+   "odis": 64,
+   "t20is": 10,
+   "firstDate": "2004-12-05",
+   "lastDate": "2014-07-17",
+   "teams": [
+    "England"
+   ]
+  },
   "matthew-hayden": {
    "cricsheetId": "d8699ab7",
    "tests": 47,
@@ -321,6 +2479,160 @@
    "lastDate": "2009-01-03",
    "teams": [
     "Australia"
+   ]
+  },
+  "matthew-hoggard": {
+   "cricsheetId": "dc0f5506",
+   "tests": 33,
+   "odis": 9,
+   "t20is": 0,
+   "firstDate": "2001-12-19",
+   "lastDate": "2008-03-05",
+   "teams": [
+    "England"
+   ]
+  },
+  "matthew-wade": {
+   "cricsheetId": "afa7e784",
+   "tests": 36,
+   "odis": 95,
+   "t20is": 90,
+   "firstDate": "2011-10-13",
+   "lastDate": "2024-06-24",
+   "teams": [
+    "Australia"
+   ]
+  },
+  "max-o-dowd": {
+   "cricsheetId": "b699df47",
+   "tests": 0,
+   "odis": 71,
+   "t20is": 88,
+   "firstDate": "2015-07-01",
+   "lastDate": "2026-10-25",
+   "teams": [
+    "Netherlands"
+   ]
+  },
+  "mayank-agarwal": {
+   "cricsheetId": "00ea847a",
+   "tests": 21,
+   "odis": 5,
+   "t20is": 0,
+   "firstDate": "2018-12-26",
+   "lastDate": "2022-03-12",
+   "teams": [
+    "India"
+   ]
+  },
+  "mehidy-hasan-miraz": {
+   "cricsheetId": "c58b0108",
+   "tests": 58,
+   "odis": 108,
+   "t20is": 31,
+   "firstDate": "2016-10-20",
+   "lastDate": "2026-08-22",
+   "teams": [
+    "Bangladesh"
+   ]
+  },
+  "michael-bevan": {
+   "cricsheetId": "c500ec39",
+   "tests": 0,
+   "odis": 32,
+   "t20is": 0,
+   "firstDate": "2003-01-09",
+   "lastDate": "2004-02-27",
+   "teams": [
+    "Australia"
+   ]
+  },
+  "michael-clarke": {
+   "cricsheetId": "f842c2cf",
+   "tests": 107,
+   "odis": 217,
+   "t20is": 34,
+   "firstDate": "2003-01-19",
+   "lastDate": "2015-08-20",
+   "teams": [
+    "Australia"
+   ]
+  },
+  "michael-kasprowicz": {
+   "cricsheetId": "8d0ea930",
+   "tests": 13,
+   "odis": 17,
+   "t20is": 2,
+   "firstDate": "2004-02-27",
+   "lastDate": "2006-03-31",
+   "teams": [
+    "Australia"
+   ]
+  },
+  "michael-vaughan": {
+   "cricsheetId": "6e1b1ec0",
+   "tests": 38,
+   "odis": 59,
+   "t20is": 2,
+   "firstDate": "2001-12-19",
+   "lastDate": "2008-07-30",
+   "teams": [
+    "England"
+   ]
+  },
+  "mike-hussey": {
+   "cricsheetId": "48fd7349",
+   "tests": 75,
+   "odis": 175,
+   "t20is": 38,
+   "firstDate": "2004-02-01",
+   "lastDate": "2013-01-03",
+   "teams": [
+    "Australia"
+   ]
+  },
+  "misbah-ul-haq": {
+   "cricsheetId": "7eae4418",
+   "tests": 70,
+   "odis": 149,
+   "t20is": 37,
+   "firstDate": "2003-04-08",
+   "lastDate": "2017-05-10",
+   "teams": [
+    "Pakistan"
+   ]
+  },
+  "mitchell-johnson": {
+   "cricsheetId": "f5180fe6",
+   "tests": 73,
+   "odis": 147,
+   "t20is": 30,
+   "firstDate": "2006-02-26",
+   "lastDate": "2015-11-13",
+   "teams": [
+    "Australia"
+   ]
+  },
+  "mitchell-marsh": {
+   "cricsheetId": "3d8feaf8",
+   "tests": 46,
+   "odis": 103,
+   "t20is": 86,
+   "firstDate": "2011-10-16",
+   "lastDate": "2026-09-30",
+   "teams": [
+    "Australia"
+   ]
+  },
+  "mitchell-santner": {
+   "cricsheetId": "e4a0deae",
+   "tests": 33,
+   "odis": 127,
+   "t20is": 136,
+   "firstDate": "2015-06-09",
+   "lastDate": "2026-10-24",
+   "teams": [
+    "New Zealand"
    ]
   },
   "mitchell-starc": {
@@ -334,6 +2646,109 @@
     "Australia"
    ]
   },
+  "moeen-ali": {
+   "cricsheetId": "bb351c23",
+   "tests": 68,
+   "odis": 135,
+   "t20is": 90,
+   "firstDate": "2014-02-28",
+   "lastDate": "2024-06-27",
+   "teams": [
+    "England"
+   ]
+  },
+  "mohammad-amir": {
+   "cricsheetId": "e174dadd",
+   "tests": 36,
+   "odis": 60,
+   "t20is": 62,
+   "firstDate": "2009-06-07",
+   "lastDate": "2024-06-16",
+   "teams": [
+    "Pakistan"
+   ]
+  },
+  "mohammad-ashraful": {
+   "cricsheetId": "2bb09eb2",
+   "tests": 36,
+   "odis": 118,
+   "t20is": 20,
+   "firstDate": "2003-02-18",
+   "lastDate": "2013-05-08",
+   "teams": [
+    "Asia XI",
+    "Bangladesh"
+   ]
+  },
+  "mohammad-asif": {
+   "cricsheetId": "e03b66ec",
+   "tests": 20,
+   "odis": 34,
+   "t20is": 11,
+   "firstDate": "2005-12-21",
+   "lastDate": "2010-08-26",
+   "teams": [
+    "Asia XI",
+    "Pakistan"
+   ]
+  },
+  "mohammad-hafeez": {
+   "cricsheetId": "9ab63e7b",
+   "tests": 51,
+   "odis": 204,
+   "t20is": 116,
+   "firstDate": "2003-04-03",
+   "lastDate": "2021-11-11",
+   "teams": [
+    "Pakistan"
+   ]
+  },
+  "mohammad-kaif": {
+   "cricsheetId": "d84378a4",
+   "tests": 8,
+   "odis": 70,
+   "t20is": 0,
+   "firstDate": "2002-06-29",
+   "lastDate": "2006-11-29",
+   "teams": [
+    "India"
+   ]
+  },
+  "mohammad-rafique": {
+   "cricsheetId": "7ff3fcaa",
+   "tests": 18,
+   "odis": 58,
+   "t20is": 0,
+   "firstDate": "2003-02-11",
+   "lastDate": "2008-02-29",
+   "teams": [
+    "Asia XI",
+    "Bangladesh"
+   ]
+  },
+  "mohammad-rizwan": {
+   "cricsheetId": "2f26ac1a",
+   "tests": 47,
+   "odis": 99,
+   "t20is": 104,
+   "firstDate": "2015-04-17",
+   "lastDate": "2026-08-27",
+   "teams": [
+    "Pakistan"
+   ]
+  },
+  "mohammad-yousuf": {
+   "cricsheetId": "e237b28c",
+   "tests": 33,
+   "odis": 136,
+   "t20is": 3,
+   "firstDate": "2002-12-26",
+   "lastDate": "2010-11-08",
+   "teams": [
+    "Asia XI",
+    "Pakistan"
+   ]
+  },
   "mohammed-shami": {
    "cricsheetId": "8cf9814c",
    "tests": 64,
@@ -343,6 +2758,63 @@
    "lastDate": "2025-03-09",
    "teams": [
     "India"
+   ]
+  },
+  "mohammed-siraj": {
+   "cricsheetId": "2f49c897",
+   "tests": 47,
+   "odis": 50,
+   "t20is": 17,
+   "firstDate": "2017-11-04",
+   "lastDate": "2026-10-03",
+   "teams": [
+    "India"
+   ]
+  },
+  "moin-khan": {
+   "cricsheetId": "feb37330",
+   "tests": 2,
+   "odis": 17,
+   "t20is": 0,
+   "firstDate": "2003-10-17",
+   "lastDate": "2004-10-16",
+   "teams": [
+    "Pakistan"
+   ]
+  },
+  "mominul-haque": {
+   "cricsheetId": "de0a3209",
+   "tests": 78,
+   "odis": 25,
+   "t20is": 6,
+   "firstDate": "2012-11-30",
+   "lastDate": "2026-08-22",
+   "teams": [
+    "Bangladesh"
+   ]
+  },
+  "monty-panesar": {
+   "cricsheetId": "5a37ec26",
+   "tests": 49,
+   "odis": 26,
+   "t20is": 1,
+   "firstDate": "2006-03-01",
+   "lastDate": "2013-12-26",
+   "teams": [
+    "England"
+   ]
+  },
+  "morne-morkel": {
+   "cricsheetId": "5bb5a915",
+   "tests": 86,
+   "odis": 116,
+   "t20is": 43,
+   "firstDate": "2006-12-26",
+   "lastDate": "2018-03-30",
+   "teams": [
+    "Africa XI",
+    "ICC World XI",
+    "South Africa"
    ]
   },
   "ms-dhoni": {
@@ -355,6 +2827,61 @@
    "teams": [
     "Asia XI",
     "India"
+   ]
+  },
+  "munaf-patel": {
+   "cricsheetId": "f0f628c7",
+   "tests": 12,
+   "odis": 69,
+   "t20is": 3,
+   "firstDate": "2006-03-09",
+   "lastDate": "2011-09-16",
+   "teams": [
+    "India"
+   ]
+  },
+  "murali-vijay": {
+   "cricsheetId": "4b57e452",
+   "tests": 60,
+   "odis": 17,
+   "t20is": 8,
+   "firstDate": "2008-11-06",
+   "lastDate": "2018-12-14",
+   "teams": [
+    "India"
+   ]
+  },
+  "mushfiqur-rahim": {
+   "cricsheetId": "a94e08ea",
+   "tests": 100,
+   "odis": 241,
+   "t20is": 90,
+   "firstDate": "2006-03-08",
+   "lastDate": "2026-08-22",
+   "teams": [
+    "Bangladesh"
+   ]
+  },
+  "mushtaq-ahmed": {
+   "cricsheetId": "0d08cbcb",
+   "tests": 2,
+   "odis": 1,
+   "t20is": 0,
+   "firstDate": "2003-10-03",
+   "lastDate": "2003-10-24",
+   "teams": [
+    "Pakistan"
+   ]
+  },
+  "mustafizur-rahman": {
+   "cricsheetId": "0a8fce53",
+   "tests": 15,
+   "odis": 113,
+   "t20is": 119,
+   "firstDate": "2015-04-24",
+   "lastDate": "2026-10-17",
+   "teams": [
+    "Bangladesh"
    ]
   },
   "muttiah-muralitharan": {
@@ -370,6 +2897,183 @@
     "Sri Lanka"
    ]
   },
+  "najmul-hossain-shanto": {
+   "cricsheetId": "1274d7ab",
+   "tests": 43,
+   "odis": 59,
+   "t20is": 46,
+   "firstDate": "2017-01-20",
+   "lastDate": "2026-10-17",
+   "teams": [
+    "Bangladesh"
+   ]
+  },
+  "naseem-shah": {
+   "cricsheetId": "9c9af282",
+   "tests": 20,
+   "odis": 34,
+   "t20is": 36,
+   "firstDate": "2019-11-21",
+   "lastDate": "2026-10-20",
+   "teams": [
+    "Pakistan"
+   ]
+  },
+  "nasser-hussain": {
+   "cricsheetId": "f76ffa81",
+   "tests": 10,
+   "odis": 12,
+   "t20is": 0,
+   "firstDate": "2001-12-19",
+   "lastDate": "2004-04-10",
+   "teams": [
+    "England"
+   ]
+  },
+  "nathan-astle": {
+   "cricsheetId": "99639abf",
+   "tests": 15,
+   "odis": 44,
+   "t20is": 4,
+   "firstDate": "2002-12-29",
+   "lastDate": "2007-01-23",
+   "teams": [
+    "New Zealand"
+   ]
+  },
+  "nathan-bracken": {
+   "cricsheetId": "4c61a0f9",
+   "tests": 2,
+   "odis": 100,
+   "t20is": 19,
+   "firstDate": "2003-01-19",
+   "lastDate": "2009-09-17",
+   "teams": [
+    "Australia"
+   ]
+  },
+  "nathan-lyon": {
+   "cricsheetId": "96a6a7ad",
+   "tests": 144,
+   "odis": 29,
+   "t20is": 2,
+   "firstDate": "2011-08-31",
+   "lastDate": "2026-10-09",
+   "teams": [
+    "Australia"
+   ]
+  },
+  "neil-mckenzie": {
+   "cricsheetId": "a830c083",
+   "tests": 26,
+   "odis": 9,
+   "t20is": 2,
+   "firstDate": "2002-12-26",
+   "lastDate": "2009-03-06",
+   "teams": [
+    "South Africa"
+   ]
+  },
+  "neil-wagner": {
+   "cricsheetId": "78adc879",
+   "tests": 64,
+   "odis": 0,
+   "t20is": 0,
+   "firstDate": "2012-07-25",
+   "lastDate": "2024-02-13",
+   "teams": [
+    "New Zealand"
+   ]
+  },
+  "niall-o-brien": {
+   "cricsheetId": "84826f48",
+   "tests": 1,
+   "odis": 64,
+   "t20is": 21,
+   "firstDate": "2007-03-15",
+   "lastDate": "2018-05-11",
+   "teams": [
+    "Ireland"
+   ]
+  },
+  "nicholas-pooran": {
+   "cricsheetId": "3241e3fd",
+   "tests": 0,
+   "odis": 57,
+   "t20is": 105,
+   "firstDate": "2016-09-23",
+   "lastDate": "2024-12-19",
+   "teams": [
+    "West Indies"
+   ]
+  },
+  "nicky-boje": {
+   "cricsheetId": "6a0537aa",
+   "tests": 17,
+   "odis": 21,
+   "t20is": 1,
+   "firstDate": "2002-12-26",
+   "lastDate": "2006-08-04",
+   "teams": [
+    "Africa XI",
+    "South Africa"
+   ]
+  },
+  "niroshan-dickwella": {
+   "cricsheetId": "45963d9e",
+   "tests": 56,
+   "odis": 55,
+   "t20is": 28,
+   "firstDate": "2014-07-24",
+   "lastDate": "2026-08-23",
+   "teams": [
+    "Sri Lanka"
+   ]
+  },
+  "nitish-kumar-reddy": {
+   "cricsheetId": "aad0c365",
+   "tests": 10,
+   "odis": 6,
+   "t20is": 8,
+   "firstDate": "2024-10-06",
+   "lastDate": "2026-10-24",
+   "teams": [
+    "India"
+   ]
+  },
+  "nuwan-kulasekara": {
+   "cricsheetId": "469ea22b",
+   "tests": 20,
+   "odis": 179,
+   "t20is": 56,
+   "firstDate": "2003-11-18",
+   "lastDate": "2017-07-10",
+   "teams": [
+    "Sri Lanka"
+   ]
+  },
+  "ollie-pope": {
+   "cricsheetId": "e94bc520",
+   "tests": 64,
+   "odis": 0,
+   "t20is": 0,
+   "firstDate": "2018-08-09",
+   "lastDate": "2025-12-17",
+   "teams": [
+    "England"
+   ]
+  },
+  "parthiv-patel": {
+   "cricsheetId": "b5da6c24",
+   "tests": 11,
+   "odis": 32,
+   "t20is": 2,
+   "firstDate": "2003-01-04",
+   "lastDate": "2018-01-24",
+   "teams": [
+    "India"
+   ]
+  },
   "pat-cummins": {
    "cricsheetId": "ded9240e",
    "tests": 76,
@@ -381,6 +3085,150 @@
     "Australia"
    ]
   },
+  "pathum-nissanka": {
+   "cricsheetId": "8ee36b18",
+   "tests": 19,
+   "odis": 70,
+   "t20is": 90,
+   "firstDate": "2021-03-03",
+   "lastDate": "2026-09-27",
+   "teams": [
+    "Sri Lanka"
+   ]
+  },
+  "paul-adams": {
+   "cricsheetId": "ae1bd901",
+   "tests": 4,
+   "odis": 2,
+   "t20is": 0,
+   "firstDate": "2003-04-21",
+   "lastDate": "2003-10-24",
+   "teams": [
+    "South Africa"
+   ]
+  },
+  "paul-collingwood": {
+   "cricsheetId": "a386e91b",
+   "tests": 64,
+   "odis": 158,
+   "t20is": 36,
+   "firstDate": "2002-06-27",
+   "lastDate": "2017-09-13",
+   "teams": [
+    "England",
+    "ICC World XI"
+   ]
+  },
+  "paul-stirling": {
+   "cricsheetId": "cf494ffe",
+   "tests": 8,
+   "odis": 118,
+   "t20is": 134,
+   "firstDate": "2008-08-25",
+   "lastDate": "2026-10-24",
+   "teams": [
+    "Ireland"
+   ]
+  },
+  "paul-van-meekeren": {
+   "cricsheetId": "4557dc54",
+   "tests": 0,
+   "odis": 35,
+   "t20is": 73,
+   "firstDate": "2013-04-20",
+   "lastDate": "2026-10-25",
+   "teams": [
+    "Netherlands"
+   ]
+  },
+  "peter-siddle": {
+   "cricsheetId": "bd93fea4",
+   "tests": 67,
+   "odis": 20,
+   "t20is": 2,
+   "firstDate": "2008-10-17",
+   "lastDate": "2019-09-12",
+   "teams": [
+    "Australia"
+   ]
+  },
+  "phil-salt": {
+   "cricsheetId": "3d284ca3",
+   "tests": 0,
+   "odis": 32,
+   "t20is": 65,
+   "firstDate": "2021-07-08",
+   "lastDate": "2026-07-11",
+   "teams": [
+    "England"
+   ]
+  },
+  "phillip-hughes": {
+   "cricsheetId": "004c9e85",
+   "tests": 26,
+   "odis": 25,
+   "t20is": 1,
+   "firstDate": "2009-02-26",
+   "lastDate": "2014-10-12",
+   "teams": [
+    "Australia"
+   ]
+  },
+  "piyush-chawla": {
+   "cricsheetId": "98ae73b1",
+   "tests": 3,
+   "odis": 25,
+   "t20is": 7,
+   "firstDate": "2006-03-09",
+   "lastDate": "2012-12-22",
+   "teams": [
+    "India"
+   ]
+  },
+  "pragyan-ojha": {
+   "cricsheetId": "6c6591ab",
+   "tests": 24,
+   "odis": 18,
+   "t20is": 6,
+   "firstDate": "2008-06-28",
+   "lastDate": "2013-11-14",
+   "teams": [
+    "India"
+   ]
+  },
+  "prasidh-krishna": {
+   "cricsheetId": "85e0cf10",
+   "tests": 8,
+   "odis": 28,
+   "t20is": 8,
+   "firstDate": "2021-03-23",
+   "lastDate": "2026-09-30",
+   "teams": [
+    "India"
+   ]
+  },
+  "prithvi-shaw": {
+   "cricsheetId": "8b3e9c7c",
+   "tests": 5,
+   "odis": 6,
+   "t20is": 1,
+   "firstDate": "2018-10-04",
+   "lastDate": "2021-07-25",
+   "teams": [
+    "India"
+   ]
+  },
+  "prosper-utseya": {
+   "cricsheetId": "9de271ef",
+   "tests": 3,
+   "odis": 118,
+   "t20is": 30,
+   "firstDate": "2004-04-20",
+   "lastDate": "2015-09-29",
+   "teams": [
+    "Zimbabwe"
+   ]
+  },
   "quinton-de-kock": {
    "cricsheetId": "372455c4",
    "tests": 54,
@@ -390,6 +3238,17 @@
    "lastDate": "2026-09-30",
    "teams": [
     "South Africa"
+   ]
+  },
+  "rachin-ravindra": {
+   "cricsheetId": "ba5e1069",
+   "tests": 24,
+   "odis": 38,
+   "t20is": 50,
+   "firstDate": "2021-09-01",
+   "lastDate": "2026-06-25",
+   "teams": [
+    "New Zealand"
    ]
   },
   "rahul-dravid": {
@@ -404,6 +3263,28 @@
     "India"
    ]
   },
+  "ramnaresh-sarwan": {
+   "cricsheetId": "36d33dd0",
+   "tests": 35,
+   "odis": 120,
+   "t20is": 18,
+   "firstDate": "2003-02-09",
+   "lastDate": "2013-06-11",
+   "teams": [
+    "West Indies"
+   ]
+  },
+  "rangana-herath": {
+   "cricsheetId": "d2fcce2f",
+   "tests": 82,
+   "odis": 66,
+   "t20is": 16,
+   "firstDate": "2004-04-27",
+   "lastDate": "2018-11-06",
+   "teams": [
+    "Sri Lanka"
+   ]
+  },
   "rashid-khan": {
    "cricsheetId": "5f547c8b",
    "tests": 0,
@@ -413,6 +3294,50 @@
    "lastDate": "2018-05-31",
    "teams": [
     "ICC World XI"
+   ]
+  },
+  "rashid-latif": {
+   "cricsheetId": "d32782ae",
+   "tests": 1,
+   "odis": 21,
+   "t20is": 0,
+   "firstDate": "2003-02-11",
+   "lastDate": "2003-10-12",
+   "teams": [
+    "Pakistan"
+   ]
+  },
+  "rassie-van-der-dussen": {
+   "cricsheetId": "9948e262",
+   "tests": 18,
+   "odis": 68,
+   "t20is": 57,
+   "firstDate": "2018-10-09",
+   "lastDate": "2025-08-16",
+   "teams": [
+    "South Africa"
+   ]
+  },
+  "ravi-bishnoi": {
+   "cricsheetId": "df064e1a",
+   "tests": 0,
+   "odis": 1,
+   "t20is": 48,
+   "firstDate": "2022-02-16",
+   "lastDate": "2026-10-03",
+   "teams": [
+    "India"
+   ]
+  },
+  "ravi-bopara": {
+   "cricsheetId": "7ca5e05d",
+   "tests": 13,
+   "odis": 117,
+   "t20is": 38,
+   "firstDate": "2007-02-02",
+   "lastDate": "2015-02-01",
+   "teams": [
+    "England"
    ]
   },
   "ravichandran-ashwin": {
@@ -437,6 +3362,28 @@
     "India"
    ]
   },
+  "reeza-hendricks": {
+   "cricsheetId": "b8cc58c9",
+   "tests": 0,
+   "odis": 35,
+   "t20is": 89,
+   "firstDate": "2014-11-05",
+   "lastDate": "2025-12-19",
+   "teams": [
+    "South Africa"
+   ]
+  },
+  "richie-berrington": {
+   "cricsheetId": "e21bc7f3",
+   "tests": 0,
+   "odis": 104,
+   "t20is": 87,
+   "firstDate": "2008-07-29",
+   "lastDate": "2026-08-13",
+   "teams": [
+    "Scotland"
+   ]
+  },
   "ricky-ponting": {
    "cricsheetId": "7d415ea5",
    "tests": 89,
@@ -446,6 +3393,17 @@
    "lastDate": "2012-11-30",
    "teams": [
     "Australia"
+   ]
+  },
+  "rinku-singh": {
+   "cricsheetId": "0a509d6b",
+   "tests": 0,
+   "odis": 2,
+   "t20is": 44,
+   "firstDate": "2023-08-18",
+   "lastDate": "2026-07-26",
+   "teams": [
+    "India"
    ]
   },
   "rishabh-pant": {
@@ -459,6 +3417,29 @@
     "India"
    ]
   },
+  "robin-uthappa": {
+   "cricsheetId": "1c17e270",
+   "tests": 0,
+   "odis": 45,
+   "t20is": 12,
+   "firstDate": "2006-04-15",
+   "lastDate": "2015-07-19",
+   "teams": [
+    "India"
+   ]
+  },
+  "roelof-van-der-merwe": {
+   "cricsheetId": "05c2ca46",
+   "tests": 0,
+   "odis": 45,
+   "t20is": 67,
+   "firstDate": "2009-03-29",
+   "lastDate": "2026-07-31",
+   "teams": [
+    "Netherlands",
+    "South Africa"
+   ]
+  },
   "rohit-sharma": {
    "cricsheetId": "740742ef",
    "tests": 67,
@@ -470,6 +3451,106 @@
     "India"
    ]
   },
+  "romario-shepherd": {
+   "cricsheetId": "c5aef772",
+   "tests": 0,
+   "odis": 39,
+   "t20is": 85,
+   "firstDate": "2020-01-09",
+   "lastDate": "2026-10-17",
+   "teams": [
+    "West Indies"
+   ]
+  },
+  "romesh-kaluwitharana": {
+   "cricsheetId": "dff967c1",
+   "tests": 0,
+   "odis": 8,
+   "t20is": 0,
+   "firstDate": "2002-06-27",
+   "lastDate": "2004-02-22",
+   "teams": [
+    "Sri Lanka"
+   ]
+  },
+  "ross-taylor": {
+   "cricsheetId": "b61a3e1a",
+   "tests": 109,
+   "odis": 224,
+   "t20is": 106,
+   "firstDate": "2006-03-01",
+   "lastDate": "2025-10-15",
+   "teams": [
+    "New Zealand",
+    "Samoa"
+   ]
+  },
+  "rovman-powell": {
+   "cricsheetId": "650d5e49",
+   "tests": 0,
+   "odis": 47,
+   "t20is": 121,
+   "firstDate": "2016-11-16",
+   "lastDate": "2026-10-17",
+   "teams": [
+    "West Indies"
+   ]
+  },
+  "rp-singh": {
+   "cricsheetId": "c3d1402f",
+   "tests": 14,
+   "odis": 55,
+   "t20is": 9,
+   "firstDate": "2005-09-04",
+   "lastDate": "2011-09-16",
+   "teams": [
+    "India"
+   ]
+  },
+  "rubel-hossain": {
+   "cricsheetId": "f56cd097",
+   "tests": 27,
+   "odis": 95,
+   "t20is": 26,
+   "firstDate": "2009-01-14",
+   "lastDate": "2021-04-01",
+   "teams": [
+    "Bangladesh"
+   ]
+  },
+  "ruturaj-gaikwad": {
+   "cricsheetId": "45a43fe2",
+   "tests": 0,
+   "odis": 12,
+   "t20is": 22,
+   "firstDate": "2021-07-28",
+   "lastDate": "2026-10-03",
+   "teams": [
+    "India"
+   ]
+  },
+  "ryan-harris": {
+   "cricsheetId": "12eddf28",
+   "tests": 27,
+   "odis": 21,
+   "t20is": 3,
+   "firstDate": "2009-01-18",
+   "lastDate": "2015-01-06",
+   "teams": [
+    "Australia"
+   ]
+  },
+  "ryan-ten-doeschate": {
+   "cricsheetId": "4ec07775",
+   "tests": 0,
+   "odis": 14,
+   "t20is": 20,
+   "firstDate": "2006-12-01",
+   "lastDate": "2021-10-20",
+   "teams": [
+    "Netherlands"
+   ]
+  },
   "sachin-tendulkar": {
    "cricsheetId": "d2c2b2d5",
    "tests": 82,
@@ -479,6 +3560,195 @@
    "lastDate": "2013-11-14",
    "teams": [
     "India"
+   ]
+  },
+  "saeed-ajmal": {
+   "cricsheetId": "05d74535",
+   "tests": 35,
+   "odis": 108,
+   "t20is": 64,
+   "firstDate": "2008-07-02",
+   "lastDate": "2015-04-24",
+   "teams": [
+    "Pakistan"
+   ]
+  },
+  "saeed-anwar": {
+   "cricsheetId": "0aa14354",
+   "tests": 0,
+   "odis": 5,
+   "t20is": 0,
+   "firstDate": "2003-02-16",
+   "lastDate": "2003-03-04",
+   "teams": [
+    "Pakistan"
+   ]
+  },
+  "safyaan-sharif": {
+   "cricsheetId": "f43dd8c2",
+   "tests": 0,
+   "odis": 80,
+   "t20is": 68,
+   "firstDate": "2011-06-29",
+   "lastDate": "2026-08-13",
+   "teams": [
+    "Scotland"
+   ]
+  },
+  "sam-curran": {
+   "cricsheetId": "e94915e6",
+   "tests": 24,
+   "odis": 46,
+   "t20is": 79,
+   "firstDate": "2018-06-01",
+   "lastDate": "2026-10-25",
+   "teams": [
+    "England"
+   ]
+  },
+  "sam-konstas": {
+   "cricsheetId": "3c34c9e1",
+   "tests": 5,
+   "odis": 0,
+   "t20is": 0,
+   "firstDate": "2024-12-26",
+   "lastDate": "2025-07-12",
+   "teams": [
+    "Australia"
+   ]
+  },
+  "samuel-badree": {
+   "cricsheetId": "76388dc8",
+   "tests": 0,
+   "odis": 0,
+   "t20is": 48,
+   "firstDate": "2012-06-30",
+   "lastDate": "2018-08-05",
+   "teams": [
+    "ICC World XI",
+    "West Indies"
+   ]
+  },
+  "sanath-jayasuriya": {
+   "cricsheetId": "f233bbb4",
+   "tests": 14,
+   "odis": 135,
+   "t20is": 30,
+   "firstDate": "2002-06-27",
+   "lastDate": "2011-06-28",
+   "teams": [
+    "Asia XI",
+    "Sri Lanka"
+   ]
+  },
+  "sanju-samson": {
+   "cricsheetId": "a4cc73aa",
+   "tests": 0,
+   "odis": 16,
+   "t20is": 75,
+   "firstDate": "2015-07-19",
+   "lastDate": "2026-10-24",
+   "teams": [
+    "India"
+   ]
+  },
+  "saqlain-mushtaq": {
+   "cricsheetId": "047c67ba",
+   "tests": 3,
+   "odis": 4,
+   "t20is": 0,
+   "firstDate": "2002-12-26",
+   "lastDate": "2003-10-07",
+   "teams": [
+    "Pakistan"
+   ]
+  },
+  "sarfaraz-ahmed": {
+   "cricsheetId": "2254ab79",
+   "tests": 54,
+   "odis": 115,
+   "t20is": 61,
+   "firstDate": "2007-11-18",
+   "lastDate": "2023-12-14",
+   "teams": [
+    "Pakistan"
+   ]
+  },
+  "sarfaraz-khan": {
+   "cricsheetId": "f088b960",
+   "tests": 6,
+   "odis": 0,
+   "t20is": 0,
+   "firstDate": "2024-02-15",
+   "lastDate": "2024-11-01",
+   "teams": [
+    "India"
+   ]
+  },
+  "saud-shakeel": {
+   "cricsheetId": "d07c1b2f",
+   "tests": 26,
+   "odis": 17,
+   "t20is": 0,
+   "firstDate": "2021-07-08",
+   "lastDate": "2026-09-09",
+   "teams": [
+    "Pakistan"
+   ]
+  },
+  "scott-boland": {
+   "cricsheetId": "d167edd3",
+   "tests": 20,
+   "odis": 14,
+   "t20is": 3,
+   "firstDate": "2016-01-12",
+   "lastDate": "2026-10-18",
+   "teams": [
+    "Australia"
+   ]
+  },
+  "scott-edwards": {
+   "cricsheetId": "b59db04f",
+   "tests": 0,
+   "odis": 69,
+   "t20is": 84,
+   "firstDate": "2018-06-12",
+   "lastDate": "2026-07-31",
+   "teams": [
+    "Netherlands"
+   ]
+  },
+  "scott-styris": {
+   "cricsheetId": "57efa3be",
+   "tests": 14,
+   "odis": 111,
+   "t20is": 31,
+   "firstDate": "2003-01-04",
+   "lastDate": "2011-03-29",
+   "teams": [
+    "New Zealand"
+   ]
+  },
+  "sean-williams": {
+   "cricsheetId": "afe57f7a",
+   "tests": 20,
+   "odis": 134,
+   "t20is": 76,
+   "firstDate": "2005-02-25",
+   "lastDate": "2025-09-18",
+   "teams": [
+    "Zimbabwe"
+   ]
+  },
+  "shadab-khan": {
+   "cricsheetId": "9de62878",
+   "tests": 6,
+   "odis": 69,
+   "t20is": 120,
+   "firstDate": "2017-03-26",
+   "lastDate": "2026-10-25",
+   "teams": [
+    "Pakistan"
    ]
   },
   "shaheen-afridi": {
@@ -505,6 +3775,17 @@
     "Pakistan"
    ]
   },
+  "shai-hope": {
+   "cricsheetId": "1fc6ef83",
+   "tests": 48,
+   "odis": 147,
+   "t20is": 73,
+   "firstDate": "2015-05-01",
+   "lastDate": "2026-10-17",
+   "teams": [
+    "West Indies"
+   ]
+  },
   "shakib-al-hasan": {
    "cricsheetId": "7dc35884",
    "tests": 68,
@@ -516,6 +3797,39 @@
     "Bangladesh"
    ]
   },
+  "shamar-joseph": {
+   "cricsheetId": "97290faf",
+   "tests": 15,
+   "odis": 9,
+   "t20is": 28,
+   "firstDate": "2024-01-17",
+   "lastDate": "2026-10-17",
+   "teams": [
+    "West Indies"
+   ]
+  },
+  "shan-masood": {
+   "cricsheetId": "6843a783",
+   "tests": 50,
+   "odis": 9,
+   "t20is": 19,
+   "firstDate": "2013-10-14",
+   "lastDate": "2026-09-09",
+   "teams": [
+    "Pakistan"
+   ]
+  },
+  "shane-bond": {
+   "cricsheetId": "4f629497",
+   "tests": 7,
+   "odis": 60,
+   "t20is": 20,
+   "firstDate": "2003-01-08",
+   "lastDate": "2010-05-10",
+   "teams": [
+    "New Zealand"
+   ]
+  },
   "shane-warne": {
    "cricsheetId": "bb18be76",
    "tests": 24,
@@ -525,6 +3839,118 @@
    "lastDate": "2007-01-02",
    "teams": [
     "Australia"
+   ]
+  },
+  "shane-watson": {
+   "cricsheetId": "4329fbb5",
+   "tests": 57,
+   "odis": 164,
+   "t20is": 58,
+   "firstDate": "2003-01-09",
+   "lastDate": "2016-03-27",
+   "teams": [
+    "Australia"
+   ]
+  },
+  "shardul-thakur": {
+   "cricsheetId": "1abb78f8",
+   "tests": 13,
+   "odis": 46,
+   "t20is": 23,
+   "firstDate": "2017-08-31",
+   "lastDate": "2025-07-23",
+   "teams": [
+    "India"
+   ]
+  },
+  "shaun-marsh": {
+   "cricsheetId": "508a1ea7",
+   "tests": 38,
+   "odis": 72,
+   "t20is": 15,
+   "firstDate": "2008-06-20",
+   "lastDate": "2019-06-15",
+   "teams": [
+    "Australia"
+   ]
+  },
+  "shaun-pollock": {
+   "cricsheetId": "88fccd6c",
+   "tests": 27,
+   "odis": 98,
+   "t20is": 11,
+   "firstDate": "2002-12-26",
+   "lastDate": "2008-02-03",
+   "teams": [
+    "Africa XI",
+    "ICC World XI",
+    "South Africa"
+   ]
+  },
+  "shaun-tait": {
+   "cricsheetId": "addfb70e",
+   "tests": 3,
+   "odis": 35,
+   "t20is": 21,
+   "firstDate": "2005-08-25",
+   "lastDate": "2016-01-31",
+   "teams": [
+    "Australia"
+   ]
+  },
+  "sheldon-cottrell": {
+   "cricsheetId": "a1d053dd",
+   "tests": 2,
+   "odis": 34,
+   "t20is": 42,
+   "firstDate": "2013-11-06",
+   "lastDate": "2023-03-28",
+   "teams": [
+    "West Indies"
+   ]
+  },
+  "shikhar-dhawan": {
+   "cricsheetId": "0a476045",
+   "tests": 33,
+   "odis": 166,
+   "t20is": 67,
+   "firstDate": "2010-10-20",
+   "lastDate": "2022-12-10",
+   "teams": [
+    "India"
+   ]
+  },
+  "shimron-hetmyer": {
+   "cricsheetId": "48a1d7b7",
+   "tests": 15,
+   "odis": 52,
+   "t20is": 84,
+   "firstDate": "2017-04-21",
+   "lastDate": "2026-10-17",
+   "teams": [
+    "West Indies"
+   ]
+  },
+  "shivam-dube": {
+   "cricsheetId": "a4e37e47",
+   "tests": 0,
+   "odis": 6,
+   "t20is": 73,
+   "firstDate": "2019-11-03",
+   "lastDate": "2026-10-17",
+   "teams": [
+    "India"
+   ]
+  },
+  "shivnarine-chanderpaul": {
+   "cricsheetId": "881a9bdd",
+   "tests": 76,
+   "odis": 114,
+   "t20is": 22,
+   "firstDate": "2003-02-09",
+   "lastDate": "2015-05-01",
+   "teams": [
+    "West Indies"
    ]
   },
   "shoaib-akhtar": {
@@ -540,6 +3966,40 @@
     "Pakistan"
    ]
   },
+  "shoaib-bashir": {
+   "cricsheetId": "e36e9dd3",
+   "tests": 21,
+   "odis": 0,
+   "t20is": 0,
+   "firstDate": "2024-02-02",
+   "lastDate": "2026-06-25",
+   "teams": [
+    "England"
+   ]
+  },
+  "shoaib-malik": {
+   "cricsheetId": "64c34cd0",
+   "tests": 24,
+   "odis": 224,
+   "t20is": 120,
+   "firstDate": "2003-04-03",
+   "lastDate": "2021-11-20",
+   "teams": [
+    "ICC World XI",
+    "Pakistan"
+   ]
+  },
+  "shreyas-iyer": {
+   "cricsheetId": "85ec8e33",
+   "tests": 14,
+   "odis": 78,
+   "t20is": 70,
+   "firstDate": "2017-11-01",
+   "lastDate": "2026-10-24",
+   "teams": [
+    "India"
+   ]
+  },
   "shubman-gill": {
    "cricsheetId": "b4b99816",
    "tests": 42,
@@ -549,6 +4009,39 @@
    "lastDate": "2026-10-03",
    "teams": [
     "India"
+   ]
+  },
+  "sikandar-raza": {
+   "cricsheetId": "26d041c4",
+   "tests": 18,
+   "odis": 132,
+   "t20is": 125,
+   "firstDate": "2013-05-03",
+   "lastDate": "2026-10-17",
+   "teams": [
+    "Zimbabwe"
+   ]
+  },
+  "simon-katich": {
+   "cricsheetId": "fdedb37c",
+   "tests": 45,
+   "odis": 33,
+   "t20is": 3,
+   "firstDate": "2003-10-17",
+   "lastDate": "2010-12-03",
+   "teams": [
+    "Australia"
+   ]
+  },
+  "soumya-sarkar": {
+   "cricsheetId": "4d9f9686",
+   "tests": 15,
+   "odis": 79,
+   "t20is": 85,
+   "firstDate": "2014-12-01",
+   "lastDate": "2026-10-17",
+   "teams": [
+    "Bangladesh"
    ]
   },
   "sourav-ganguly": {
@@ -563,6 +4056,40 @@
     "India"
    ]
   },
+  "sreesanth": {
+   "cricsheetId": "6b8eb6e5",
+   "tests": 26,
+   "odis": 50,
+   "t20is": 9,
+   "firstDate": "2005-10-25",
+   "lastDate": "2011-08-18",
+   "teams": [
+    "India"
+   ]
+  },
+  "stephen-fleming": {
+   "cricsheetId": "eea6b7f1",
+   "tests": 24,
+   "odis": 68,
+   "t20is": 5,
+   "firstDate": "2002-12-29",
+   "lastDate": "2008-03-22",
+   "teams": [
+    "New Zealand"
+   ]
+  },
+  "steve-harmison": {
+   "cricsheetId": "c16d2e28",
+   "tests": 42,
+   "odis": 47,
+   "t20is": 2,
+   "firstDate": "2002-12-26",
+   "lastDate": "2009-08-20",
+   "teams": [
+    "England",
+    "ICC World XI"
+   ]
+  },
   "steve-smith": {
    "cricsheetId": "30a45b23",
    "tests": 127,
@@ -572,6 +4099,28 @@
    "lastDate": "2026-10-18",
    "teams": [
     "Australia"
+   ]
+  },
+  "steve-waugh": {
+   "cricsheetId": "622dee94",
+   "tests": 8,
+   "odis": 0,
+   "t20is": 0,
+   "firstDate": "2002-12-26",
+   "lastDate": "2004-01-02",
+   "teams": [
+    "Australia"
+   ]
+  },
+  "steven-finn": {
+   "cricsheetId": "ccdd8308",
+   "tests": 36,
+   "odis": 69,
+   "t20is": 20,
+   "firstDate": "2010-03-12",
+   "lastDate": "2017-05-29",
+   "teams": [
+    "England"
    ]
   },
   "stuart-broad": {
@@ -585,6 +4134,61 @@
     "England"
    ]
   },
+  "stuart-clark": {
+   "cricsheetId": "a3bfec5d",
+   "tests": 24,
+   "odis": 37,
+   "t20is": 9,
+   "firstDate": "2005-10-07",
+   "lastDate": "2009-08-20",
+   "teams": [
+    "Australia"
+   ]
+  },
+  "stuart-macgill": {
+   "cricsheetId": "60dac349",
+   "tests": 17,
+   "odis": 0,
+   "t20is": 0,
+   "firstDate": "2002-12-26",
+   "lastDate": "2008-05-30",
+   "teams": [
+    "Australia"
+   ]
+  },
+  "sunil-narine": {
+   "cricsheetId": "9d430b40",
+   "tests": 6,
+   "odis": 64,
+   "t20is": 48,
+   "firstDate": "2011-12-05",
+   "lastDate": "2019-08-06",
+   "teams": [
+    "West Indies"
+   ]
+  },
+  "suranga-lakmal": {
+   "cricsheetId": "2f28dc94",
+   "tests": 70,
+   "odis": 83,
+   "t20is": 11,
+   "firstDate": "2009-12-18",
+   "lastDate": "2022-03-12",
+   "teams": [
+    "Sri Lanka"
+   ]
+  },
+  "suresh-raina": {
+   "cricsheetId": "1dc12ab9",
+   "tests": 18,
+   "odis": 220,
+   "t20is": 76,
+   "firstDate": "2005-07-31",
+   "lastDate": "2018-07-17",
+   "teams": [
+    "India"
+   ]
+  },
   "suryakumar-yadav": {
    "cricsheetId": "271f83cd",
    "tests": 1,
@@ -594,6 +4198,187 @@
    "lastDate": "2026-03-08",
    "teams": [
     "India"
+   ]
+  },
+  "tabraiz-shamsi": {
+   "cricsheetId": "a03bba42",
+   "tests": 2,
+   "odis": 55,
+   "t20is": 69,
+   "firstDate": "2016-06-07",
+   "lastDate": "2025-02-12",
+   "teams": [
+    "South Africa"
+   ]
+  },
+  "taijul-islam": {
+   "cricsheetId": "9d1d34bd",
+   "tests": 60,
+   "odis": 17,
+   "t20is": 1,
+   "firstDate": "2014-09-05",
+   "lastDate": "2026-08-22",
+   "teams": [
+    "Bangladesh"
+   ]
+  },
+  "tamim-iqbal": {
+   "cricsheetId": "3b041a12",
+   "tests": 68,
+   "odis": 218,
+   "t20is": 71,
+   "firstDate": "2007-03-17",
+   "lastDate": "2023-09-23",
+   "teams": [
+    "Bangladesh",
+    "ICC World XI"
+   ]
+  },
+  "taskin-ahmed": {
+   "cricsheetId": "ef18b66e",
+   "tests": 20,
+   "odis": 81,
+   "t20is": 84,
+   "firstDate": "2014-04-01",
+   "lastDate": "2026-10-17",
+   "teams": [
+    "Bangladesh"
+   ]
+  },
+  "tatenda-taibu": {
+   "cricsheetId": "75de770f",
+   "tests": 12,
+   "odis": 106,
+   "t20is": 13,
+   "firstDate": "2003-02-10",
+   "lastDate": "2012-02-14",
+   "teams": [
+    "Africa XI",
+    "Zimbabwe"
+   ]
+  },
+  "temba-bavuma": {
+   "cricsheetId": "9ffd1ac1",
+   "tests": 68,
+   "odis": 53,
+   "t20is": 36,
+   "firstDate": "2014-12-26",
+   "lastDate": "2026-10-18",
+   "teams": [
+    "South Africa"
+   ]
+  },
+  "thilan-samaraweera": {
+   "cricsheetId": "2008fc75",
+   "tests": 52,
+   "odis": 37,
+   "t20is": 0,
+   "firstDate": "2003-12-18",
+   "lastDate": "2013-01-03",
+   "teams": [
+    "Sri Lanka"
+   ]
+  },
+  "thisara-perera": {
+   "cricsheetId": "0f12f9df",
+   "tests": 6,
+   "odis": 161,
+   "t20is": 83,
+   "firstDate": "2009-12-24",
+   "lastDate": "2021-03-14",
+   "teams": [
+    "ICC World XI",
+    "Sri Lanka"
+   ]
+  },
+  "tilak-varma": {
+   "cricsheetId": "b0482a1d",
+   "tests": 0,
+   "odis": 5,
+   "t20is": 67,
+   "firstDate": "2023-08-03",
+   "lastDate": "2026-10-24",
+   "teams": [
+    "India"
+   ]
+  },
+  "tillakaratne-dilshan": {
+   "cricsheetId": "5bdcdb72",
+   "tests": 61,
+   "odis": 280,
+   "t20is": 77,
+   "firstDate": "2003-05-19",
+   "lastDate": "2016-09-09",
+   "teams": [
+    "Sri Lanka"
+   ]
+  },
+  "tim-bresnan": {
+   "cricsheetId": "58043739",
+   "tests": 23,
+   "odis": 84,
+   "t20is": 34,
+   "firstDate": "2006-06-15",
+   "lastDate": "2015-05-08",
+   "teams": [
+    "England"
+   ]
+  },
+  "tim-david": {
+   "cricsheetId": "f1f99156",
+   "tests": 0,
+   "odis": 4,
+   "t20is": 73,
+   "firstDate": "2019-07-22",
+   "lastDate": "2026-06-21",
+   "teams": [
+    "Australia",
+    "Singapore"
+   ]
+  },
+  "tim-paine": {
+   "cricsheetId": "5748e866",
+   "tests": 35,
+   "odis": 34,
+   "t20is": 12,
+   "firstDate": "2009-08-30",
+   "lastDate": "2021-01-15",
+   "teams": [
+    "Australia",
+    "ICC World XI"
+   ]
+  },
+  "tim-southee": {
+   "cricsheetId": "13c35c9e",
+   "tests": 107,
+   "odis": 152,
+   "t20is": 125,
+   "firstDate": "2008-02-05",
+   "lastDate": "2024-12-14",
+   "teams": [
+    "New Zealand"
+   ]
+  },
+  "tom-latham": {
+   "cricsheetId": "e824e6ee",
+   "tests": 95,
+   "odis": 169,
+   "t20is": 29,
+   "firstDate": "2012-02-03",
+   "lastDate": "2026-07-21",
+   "teams": [
+    "New Zealand"
+   ]
+  },
+  "towhid-hridoy": {
+   "cricsheetId": "9e52a414",
+   "tests": 1,
+   "odis": 46,
+   "t20is": 63,
+   "firstDate": "2023-03-09",
+   "lastDate": "2026-10-17",
+   "teams": [
+    "Bangladesh"
    ]
   },
   "travis-head": {
@@ -616,6 +4401,106 @@
    "lastDate": "2024-06-17",
    "teams": [
     "New Zealand"
+   ]
+  },
+  "trent-johnston": {
+   "cricsheetId": "e01895bb",
+   "tests": 0,
+   "odis": 35,
+   "t20is": 19,
+   "firstDate": "2006-06-13",
+   "lastDate": "2013-11-16",
+   "teams": [
+    "Ireland"
+   ]
+  },
+  "tristan-stubbs": {
+   "cricsheetId": "85b3fab2",
+   "tests": 15,
+   "odis": 14,
+   "t20is": 50,
+   "firstDate": "2022-06-09",
+   "lastDate": "2026-10-09",
+   "teams": [
+    "South Africa"
+   ]
+  },
+  "umar-akmal": {
+   "cricsheetId": "fd2bf2a0",
+   "tests": 16,
+   "odis": 117,
+   "t20is": 83,
+   "firstDate": "2009-08-01",
+   "lastDate": "2019-10-07",
+   "teams": [
+    "Pakistan"
+   ]
+  },
+  "umar-gul": {
+   "cricsheetId": "16dfcc19",
+   "tests": 41,
+   "odis": 120,
+   "t20is": 58,
+   "firstDate": "2003-04-03",
+   "lastDate": "2016-09-04",
+   "teams": [
+    "Pakistan"
+   ]
+  },
+  "umesh-yadav": {
+   "cricsheetId": "cc1e8c68",
+   "tests": 56,
+   "odis": 75,
+   "t20is": 9,
+   "firstDate": "2010-05-28",
+   "lastDate": "2023-06-07",
+   "teams": [
+    "India"
+   ]
+  },
+  "upul-tharanga": {
+   "cricsheetId": "7ed9fd56",
+   "tests": 30,
+   "odis": 217,
+   "t20is": 26,
+   "firstDate": "2005-08-02",
+   "lastDate": "2019-03-16",
+   "teams": [
+    "Asia XI",
+    "Sri Lanka"
+   ]
+  },
+  "usman-khawaja": {
+   "cricsheetId": "331ea488",
+   "tests": 88,
+   "odis": 39,
+   "t20is": 9,
+   "firstDate": "2011-01-03",
+   "lastDate": "2026-01-04",
+   "teams": [
+    "Australia"
+   ]
+  },
+  "varun-chakravarthy": {
+   "cricsheetId": "5b7ab5a9",
+   "tests": 0,
+   "odis": 4,
+   "t20is": 48,
+   "firstDate": "2021-07-25",
+   "lastDate": "2026-07-07",
+   "teams": [
+    "India"
+   ]
+  },
+  "vernon-philander": {
+   "cricsheetId": "cfe70281",
+   "tests": 64,
+   "odis": 30,
+   "t20is": 7,
+   "firstDate": "2007-06-24",
+   "lastDate": "2020-01-24",
+   "teams": [
+    "South Africa"
    ]
   },
   "virat-kohli": {
@@ -642,6 +4527,61 @@
     "India"
    ]
   },
+  "vvs-laxman": {
+   "cricsheetId": "de8cce37",
+   "tests": 76,
+   "odis": 28,
+   "t20is": 0,
+   "firstDate": "2001-12-19",
+   "lastDate": "2012-01-24",
+   "teams": [
+    "India"
+   ]
+  },
+  "wahab-riaz": {
+   "cricsheetId": "b3118300",
+   "tests": 27,
+   "odis": 89,
+   "t20is": 36,
+   "firstDate": "2008-02-02",
+   "lastDate": "2020-12-20",
+   "teams": [
+    "Pakistan"
+   ]
+  },
+  "wanindu-hasaranga": {
+   "cricsheetId": "a97c8ec2",
+   "tests": 4,
+   "odis": 63,
+   "t20is": 93,
+   "firstDate": "2017-07-02",
+   "lastDate": "2026-09-19",
+   "teams": [
+    "Sri Lanka"
+   ]
+  },
+  "waqar-younis": {
+   "cricsheetId": "d8906a73",
+   "tests": 2,
+   "odis": 6,
+   "t20is": 0,
+   "firstDate": "2002-12-26",
+   "lastDate": "2003-03-04",
+   "teams": [
+    "Pakistan"
+   ]
+  },
+  "washington-sundar": {
+   "cricsheetId": "f19ccfad",
+   "tests": 17,
+   "odis": 31,
+   "t20is": 60,
+   "firstDate": "2017-12-13",
+   "lastDate": "2026-10-03",
+   "teams": [
+    "India"
+   ]
+  },
   "wasim-akram": {
    "cricsheetId": "126e56a1",
    "tests": 0,
@@ -651,6 +4591,94 @@
    "lastDate": "2003-03-04",
    "teams": [
     "Pakistan"
+   ]
+  },
+  "wavell-hinds": {
+   "cricsheetId": "60beb01b",
+   "tests": 4,
+   "odis": 42,
+   "t20is": 5,
+   "firstDate": "2003-02-09",
+   "lastDate": "2010-05-09",
+   "teams": [
+    "West Indies"
+   ]
+  },
+  "wayne-parnell": {
+   "cricsheetId": "3a60e0b5",
+   "tests": 6,
+   "odis": 73,
+   "t20is": 56,
+   "firstDate": "2009-01-13",
+   "lastDate": "2023-03-28",
+   "teams": [
+    "South Africa"
+   ]
+  },
+  "william-porterfield": {
+   "cricsheetId": "ec02b798",
+   "tests": 2,
+   "odis": 90,
+   "t20is": 42,
+   "firstDate": "2007-03-15",
+   "lastDate": "2022-01-16",
+   "teams": [
+    "Ireland"
+   ]
+  },
+  "wriddhiman-saha": {
+   "cricsheetId": "fe11caa6",
+   "tests": 40,
+   "odis": 9,
+   "t20is": 0,
+   "firstDate": "2010-02-06",
+   "lastDate": "2021-12-03",
+   "teams": [
+    "India"
+   ]
+  },
+  "yashasvi-jaiswal": {
+   "cricsheetId": "6c19c6e5",
+   "tests": 30,
+   "odis": 4,
+   "t20is": 20,
+   "firstDate": "2023-07-12",
+   "lastDate": "2026-08-23",
+   "teams": [
+    "India"
+   ]
+  },
+  "yasir-shah": {
+   "cricsheetId": "f2800ef3",
+   "tests": 48,
+   "odis": 25,
+   "t20is": 2,
+   "firstDate": "2011-09-14",
+   "lastDate": "2022-07-24",
+   "teams": [
+    "Pakistan"
+   ]
+  },
+  "younis-khan": {
+   "cricsheetId": "33cb3411",
+   "tests": 81,
+   "odis": 177,
+   "t20is": 23,
+   "firstDate": "2002-12-26",
+   "lastDate": "2017-05-10",
+   "teams": [
+    "Pakistan"
+   ]
+  },
+  "yusuf-pathan": {
+   "cricsheetId": "3c6ffae8",
+   "tests": 0,
+   "odis": 57,
+   "t20is": 21,
+   "firstDate": "2007-09-24",
+   "lastDate": "2012-03-30",
+   "teams": [
+    "India"
    ]
   },
   "yuvraj-singh": {
@@ -665,6 +4693,17 @@
     "India"
    ]
   },
+  "yuzvendra-chahal": {
+   "cricsheetId": "57ee1fde",
+   "tests": 0,
+   "odis": 71,
+   "t20is": 80,
+   "firstDate": "2016-06-11",
+   "lastDate": "2023-08-13",
+   "teams": [
+    "India"
+   ]
+  },
   "zaheer-khan": {
    "cricsheetId": "91a4a398",
    "tests": 60,
@@ -675,6 +4714,17 @@
    "teams": [
     "Asia XI",
     "India"
+   ]
+  },
+  "zak-crawley": {
+   "cricsheetId": "922e1b19",
+   "tests": 64,
+   "odis": 9,
+   "t20is": 0,
+   "firstDate": "2019-11-29",
+   "lastDate": "2026-01-22",
+   "teams": [
+    "England"
    ]
   }
  }

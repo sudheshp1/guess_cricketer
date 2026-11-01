@@ -11,7 +11,8 @@ npm install
 npm run dev      # start the dev server
 npm test         # run unit tests
 npm run lint     # oxlint + prettier check
-npm run data     # rebuild + validate players.json and schedule.json
+npm run data     # rebuild + validate players.json and schedule.json (offline)
+npm run data:fetch  # refresh Wikipedia/Cricsheet snapshots (network)
 npm run build    # production build into dist/
 ```
 
@@ -37,3 +38,21 @@ earliest international debut in the infobox. "Active" means Wikipedia's internat
 
 Match data from [Cricsheet](https://cricsheet.org) (ODC-By). Not affiliated with any cricket board
 or league.
+
+Current data: 508 players from 14 teams; 388 are answer-eligible (difficulty 1–2), so the
+388-day schedule never repeats an answer within a year. `scripts/sources/report.md` lists every
+source disagreement and every manual override.
+
+## Deploying
+
+The site is a static Vite build (`dist/`). `vercel.json` configures Vercel, including long-lived
+caching for hashed assets.
+
+```sh
+npx vercel --prod          # first run links the project, later runs redeploy
+```
+
+If the production domain is not `https://guess-cricketer.vercel.app`, set `VITE_SITE_URL` in
+`.env` (used in share text and Open Graph tags) and redeploy. `LAUNCH_DATE` in `src/config.ts`
+(IST) is puzzle #1. Once live, don't reshuffle `schedule.json`: past and future answers would
+change.

@@ -1,5 +1,33 @@
 [
   {
+    "id": "aamer-sohail",
+    "name": "Aamer Sohail",
+    "aliases": [],
+    "country": "Pakistan",
+    "role": "Batter",
+    "battingHand": "Left",
+    "bowlingType": "Left-arm orthodox",
+    "debutYear": 1990,
+    "intlMatches": 203,
+    "active": false,
+    "difficulty": 3
+  },
+  {
+    "id": "aaron-finch",
+    "name": "Aaron Finch",
+    "aliases": [
+      "Finchy"
+    ],
+    "country": "Australia",
+    "role": "Batter",
+    "battingHand": "Right",
+    "bowlingType": "Left-arm orthodox",
+    "debutYear": 2011,
+    "intlMatches": 254,
+    "active": false,
+    "difficulty": 1
+  },
+  {
     "id": "ab-de-villiers",
     "name": "AB de Villiers",
     "aliases": [
@@ -14,6 +42,71 @@
     "intlMatches": 420,
     "active": false,
     "difficulty": 1
+  },
+  {
+    "id": "abdul-qadir",
+    "name": "Abdul Qadir",
+    "aliases": [],
+    "country": "Pakistan",
+    "role": "Bowler",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm leg-spin",
+    "debutYear": 1977,
+    "intlMatches": 171,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "abdul-razzaq",
+    "name": "Abdul Razzaq",
+    "aliases": [],
+    "country": "Pakistan",
+    "role": "All-rounder",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm fast",
+    "debutYear": 1996,
+    "intlMatches": 343,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "abdullah-shafique",
+    "name": "Abdullah Shafique",
+    "aliases": [],
+    "country": "Pakistan",
+    "role": "Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm off-spin",
+    "debutYear": 2020,
+    "intlMatches": 61,
+    "active": true,
+    "difficulty": 3
+  },
+  {
+    "id": "abdur-razzak",
+    "name": "Abdur Razzak",
+    "aliases": [],
+    "country": "Bangladesh",
+    "role": "Bowler",
+    "battingHand": "Left",
+    "bowlingType": "Left-arm orthodox",
+    "debutYear": 2004,
+    "intlMatches": 200,
+    "active": false,
+    "difficulty": 3
+  },
+  {
+    "id": "abhishek-sharma",
+    "name": "Abhishek Sharma",
+    "aliases": [],
+    "country": "India",
+    "role": "All-rounder",
+    "battingHand": "Left",
+    "bowlingType": "Left-arm orthodox",
+    "debutYear": 2024,
+    "intlMatches": 70,
+    "active": true,
+    "difficulty": 2
   },
   {
     "id": "adam-gilchrist",
@@ -32,6 +125,333 @@
     "difficulty": 1
   },
   {
+    "id": "adam-zampa",
+    "name": "Adam Zampa",
+    "aliases": [],
+    "country": "Australia",
+    "role": "Bowler",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm leg-spin",
+    "debutYear": 2016,
+    "intlMatches": 245,
+    "active": true,
+    "difficulty": 2
+  },
+  {
+    "id": "adil-rashid",
+    "name": "Adil Rashid",
+    "aliases": [],
+    "country": "England",
+    "role": "Bowler",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm leg-spin",
+    "debutYear": 2009,
+    "intlMatches": 337,
+    "active": true,
+    "difficulty": 2
+  },
+  {
+    "id": "ahmed-shehzad",
+    "name": "Ahmed Shehzad",
+    "aliases": [],
+    "country": "Pakistan",
+    "role": "Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm leg-spin",
+    "debutYear": 2009,
+    "intlMatches": 153,
+    "active": false,
+    "difficulty": 3
+  },
+  {
+    "id": "aiden-markram",
+    "name": "Aiden Markram",
+    "aliases": [],
+    "country": "South Africa",
+    "role": "Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm off-spin",
+    "debutYear": 2017,
+    "intlMatches": 218,
+    "active": true,
+    "difficulty": 2
+  },
+  {
+    "id": "ajantha-mendis",
+    "name": "Ajantha Mendis",
+    "aliases": [],
+    "country": "Sri Lanka",
+    "role": "Bowler",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm off-spin",
+    "debutYear": 2008,
+    "intlMatches": 145,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "ajay-jadeja",
+    "name": "Ajay Jadeja",
+    "aliases": [],
+    "country": "India",
+    "role": "All-rounder",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm medium",
+    "debutYear": 1992,
+    "intlMatches": 211,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "ajinkya-rahane",
+    "name": "Ajinkya Rahane",
+    "aliases": [
+      "Jinks"
+    ],
+    "country": "India",
+    "role": "Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm off-spin",
+    "debutYear": 2011,
+    "intlMatches": 195,
+    "active": false,
+    "difficulty": 1
+  },
+  {
+    "id": "ajit-agarkar",
+    "name": "Ajit Agarkar",
+    "aliases": [],
+    "country": "India",
+    "role": "All-rounder",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm fast",
+    "debutYear": 1998,
+    "intlMatches": 221,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "akeal-hosein",
+    "name": "Akeal Hosein",
+    "aliases": [],
+    "country": "West Indies",
+    "role": "Bowler",
+    "battingHand": "Left",
+    "bowlingType": "Left-arm orthodox",
+    "debutYear": 2021,
+    "intlMatches": 141,
+    "active": true,
+    "difficulty": 3
+  },
+  {
+    "id": "alastair-cook",
+    "name": "Alastair Cook",
+    "aliases": [
+      "Cookie",
+      "Chef"
+    ],
+    "country": "England",
+    "role": "Batter",
+    "battingHand": "Left",
+    "bowlingType": "Right-arm medium",
+    "debutYear": 2006,
+    "intlMatches": 257,
+    "active": false,
+    "difficulty": 1
+  },
+  {
+    "id": "albie-morkel",
+    "name": "Albie Morkel",
+    "aliases": [],
+    "country": "South Africa",
+    "role": "All-rounder",
+    "battingHand": "Left",
+    "bowlingType": "Right-arm medium",
+    "debutYear": 2004,
+    "intlMatches": 109,
+    "active": false,
+    "difficulty": 3
+  },
+  {
+    "id": "alec-stewart",
+    "name": "Alec Stewart",
+    "aliases": [
+      "Stewie"
+    ],
+    "country": "England",
+    "role": "Wicketkeeper-Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm medium",
+    "debutYear": 1989,
+    "intlMatches": 303,
+    "active": false,
+    "difficulty": 1
+  },
+  {
+    "id": "alex-carey",
+    "name": "Alex Carey",
+    "aliases": [],
+    "country": "Australia",
+    "role": "Wicketkeeper-Batter",
+    "battingHand": "Left",
+    "bowlingType": "None",
+    "debutYear": 2018,
+    "intlMatches": 191,
+    "active": true,
+    "difficulty": 2
+  },
+  {
+    "id": "alex-hales",
+    "name": "Alex Hales",
+    "aliases": [],
+    "country": "England",
+    "role": "Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm medium",
+    "debutYear": 2011,
+    "intlMatches": 156,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "alistair-campbell",
+    "name": "Alistair Campbell",
+    "aliases": [],
+    "country": "Zimbabwe",
+    "role": "Batter",
+    "battingHand": "Left",
+    "bowlingType": "Right-arm off-spin",
+    "debutYear": 1992,
+    "intlMatches": 248,
+    "active": false,
+    "difficulty": 3
+  },
+  {
+    "id": "allan-border",
+    "name": "Allan Border",
+    "aliases": [
+      "Captain Grumpy"
+    ],
+    "country": "Australia",
+    "role": "Batter",
+    "battingHand": "Left",
+    "bowlingType": "Left-arm orthodox",
+    "debutYear": 1978,
+    "intlMatches": 429,
+    "active": false,
+    "difficulty": 1
+  },
+  {
+    "id": "allan-donald",
+    "name": "Allan Donald",
+    "aliases": [
+      "White Lightning"
+    ],
+    "country": "South Africa",
+    "role": "Bowler",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm fast",
+    "debutYear": 1991,
+    "intlMatches": 236,
+    "active": false,
+    "difficulty": 1
+  },
+  {
+    "id": "allan-lamb",
+    "name": "Allan Lamb",
+    "aliases": [
+      "Lamby"
+    ],
+    "country": "England",
+    "role": "Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm medium",
+    "debutYear": 1982,
+    "intlMatches": 201,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "alzarri-joseph",
+    "name": "Alzarri Joseph",
+    "aliases": [],
+    "country": "West Indies",
+    "role": "Bowler",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm fast",
+    "debutYear": 2016,
+    "intlMatches": 173,
+    "active": true,
+    "difficulty": 2
+  },
+  {
+    "id": "ambati-rayudu",
+    "name": "Ambati Rayudu",
+    "aliases": [],
+    "country": "India",
+    "role": "Wicketkeeper-Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm off-spin",
+    "debutYear": 2013,
+    "intlMatches": 61,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "amit-mishra",
+    "name": "Amit Mishra",
+    "aliases": [],
+    "country": "India",
+    "role": "Bowler",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm leg-spin",
+    "debutYear": 2003,
+    "intlMatches": 68,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "andre-russell",
+    "name": "Andre Russell",
+    "aliases": [
+      "Dre Russ"
+    ],
+    "country": "West Indies",
+    "role": "All-rounder",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm fast",
+    "debutYear": 2010,
+    "intlMatches": 143,
+    "active": false,
+    "difficulty": 1
+  },
+  {
+    "id": "andrew-balbirnie",
+    "name": "Andrew Balbirnie",
+    "aliases": [],
+    "country": "Ireland",
+    "role": "Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm off-spin",
+    "debutYear": 2010,
+    "intlMatches": 240,
+    "active": true,
+    "difficulty": 3
+  },
+  {
+    "id": "andrew-caddick",
+    "name": "Andrew Caddick",
+    "aliases": [],
+    "country": "England",
+    "role": "Bowler",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm fast",
+    "debutYear": 1993,
+    "intlMatches": 116,
+    "active": false,
+    "difficulty": 2
+  },
+  {
     "id": "andrew-flintoff",
     "name": "Andrew Flintoff",
     "aliases": [
@@ -46,6 +466,90 @@
     "intlMatches": 227,
     "active": false,
     "difficulty": 1
+  },
+  {
+    "id": "andrew-strauss",
+    "name": "Andrew Strauss",
+    "aliases": [
+      "Straussy"
+    ],
+    "country": "England",
+    "role": "Batter",
+    "battingHand": "Left",
+    "bowlingType": "Left-arm medium",
+    "debutYear": 2003,
+    "intlMatches": 231,
+    "active": false,
+    "difficulty": 1
+  },
+  {
+    "id": "andrew-symonds",
+    "name": "Andrew Symonds",
+    "aliases": [
+      "Roy"
+    ],
+    "country": "Australia",
+    "role": "All-rounder",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm medium",
+    "debutYear": 1998,
+    "intlMatches": 238,
+    "active": false,
+    "difficulty": 1
+  },
+  {
+    "id": "andy-flower",
+    "name": "Andy Flower",
+    "aliases": [],
+    "country": "Zimbabwe",
+    "role": "Wicketkeeper-Batter",
+    "battingHand": "Left",
+    "bowlingType": "Right-arm off-spin",
+    "debutYear": 1992,
+    "intlMatches": 276,
+    "active": false,
+    "difficulty": 1
+  },
+  {
+    "id": "andy-roberts",
+    "name": "Andy Roberts",
+    "aliases": [],
+    "country": "West Indies",
+    "role": "Bowler",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm fast",
+    "debutYear": 1974,
+    "intlMatches": 103,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "angelo-mathews",
+    "name": "Angelo Mathews",
+    "aliases": [],
+    "country": "Sri Lanka",
+    "role": "All-rounder",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm medium",
+    "debutYear": 2008,
+    "intlMatches": 435,
+    "active": false,
+    "difficulty": 1
+  },
+  {
+    "id": "angus-fraser",
+    "name": "Angus Fraser",
+    "aliases": [
+      "Gus"
+    ],
+    "country": "England",
+    "role": "Bowler",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm fast",
+    "debutYear": 1989,
+    "intlMatches": 88,
+    "active": false,
+    "difficulty": 3
   },
   {
     "id": "anil-kumble",
@@ -63,6 +567,140 @@
     "difficulty": 1
   },
   {
+    "id": "anrich-nortje",
+    "name": "Anrich Nortje",
+    "aliases": [],
+    "country": "South Africa",
+    "role": "Bowler",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm fast",
+    "debutYear": 2019,
+    "intlMatches": 90,
+    "active": true,
+    "difficulty": 2
+  },
+  {
+    "id": "aravinda-de-silva",
+    "name": "Aravinda de Silva",
+    "aliases": [],
+    "country": "Sri Lanka",
+    "role": "All-rounder",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm off-spin",
+    "debutYear": 1984,
+    "intlMatches": 401,
+    "active": false,
+    "difficulty": 1
+  },
+  {
+    "id": "arjuna-ranatunga",
+    "name": "Arjuna Ranatunga",
+    "aliases": [],
+    "country": "Sri Lanka",
+    "role": "Batter",
+    "battingHand": "Left",
+    "bowlingType": "Right-arm medium",
+    "debutYear": 1982,
+    "intlMatches": 362,
+    "active": false,
+    "difficulty": 1
+  },
+  {
+    "id": "arshdeep-singh",
+    "name": "Arshdeep Singh",
+    "aliases": [],
+    "country": "India",
+    "role": "Bowler",
+    "battingHand": "Left",
+    "bowlingType": "Left-arm medium",
+    "debutYear": 2022,
+    "intlMatches": 110,
+    "active": true,
+    "difficulty": 2
+  },
+  {
+    "id": "asad-shafiq",
+    "name": "Asad Shafiq",
+    "aliases": [],
+    "country": "Pakistan",
+    "role": "Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm off-spin",
+    "debutYear": 2010,
+    "intlMatches": 147,
+    "active": false,
+    "difficulty": 3
+  },
+  {
+    "id": "asghar-afghan",
+    "name": "Asghar Afghan",
+    "aliases": [
+      "Asghar Stanikzai"
+    ],
+    "country": "Afghanistan",
+    "role": "Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm medium",
+    "debutYear": 2009,
+    "intlMatches": 195,
+    "active": false,
+    "difficulty": 3
+  },
+  {
+    "id": "ashish-nehra",
+    "name": "Ashish Nehra",
+    "aliases": [],
+    "country": "India",
+    "role": "Bowler",
+    "battingHand": "Right",
+    "bowlingType": "Left-arm fast",
+    "debutYear": 1999,
+    "intlMatches": 164,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "axar-patel",
+    "name": "Axar Patel",
+    "aliases": [
+      "Bapu"
+    ],
+    "country": "India",
+    "role": "All-rounder",
+    "battingHand": "Left",
+    "bowlingType": "Left-arm orthodox",
+    "debutYear": 2014,
+    "intlMatches": 196,
+    "active": true,
+    "difficulty": 2
+  },
+  {
+    "id": "azhar-ali",
+    "name": "Azhar Ali",
+    "aliases": [],
+    "country": "Pakistan",
+    "role": "Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm leg-spin",
+    "debutYear": 2010,
+    "intlMatches": 150,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "azmatullah-omarzai",
+    "name": "Azmatullah Omarzai",
+    "aliases": [],
+    "country": "Afghanistan",
+    "role": "All-rounder",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm fast",
+    "debutYear": 2021,
+    "intlMatches": 112,
+    "active": true,
+    "difficulty": 2
+  },
+  {
     "id": "babar-azam",
     "name": "Babar Azam",
     "aliases": [],
@@ -74,6 +712,32 @@
     "intlMatches": 355,
     "active": true,
     "difficulty": 1
+  },
+  {
+    "id": "bas-de-leede",
+    "name": "Bas de Leede",
+    "aliases": [],
+    "country": "Netherlands",
+    "role": "All-rounder",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm medium",
+    "debutYear": 2018,
+    "intlMatches": 110,
+    "active": true,
+    "difficulty": 3
+  },
+  {
+    "id": "ben-duckett",
+    "name": "Ben Duckett",
+    "aliases": [],
+    "country": "England",
+    "role": "Batter",
+    "battingHand": "Left",
+    "bowlingType": "Right-arm off-spin",
+    "debutYear": 2016,
+    "intlMatches": 114,
+    "active": true,
+    "difficulty": 2
   },
   {
     "id": "ben-stokes",
@@ -89,6 +753,140 @@
     "intlMatches": 279,
     "active": false,
     "difficulty": 1
+  },
+  {
+    "id": "bhuvneshwar-kumar",
+    "name": "Bhuvneshwar Kumar",
+    "aliases": [
+      "Bhuvi"
+    ],
+    "country": "India",
+    "role": "Bowler",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm medium",
+    "debutYear": 2012,
+    "intlMatches": 231,
+    "active": true,
+    "difficulty": 1
+  },
+  {
+    "id": "bishan-singh-bedi",
+    "name": "Bishan Singh Bedi",
+    "aliases": [],
+    "country": "India",
+    "role": "Bowler",
+    "battingHand": "Right",
+    "bowlingType": "Left-arm orthodox",
+    "debutYear": 1966,
+    "intlMatches": 77,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "bj-watling",
+    "name": "BJ Watling",
+    "aliases": [],
+    "country": "New Zealand",
+    "role": "Wicketkeeper-Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm off-spin",
+    "debutYear": 2009,
+    "intlMatches": 108,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "blessing-muzarabani",
+    "name": "Blessing Muzarabani",
+    "aliases": [],
+    "country": "Zimbabwe",
+    "role": "Bowler",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm fast",
+    "debutYear": 2017,
+    "intlMatches": 164,
+    "active": true,
+    "difficulty": 3
+  },
+  {
+    "id": "bob-willis",
+    "name": "Bob Willis",
+    "aliases": [],
+    "country": "England",
+    "role": "Bowler",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm fast",
+    "debutYear": 1971,
+    "intlMatches": 154,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "boyd-rankin",
+    "name": "Boyd Rankin",
+    "aliases": [],
+    "country": "Ireland",
+    "role": "Bowler",
+    "battingHand": "Left",
+    "bowlingType": "Right-arm fast",
+    "debutYear": 2007,
+    "intlMatches": 128,
+    "active": false,
+    "difficulty": 3
+  },
+  {
+    "id": "brad-haddin",
+    "name": "Brad Haddin",
+    "aliases": [],
+    "country": "Australia",
+    "role": "Wicketkeeper-Batter",
+    "battingHand": "Right",
+    "bowlingType": "None",
+    "debutYear": 2001,
+    "intlMatches": 226,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "brad-hogg",
+    "name": "Brad Hogg",
+    "aliases": [
+      "Hoggy"
+    ],
+    "country": "Australia",
+    "role": "All-rounder",
+    "battingHand": "Left",
+    "bowlingType": "Left-arm wrist-spin",
+    "debutYear": 1996,
+    "intlMatches": 145,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "brandon-king",
+    "name": "Brandon King",
+    "aliases": [],
+    "country": "West Indies",
+    "role": "Batter",
+    "battingHand": "Right",
+    "bowlingType": "None",
+    "debutYear": 2019,
+    "intlMatches": 155,
+    "active": true,
+    "difficulty": 3
+  },
+  {
+    "id": "brendan-taylor",
+    "name": "Brendan Taylor",
+    "aliases": [],
+    "country": "Zimbabwe",
+    "role": "Wicketkeeper-Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm off-spin",
+    "debutYear": 2004,
+    "intlMatches": 306,
+    "active": true,
+    "difficulty": 2
   },
   {
     "id": "brendon-mccullum",
@@ -134,6 +932,101 @@
     "difficulty": 1
   },
   {
+    "id": "calum-macleod",
+    "name": "Calum MacLeod",
+    "aliases": [],
+    "country": "Scotland",
+    "role": "Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm fast",
+    "debutYear": 2008,
+    "intlMatches": 152,
+    "active": false,
+    "difficulty": 3
+  },
+  {
+    "id": "cameron-green",
+    "name": "Cameron Green",
+    "aliases": [
+      "Cam Green"
+    ],
+    "country": "Australia",
+    "role": "All-rounder",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm fast",
+    "debutYear": 2020,
+    "intlMatches": 108,
+    "active": true,
+    "difficulty": 2
+  },
+  {
+    "id": "carl-hooper",
+    "name": "Carl Hooper",
+    "aliases": [],
+    "country": "West Indies",
+    "role": "All-rounder",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm off-spin",
+    "debutYear": 1987,
+    "intlMatches": 329,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "chaminda-vaas",
+    "name": "Chaminda Vaas",
+    "aliases": [],
+    "country": "Sri Lanka",
+    "role": "Bowler",
+    "battingHand": "Left",
+    "bowlingType": "Left-arm fast",
+    "debutYear": 1994,
+    "intlMatches": 439,
+    "active": false,
+    "difficulty": 1
+  },
+  {
+    "id": "charith-asalanka",
+    "name": "Charith Asalanka",
+    "aliases": [],
+    "country": "Sri Lanka",
+    "role": "All-rounder",
+    "battingHand": "Left",
+    "bowlingType": "Right-arm off-spin",
+    "debutYear": 2021,
+    "intlMatches": 158,
+    "active": true,
+    "difficulty": 2
+  },
+  {
+    "id": "cheteshwar-pujara",
+    "name": "Cheteshwar Pujara",
+    "aliases": [
+      "Pujji"
+    ],
+    "country": "India",
+    "role": "Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm leg-spin",
+    "debutYear": 2010,
+    "intlMatches": 108,
+    "active": false,
+    "difficulty": 1
+  },
+  {
+    "id": "chris-cairns",
+    "name": "Chris Cairns",
+    "aliases": [],
+    "country": "New Zealand",
+    "role": "All-rounder",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm fast",
+    "debutYear": 1989,
+    "intlMatches": 279,
+    "active": false,
+    "difficulty": 1
+  },
+  {
     "id": "chris-gayle",
     "name": "Chris Gayle",
     "aliases": [
@@ -145,6 +1038,157 @@
     "bowlingType": "Right-arm off-spin",
     "debutYear": 1999,
     "intlMatches": 483,
+    "active": false,
+    "difficulty": 1
+  },
+  {
+    "id": "chris-jordan",
+    "name": "Chris Jordan",
+    "aliases": [
+      "CJ"
+    ],
+    "country": "England",
+    "role": "Bowler",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm fast",
+    "debutYear": 2013,
+    "intlMatches": 138,
+    "active": true,
+    "difficulty": 2
+  },
+  {
+    "id": "chris-rogers",
+    "name": "Chris Rogers",
+    "aliases": [
+      "Bucky"
+    ],
+    "country": "Australia",
+    "role": "Batter",
+    "battingHand": "Left",
+    "bowlingType": "Right-arm leg-spin",
+    "debutYear": 2008,
+    "intlMatches": 25,
+    "active": false,
+    "difficulty": 3
+  },
+  {
+    "id": "chris-woakes",
+    "name": "Chris Woakes",
+    "aliases": [
+      "Woaksey"
+    ],
+    "country": "England",
+    "role": "All-rounder",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm fast",
+    "debutYear": 2011,
+    "intlMatches": 217,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "clive-lloyd",
+    "name": "Clive Lloyd",
+    "aliases": [
+      "Big Cat"
+    ],
+    "country": "West Indies",
+    "role": "Batter",
+    "battingHand": "Left",
+    "bowlingType": "Right-arm medium",
+    "debutYear": 1966,
+    "intlMatches": 197,
+    "active": false,
+    "difficulty": 1
+  },
+  {
+    "id": "colin-de-grandhomme",
+    "name": "Colin de Grandhomme",
+    "aliases": [],
+    "country": "New Zealand",
+    "role": "All-rounder",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm medium",
+    "debutYear": 2012,
+    "intlMatches": 115,
+    "active": false,
+    "difficulty": 3
+  },
+  {
+    "id": "colin-munro",
+    "name": "Colin Munro",
+    "aliases": [],
+    "country": "New Zealand",
+    "role": "Batter",
+    "battingHand": "Left",
+    "bowlingType": "Right-arm medium",
+    "debutYear": 2012,
+    "intlMatches": 123,
+    "active": false,
+    "difficulty": 3
+  },
+  {
+    "id": "corey-anderson",
+    "name": "Corey Anderson",
+    "aliases": [],
+    "country": "New Zealand",
+    "role": "All-rounder",
+    "battingHand": "Left",
+    "bowlingType": "Left-arm medium",
+    "debutYear": 2012,
+    "intlMatches": 104,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "courtney-walsh",
+    "name": "Courtney Walsh",
+    "aliases": [],
+    "country": "West Indies",
+    "role": "Bowler",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm fast",
+    "debutYear": 1984,
+    "intlMatches": 337,
+    "active": false,
+    "difficulty": 1
+  },
+  {
+    "id": "craig-ervine",
+    "name": "Craig Ervine",
+    "aliases": [],
+    "country": "Zimbabwe",
+    "role": "Batter",
+    "battingHand": "Left",
+    "bowlingType": "Right-arm off-spin",
+    "debutYear": 2010,
+    "intlMatches": 228,
+    "active": true,
+    "difficulty": 3
+  },
+  {
+    "id": "craig-mcmillan",
+    "name": "Craig McMillan",
+    "aliases": [],
+    "country": "New Zealand",
+    "role": "Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm medium",
+    "debutYear": 1997,
+    "intlMatches": 260,
+    "active": false,
+    "difficulty": 3
+  },
+  {
+    "id": "curtly-ambrose",
+    "name": "Curtly Ambrose",
+    "aliases": [],
+    "country": "West Indies",
+    "role": "Bowler",
+    "battingHand": "Left",
+    "bowlingType": "Right-arm fast",
+    "debutYear": 1988,
+    "intlMatches": 274,
     "active": false,
     "difficulty": 1
   },
@@ -164,6 +1208,201 @@
     "difficulty": 1
   },
   {
+    "id": "damien-fleming",
+    "name": "Damien Fleming",
+    "aliases": [],
+    "country": "Australia",
+    "role": "Bowler",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm fast",
+    "debutYear": 1994,
+    "intlMatches": 108,
+    "active": false,
+    "difficulty": 3
+  },
+  {
+    "id": "damien-martyn",
+    "name": "Damien Martyn",
+    "aliases": [],
+    "country": "Australia",
+    "role": "Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm medium",
+    "debutYear": 1992,
+    "intlMatches": 279,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "daniel-vettori",
+    "name": "Daniel Vettori",
+    "aliases": [
+      "Dan Vettori"
+    ],
+    "country": "New Zealand",
+    "role": "All-rounder",
+    "battingHand": "Left",
+    "bowlingType": "Left-arm orthodox",
+    "debutYear": 1997,
+    "intlMatches": 442,
+    "active": false,
+    "difficulty": 1
+  },
+  {
+    "id": "danish-kaneria",
+    "name": "Danish Kaneria",
+    "aliases": [],
+    "country": "Pakistan",
+    "role": "Bowler",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm leg-spin",
+    "debutYear": 2000,
+    "intlMatches": 79,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "danny-morrison",
+    "name": "Danny Morrison",
+    "aliases": [],
+    "country": "New Zealand",
+    "role": "Bowler",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm fast",
+    "debutYear": 1987,
+    "intlMatches": 144,
+    "active": false,
+    "difficulty": 3
+  },
+  {
+    "id": "darren-gough",
+    "name": "Darren Gough",
+    "aliases": [
+      "Goughie",
+      "Dazzler"
+    ],
+    "country": "England",
+    "role": "Bowler",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm fast",
+    "debutYear": 1994,
+    "intlMatches": 219,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "darren-lehmann",
+    "name": "Darren Lehmann",
+    "aliases": [
+      "Boof"
+    ],
+    "country": "Australia",
+    "role": "Batter",
+    "battingHand": "Left",
+    "bowlingType": "Left-arm orthodox",
+    "debutYear": 1996,
+    "intlMatches": 144,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "darren-sammy",
+    "name": "Darren Sammy",
+    "aliases": [],
+    "country": "West Indies",
+    "role": "All-rounder",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm medium",
+    "debutYear": 2004,
+    "intlMatches": 232,
+    "active": false,
+    "difficulty": 1
+  },
+  {
+    "id": "daryl-mitchell",
+    "name": "Daryl Mitchell",
+    "aliases": [],
+    "country": "New Zealand",
+    "role": "All-rounder",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm medium",
+    "debutYear": 2019,
+    "intlMatches": 209,
+    "active": true,
+    "difficulty": 2
+  },
+  {
+    "id": "daryll-cullinan",
+    "name": "Daryll Cullinan",
+    "aliases": [],
+    "country": "South Africa",
+    "role": "Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm off-spin",
+    "debutYear": 1993,
+    "intlMatches": 208,
+    "active": false,
+    "difficulty": 3
+  },
+  {
+    "id": "dasun-shanaka",
+    "name": "Dasun Shanaka",
+    "aliases": [],
+    "country": "Sri Lanka",
+    "role": "All-rounder",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm medium",
+    "debutYear": 2015,
+    "intlMatches": 209,
+    "active": true,
+    "difficulty": 2
+  },
+  {
+    "id": "david-boon",
+    "name": "David Boon",
+    "aliases": [
+      "Boonie"
+    ],
+    "country": "Australia",
+    "role": "Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm off-spin",
+    "debutYear": 1984,
+    "intlMatches": 288,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "david-gower",
+    "name": "David Gower",
+    "aliases": [
+      "Lubo"
+    ],
+    "country": "England",
+    "role": "Batter",
+    "battingHand": "Left",
+    "bowlingType": "Right-arm off-spin",
+    "debutYear": 1978,
+    "intlMatches": 231,
+    "active": false,
+    "difficulty": 1
+  },
+  {
+    "id": "david-miller",
+    "name": "David Miller",
+    "aliases": [
+      "Killer Miller"
+    ],
+    "country": "South Africa",
+    "role": "Batter",
+    "battingHand": "Left",
+    "bowlingType": "Right-arm off-spin",
+    "debutYear": 2010,
+    "intlMatches": 320,
+    "active": true,
+    "difficulty": 1
+  },
+  {
     "id": "david-warner",
     "name": "David Warner",
     "aliases": [
@@ -177,6 +1416,511 @@
     "intlMatches": 383,
     "active": false,
     "difficulty": 1
+  },
+  {
+    "id": "dawid-malan",
+    "name": "Dawid Malan",
+    "aliases": [],
+    "country": "England",
+    "role": "Batter",
+    "battingHand": "Left",
+    "bowlingType": "Right-arm leg-spin",
+    "debutYear": 2017,
+    "intlMatches": 114,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "dean-elgar",
+    "name": "Dean Elgar",
+    "aliases": [],
+    "country": "South Africa",
+    "role": "Batter",
+    "battingHand": "Left",
+    "bowlingType": "Left-arm orthodox",
+    "debutYear": 2012,
+    "intlMatches": 94,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "dean-jones",
+    "name": "Dean Jones",
+    "aliases": [
+      "Deano"
+    ],
+    "country": "Australia",
+    "role": "Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm off-spin",
+    "debutYear": 1984,
+    "intlMatches": 216,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "deepak-chahar",
+    "name": "Deepak Chahar",
+    "aliases": [],
+    "country": "India",
+    "role": "Bowler",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm medium",
+    "debutYear": 2018,
+    "intlMatches": 38,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "denesh-ramdin",
+    "name": "Denesh Ramdin",
+    "aliases": [],
+    "country": "West Indies",
+    "role": "Wicketkeeper-Batter",
+    "battingHand": "Right",
+    "bowlingType": "None",
+    "debutYear": 2005,
+    "intlMatches": 284,
+    "active": false,
+    "difficulty": 3
+  },
+  {
+    "id": "dennis-lillee",
+    "name": "Dennis Lillee",
+    "aliases": [],
+    "country": "Australia",
+    "role": "Bowler",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm fast",
+    "debutYear": 1971,
+    "intlMatches": 133,
+    "active": false,
+    "difficulty": 1
+  },
+  {
+    "id": "desmond-haynes",
+    "name": "Desmond Haynes",
+    "aliases": [],
+    "country": "West Indies",
+    "role": "Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm leg-spin",
+    "debutYear": 1978,
+    "intlMatches": 354,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "devon-conway",
+    "name": "Devon Conway",
+    "aliases": [],
+    "country": "New Zealand",
+    "role": "Wicketkeeper-Batter",
+    "battingHand": "Left",
+    "bowlingType": "Right-arm medium",
+    "debutYear": 2020,
+    "intlMatches": 148,
+    "active": true,
+    "difficulty": 2
+  },
+  {
+    "id": "devon-malcolm",
+    "name": "Devon Malcolm",
+    "aliases": [],
+    "country": "England",
+    "role": "Bowler",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm fast",
+    "debutYear": 1989,
+    "intlMatches": 50,
+    "active": false,
+    "difficulty": 3
+  },
+  {
+    "id": "dhananjaya-de-silva",
+    "name": "Dhananjaya de Silva",
+    "aliases": [],
+    "country": "Sri Lanka",
+    "role": "All-rounder",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm off-spin",
+    "debutYear": 2015,
+    "intlMatches": 209,
+    "active": true,
+    "difficulty": 3
+  },
+  {
+    "id": "dhruv-jurel",
+    "name": "Dhruv Jurel",
+    "aliases": [],
+    "country": "India",
+    "role": "Wicketkeeper-Batter",
+    "battingHand": "Right",
+    "bowlingType": "None",
+    "debutYear": 2024,
+    "intlMatches": 15,
+    "active": true,
+    "difficulty": 3
+  },
+  {
+    "id": "dilhara-fernando",
+    "name": "Dilhara Fernando",
+    "aliases": [],
+    "country": "Sri Lanka",
+    "role": "Bowler",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm fast",
+    "debutYear": 2000,
+    "intlMatches": 205,
+    "active": false,
+    "difficulty": 3
+  },
+  {
+    "id": "dilip-vengsarkar",
+    "name": "Dilip Vengsarkar",
+    "aliases": [
+      "Colonel"
+    ],
+    "country": "India",
+    "role": "Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm medium",
+    "debutYear": 1976,
+    "intlMatches": 245,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "dimuth-karunaratne",
+    "name": "Dimuth Karunaratne",
+    "aliases": [],
+    "country": "Sri Lanka",
+    "role": "Batter",
+    "battingHand": "Left",
+    "bowlingType": "Right-arm medium",
+    "debutYear": 2011,
+    "intlMatches": 150,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "dinesh-chandimal",
+    "name": "Dinesh Chandimal",
+    "aliases": [],
+    "country": "Sri Lanka",
+    "role": "Wicketkeeper-Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm off-spin",
+    "debutYear": 2010,
+    "intlMatches": 318,
+    "active": true,
+    "difficulty": 2
+  },
+  {
+    "id": "dinesh-karthik",
+    "name": "Dinesh Karthik",
+    "aliases": [
+      "DK"
+    ],
+    "country": "India",
+    "role": "Wicketkeeper-Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm off-spin",
+    "debutYear": 2004,
+    "intlMatches": 180,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "dinesh-mongia",
+    "name": "Dinesh Mongia",
+    "aliases": [],
+    "country": "India",
+    "role": "Batter",
+    "battingHand": "Left",
+    "bowlingType": "Left-arm orthodox",
+    "debutYear": 2001,
+    "intlMatches": 58,
+    "active": false,
+    "difficulty": 3
+  },
+  {
+    "id": "dushmantha-chameera",
+    "name": "Dushmantha Chameera",
+    "aliases": [],
+    "country": "Sri Lanka",
+    "role": "All-rounder",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm fast",
+    "debutYear": 2015,
+    "intlMatches": 149,
+    "active": true,
+    "difficulty": 3
+  },
+  {
+    "id": "dwayne-bravo",
+    "name": "Dwayne Bravo",
+    "aliases": [
+      "DJ Bravo"
+    ],
+    "country": "West Indies",
+    "role": "All-rounder",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm medium",
+    "debutYear": 2004,
+    "intlMatches": 295,
+    "active": false,
+    "difficulty": 1
+  },
+  {
+    "id": "ed-joyce",
+    "name": "Ed Joyce",
+    "aliases": [],
+    "country": "Ireland",
+    "role": "Batter",
+    "battingHand": "Left",
+    "bowlingType": "Right-arm medium",
+    "debutYear": 2006,
+    "intlMatches": 97,
+    "active": false,
+    "difficulty": 3
+  },
+  {
+    "id": "elton-chigumbura",
+    "name": "Elton Chigumbura",
+    "aliases": [],
+    "country": "Zimbabwe",
+    "role": "All-rounder",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm medium",
+    "debutYear": 2004,
+    "intlMatches": 284,
+    "active": false,
+    "difficulty": 3
+  },
+  {
+    "id": "eoin-morgan",
+    "name": "Eoin Morgan",
+    "aliases": [
+      "Morgs"
+    ],
+    "country": "England",
+    "role": "Batter",
+    "battingHand": "Left",
+    "bowlingType": "None",
+    "debutYear": 2006,
+    "intlMatches": 379,
+    "active": false,
+    "difficulty": 1
+  },
+  {
+    "id": "evin-lewis",
+    "name": "Evin Lewis",
+    "aliases": [],
+    "country": "West Indies",
+    "role": "Batter",
+    "battingHand": "Left",
+    "bowlingType": "Right-arm medium",
+    "debutYear": 2016,
+    "intlMatches": 132,
+    "active": true,
+    "difficulty": 2
+  },
+  {
+    "id": "faf-du-plessis",
+    "name": "Faf du Plessis",
+    "aliases": [
+      "Faf"
+    ],
+    "country": "South Africa",
+    "role": "Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm leg-spin",
+    "debutYear": 2011,
+    "intlMatches": 262,
+    "active": false,
+    "difficulty": 1
+  },
+  {
+    "id": "fakhar-zaman",
+    "name": "Fakhar Zaman",
+    "aliases": [],
+    "country": "Pakistan",
+    "role": "Batter",
+    "battingHand": "Left",
+    "bowlingType": "Left-arm orthodox",
+    "debutYear": 2017,
+    "intlMatches": 215,
+    "active": true,
+    "difficulty": 2
+  },
+  {
+    "id": "fanie-de-villiers",
+    "name": "Fanie de Villiers",
+    "aliases": [],
+    "country": "South Africa",
+    "role": "Bowler",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm fast",
+    "debutYear": 1992,
+    "intlMatches": 101,
+    "active": false,
+    "difficulty": 3
+  },
+  {
+    "id": "farveez-maharoof",
+    "name": "Farveez Maharoof",
+    "aliases": [],
+    "country": "Sri Lanka",
+    "role": "All-rounder",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm fast",
+    "debutYear": 2004,
+    "intlMatches": 139,
+    "active": false,
+    "difficulty": 3
+  },
+  {
+    "id": "fazalhaq-farooqi",
+    "name": "Fazalhaq Farooqi",
+    "aliases": [],
+    "country": "Afghanistan",
+    "role": "Bowler",
+    "battingHand": "Right",
+    "bowlingType": "Left-arm fast",
+    "debutYear": 2021,
+    "intlMatches": 96,
+    "active": true,
+    "difficulty": 2
+  },
+  {
+    "id": "fidel-edwards",
+    "name": "Fidel Edwards",
+    "aliases": [],
+    "country": "West Indies",
+    "role": "Bowler",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm fast",
+    "debutYear": 2003,
+    "intlMatches": 131,
+    "active": false,
+    "difficulty": 3
+  },
+  {
+    "id": "fred-trueman",
+    "name": "Fred Trueman",
+    "aliases": [
+      "Fiery Fred"
+    ],
+    "country": "England",
+    "role": "Bowler",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm fast",
+    "debutYear": 1952,
+    "intlMatches": 67,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "garfield-sobers",
+    "name": "Garfield Sobers",
+    "aliases": [
+      "Sir Garry",
+      "Garry Sobers"
+    ],
+    "country": "West Indies",
+    "role": "All-rounder",
+    "battingHand": "Left",
+    "bowlingType": "Left-arm fast",
+    "debutYear": 1954,
+    "intlMatches": 94,
+    "active": false,
+    "difficulty": 1
+  },
+  {
+    "id": "gary-kirsten",
+    "name": "Gary Kirsten",
+    "aliases": [
+      "Gazza"
+    ],
+    "country": "South Africa",
+    "role": "Batter",
+    "battingHand": "Left",
+    "bowlingType": "Right-arm off-spin",
+    "debutYear": 1993,
+    "intlMatches": 286,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "gautam-gambhir",
+    "name": "Gautam Gambhir",
+    "aliases": [
+      "Gauti"
+    ],
+    "country": "India",
+    "role": "Batter",
+    "battingHand": "Left",
+    "bowlingType": "Right-arm leg-spin",
+    "debutYear": 2003,
+    "intlMatches": 242,
+    "active": false,
+    "difficulty": 1
+  },
+  {
+    "id": "geoffrey-boycott",
+    "name": "Geoffrey Boycott",
+    "aliases": [
+      "Boycs",
+      "Geoff Boycott"
+    ],
+    "country": "England",
+    "role": "Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm medium",
+    "debutYear": 1964,
+    "intlMatches": 144,
+    "active": false,
+    "difficulty": 1
+  },
+  {
+    "id": "george-dockrell",
+    "name": "George Dockrell",
+    "aliases": [],
+    "country": "Ireland",
+    "role": "All-rounder",
+    "battingHand": "Right",
+    "bowlingType": "Left-arm orthodox",
+    "debutYear": 2010,
+    "intlMatches": 295,
+    "active": true,
+    "difficulty": 3
+  },
+  {
+    "id": "george-munsey",
+    "name": "George Munsey",
+    "aliases": [],
+    "country": "Scotland",
+    "role": "Batter",
+    "battingHand": "Left",
+    "bowlingType": "Right-arm medium",
+    "debutYear": 2015,
+    "intlMatches": 167,
+    "active": true,
+    "difficulty": 3
+  },
+  {
+    "id": "gerald-coetzee",
+    "name": "Gerald Coetzee",
+    "aliases": [],
+    "country": "South Africa",
+    "role": "Bowler",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm fast",
+    "debutYear": 2023,
+    "intlMatches": 39,
+    "active": true,
+    "difficulty": 3
   },
   {
     "id": "glenn-maxwell",
@@ -210,6 +1954,209 @@
     "difficulty": 1
   },
   {
+    "id": "glenn-phillips",
+    "name": "Glenn Phillips",
+    "aliases": [],
+    "country": "New Zealand",
+    "role": "Wicketkeeper-Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm off-spin",
+    "debutYear": 2017,
+    "intlMatches": 167,
+    "active": true,
+    "difficulty": 2
+  },
+  {
+    "id": "gordon-greenidge",
+    "name": "Gordon Greenidge",
+    "aliases": [],
+    "country": "West Indies",
+    "role": "Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm medium",
+    "debutYear": 1974,
+    "intlMatches": 236,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "graeme-swann",
+    "name": "Graeme Swann",
+    "aliases": [
+      "Swanny"
+    ],
+    "country": "England",
+    "role": "Bowler",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm off-spin",
+    "debutYear": 2000,
+    "intlMatches": 178,
+    "active": false,
+    "difficulty": 1
+  },
+  {
+    "id": "graham-gooch",
+    "name": "Graham Gooch",
+    "aliases": [
+      "Goochie"
+    ],
+    "country": "England",
+    "role": "Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm medium",
+    "debutYear": 1975,
+    "intlMatches": 243,
+    "active": false,
+    "difficulty": 1
+  },
+  {
+    "id": "graham-thorpe",
+    "name": "Graham Thorpe",
+    "aliases": [
+      "Chalky"
+    ],
+    "country": "England",
+    "role": "Batter",
+    "battingHand": "Left",
+    "bowlingType": "Right-arm medium",
+    "debutYear": 1993,
+    "intlMatches": 182,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "grant-flower",
+    "name": "Grant Flower",
+    "aliases": [],
+    "country": "Zimbabwe",
+    "role": "Batter",
+    "battingHand": "Right",
+    "bowlingType": "Left-arm orthodox",
+    "debutYear": 1992,
+    "intlMatches": 288,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "greg-chappell",
+    "name": "Greg Chappell",
+    "aliases": [],
+    "country": "Australia",
+    "role": "Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm medium",
+    "debutYear": 1970,
+    "intlMatches": 161,
+    "active": false,
+    "difficulty": 1
+  },
+  {
+    "id": "gulbadin-naib",
+    "name": "Gulbadin Naib",
+    "aliases": [],
+    "country": "Afghanistan",
+    "role": "All-rounder",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm fast",
+    "debutYear": 2011,
+    "intlMatches": 164,
+    "active": true,
+    "difficulty": 2
+  },
+  {
+    "id": "gundappa-viswanath",
+    "name": "Gundappa Viswanath",
+    "aliases": [
+      "Vishy"
+    ],
+    "country": "India",
+    "role": "Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm leg-spin",
+    "debutYear": 1969,
+    "intlMatches": 116,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "gus-atkinson",
+    "name": "Gus Atkinson",
+    "aliases": [],
+    "country": "England",
+    "role": "Bowler",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm fast",
+    "debutYear": 2023,
+    "intlMatches": 45,
+    "active": true,
+    "difficulty": 3
+  },
+  {
+    "id": "habibul-bashar",
+    "name": "Habibul Bashar",
+    "aliases": [],
+    "country": "Bangladesh",
+    "role": "Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm off-spin",
+    "debutYear": 1995,
+    "intlMatches": 161,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "hamid-hassan",
+    "name": "Hamid Hassan",
+    "aliases": [],
+    "country": "Afghanistan",
+    "role": "Bowler",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm fast",
+    "debutYear": 2009,
+    "intlMatches": 63,
+    "active": false,
+    "difficulty": 3
+  },
+  {
+    "id": "hamilton-masakadza",
+    "name": "Hamilton Masakadza",
+    "aliases": [],
+    "country": "Zimbabwe",
+    "role": "Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm medium",
+    "debutYear": 2001,
+    "intlMatches": 313,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "hansie-cronje",
+    "name": "Hansie Cronje",
+    "aliases": [],
+    "country": "South Africa",
+    "role": "All-rounder",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm medium",
+    "debutYear": 1992,
+    "intlMatches": 256,
+    "active": false,
+    "difficulty": 1
+  },
+  {
+    "id": "hanuma-vihari",
+    "name": "Hanuma Vihari",
+    "aliases": [],
+    "country": "India",
+    "role": "All-rounder",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm off-spin",
+    "debutYear": 2018,
+    "intlMatches": 16,
+    "active": false,
+    "difficulty": 3
+  },
+  {
     "id": "harbhajan-singh",
     "name": "Harbhajan Singh",
     "aliases": [
@@ -241,6 +2188,441 @@
     "difficulty": 1
   },
   {
+    "id": "haris-rauf",
+    "name": "Haris Rauf",
+    "aliases": [],
+    "country": "Pakistan",
+    "role": "Bowler",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm fast",
+    "debutYear": 2020,
+    "intlMatches": 154,
+    "active": true,
+    "difficulty": 2
+  },
+  {
+    "id": "harry-brook",
+    "name": "Harry Brook",
+    "aliases": [],
+    "country": "England",
+    "role": "Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm medium",
+    "debutYear": 2022,
+    "intlMatches": 160,
+    "active": true,
+    "difficulty": 1
+  },
+  {
+    "id": "harry-tector",
+    "name": "Harry Tector",
+    "aliases": [],
+    "country": "Ireland",
+    "role": "Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm off-spin",
+    "debutYear": 2019,
+    "intlMatches": 168,
+    "active": true,
+    "difficulty": 3
+  },
+  {
+    "id": "harshit-rana",
+    "name": "Harshit Rana",
+    "aliases": [],
+    "country": "India",
+    "role": "Bowler",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm fast",
+    "debutYear": 2024,
+    "intlMatches": 30,
+    "active": true,
+    "difficulty": 3
+  },
+  {
+    "id": "hasan-ali",
+    "name": "Hasan Ali",
+    "aliases": [],
+    "country": "Pakistan",
+    "role": "Bowler",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm medium",
+    "debutYear": 2016,
+    "intlMatches": 152,
+    "active": true,
+    "difficulty": 2
+  },
+  {
+    "id": "hashan-tillakaratne",
+    "name": "Hashan Tillakaratne",
+    "aliases": [],
+    "country": "Sri Lanka",
+    "role": "Wicketkeeper-Batter",
+    "battingHand": "Left",
+    "bowlingType": "None",
+    "debutYear": 1986,
+    "intlMatches": 283,
+    "active": false,
+    "difficulty": 3
+  },
+  {
+    "id": "hashim-amla",
+    "name": "Hashim Amla",
+    "aliases": [],
+    "country": "South Africa",
+    "role": "Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm off-spin",
+    "debutYear": 2004,
+    "intlMatches": 349,
+    "active": false,
+    "difficulty": 1
+  },
+  {
+    "id": "hashmatullah-shahidi",
+    "name": "Hashmatullah Shahidi",
+    "aliases": [],
+    "country": "Afghanistan",
+    "role": "Batter",
+    "battingHand": "Left",
+    "bowlingType": "Right-arm off-spin",
+    "debutYear": 2013,
+    "intlMatches": 114,
+    "active": true,
+    "difficulty": 2
+  },
+  {
+    "id": "heath-streak",
+    "name": "Heath Streak",
+    "aliases": [],
+    "country": "Zimbabwe",
+    "role": "All-rounder",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm fast",
+    "debutYear": 1993,
+    "intlMatches": 254,
+    "active": false,
+    "difficulty": 1
+  },
+  {
+    "id": "heinrich-klaasen",
+    "name": "Heinrich Klaasen",
+    "aliases": [],
+    "country": "South Africa",
+    "role": "Wicketkeeper-Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm off-spin",
+    "debutYear": 2018,
+    "intlMatches": 122,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "hemang-badani",
+    "name": "Hemang Badani",
+    "aliases": [],
+    "country": "India",
+    "role": "Batter",
+    "battingHand": "Left",
+    "bowlingType": "Left-arm orthodox",
+    "debutYear": 2000,
+    "intlMatches": 44,
+    "active": false,
+    "difficulty": 3
+  },
+  {
+    "id": "henry-nicholls",
+    "name": "Henry Nicholls",
+    "aliases": [],
+    "country": "New Zealand",
+    "role": "Batter",
+    "battingHand": "Left",
+    "bowlingType": "Right-arm off-spin",
+    "debutYear": 2015,
+    "intlMatches": 162,
+    "active": true,
+    "difficulty": 3
+  },
+  {
+    "id": "henry-olonga",
+    "name": "Henry Olonga",
+    "aliases": [],
+    "country": "Zimbabwe",
+    "role": "Bowler",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm fast",
+    "debutYear": 1995,
+    "intlMatches": 80,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "herschelle-gibbs",
+    "name": "Herschelle Gibbs",
+    "aliases": [
+      "Scooter"
+    ],
+    "country": "South Africa",
+    "role": "Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm medium",
+    "debutYear": 1996,
+    "intlMatches": 361,
+    "active": false,
+    "difficulty": 1
+  },
+  {
+    "id": "ian-bell",
+    "name": "Ian Bell",
+    "aliases": [
+      "Belly"
+    ],
+    "country": "England",
+    "role": "Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm medium",
+    "debutYear": 2004,
+    "intlMatches": 287,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "ian-bishop",
+    "name": "Ian Bishop",
+    "aliases": [],
+    "country": "West Indies",
+    "role": "Bowler",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm fast",
+    "debutYear": 1988,
+    "intlMatches": 127,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "ian-botham",
+    "name": "Ian Botham",
+    "aliases": [
+      "Beefy"
+    ],
+    "country": "England",
+    "role": "All-rounder",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm fast",
+    "debutYear": 1976,
+    "intlMatches": 218,
+    "active": false,
+    "difficulty": 1
+  },
+  {
+    "id": "ian-chappell",
+    "name": "Ian Chappell",
+    "aliases": [
+      "Chappelli"
+    ],
+    "country": "Australia",
+    "role": "Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm leg-spin",
+    "debutYear": 1964,
+    "intlMatches": 91,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "ian-healy",
+    "name": "Ian Healy",
+    "aliases": [
+      "Heals"
+    ],
+    "country": "Australia",
+    "role": "Wicketkeeper-Batter",
+    "battingHand": "Right",
+    "bowlingType": "None",
+    "debutYear": 1988,
+    "intlMatches": 287,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "ibrahim-zadran",
+    "name": "Ibrahim Zadran",
+    "aliases": [],
+    "country": "Afghanistan",
+    "role": "Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm medium",
+    "debutYear": 2019,
+    "intlMatches": 124,
+    "active": true,
+    "difficulty": 2
+  },
+  {
+    "id": "iftikhar-ahmed",
+    "name": "Iftikhar Ahmed",
+    "aliases": [],
+    "country": "Pakistan",
+    "role": "Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm off-spin",
+    "debutYear": 2015,
+    "intlMatches": 98,
+    "active": false,
+    "difficulty": 3
+  },
+  {
+    "id": "imam-ul-haq",
+    "name": "Imam-ul-Haq",
+    "aliases": [],
+    "country": "Pakistan",
+    "role": "Batter",
+    "battingHand": "Left",
+    "bowlingType": "Right-arm leg-spin",
+    "debutYear": 2017,
+    "intlMatches": 108,
+    "active": true,
+    "difficulty": 2
+  },
+  {
+    "id": "imran-khan",
+    "name": "Imran Khan",
+    "aliases": [
+      "Kaptaan"
+    ],
+    "country": "Pakistan",
+    "role": "All-rounder",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm fast",
+    "debutYear": 1971,
+    "intlMatches": 263,
+    "active": false,
+    "difficulty": 1
+  },
+  {
+    "id": "imran-tahir",
+    "name": "Imran Tahir",
+    "aliases": [],
+    "country": "South Africa",
+    "role": "Bowler",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm leg-spin",
+    "debutYear": 2011,
+    "intlMatches": 165,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "imrul-kayes",
+    "name": "Imrul Kayes",
+    "aliases": [],
+    "country": "Bangladesh",
+    "role": "Wicketkeeper-Batter",
+    "battingHand": "Left",
+    "bowlingType": "Left-arm orthodox",
+    "debutYear": 2008,
+    "intlMatches": 131,
+    "active": false,
+    "difficulty": 3
+  },
+  {
+    "id": "inzamam-ul-haq",
+    "name": "Inzamam-ul-Haq",
+    "aliases": [
+      "Inzi",
+      "Inzamam"
+    ],
+    "country": "Pakistan",
+    "role": "Batter",
+    "battingHand": "Right",
+    "bowlingType": "Left-arm orthodox",
+    "debutYear": 1991,
+    "intlMatches": 499,
+    "active": false,
+    "difficulty": 1
+  },
+  {
+    "id": "irfan-pathan",
+    "name": "Irfan Pathan",
+    "aliases": [],
+    "country": "India",
+    "role": "All-rounder",
+    "battingHand": "Left",
+    "bowlingType": "Left-arm medium",
+    "debutYear": 2003,
+    "intlMatches": 173,
+    "active": false,
+    "difficulty": 1
+  },
+  {
+    "id": "ish-sodhi",
+    "name": "Ish Sodhi",
+    "aliases": [],
+    "country": "New Zealand",
+    "role": "Bowler",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm leg-spin",
+    "debutYear": 2013,
+    "intlMatches": 217,
+    "active": true,
+    "difficulty": 2
+  },
+  {
+    "id": "ishan-kishan",
+    "name": "Ishan Kishan",
+    "aliases": [],
+    "country": "India",
+    "role": "Wicketkeeper-Batter",
+    "battingHand": "Left",
+    "bowlingType": "Right-arm leg-spin",
+    "debutYear": 2021,
+    "intlMatches": 103,
+    "active": true,
+    "difficulty": 2
+  },
+  {
+    "id": "ishant-sharma",
+    "name": "Ishant Sharma",
+    "aliases": [
+      "Lambu"
+    ],
+    "country": "India",
+    "role": "Bowler",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm fast",
+    "debutYear": 2007,
+    "intlMatches": 199,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "jack-leach",
+    "name": "Jack Leach",
+    "aliases": [
+      "Leachy"
+    ],
+    "country": "England",
+    "role": "Bowler",
+    "battingHand": "Left",
+    "bowlingType": "Left-arm orthodox",
+    "debutYear": 2018,
+    "intlMatches": 39,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "jacob-oram",
+    "name": "Jacob Oram",
+    "aliases": [],
+    "country": "New Zealand",
+    "role": "All-rounder",
+    "battingHand": "Left",
+    "bowlingType": "Right-arm fast",
+    "debutYear": 2001,
+    "intlMatches": 229,
+    "active": false,
+    "difficulty": 2
+  },
+  {
     "id": "jacques-kallis",
     "name": "Jacques Kallis",
     "aliases": [
@@ -254,6 +2636,34 @@
     "intlMatches": 520,
     "active": false,
     "difficulty": 1
+  },
+  {
+    "id": "jacques-rudolph",
+    "name": "Jacques Rudolph",
+    "aliases": [],
+    "country": "South Africa",
+    "role": "Batter",
+    "battingHand": "Left",
+    "bowlingType": "Right-arm leg-spin",
+    "debutYear": 2003,
+    "intlMatches": 94,
+    "active": false,
+    "difficulty": 3
+  },
+  {
+    "id": "jake-fraser-mcgurk",
+    "name": "Jake Fraser-McGurk",
+    "aliases": [
+      "JFM"
+    ],
+    "country": "Australia",
+    "role": "Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm leg-spin",
+    "debutYear": 2024,
+    "intlMatches": 15,
+    "active": false,
+    "difficulty": 3
   },
   {
     "id": "james-anderson",
@@ -272,6 +2682,73 @@
     "difficulty": 1
   },
   {
+    "id": "james-faulkner",
+    "name": "James Faulkner",
+    "aliases": [],
+    "country": "Australia",
+    "role": "All-rounder",
+    "battingHand": "Right",
+    "bowlingType": "Left-arm fast",
+    "debutYear": 2012,
+    "intlMatches": 94,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "james-vince",
+    "name": "James Vince",
+    "aliases": [],
+    "country": "England",
+    "role": "Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm medium",
+    "debutYear": 2015,
+    "intlMatches": 55,
+    "active": false,
+    "difficulty": 3
+  },
+  {
+    "id": "jason-gillespie",
+    "name": "Jason Gillespie",
+    "aliases": [
+      "Dizzy"
+    ],
+    "country": "Australia",
+    "role": "Bowler",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm fast",
+    "debutYear": 1996,
+    "intlMatches": 169,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "jason-holder",
+    "name": "Jason Holder",
+    "aliases": [],
+    "country": "West Indies",
+    "role": "All-rounder",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm medium",
+    "debutYear": 2013,
+    "intlMatches": 303,
+    "active": true,
+    "difficulty": 1
+  },
+  {
+    "id": "jason-roy",
+    "name": "Jason Roy",
+    "aliases": [],
+    "country": "England",
+    "role": "Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm medium",
+    "debutYear": 2014,
+    "intlMatches": 185,
+    "active": false,
+    "difficulty": 2
+  },
+  {
     "id": "jasprit-bumrah",
     "name": "Jasprit Bumrah",
     "aliases": [
@@ -288,6 +2765,114 @@
     "difficulty": 1
   },
   {
+    "id": "javagal-srinath",
+    "name": "Javagal Srinath",
+    "aliases": [],
+    "country": "India",
+    "role": "Bowler",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm fast",
+    "debutYear": 1991,
+    "intlMatches": 296,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "javed-miandad",
+    "name": "Javed Miandad",
+    "aliases": [],
+    "country": "Pakistan",
+    "role": "Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm leg-spin",
+    "debutYear": 1975,
+    "intlMatches": 357,
+    "active": false,
+    "difficulty": 1
+  },
+  {
+    "id": "jeff-thomson",
+    "name": "Jeff Thomson",
+    "aliases": [
+      "Thommo"
+    ],
+    "country": "Australia",
+    "role": "Bowler",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm fast",
+    "debutYear": 1972,
+    "intlMatches": 101,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "jerome-taylor",
+    "name": "Jerome Taylor",
+    "aliases": [],
+    "country": "West Indies",
+    "role": "Bowler",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm fast",
+    "debutYear": 2003,
+    "intlMatches": 166,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "jesse-ryder",
+    "name": "Jesse Ryder",
+    "aliases": [],
+    "country": "New Zealand",
+    "role": "All-rounder",
+    "battingHand": "Left",
+    "bowlingType": "Right-arm medium",
+    "debutYear": 2008,
+    "intlMatches": 88,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "jim-laker",
+    "name": "Jim Laker",
+    "aliases": [],
+    "country": "England",
+    "role": "Bowler",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm off-spin",
+    "debutYear": 1948,
+    "intlMatches": 46,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "jimmy-adams",
+    "name": "Jimmy Adams",
+    "aliases": [],
+    "country": "West Indies",
+    "role": "Batter",
+    "battingHand": "Left",
+    "bowlingType": "Left-arm orthodox",
+    "debutYear": 1992,
+    "intlMatches": 181,
+    "active": false,
+    "difficulty": 3
+  },
+  {
+    "id": "jimmy-neesham",
+    "name": "Jimmy Neesham",
+    "aliases": [
+      "James Neesham"
+    ],
+    "country": "New Zealand",
+    "role": "All-rounder",
+    "battingHand": "Left",
+    "bowlingType": "Right-arm medium",
+    "debutYear": 2012,
+    "intlMatches": 193,
+    "active": true,
+    "difficulty": 2
+  },
+  {
     "id": "joe-root",
     "name": "Joe Root",
     "aliases": [
@@ -300,6 +2885,75 @@
     "debutYear": 2012,
     "intlMatches": 400,
     "active": true,
+    "difficulty": 1
+  },
+  {
+    "id": "joel-garner",
+    "name": "Joel Garner",
+    "aliases": [
+      "Big Bird"
+    ],
+    "country": "West Indies",
+    "role": "Bowler",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm fast",
+    "debutYear": 1977,
+    "intlMatches": 156,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "jofra-archer",
+    "name": "Jofra Archer",
+    "aliases": [],
+    "country": "England",
+    "role": "Bowler",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm fast",
+    "debutYear": 2019,
+    "intlMatches": 116,
+    "active": true,
+    "difficulty": 1
+  },
+  {
+    "id": "john-wright",
+    "name": "John Wright",
+    "aliases": [],
+    "country": "New Zealand",
+    "role": "Batter",
+    "battingHand": "Left",
+    "bowlingType": "Right-arm medium",
+    "debutYear": 1978,
+    "intlMatches": 231,
+    "active": false,
+    "difficulty": 3
+  },
+  {
+    "id": "jonny-bairstow",
+    "name": "Jonny Bairstow",
+    "aliases": [
+      "Bluey"
+    ],
+    "country": "England",
+    "role": "Wicketkeeper-Batter",
+    "battingHand": "Right",
+    "bowlingType": "None",
+    "debutYear": 2011,
+    "intlMatches": 287,
+    "active": false,
+    "difficulty": 1
+  },
+  {
+    "id": "jonty-rhodes",
+    "name": "Jonty Rhodes",
+    "aliases": [],
+    "country": "South Africa",
+    "role": "Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm medium",
+    "debutYear": 1992,
+    "intlMatches": 297,
+    "active": false,
     "difficulty": 1
   },
   {
@@ -318,6 +2972,75 @@
     "difficulty": 1
   },
   {
+    "id": "josh-hazlewood",
+    "name": "Josh Hazlewood",
+    "aliases": [
+      "Hoff"
+    ],
+    "country": "Australia",
+    "role": "Bowler",
+    "battingHand": "Left",
+    "bowlingType": "Right-arm fast",
+    "debutYear": 2010,
+    "intlMatches": 240,
+    "active": true,
+    "difficulty": 1
+  },
+  {
+    "id": "josh-inglis",
+    "name": "Josh Inglis",
+    "aliases": [],
+    "country": "Australia",
+    "role": "Wicketkeeper-Batter",
+    "battingHand": "Right",
+    "bowlingType": "None",
+    "debutYear": 2022,
+    "intlMatches": 98,
+    "active": true,
+    "difficulty": 2
+  },
+  {
+    "id": "josh-little",
+    "name": "Josh Little",
+    "aliases": [],
+    "country": "Ireland",
+    "role": "Bowler",
+    "battingHand": "Right",
+    "bowlingType": "Left-arm fast",
+    "debutYear": 2016,
+    "intlMatches": 119,
+    "active": true,
+    "difficulty": 3
+  },
+  {
+    "id": "jp-duminy",
+    "name": "JP Duminy",
+    "aliases": [],
+    "country": "South Africa",
+    "role": "All-rounder",
+    "battingHand": "Left",
+    "bowlingType": "Right-arm off-spin",
+    "debutYear": 2004,
+    "intlMatches": 326,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "justin-langer",
+    "name": "Justin Langer",
+    "aliases": [
+      "Alfie"
+    ],
+    "country": "Australia",
+    "role": "Batter",
+    "battingHand": "Left",
+    "bowlingType": "Right-arm medium",
+    "debutYear": 1993,
+    "intlMatches": 113,
+    "active": false,
+    "difficulty": 1
+  },
+  {
     "id": "kagiso-rabada",
     "name": "Kagiso Rabada",
     "aliases": [
@@ -332,6 +3055,45 @@
     "intlMatches": 260,
     "active": true,
     "difficulty": 2
+  },
+  {
+    "id": "kamindu-mendis",
+    "name": "Kamindu Mendis",
+    "aliases": [],
+    "country": "Sri Lanka",
+    "role": "All-rounder",
+    "battingHand": "Left",
+    "bowlingType": "Left-arm orthodox",
+    "debutYear": 2018,
+    "intlMatches": 101,
+    "active": true,
+    "difficulty": 3
+  },
+  {
+    "id": "kamran-akmal",
+    "name": "Kamran Akmal",
+    "aliases": [],
+    "country": "Pakistan",
+    "role": "Wicketkeeper-Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm medium",
+    "debutYear": 2002,
+    "intlMatches": 268,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "kane-richardson",
+    "name": "Kane Richardson",
+    "aliases": [],
+    "country": "Australia",
+    "role": "Bowler",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm fast",
+    "debutYear": 2013,
+    "intlMatches": 61,
+    "active": false,
+    "difficulty": 3
   },
   {
     "id": "kane-williamson",
@@ -364,6 +3126,60 @@
     "difficulty": 1
   },
   {
+    "id": "kedar-jadhav",
+    "name": "Kedar Jadhav",
+    "aliases": [],
+    "country": "India",
+    "role": "Wicketkeeper-Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm off-spin",
+    "debutYear": 2014,
+    "intlMatches": 82,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "kemar-roach",
+    "name": "Kemar Roach",
+    "aliases": [],
+    "country": "West Indies",
+    "role": "Bowler",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm fast",
+    "debutYear": 2008,
+    "intlMatches": 196,
+    "active": true,
+    "difficulty": 2
+  },
+  {
+    "id": "keshav-maharaj",
+    "name": "Keshav Maharaj",
+    "aliases": [
+      "Kesh"
+    ],
+    "country": "South Africa",
+    "role": "Bowler",
+    "battingHand": "Right",
+    "bowlingType": "Left-arm orthodox",
+    "debutYear": 2016,
+    "intlMatches": 175,
+    "active": true,
+    "difficulty": 2
+  },
+  {
+    "id": "kevin-o-brien",
+    "name": "Kevin O'Brien",
+    "aliases": [],
+    "country": "Ireland",
+    "role": "All-rounder",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm medium",
+    "debutYear": 2006,
+    "intlMatches": 266,
+    "active": false,
+    "difficulty": 2
+  },
+  {
     "id": "kevin-pietersen",
     "name": "Kevin Pietersen",
     "aliases": [
@@ -379,6 +3195,101 @@
     "difficulty": 1
   },
   {
+    "id": "khaled-mashud",
+    "name": "Khaled Mashud",
+    "aliases": [],
+    "country": "Bangladesh",
+    "role": "Wicketkeeper-Batter",
+    "battingHand": "Right",
+    "bowlingType": "None",
+    "debutYear": 1995,
+    "intlMatches": 170,
+    "active": false,
+    "difficulty": 3
+  },
+  {
+    "id": "kieron-pollard",
+    "name": "Kieron Pollard",
+    "aliases": [
+      "Polly"
+    ],
+    "country": "West Indies",
+    "role": "All-rounder",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm medium",
+    "debutYear": 2007,
+    "intlMatches": 224,
+    "active": false,
+    "difficulty": 1
+  },
+  {
+    "id": "kraigg-brathwaite",
+    "name": "Kraigg Brathwaite",
+    "aliases": [],
+    "country": "West Indies",
+    "role": "Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm off-spin",
+    "debutYear": 2011,
+    "intlMatches": 110,
+    "active": true,
+    "difficulty": 2
+  },
+  {
+    "id": "kris-srikkanth",
+    "name": "Kris Srikkanth",
+    "aliases": [
+      "Cheeka"
+    ],
+    "country": "India",
+    "role": "Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm off-spin",
+    "debutYear": 1981,
+    "intlMatches": 189,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "krunal-pandya",
+    "name": "Krunal Pandya",
+    "aliases": [],
+    "country": "India",
+    "role": "All-rounder",
+    "battingHand": "Left",
+    "bowlingType": "Left-arm orthodox",
+    "debutYear": 2018,
+    "intlMatches": 24,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "kuldeep-yadav",
+    "name": "Kuldeep Yadav",
+    "aliases": [],
+    "country": "India",
+    "role": "Bowler",
+    "battingHand": "Left",
+    "bowlingType": "Left-arm wrist-spin",
+    "debutYear": 2017,
+    "intlMatches": 192,
+    "active": true,
+    "difficulty": 1
+  },
+  {
+    "id": "kumar-dharmasena",
+    "name": "Kumar Dharmasena",
+    "aliases": [],
+    "country": "Sri Lanka",
+    "role": "All-rounder",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm off-spin",
+    "debutYear": 1993,
+    "intlMatches": 172,
+    "active": false,
+    "difficulty": 2
+  },
+  {
     "id": "kumar-sangakkara",
     "name": "Kumar Sangakkara",
     "aliases": [
@@ -390,6 +3301,86 @@
     "bowlingType": "Right-arm off-spin",
     "debutYear": 2000,
     "intlMatches": 594,
+    "active": false,
+    "difficulty": 1
+  },
+  {
+    "id": "kusal-mendis",
+    "name": "Kusal Mendis",
+    "aliases": [],
+    "country": "Sri Lanka",
+    "role": "Wicketkeeper-Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm leg-spin",
+    "debutYear": 2015,
+    "intlMatches": 327,
+    "active": true,
+    "difficulty": 2
+  },
+  {
+    "id": "kusal-perera",
+    "name": "Kusal Perera",
+    "aliases": [],
+    "country": "Sri Lanka",
+    "role": "Wicketkeeper-Batter",
+    "battingHand": "Left",
+    "bowlingType": "Right-arm medium",
+    "debutYear": 2013,
+    "intlMatches": 230,
+    "active": true,
+    "difficulty": 2
+  },
+  {
+    "id": "kyle-coetzer",
+    "name": "Kyle Coetzer",
+    "aliases": [],
+    "country": "Scotland",
+    "role": "Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm medium",
+    "debutYear": 2008,
+    "intlMatches": 159,
+    "active": false,
+    "difficulty": 3
+  },
+  {
+    "id": "kyle-jamieson",
+    "name": "Kyle Jamieson",
+    "aliases": [],
+    "country": "New Zealand",
+    "role": "All-rounder",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm fast",
+    "debutYear": 2020,
+    "intlMatches": 77,
+    "active": true,
+    "difficulty": 2
+  },
+  {
+    "id": "lahiru-thirimanne",
+    "name": "Lahiru Thirimanne",
+    "aliases": [],
+    "country": "Sri Lanka",
+    "role": "Batter",
+    "battingHand": "Left",
+    "bowlingType": "Right-arm medium",
+    "debutYear": 2010,
+    "intlMatches": 197,
+    "active": false,
+    "difficulty": 3
+  },
+  {
+    "id": "lance-klusener",
+    "name": "Lance Klusener",
+    "aliases": [
+      "Zulu"
+    ],
+    "country": "South Africa",
+    "role": "All-rounder",
+    "battingHand": "Left",
+    "bowlingType": "Right-arm fast",
+    "debutYear": 1996,
+    "intlMatches": 220,
     "active": false,
     "difficulty": 1
   },
@@ -410,6 +3401,112 @@
     "difficulty": 1
   },
   {
+    "id": "lendl-simmons",
+    "name": "Lendl Simmons",
+    "aliases": [],
+    "country": "West Indies",
+    "role": "Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm fast",
+    "debutYear": 2006,
+    "intlMatches": 144,
+    "active": false,
+    "difficulty": 3
+  },
+  {
+    "id": "liam-livingstone",
+    "name": "Liam Livingstone",
+    "aliases": [
+      "Livi"
+    ],
+    "country": "England",
+    "role": "All-rounder",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm off-spin",
+    "debutYear": 2017,
+    "intlMatches": 100,
+    "active": true,
+    "difficulty": 2
+  },
+  {
+    "id": "litton-das",
+    "name": "Litton Das",
+    "aliases": [],
+    "country": "Bangladesh",
+    "role": "Wicketkeeper-Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm off-spin",
+    "debutYear": 2015,
+    "intlMatches": 282,
+    "active": true,
+    "difficulty": 2
+  },
+  {
+    "id": "lockie-ferguson",
+    "name": "Lockie Ferguson",
+    "aliases": [],
+    "country": "New Zealand",
+    "role": "Bowler",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm fast",
+    "debutYear": 2016,
+    "intlMatches": 122,
+    "active": true,
+    "difficulty": 2
+  },
+  {
+    "id": "logan-van-beek",
+    "name": "Logan van Beek",
+    "aliases": [],
+    "country": "Netherlands",
+    "role": "All-rounder",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm medium",
+    "debutYear": 2014,
+    "intlMatches": 73,
+    "active": true,
+    "difficulty": 3
+  },
+  {
+    "id": "lou-vincent",
+    "name": "Lou Vincent",
+    "aliases": [],
+    "country": "New Zealand",
+    "role": "Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm medium",
+    "debutYear": 2001,
+    "intlMatches": 134,
+    "active": false,
+    "difficulty": 3
+  },
+  {
+    "id": "lungi-ngidi",
+    "name": "Lungi Ngidi",
+    "aliases": [],
+    "country": "South Africa",
+    "role": "Bowler",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm fast",
+    "debutYear": 2017,
+    "intlMatches": 159,
+    "active": true,
+    "difficulty": 2
+  },
+  {
+    "id": "maheesh-theekshana",
+    "name": "Maheesh Theekshana",
+    "aliases": [],
+    "country": "Sri Lanka",
+    "role": "Bowler",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm off-spin",
+    "debutYear": 2021,
+    "intlMatches": 147,
+    "active": true,
+    "difficulty": 2
+  },
+  {
     "id": "mahela-jayawardene",
     "name": "Mahela Jayawardene",
     "aliases": [],
@@ -421,6 +3518,301 @@
     "intlMatches": 652,
     "active": false,
     "difficulty": 1
+  },
+  {
+    "id": "mahmudullah",
+    "name": "Mahmudullah",
+    "aliases": [
+      "Riyad"
+    ],
+    "country": "Bangladesh",
+    "role": "Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm off-spin",
+    "debutYear": 2007,
+    "intlMatches": 430,
+    "active": false,
+    "difficulty": 1
+  },
+  {
+    "id": "makhaya-ntini",
+    "name": "Makhaya Ntini",
+    "aliases": [],
+    "country": "South Africa",
+    "role": "Bowler",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm fast",
+    "debutYear": 1998,
+    "intlMatches": 284,
+    "active": false,
+    "difficulty": 1
+  },
+  {
+    "id": "malcolm-marshall",
+    "name": "Malcolm Marshall",
+    "aliases": [
+      "Macko"
+    ],
+    "country": "West Indies",
+    "role": "Bowler",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm fast",
+    "debutYear": 1978,
+    "intlMatches": 217,
+    "active": false,
+    "difficulty": 1
+  },
+  {
+    "id": "manish-pandey",
+    "name": "Manish Pandey",
+    "aliases": [],
+    "country": "India",
+    "role": "Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm medium",
+    "debutYear": 2015,
+    "intlMatches": 68,
+    "active": false,
+    "difficulty": 3
+  },
+  {
+    "id": "marco-jansen",
+    "name": "Marco Jansen",
+    "aliases": [],
+    "country": "South Africa",
+    "role": "All-rounder",
+    "battingHand": "Right",
+    "bowlingType": "Left-arm fast",
+    "debutYear": 2021,
+    "intlMatches": 88,
+    "active": true,
+    "difficulty": 2
+  },
+  {
+    "id": "marcus-stoinis",
+    "name": "Marcus Stoinis",
+    "aliases": [],
+    "country": "Australia",
+    "role": "All-rounder",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm medium",
+    "debutYear": 2015,
+    "intlMatches": 158,
+    "active": true,
+    "difficulty": 2
+  },
+  {
+    "id": "marcus-trescothick",
+    "name": "Marcus Trescothick",
+    "aliases": [
+      "Banger"
+    ],
+    "country": "England",
+    "role": "Batter",
+    "battingHand": "Left",
+    "bowlingType": "Right-arm medium",
+    "debutYear": 2000,
+    "intlMatches": 202,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "mark-boucher",
+    "name": "Mark Boucher",
+    "aliases": [
+      "Bouch"
+    ],
+    "country": "South Africa",
+    "role": "Wicketkeeper-Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm medium",
+    "debutYear": 1997,
+    "intlMatches": 467,
+    "active": false,
+    "difficulty": 1
+  },
+  {
+    "id": "mark-taylor",
+    "name": "Mark Taylor",
+    "aliases": [
+      "Tubby"
+    ],
+    "country": "Australia",
+    "role": "Batter",
+    "battingHand": "Left",
+    "bowlingType": "Right-arm leg-spin",
+    "debutYear": 1989,
+    "intlMatches": 217,
+    "active": false,
+    "difficulty": 1
+  },
+  {
+    "id": "mark-watt",
+    "name": "Mark Watt",
+    "aliases": [],
+    "country": "Scotland",
+    "role": "Bowler",
+    "battingHand": "Left",
+    "bowlingType": "Left-arm orthodox",
+    "debutYear": 2015,
+    "intlMatches": 175,
+    "active": true,
+    "difficulty": 3
+  },
+  {
+    "id": "mark-waugh",
+    "name": "Mark Waugh",
+    "aliases": [
+      "Junior"
+    ],
+    "country": "Australia",
+    "role": "All-rounder",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm medium",
+    "debutYear": 1988,
+    "intlMatches": 372,
+    "active": false,
+    "difficulty": 1
+  },
+  {
+    "id": "mark-wood",
+    "name": "Mark Wood",
+    "aliases": [
+      "Woody"
+    ],
+    "country": "England",
+    "role": "Bowler",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm fast",
+    "debutYear": 2015,
+    "intlMatches": 146,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "marlon-samuels",
+    "name": "Marlon Samuels",
+    "aliases": [],
+    "country": "West Indies",
+    "role": "Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm off-spin",
+    "debutYear": 2000,
+    "intlMatches": 345,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "marnus-labuschagne",
+    "name": "Marnus Labuschagne",
+    "aliases": [],
+    "country": "Australia",
+    "role": "Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm medium",
+    "debutYear": 2018,
+    "intlMatches": 141,
+    "active": true,
+    "difficulty": 1
+  },
+  {
+    "id": "martin-crowe",
+    "name": "Martin Crowe",
+    "aliases": [
+      "Hogan"
+    ],
+    "country": "New Zealand",
+    "role": "Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm medium",
+    "debutYear": 1982,
+    "intlMatches": 220,
+    "active": false,
+    "difficulty": 1
+  },
+  {
+    "id": "martin-guptill",
+    "name": "Martin Guptill",
+    "aliases": [
+      "Guppy"
+    ],
+    "country": "New Zealand",
+    "role": "Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm off-spin",
+    "debutYear": 2009,
+    "intlMatches": 367,
+    "active": false,
+    "difficulty": 1
+  },
+  {
+    "id": "marvan-atapattu",
+    "name": "Marvan Atapattu",
+    "aliases": [],
+    "country": "Sri Lanka",
+    "role": "Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm leg-spin",
+    "debutYear": 1990,
+    "intlMatches": 360,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "mashrafe-mortaza",
+    "name": "Mashrafe Mortaza",
+    "aliases": [
+      "Narail Express"
+    ],
+    "country": "Bangladesh",
+    "role": "Bowler",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm fast",
+    "debutYear": 2001,
+    "intlMatches": 310,
+    "active": false,
+    "difficulty": 1
+  },
+  {
+    "id": "matheesha-pathirana",
+    "name": "Matheesha Pathirana",
+    "aliases": [
+      "Baby Malinga"
+    ],
+    "country": "Sri Lanka",
+    "role": "Bowler",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm fast",
+    "debutYear": 2022,
+    "intlMatches": 36,
+    "active": true,
+    "difficulty": 3
+  },
+  {
+    "id": "matt-henry",
+    "name": "Matt Henry",
+    "aliases": [],
+    "country": "New Zealand",
+    "role": "Bowler",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm fast",
+    "debutYear": 2014,
+    "intlMatches": 175,
+    "active": true,
+    "difficulty": 2
+  },
+  {
+    "id": "matt-prior",
+    "name": "Matt Prior",
+    "aliases": [],
+    "country": "England",
+    "role": "Wicketkeeper-Batter",
+    "battingHand": "Right",
+    "bowlingType": "None",
+    "debutYear": 2004,
+    "intlMatches": 157,
+    "active": false,
+    "difficulty": 2
   },
   {
     "id": "matthew-hayden",
@@ -435,6 +3827,264 @@
     "debutYear": 1993,
     "intlMatches": 273,
     "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "matthew-hoggard",
+    "name": "Matthew Hoggard",
+    "aliases": [],
+    "country": "England",
+    "role": "Bowler",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm fast",
+    "debutYear": 2000,
+    "intlMatches": 93,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "matthew-wade",
+    "name": "Matthew Wade",
+    "aliases": [],
+    "country": "Australia",
+    "role": "Wicketkeeper-Batter",
+    "battingHand": "Left",
+    "bowlingType": "Right-arm medium",
+    "debutYear": 2011,
+    "intlMatches": 225,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "max-o-dowd",
+    "name": "Max O'Dowd",
+    "aliases": [],
+    "country": "Netherlands",
+    "role": "Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm off-spin",
+    "debutYear": 2015,
+    "intlMatches": 163,
+    "active": true,
+    "difficulty": 3
+  },
+  {
+    "id": "mayank-agarwal",
+    "name": "Mayank Agarwal",
+    "aliases": [],
+    "country": "India",
+    "role": "Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm off-spin",
+    "debutYear": 2018,
+    "intlMatches": 26,
+    "active": false,
+    "difficulty": 3
+  },
+  {
+    "id": "mehidy-hasan-miraz",
+    "name": "Mehidy Hasan Miraz",
+    "aliases": [
+      "Miraz"
+    ],
+    "country": "Bangladesh",
+    "role": "All-rounder",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm off-spin",
+    "debutYear": 2016,
+    "intlMatches": 218,
+    "active": true,
+    "difficulty": 2
+  },
+  {
+    "id": "merv-hughes",
+    "name": "Merv Hughes",
+    "aliases": [],
+    "country": "Australia",
+    "role": "Bowler",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm fast",
+    "debutYear": 1985,
+    "intlMatches": 86,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "michael-atherton",
+    "name": "Michael Atherton",
+    "aliases": [
+      "Athers",
+      "Mike Atherton"
+    ],
+    "country": "England",
+    "role": "Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm leg-spin",
+    "debutYear": 1989,
+    "intlMatches": 169,
+    "active": false,
+    "difficulty": 1
+  },
+  {
+    "id": "michael-bevan",
+    "name": "Michael Bevan",
+    "aliases": [],
+    "country": "Australia",
+    "role": "Batter",
+    "battingHand": "Left",
+    "bowlingType": "Left-arm wrist-spin",
+    "debutYear": 1994,
+    "intlMatches": 250,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "michael-clarke",
+    "name": "Michael Clarke",
+    "aliases": [
+      "Pup"
+    ],
+    "country": "Australia",
+    "role": "Batter",
+    "battingHand": "Right",
+    "bowlingType": "Left-arm orthodox",
+    "debutYear": 2003,
+    "intlMatches": 394,
+    "active": false,
+    "difficulty": 1
+  },
+  {
+    "id": "michael-holding",
+    "name": "Michael Holding",
+    "aliases": [
+      "Whispering Death"
+    ],
+    "country": "West Indies",
+    "role": "Bowler",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm fast",
+    "debutYear": 1975,
+    "intlMatches": 162,
+    "active": false,
+    "difficulty": 1
+  },
+  {
+    "id": "michael-kasprowicz",
+    "name": "Michael Kasprowicz",
+    "aliases": [
+      "Kasper"
+    ],
+    "country": "Australia",
+    "role": "Bowler",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm fast",
+    "debutYear": 1995,
+    "intlMatches": 83,
+    "active": false,
+    "difficulty": 3
+  },
+  {
+    "id": "michael-vaughan",
+    "name": "Michael Vaughan",
+    "aliases": [
+      "Vaughany"
+    ],
+    "country": "England",
+    "role": "Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm off-spin",
+    "debutYear": 1999,
+    "intlMatches": 170,
+    "active": false,
+    "difficulty": 1
+  },
+  {
+    "id": "mike-gatting",
+    "name": "Mike Gatting",
+    "aliases": [
+      "Gatt"
+    ],
+    "country": "England",
+    "role": "Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm medium",
+    "debutYear": 1977,
+    "intlMatches": 171,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "mike-hussey",
+    "name": "Mike Hussey",
+    "aliases": [
+      "Mr Cricket",
+      "Michael Hussey"
+    ],
+    "country": "Australia",
+    "role": "Batter",
+    "battingHand": "Left",
+    "bowlingType": "Right-arm medium",
+    "debutYear": 2004,
+    "intlMatches": 302,
+    "active": false,
+    "difficulty": 1
+  },
+  {
+    "id": "misbah-ul-haq",
+    "name": "Misbah-ul-Haq",
+    "aliases": [
+      "Misbah"
+    ],
+    "country": "Pakistan",
+    "role": "Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm leg-spin",
+    "debutYear": 2001,
+    "intlMatches": 276,
+    "active": false,
+    "difficulty": 1
+  },
+  {
+    "id": "mitchell-johnson",
+    "name": "Mitchell Johnson",
+    "aliases": [
+      "Mitch"
+    ],
+    "country": "Australia",
+    "role": "Bowler",
+    "battingHand": "Left",
+    "bowlingType": "Left-arm fast",
+    "debutYear": 2005,
+    "intlMatches": 256,
+    "active": false,
+    "difficulty": 1
+  },
+  {
+    "id": "mitchell-marsh",
+    "name": "Mitchell Marsh",
+    "aliases": [
+      "Bison"
+    ],
+    "country": "Australia",
+    "role": "Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm medium",
+    "debutYear": 2011,
+    "intlMatches": 239,
+    "active": true,
+    "difficulty": 1
+  },
+  {
+    "id": "mitchell-santner",
+    "name": "Mitchell Santner",
+    "aliases": [],
+    "country": "New Zealand",
+    "role": "All-rounder",
+    "battingHand": "Left",
+    "bowlingType": "Left-arm orthodox",
+    "debutYear": 2015,
+    "intlMatches": 304,
+    "active": true,
     "difficulty": 2
   },
   {
@@ -453,6 +4103,172 @@
     "difficulty": 1
   },
   {
+    "id": "moeen-ali",
+    "name": "Moeen Ali",
+    "aliases": [
+      "Mo"
+    ],
+    "country": "England",
+    "role": "All-rounder",
+    "battingHand": "Left",
+    "bowlingType": "Right-arm off-spin",
+    "debutYear": 2014,
+    "intlMatches": 298,
+    "active": false,
+    "difficulty": 1
+  },
+  {
+    "id": "mohammad-amir",
+    "name": "Mohammad Amir",
+    "aliases": [],
+    "country": "Pakistan",
+    "role": "Bowler",
+    "battingHand": "Left",
+    "bowlingType": "Left-arm fast",
+    "debutYear": 2009,
+    "intlMatches": 159,
+    "active": false,
+    "difficulty": 1
+  },
+  {
+    "id": "mohammad-ashraful",
+    "name": "Mohammad Ashraful",
+    "aliases": [],
+    "country": "Bangladesh",
+    "role": "Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm off-spin",
+    "debutYear": 2001,
+    "intlMatches": 261,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "mohammad-asif",
+    "name": "Mohammad Asif",
+    "aliases": [],
+    "country": "Pakistan",
+    "role": "Bowler",
+    "battingHand": "Left",
+    "bowlingType": "Right-arm medium",
+    "debutYear": 2005,
+    "intlMatches": 72,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "mohammad-azharuddin",
+    "name": "Mohammad Azharuddin",
+    "aliases": [
+      "Azhar"
+    ],
+    "country": "India",
+    "role": "Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm medium",
+    "debutYear": 1984,
+    "intlMatches": 433,
+    "active": false,
+    "difficulty": 1
+  },
+  {
+    "id": "mohammad-hafeez",
+    "name": "Mohammad Hafeez",
+    "aliases": [
+      "Professor"
+    ],
+    "country": "Pakistan",
+    "role": "All-rounder",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm off-spin",
+    "debutYear": 2003,
+    "intlMatches": 392,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "mohammad-kaif",
+    "name": "Mohammad Kaif",
+    "aliases": [],
+    "country": "India",
+    "role": "All-rounder",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm off-spin",
+    "debutYear": 2000,
+    "intlMatches": 138,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "mohammad-nabi",
+    "name": "Mohammad Nabi",
+    "aliases": [
+      "Nabi"
+    ],
+    "country": "Afghanistan",
+    "role": "All-rounder",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm off-spin",
+    "debutYear": 2009,
+    "intlMatches": 333,
+    "active": true,
+    "difficulty": 1
+  },
+  {
+    "id": "mohammad-rafique",
+    "name": "Mohammad Rafique",
+    "aliases": [],
+    "country": "Bangladesh",
+    "role": "All-rounder",
+    "battingHand": "Left",
+    "bowlingType": "Left-arm orthodox",
+    "debutYear": 1995,
+    "intlMatches": 159,
+    "active": false,
+    "difficulty": 3
+  },
+  {
+    "id": "mohammad-rizwan",
+    "name": "Mohammad Rizwan",
+    "aliases": [],
+    "country": "Pakistan",
+    "role": "Wicketkeeper-Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm medium",
+    "debutYear": 2015,
+    "intlMatches": 256,
+    "active": true,
+    "difficulty": 1
+  },
+  {
+    "id": "mohammad-shahzad",
+    "name": "Mohammad Shahzad",
+    "aliases": [],
+    "country": "Afghanistan",
+    "role": "Wicketkeeper-Batter",
+    "battingHand": "Right",
+    "bowlingType": "None",
+    "debutYear": 2009,
+    "intlMatches": 159,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "mohammad-yousuf",
+    "name": "Mohammad Yousuf",
+    "aliases": [
+      "Yousuf Youhana"
+    ],
+    "country": "Pakistan",
+    "role": "Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm medium",
+    "debutYear": 1998,
+    "intlMatches": 381,
+    "active": false,
+    "difficulty": 1
+  },
+  {
     "id": "mohammed-shami",
     "name": "Mohammed Shami",
     "aliases": [
@@ -465,6 +4281,90 @@
     "debutYear": 2013,
     "intlMatches": 197,
     "active": true,
+    "difficulty": 2
+  },
+  {
+    "id": "mohammed-siraj",
+    "name": "Mohammed Siraj",
+    "aliases": [
+      "Miyan"
+    ],
+    "country": "India",
+    "role": "Bowler",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm fast",
+    "debutYear": 2017,
+    "intlMatches": 114,
+    "active": true,
+    "difficulty": 1
+  },
+  {
+    "id": "mohinder-amarnath",
+    "name": "Mohinder Amarnath",
+    "aliases": [],
+    "country": "India",
+    "role": "All-rounder",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm medium",
+    "debutYear": 1969,
+    "intlMatches": 154,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "moin-khan",
+    "name": "Moin Khan",
+    "aliases": [],
+    "country": "Pakistan",
+    "role": "Wicketkeeper-Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm off-spin",
+    "debutYear": 1990,
+    "intlMatches": 288,
+    "active": false,
+    "difficulty": 3
+  },
+  {
+    "id": "mominul-haque",
+    "name": "Mominul Haque",
+    "aliases": [],
+    "country": "Bangladesh",
+    "role": "Batter",
+    "battingHand": "Left",
+    "bowlingType": "Left-arm orthodox",
+    "debutYear": 2012,
+    "intlMatches": 113,
+    "active": true,
+    "difficulty": 3
+  },
+  {
+    "id": "monty-panesar",
+    "name": "Monty Panesar",
+    "aliases": [
+      "Monty"
+    ],
+    "country": "England",
+    "role": "Bowler",
+    "battingHand": "Left",
+    "bowlingType": "Left-arm orthodox",
+    "debutYear": 2006,
+    "intlMatches": 77,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "morne-morkel",
+    "name": "Morne Morkel",
+    "aliases": [
+      "Morné Morkel"
+    ],
+    "country": "South Africa",
+    "role": "Bowler",
+    "battingHand": "Left",
+    "bowlingType": "Right-arm fast",
+    "debutYear": 2006,
+    "intlMatches": 246,
+    "active": false,
     "difficulty": 2
   },
   {
@@ -486,6 +4386,103 @@
     "difficulty": 1
   },
   {
+    "id": "mujeeb-ur-rahman",
+    "name": "Mujeeb Ur Rahman",
+    "aliases": [
+      "Mujeeb"
+    ],
+    "country": "Afghanistan",
+    "role": "Bowler",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm off-spin",
+    "debutYear": 2017,
+    "intlMatches": 141,
+    "active": true,
+    "difficulty": 2
+  },
+  {
+    "id": "munaf-patel",
+    "name": "Munaf Patel",
+    "aliases": [],
+    "country": "India",
+    "role": "Bowler",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm fast",
+    "debutYear": 2006,
+    "intlMatches": 86,
+    "active": false,
+    "difficulty": 3
+  },
+  {
+    "id": "murali-vijay",
+    "name": "Murali Vijay",
+    "aliases": [],
+    "country": "India",
+    "role": "Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm off-spin",
+    "debutYear": 2008,
+    "intlMatches": 87,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "murray-goodwin",
+    "name": "Murray Goodwin",
+    "aliases": [],
+    "country": "Zimbabwe",
+    "role": "Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm leg-spin",
+    "debutYear": 1998,
+    "intlMatches": 90,
+    "active": false,
+    "difficulty": 3
+  },
+  {
+    "id": "mushfiqur-rahim",
+    "name": "Mushfiqur Rahim",
+    "aliases": [
+      "Mushfiq"
+    ],
+    "country": "Bangladesh",
+    "role": "Wicketkeeper-Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm off-spin",
+    "debutYear": 2005,
+    "intlMatches": 481,
+    "active": true,
+    "difficulty": 1
+  },
+  {
+    "id": "mushtaq-ahmed",
+    "name": "Mushtaq Ahmed",
+    "aliases": [],
+    "country": "Pakistan",
+    "role": "Bowler",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm leg-spin",
+    "debutYear": 1989,
+    "intlMatches": 196,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "mustafizur-rahman",
+    "name": "Mustafizur Rahman",
+    "aliases": [
+      "Fizz"
+    ],
+    "country": "Bangladesh",
+    "role": "Bowler",
+    "battingHand": "Left",
+    "bowlingType": "Left-arm fast",
+    "debutYear": 2015,
+    "intlMatches": 266,
+    "active": true,
+    "difficulty": 1
+  },
+  {
     "id": "muttiah-muralitharan",
     "name": "Muttiah Muralitharan",
     "aliases": [
@@ -501,6 +4498,285 @@
     "difficulty": 1
   },
   {
+    "id": "najibullah-zadran",
+    "name": "Najibullah Zadran",
+    "aliases": [],
+    "country": "Afghanistan",
+    "role": "Batter",
+    "battingHand": "Left",
+    "bowlingType": "Right-arm off-spin",
+    "debutYear": 2012,
+    "intlMatches": 199,
+    "active": false,
+    "difficulty": 3
+  },
+  {
+    "id": "najmul-hossain-shanto",
+    "name": "Najmul Hossain Shanto",
+    "aliases": [
+      "Shanto"
+    ],
+    "country": "Bangladesh",
+    "role": "Batter",
+    "battingHand": "Left",
+    "bowlingType": "Right-arm off-spin",
+    "debutYear": 2017,
+    "intlMatches": 163,
+    "active": true,
+    "difficulty": 2
+  },
+  {
+    "id": "naseem-shah",
+    "name": "Naseem Shah",
+    "aliases": [],
+    "country": "Pakistan",
+    "role": "Bowler",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm fast",
+    "debutYear": 2019,
+    "intlMatches": 93,
+    "active": true,
+    "difficulty": 2
+  },
+  {
+    "id": "nasser-hussain",
+    "name": "Nasser Hussain",
+    "aliases": [],
+    "country": "England",
+    "role": "Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm leg-spin",
+    "debutYear": 1989,
+    "intlMatches": 184,
+    "active": false,
+    "difficulty": 1
+  },
+  {
+    "id": "nathan-astle",
+    "name": "Nathan Astle",
+    "aliases": [],
+    "country": "New Zealand",
+    "role": "Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm medium",
+    "debutYear": 1995,
+    "intlMatches": 308,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "nathan-bracken",
+    "name": "Nathan Bracken",
+    "aliases": [],
+    "country": "Australia",
+    "role": "Bowler",
+    "battingHand": "Right",
+    "bowlingType": "Left-arm fast",
+    "debutYear": 2001,
+    "intlMatches": 140,
+    "active": false,
+    "difficulty": 3
+  },
+  {
+    "id": "nathan-lyon",
+    "name": "Nathan Lyon",
+    "aliases": [
+      "Gary"
+    ],
+    "country": "Australia",
+    "role": "Bowler",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm off-spin",
+    "debutYear": 2011,
+    "intlMatches": 176,
+    "active": true,
+    "difficulty": 1
+  },
+  {
+    "id": "naveen-ul-haq",
+    "name": "Naveen-ul-Haq",
+    "aliases": [
+      "Naveen"
+    ],
+    "country": "Afghanistan",
+    "role": "Bowler",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm medium",
+    "debutYear": 2016,
+    "intlMatches": 63,
+    "active": true,
+    "difficulty": 2
+  },
+  {
+    "id": "navjot-singh-sidhu",
+    "name": "Navjot Singh Sidhu",
+    "aliases": [],
+    "country": "India",
+    "role": "Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm medium",
+    "debutYear": 1983,
+    "intlMatches": 187,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "nayan-mongia",
+    "name": "Nayan Mongia",
+    "aliases": [],
+    "country": "India",
+    "role": "Wicketkeeper-Batter",
+    "battingHand": "Right",
+    "bowlingType": "None",
+    "debutYear": 1994,
+    "intlMatches": 184,
+    "active": false,
+    "difficulty": 3
+  },
+  {
+    "id": "neil-johnson",
+    "name": "Neil Johnson",
+    "aliases": [],
+    "country": "Zimbabwe",
+    "role": "All-rounder",
+    "battingHand": "Left",
+    "bowlingType": "Right-arm fast",
+    "debutYear": 1998,
+    "intlMatches": 61,
+    "active": false,
+    "difficulty": 3
+  },
+  {
+    "id": "neil-mckenzie",
+    "name": "Neil McKenzie",
+    "aliases": [],
+    "country": "South Africa",
+    "role": "Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm medium",
+    "debutYear": 2000,
+    "intlMatches": 124,
+    "active": false,
+    "difficulty": 3
+  },
+  {
+    "id": "neil-wagner",
+    "name": "Neil Wagner",
+    "aliases": [],
+    "country": "New Zealand",
+    "role": "Bowler",
+    "battingHand": "Left",
+    "bowlingType": "Left-arm fast",
+    "debutYear": 2012,
+    "intlMatches": 64,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "niall-o-brien",
+    "name": "Niall O'Brien",
+    "aliases": [],
+    "country": "Ireland",
+    "role": "Wicketkeeper-Batter",
+    "battingHand": "Left",
+    "bowlingType": "None",
+    "debutYear": 2006,
+    "intlMatches": 134,
+    "active": false,
+    "difficulty": 3
+  },
+  {
+    "id": "nicholas-pooran",
+    "name": "Nicholas Pooran",
+    "aliases": [],
+    "country": "West Indies",
+    "role": "Wicketkeeper-Batter",
+    "battingHand": "Left",
+    "bowlingType": "Right-arm off-spin",
+    "debutYear": 2016,
+    "intlMatches": 167,
+    "active": false,
+    "difficulty": 1
+  },
+  {
+    "id": "nicky-boje",
+    "name": "Nicky Boje",
+    "aliases": [],
+    "country": "South Africa",
+    "role": "All-rounder",
+    "battingHand": "Left",
+    "bowlingType": "Left-arm orthodox",
+    "debutYear": 1995,
+    "intlMatches": 159,
+    "active": false,
+    "difficulty": 3
+  },
+  {
+    "id": "niroshan-dickwella",
+    "name": "Niroshan Dickwella",
+    "aliases": [],
+    "country": "Sri Lanka",
+    "role": "Wicketkeeper-Batter",
+    "battingHand": "Left",
+    "bowlingType": "None",
+    "debutYear": 2014,
+    "intlMatches": 139,
+    "active": true,
+    "difficulty": 3
+  },
+  {
+    "id": "nitish-kumar-reddy",
+    "name": "Nitish Kumar Reddy",
+    "aliases": [],
+    "country": "India",
+    "role": "All-rounder",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm medium",
+    "debutYear": 2024,
+    "intlMatches": 32,
+    "active": true,
+    "difficulty": 3
+  },
+  {
+    "id": "nuwan-kulasekara",
+    "name": "Nuwan Kulasekara",
+    "aliases": [],
+    "country": "Sri Lanka",
+    "role": "Bowler",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm fast",
+    "debutYear": 2003,
+    "intlMatches": 263,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "ollie-pope",
+    "name": "Ollie Pope",
+    "aliases": [],
+    "country": "England",
+    "role": "Wicketkeeper-Batter",
+    "battingHand": "Right",
+    "bowlingType": "None",
+    "debutYear": 2018,
+    "intlMatches": 64,
+    "active": true,
+    "difficulty": 2
+  },
+  {
+    "id": "parthiv-patel",
+    "name": "Parthiv Patel",
+    "aliases": [],
+    "country": "India",
+    "role": "Wicketkeeper-Batter",
+    "battingHand": "Left",
+    "bowlingType": "None",
+    "debutYear": 2002,
+    "intlMatches": 65,
+    "active": false,
+    "difficulty": 2
+  },
+  {
     "id": "pat-cummins",
     "name": "Pat Cummins",
     "aliases": [
@@ -514,6 +4790,209 @@
     "intlMatches": 225,
     "active": true,
     "difficulty": 1
+  },
+  {
+    "id": "pathum-nissanka",
+    "name": "Pathum Nissanka",
+    "aliases": [],
+    "country": "Sri Lanka",
+    "role": "Batter",
+    "battingHand": "Right",
+    "bowlingType": "None",
+    "debutYear": 2021,
+    "intlMatches": 188,
+    "active": true,
+    "difficulty": 2
+  },
+  {
+    "id": "paul-adams",
+    "name": "Paul Adams",
+    "aliases": [],
+    "country": "South Africa",
+    "role": "Bowler",
+    "battingHand": "Right",
+    "bowlingType": "Left-arm wrist-spin",
+    "debutYear": 1995,
+    "intlMatches": 69,
+    "active": false,
+    "difficulty": 3
+  },
+  {
+    "id": "paul-collingwood",
+    "name": "Paul Collingwood",
+    "aliases": [
+      "Colly"
+    ],
+    "country": "England",
+    "role": "All-rounder",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm medium",
+    "debutYear": 2001,
+    "intlMatches": 301,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "paul-stirling",
+    "name": "Paul Stirling",
+    "aliases": [
+      "Stirlo"
+    ],
+    "country": "Ireland",
+    "role": "Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm off-spin",
+    "debutYear": 2008,
+    "intlMatches": 347,
+    "active": true,
+    "difficulty": 2
+  },
+  {
+    "id": "paul-strang",
+    "name": "Paul Strang",
+    "aliases": [],
+    "country": "Zimbabwe",
+    "role": "All-rounder",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm leg-spin",
+    "debutYear": 1994,
+    "intlMatches": 119,
+    "active": false,
+    "difficulty": 3
+  },
+  {
+    "id": "paul-van-meekeren",
+    "name": "Paul van Meekeren",
+    "aliases": [],
+    "country": "Netherlands",
+    "role": "Bowler",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm fast",
+    "debutYear": 2013,
+    "intlMatches": 117,
+    "active": false,
+    "difficulty": 3
+  },
+  {
+    "id": "peter-siddle",
+    "name": "Peter Siddle",
+    "aliases": [
+      "Sidds"
+    ],
+    "country": "Australia",
+    "role": "Bowler",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm fast",
+    "debutYear": 2008,
+    "intlMatches": 89,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "phil-salt",
+    "name": "Phil Salt",
+    "aliases": [],
+    "country": "England",
+    "role": "Wicketkeeper-Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm off-spin",
+    "debutYear": 2021,
+    "intlMatches": 98,
+    "active": true,
+    "difficulty": 2
+  },
+  {
+    "id": "phil-tufnell",
+    "name": "Phil Tufnell",
+    "aliases": [
+      "Tuffers"
+    ],
+    "country": "England",
+    "role": "Bowler",
+    "battingHand": "Right",
+    "bowlingType": "Left-arm orthodox",
+    "debutYear": 1990,
+    "intlMatches": 62,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "phillip-hughes",
+    "name": "Phillip Hughes",
+    "aliases": [],
+    "country": "Australia",
+    "role": "Batter",
+    "battingHand": "Left",
+    "bowlingType": "Right-arm off-spin",
+    "debutYear": 2009,
+    "intlMatches": 52,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "piyush-chawla",
+    "name": "Piyush Chawla",
+    "aliases": [],
+    "country": "India",
+    "role": "All-rounder",
+    "battingHand": "Left",
+    "bowlingType": "Right-arm leg-spin",
+    "debutYear": 2006,
+    "intlMatches": 35,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "pragyan-ojha",
+    "name": "Pragyan Ojha",
+    "aliases": [],
+    "country": "India",
+    "role": "Bowler",
+    "battingHand": "Left",
+    "bowlingType": "Left-arm orthodox",
+    "debutYear": 2008,
+    "intlMatches": 48,
+    "active": false,
+    "difficulty": 3
+  },
+  {
+    "id": "prasidh-krishna",
+    "name": "Prasidh Krishna",
+    "aliases": [],
+    "country": "India",
+    "role": "Bowler",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm fast",
+    "debutYear": 2021,
+    "intlMatches": 44,
+    "active": true,
+    "difficulty": 3
+  },
+  {
+    "id": "prithvi-shaw",
+    "name": "Prithvi Shaw",
+    "aliases": [],
+    "country": "India",
+    "role": "Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm off-spin",
+    "debutYear": 2018,
+    "intlMatches": 12,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "prosper-utseya",
+    "name": "Prosper Utseya",
+    "aliases": [],
+    "country": "Zimbabwe",
+    "role": "Bowler",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm off-spin",
+    "debutYear": 2004,
+    "intlMatches": 203,
+    "active": false,
+    "difficulty": 3
   },
   {
     "id": "quinton-de-kock",
@@ -532,6 +5011,47 @@
     "difficulty": 2
   },
   {
+    "id": "rachin-ravindra",
+    "name": "Rachin Ravindra",
+    "aliases": [],
+    "country": "New Zealand",
+    "role": "All-rounder",
+    "battingHand": "Left",
+    "bowlingType": "Left-arm orthodox",
+    "debutYear": 2021,
+    "intlMatches": 115,
+    "active": true,
+    "difficulty": 2
+  },
+  {
+    "id": "rahmanullah-gurbaz",
+    "name": "Rahmanullah Gurbaz",
+    "aliases": [
+      "Gurbaz"
+    ],
+    "country": "Afghanistan",
+    "role": "Wicketkeeper-Batter",
+    "battingHand": "Right",
+    "bowlingType": "None",
+    "debutYear": 2019,
+    "intlMatches": 154,
+    "active": true,
+    "difficulty": 2
+  },
+  {
+    "id": "rahmat-shah",
+    "name": "Rahmat Shah",
+    "aliases": [],
+    "country": "Afghanistan",
+    "role": "All-rounder",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm leg-spin",
+    "debutYear": 2013,
+    "intlMatches": 145,
+    "active": true,
+    "difficulty": 3
+  },
+  {
     "id": "rahul-dravid",
     "name": "Rahul Dravid",
     "aliases": [
@@ -548,6 +5068,45 @@
     "difficulty": 1
   },
   {
+    "id": "ramiz-raja",
+    "name": "Ramiz Raja",
+    "aliases": [],
+    "country": "Pakistan",
+    "role": "Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm leg-spin",
+    "debutYear": 1984,
+    "intlMatches": 255,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "ramnaresh-sarwan",
+    "name": "Ramnaresh Sarwan",
+    "aliases": [],
+    "country": "West Indies",
+    "role": "Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm leg-spin",
+    "debutYear": 2000,
+    "intlMatches": 286,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "rangana-herath",
+    "name": "Rangana Herath",
+    "aliases": [],
+    "country": "Sri Lanka",
+    "role": "Bowler",
+    "battingHand": "Left",
+    "bowlingType": "Left-arm orthodox",
+    "debutYear": 1999,
+    "intlMatches": 181,
+    "active": false,
+    "difficulty": 2
+  },
+  {
     "id": "rashid-khan",
     "name": "Rashid Khan",
     "aliases": [],
@@ -558,6 +5117,71 @@
     "debutYear": 2015,
     "intlMatches": 244,
     "active": true,
+    "difficulty": 1
+  },
+  {
+    "id": "rashid-latif",
+    "name": "Rashid Latif",
+    "aliases": [],
+    "country": "Pakistan",
+    "role": "Wicketkeeper-Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm leg-spin",
+    "debutYear": 1992,
+    "intlMatches": 203,
+    "active": false,
+    "difficulty": 3
+  },
+  {
+    "id": "rassie-van-der-dussen",
+    "name": "Rassie van der Dussen",
+    "aliases": [],
+    "country": "South Africa",
+    "role": "Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm leg-spin",
+    "debutYear": 2018,
+    "intlMatches": 146,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "ravi-bishnoi",
+    "name": "Ravi Bishnoi",
+    "aliases": [],
+    "country": "India",
+    "role": "Bowler",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm leg-spin",
+    "debutYear": 2022,
+    "intlMatches": 49,
+    "active": true,
+    "difficulty": 2
+  },
+  {
+    "id": "ravi-bopara",
+    "name": "Ravi Bopara",
+    "aliases": [],
+    "country": "England",
+    "role": "All-rounder",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm medium",
+    "debutYear": 2007,
+    "intlMatches": 171,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "ravi-shastri",
+    "name": "Ravi Shastri",
+    "aliases": [],
+    "country": "India",
+    "role": "All-rounder",
+    "battingHand": "Right",
+    "bowlingType": "Left-arm orthodox",
+    "debutYear": 1981,
+    "intlMatches": 230,
+    "active": false,
     "difficulty": 1
   },
   {
@@ -593,6 +5217,60 @@
     "difficulty": 1
   },
   {
+    "id": "reeza-hendricks",
+    "name": "Reeza Hendricks",
+    "aliases": [],
+    "country": "South Africa",
+    "role": "Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm off-spin",
+    "debutYear": 2014,
+    "intlMatches": 127,
+    "active": true,
+    "difficulty": 3
+  },
+  {
+    "id": "richard-hadlee",
+    "name": "Richard Hadlee",
+    "aliases": [
+      "Paddles"
+    ],
+    "country": "New Zealand",
+    "role": "All-rounder",
+    "battingHand": "Left",
+    "bowlingType": "Right-arm fast",
+    "debutYear": 1973,
+    "intlMatches": 201,
+    "active": false,
+    "difficulty": 1
+  },
+  {
+    "id": "richie-berrington",
+    "name": "Richie Berrington",
+    "aliases": [],
+    "country": "Scotland",
+    "role": "All-rounder",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm medium",
+    "debutYear": 2008,
+    "intlMatches": 251,
+    "active": true,
+    "difficulty": 3
+  },
+  {
+    "id": "richie-richardson",
+    "name": "Richie Richardson",
+    "aliases": [],
+    "country": "West Indies",
+    "role": "Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm medium",
+    "debutYear": 1983,
+    "intlMatches": 310,
+    "active": false,
+    "difficulty": 2
+  },
+  {
     "id": "ricky-ponting",
     "name": "Ricky Ponting",
     "aliases": [
@@ -608,6 +5286,32 @@
     "difficulty": 1
   },
   {
+    "id": "ridley-jacobs",
+    "name": "Ridley Jacobs",
+    "aliases": [],
+    "country": "West Indies",
+    "role": "Wicketkeeper-Batter",
+    "battingHand": "Left",
+    "bowlingType": "None",
+    "debutYear": 1996,
+    "intlMatches": 212,
+    "active": false,
+    "difficulty": 3
+  },
+  {
+    "id": "rinku-singh",
+    "name": "Rinku Singh",
+    "aliases": [],
+    "country": "India",
+    "role": "Batter",
+    "battingHand": "Left",
+    "bowlingType": "Right-arm off-spin",
+    "debutYear": 2023,
+    "intlMatches": 47,
+    "active": true,
+    "difficulty": 2
+  },
+  {
     "id": "rishabh-pant",
     "name": "Rishabh Pant",
     "aliases": [],
@@ -619,6 +5323,32 @@
     "intlMatches": 158,
     "active": true,
     "difficulty": 1
+  },
+  {
+    "id": "robin-uthappa",
+    "name": "Robin Uthappa",
+    "aliases": [],
+    "country": "India",
+    "role": "Wicketkeeper-Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm medium",
+    "debutYear": 2006,
+    "intlMatches": 59,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "roelof-van-der-merwe",
+    "name": "Roelof van der Merwe",
+    "aliases": [],
+    "country": "Netherlands",
+    "role": "All-rounder",
+    "battingHand": "Right",
+    "bowlingType": "Left-arm orthodox",
+    "debutYear": 2009,
+    "intlMatches": 117,
+    "active": false,
+    "difficulty": 3
   },
   {
     "id": "rohit-sharma",
@@ -637,6 +5367,144 @@
     "difficulty": 1
   },
   {
+    "id": "romario-shepherd",
+    "name": "Romario Shepherd",
+    "aliases": [],
+    "country": "West Indies",
+    "role": "All-rounder",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm fast",
+    "debutYear": 2019,
+    "intlMatches": 127,
+    "active": true,
+    "difficulty": 3
+  },
+  {
+    "id": "romesh-kaluwitharana",
+    "name": "Romesh Kaluwitharana",
+    "aliases": [
+      "Little Kalu"
+    ],
+    "country": "Sri Lanka",
+    "role": "Wicketkeeper-Batter",
+    "battingHand": "Right",
+    "bowlingType": "None",
+    "debutYear": 1990,
+    "intlMatches": 238,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "roshan-mahanama",
+    "name": "Roshan Mahanama",
+    "aliases": [],
+    "country": "Sri Lanka",
+    "role": "Batter",
+    "battingHand": "Right",
+    "bowlingType": "None",
+    "debutYear": 1986,
+    "intlMatches": 265,
+    "active": false,
+    "difficulty": 3
+  },
+  {
+    "id": "ross-taylor",
+    "name": "Ross Taylor",
+    "aliases": [
+      "Rosco"
+    ],
+    "country": "New Zealand",
+    "role": "Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm off-spin",
+    "debutYear": 2006,
+    "intlMatches": 454,
+    "active": false,
+    "difficulty": 1
+  },
+  {
+    "id": "rovman-powell",
+    "name": "Rovman Powell",
+    "aliases": [],
+    "country": "West Indies",
+    "role": "Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm medium",
+    "debutYear": 2016,
+    "intlMatches": 172,
+    "active": true,
+    "difficulty": 2
+  },
+  {
+    "id": "rp-singh",
+    "name": "RP Singh",
+    "aliases": [
+      "Rudra Pratap Singh"
+    ],
+    "country": "India",
+    "role": "Bowler",
+    "battingHand": "Right",
+    "bowlingType": "Left-arm fast",
+    "debutYear": 2005,
+    "intlMatches": 82,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "rubel-hossain",
+    "name": "Rubel Hossain",
+    "aliases": [],
+    "country": "Bangladesh",
+    "role": "Bowler",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm fast",
+    "debutYear": 2009,
+    "intlMatches": 159,
+    "active": false,
+    "difficulty": 3
+  },
+  {
+    "id": "ruturaj-gaikwad",
+    "name": "Ruturaj Gaikwad",
+    "aliases": [],
+    "country": "India",
+    "role": "Wicketkeeper-Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm off-spin",
+    "debutYear": 2021,
+    "intlMatches": 35,
+    "active": true,
+    "difficulty": 2
+  },
+  {
+    "id": "ryan-harris",
+    "name": "Ryan Harris",
+    "aliases": [
+      "Rhino"
+    ],
+    "country": "Australia",
+    "role": "Bowler",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm fast",
+    "debutYear": 2009,
+    "intlMatches": 51,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "ryan-ten-doeschate",
+    "name": "Ryan ten Doeschate",
+    "aliases": [],
+    "country": "Netherlands",
+    "role": "All-rounder",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm medium",
+    "debutYear": 2006,
+    "intlMatches": 57,
+    "active": false,
+    "difficulty": 2
+  },
+  {
     "id": "sachin-tendulkar",
     "name": "Sachin Tendulkar",
     "aliases": [
@@ -651,6 +5519,231 @@
     "intlMatches": 664,
     "active": false,
     "difficulty": 1
+  },
+  {
+    "id": "saeed-ajmal",
+    "name": "Saeed Ajmal",
+    "aliases": [],
+    "country": "Pakistan",
+    "role": "Bowler",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm off-spin",
+    "debutYear": 2008,
+    "intlMatches": 212,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "saeed-anwar",
+    "name": "Saeed Anwar",
+    "aliases": [],
+    "country": "Pakistan",
+    "role": "Batter",
+    "battingHand": "Left",
+    "bowlingType": "Left-arm orthodox",
+    "debutYear": 1989,
+    "intlMatches": 302,
+    "active": false,
+    "difficulty": 1
+  },
+  {
+    "id": "safyaan-sharif",
+    "name": "Safyaan Sharif",
+    "aliases": [],
+    "country": "Scotland",
+    "role": "Bowler",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm fast",
+    "debutYear": 2011,
+    "intlMatches": 175,
+    "active": true,
+    "difficulty": 3
+  },
+  {
+    "id": "sam-curran",
+    "name": "Sam Curran",
+    "aliases": [],
+    "country": "England",
+    "role": "All-rounder",
+    "battingHand": "Left",
+    "bowlingType": "Left-arm medium",
+    "debutYear": 2018,
+    "intlMatches": 152,
+    "active": true,
+    "difficulty": 2
+  },
+  {
+    "id": "sam-konstas",
+    "name": "Sam Konstas",
+    "aliases": [],
+    "country": "Australia",
+    "role": "Batter",
+    "battingHand": "Right",
+    "bowlingType": "None",
+    "debutYear": 2024,
+    "intlMatches": 5,
+    "active": true,
+    "difficulty": 3
+  },
+  {
+    "id": "samuel-badree",
+    "name": "Samuel Badree",
+    "aliases": [],
+    "country": "West Indies",
+    "role": "Bowler",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm leg-spin",
+    "debutYear": 2012,
+    "intlMatches": 52,
+    "active": false,
+    "difficulty": 3
+  },
+  {
+    "id": "sanath-jayasuriya",
+    "name": "Sanath Jayasuriya",
+    "aliases": [],
+    "country": "Sri Lanka",
+    "role": "All-rounder",
+    "battingHand": "Left",
+    "bowlingType": "Left-arm orthodox",
+    "debutYear": 1989,
+    "intlMatches": 586,
+    "active": false,
+    "difficulty": 1
+  },
+  {
+    "id": "sanju-samson",
+    "name": "Sanju Samson",
+    "aliases": [],
+    "country": "India",
+    "role": "Wicketkeeper-Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm off-spin",
+    "debutYear": 2015,
+    "intlMatches": 98,
+    "active": true,
+    "difficulty": 2
+  },
+  {
+    "id": "saqlain-mushtaq",
+    "name": "Saqlain Mushtaq",
+    "aliases": [
+      "Saqi"
+    ],
+    "country": "Pakistan",
+    "role": "Bowler",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm off-spin",
+    "debutYear": 1995,
+    "intlMatches": 218,
+    "active": false,
+    "difficulty": 1
+  },
+  {
+    "id": "sarfaraz-ahmed",
+    "name": "Sarfaraz Ahmed",
+    "aliases": [
+      "Sarfu"
+    ],
+    "country": "Pakistan",
+    "role": "Wicketkeeper-Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm off-spin",
+    "debutYear": 2007,
+    "intlMatches": 232,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "sarfaraz-khan",
+    "name": "Sarfaraz Khan",
+    "aliases": [],
+    "country": "India",
+    "role": "Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm leg-spin",
+    "debutYear": 2024,
+    "intlMatches": 6,
+    "active": false,
+    "difficulty": 3
+  },
+  {
+    "id": "saud-shakeel",
+    "name": "Saud Shakeel",
+    "aliases": [],
+    "country": "Pakistan",
+    "role": "Batter",
+    "battingHand": "Left",
+    "bowlingType": "Left-arm orthodox",
+    "debutYear": 2021,
+    "intlMatches": 45,
+    "active": true,
+    "difficulty": 3
+  },
+  {
+    "id": "scott-boland",
+    "name": "Scott Boland",
+    "aliases": [],
+    "country": "Australia",
+    "role": "Bowler",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm fast",
+    "debutYear": 2016,
+    "intlMatches": 37,
+    "active": true,
+    "difficulty": 2
+  },
+  {
+    "id": "scott-edwards",
+    "name": "Scott Edwards",
+    "aliases": [],
+    "country": "Netherlands",
+    "role": "Wicketkeeper-Batter",
+    "battingHand": "Right",
+    "bowlingType": "None",
+    "debutYear": 2018,
+    "intlMatches": 162,
+    "active": true,
+    "difficulty": 3
+  },
+  {
+    "id": "scott-styris",
+    "name": "Scott Styris",
+    "aliases": [],
+    "country": "New Zealand",
+    "role": "All-rounder",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm medium",
+    "debutYear": 1999,
+    "intlMatches": 248,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "sean-williams",
+    "name": "Sean Williams",
+    "aliases": [],
+    "country": "Zimbabwe",
+    "role": "All-rounder",
+    "battingHand": "Left",
+    "bowlingType": "Left-arm orthodox",
+    "debutYear": 2005,
+    "intlMatches": 263,
+    "active": true,
+    "difficulty": 3
+  },
+  {
+    "id": "shadab-khan",
+    "name": "Shadab Khan",
+    "aliases": [],
+    "country": "Pakistan",
+    "role": "All-rounder",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm leg-spin",
+    "debutYear": 2017,
+    "intlMatches": 206,
+    "active": true,
+    "difficulty": 2
   },
   {
     "id": "shaheen-afridi",
@@ -684,6 +5777,19 @@
     "difficulty": 1
   },
   {
+    "id": "shai-hope",
+    "name": "Shai Hope",
+    "aliases": [],
+    "country": "West Indies",
+    "role": "Wicketkeeper-Batter",
+    "battingHand": "Right",
+    "bowlingType": "Left-arm medium",
+    "debutYear": 2015,
+    "intlMatches": 281,
+    "active": true,
+    "difficulty": 2
+  },
+  {
     "id": "shakib-al-hasan",
     "name": "Shakib Al Hasan",
     "aliases": [
@@ -699,6 +5805,45 @@
     "difficulty": 2
   },
   {
+    "id": "shamar-joseph",
+    "name": "Shamar Joseph",
+    "aliases": [],
+    "country": "West Indies",
+    "role": "Bowler",
+    "battingHand": "Left",
+    "bowlingType": "Right-arm fast",
+    "debutYear": 2024,
+    "intlMatches": 52,
+    "active": true,
+    "difficulty": 2
+  },
+  {
+    "id": "shan-masood",
+    "name": "Shan Masood",
+    "aliases": [],
+    "country": "Pakistan",
+    "role": "Batter",
+    "battingHand": "Left",
+    "bowlingType": "Right-arm fast",
+    "debutYear": 2013,
+    "intlMatches": 78,
+    "active": true,
+    "difficulty": 2
+  },
+  {
+    "id": "shane-bond",
+    "name": "Shane Bond",
+    "aliases": [],
+    "country": "New Zealand",
+    "role": "Bowler",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm fast",
+    "debutYear": 2001,
+    "intlMatches": 120,
+    "active": false,
+    "difficulty": 1
+  },
+  {
     "id": "shane-warne",
     "name": "Shane Warne",
     "aliases": [
@@ -710,6 +5855,148 @@
     "bowlingType": "Right-arm leg-spin",
     "debutYear": 1992,
     "intlMatches": 339,
+    "active": false,
+    "difficulty": 1
+  },
+  {
+    "id": "shane-watson",
+    "name": "Shane Watson",
+    "aliases": [
+      "Watto"
+    ],
+    "country": "Australia",
+    "role": "All-rounder",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm fast",
+    "debutYear": 2002,
+    "intlMatches": 307,
+    "active": false,
+    "difficulty": 1
+  },
+  {
+    "id": "shardul-thakur",
+    "name": "Shardul Thakur",
+    "aliases": [
+      "Lord Shardul"
+    ],
+    "country": "India",
+    "role": "Bowler",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm medium",
+    "debutYear": 2017,
+    "intlMatches": 85,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "shaun-marsh",
+    "name": "Shaun Marsh",
+    "aliases": [],
+    "country": "Australia",
+    "role": "Batter",
+    "battingHand": "Left",
+    "bowlingType": "Left-arm orthodox",
+    "debutYear": 2008,
+    "intlMatches": 126,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "shaun-pollock",
+    "name": "Shaun Pollock",
+    "aliases": [
+      "Polly"
+    ],
+    "country": "South Africa",
+    "role": "All-rounder",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm fast",
+    "debutYear": 1995,
+    "intlMatches": 423,
+    "active": false,
+    "difficulty": 1
+  },
+  {
+    "id": "shaun-tait",
+    "name": "Shaun Tait",
+    "aliases": [],
+    "country": "Australia",
+    "role": "Bowler",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm fast",
+    "debutYear": 2005,
+    "intlMatches": 59,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "sheldon-cottrell",
+    "name": "Sheldon Cottrell",
+    "aliases": [],
+    "country": "West Indies",
+    "role": "Bowler",
+    "battingHand": "Right",
+    "bowlingType": "Left-arm fast",
+    "debutYear": 2013,
+    "intlMatches": 82,
+    "active": false,
+    "difficulty": 3
+  },
+  {
+    "id": "shikhar-dhawan",
+    "name": "Shikhar Dhawan",
+    "aliases": [
+      "Gabbar"
+    ],
+    "country": "India",
+    "role": "Batter",
+    "battingHand": "Left",
+    "bowlingType": "Right-arm off-spin",
+    "debutYear": 2010,
+    "intlMatches": 269,
+    "active": false,
+    "difficulty": 1
+  },
+  {
+    "id": "shimron-hetmyer",
+    "name": "Shimron Hetmyer",
+    "aliases": [
+      "Hettie"
+    ],
+    "country": "West Indies",
+    "role": "Batter",
+    "battingHand": "Left",
+    "bowlingType": "None",
+    "debutYear": 2017,
+    "intlMatches": 160,
+    "active": true,
+    "difficulty": 2
+  },
+  {
+    "id": "shivam-dube",
+    "name": "Shivam Dube",
+    "aliases": [],
+    "country": "India",
+    "role": "All-rounder",
+    "battingHand": "Left",
+    "bowlingType": "Right-arm medium",
+    "debutYear": 2019,
+    "intlMatches": 79,
+    "active": true,
+    "difficulty": 2
+  },
+  {
+    "id": "shivnarine-chanderpaul",
+    "name": "Shivnarine Chanderpaul",
+    "aliases": [
+      "Tiger"
+    ],
+    "country": "West Indies",
+    "role": "Batter",
+    "battingHand": "Left",
+    "bowlingType": "Right-arm leg-spin",
+    "debutYear": 1994,
+    "intlMatches": 454,
     "active": false,
     "difficulty": 1
   },
@@ -729,6 +6016,45 @@
     "difficulty": 1
   },
   {
+    "id": "shoaib-bashir",
+    "name": "Shoaib Bashir",
+    "aliases": [],
+    "country": "England",
+    "role": "Bowler",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm off-spin",
+    "debutYear": 2024,
+    "intlMatches": 21,
+    "active": true,
+    "difficulty": 3
+  },
+  {
+    "id": "shoaib-malik",
+    "name": "Shoaib Malik",
+    "aliases": [],
+    "country": "Pakistan",
+    "role": "All-rounder",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm off-spin",
+    "debutYear": 1999,
+    "intlMatches": 446,
+    "active": false,
+    "difficulty": 1
+  },
+  {
+    "id": "shreyas-iyer",
+    "name": "Shreyas Iyer",
+    "aliases": [],
+    "country": "India",
+    "role": "Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm leg-spin",
+    "debutYear": 2017,
+    "intlMatches": 173,
+    "active": true,
+    "difficulty": 1
+  },
+  {
     "id": "shubman-gill",
     "name": "Shubman Gill",
     "aliases": [
@@ -742,6 +6068,47 @@
     "intlMatches": 149,
     "active": true,
     "difficulty": 1
+  },
+  {
+    "id": "sikandar-raza",
+    "name": "Sikandar Raza",
+    "aliases": [
+      "Raza"
+    ],
+    "country": "Zimbabwe",
+    "role": "All-rounder",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm off-spin",
+    "debutYear": 2013,
+    "intlMatches": 325,
+    "active": true,
+    "difficulty": 1
+  },
+  {
+    "id": "simon-katich",
+    "name": "Simon Katich",
+    "aliases": [],
+    "country": "Australia",
+    "role": "Batter",
+    "battingHand": "Left",
+    "bowlingType": "Left-arm wrist-spin",
+    "debutYear": 2001,
+    "intlMatches": 104,
+    "active": false,
+    "difficulty": 3
+  },
+  {
+    "id": "soumya-sarkar",
+    "name": "Soumya Sarkar",
+    "aliases": [],
+    "country": "Bangladesh",
+    "role": "All-rounder",
+    "battingHand": "Left",
+    "bowlingType": "Right-arm medium",
+    "debutYear": 2014,
+    "intlMatches": 191,
+    "active": true,
+    "difficulty": 3
   },
   {
     "id": "sourav-ganguly",
@@ -760,6 +6127,49 @@
     "difficulty": 1
   },
   {
+    "id": "sreesanth",
+    "name": "Sreesanth",
+    "aliases": [
+      "S Sreesanth"
+    ],
+    "country": "India",
+    "role": "Bowler",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm fast",
+    "debutYear": 2005,
+    "intlMatches": 90,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "stephen-fleming",
+    "name": "Stephen Fleming",
+    "aliases": [],
+    "country": "New Zealand",
+    "role": "Batter",
+    "battingHand": "Left",
+    "bowlingType": "Right-arm medium",
+    "debutYear": 1994,
+    "intlMatches": 396,
+    "active": false,
+    "difficulty": 1
+  },
+  {
+    "id": "steve-harmison",
+    "name": "Steve Harmison",
+    "aliases": [
+      "Harmy"
+    ],
+    "country": "England",
+    "role": "Bowler",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm fast",
+    "debutYear": 2002,
+    "intlMatches": 123,
+    "active": false,
+    "difficulty": 2
+  },
+  {
     "id": "steve-smith",
     "name": "Steve Smith",
     "aliases": [
@@ -774,6 +6184,34 @@
     "intlMatches": 364,
     "active": true,
     "difficulty": 1
+  },
+  {
+    "id": "steve-waugh",
+    "name": "Steve Waugh",
+    "aliases": [
+      "Tugga"
+    ],
+    "country": "Australia",
+    "role": "Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm medium",
+    "debutYear": 1985,
+    "intlMatches": 493,
+    "active": false,
+    "difficulty": 1
+  },
+  {
+    "id": "steven-finn",
+    "name": "Steven Finn",
+    "aliases": [],
+    "country": "England",
+    "role": "Bowler",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm fast",
+    "debutYear": 2010,
+    "intlMatches": 126,
+    "active": false,
+    "difficulty": 3
   },
   {
     "id": "stuart-broad",
@@ -791,6 +6229,88 @@
     "difficulty": 1
   },
   {
+    "id": "stuart-clark",
+    "name": "Stuart Clark",
+    "aliases": [],
+    "country": "Australia",
+    "role": "Bowler",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm fast",
+    "debutYear": 2005,
+    "intlMatches": 72,
+    "active": false,
+    "difficulty": 3
+  },
+  {
+    "id": "stuart-macgill",
+    "name": "Stuart MacGill",
+    "aliases": [],
+    "country": "Australia",
+    "role": "Bowler",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm leg-spin",
+    "debutYear": 1998,
+    "intlMatches": 47,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "sunil-gavaskar",
+    "name": "Sunil Gavaskar",
+    "aliases": [
+      "Sunny"
+    ],
+    "country": "India",
+    "role": "Batter",
+    "battingHand": "Right",
+    "bowlingType": "None",
+    "debutYear": 1971,
+    "intlMatches": 233,
+    "active": false,
+    "difficulty": 1
+  },
+  {
+    "id": "sunil-narine",
+    "name": "Sunil Narine",
+    "aliases": [],
+    "country": "West Indies",
+    "role": "All-rounder",
+    "battingHand": "Left",
+    "bowlingType": "Right-arm off-spin",
+    "debutYear": 2011,
+    "intlMatches": 122,
+    "active": false,
+    "difficulty": 1
+  },
+  {
+    "id": "suranga-lakmal",
+    "name": "Suranga Lakmal",
+    "aliases": [],
+    "country": "Sri Lanka",
+    "role": "Bowler",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm fast",
+    "debutYear": 2009,
+    "intlMatches": 167,
+    "active": false,
+    "difficulty": 3
+  },
+  {
+    "id": "suresh-raina",
+    "name": "Suresh Raina",
+    "aliases": [
+      "Chinna Thala"
+    ],
+    "country": "India",
+    "role": "Batter",
+    "battingHand": "Left",
+    "bowlingType": "Right-arm off-spin",
+    "debutYear": 2005,
+    "intlMatches": 322,
+    "active": false,
+    "difficulty": 1
+  },
+  {
     "id": "suryakumar-yadav",
     "name": "Suryakumar Yadav",
     "aliases": [
@@ -804,6 +6324,218 @@
     "intlMatches": 151,
     "active": false,
     "difficulty": 1
+  },
+  {
+    "id": "tabraiz-shamsi",
+    "name": "Tabraiz Shamsi",
+    "aliases": [],
+    "country": "South Africa",
+    "role": "Bowler",
+    "battingHand": "Right",
+    "bowlingType": "Left-arm wrist-spin",
+    "debutYear": 2016,
+    "intlMatches": 127,
+    "active": true,
+    "difficulty": 2
+  },
+  {
+    "id": "taijul-islam",
+    "name": "Taijul Islam",
+    "aliases": [],
+    "country": "Bangladesh",
+    "role": "Bowler",
+    "battingHand": "Left",
+    "bowlingType": "Left-arm orthodox",
+    "debutYear": 2014,
+    "intlMatches": 82,
+    "active": true,
+    "difficulty": 3
+  },
+  {
+    "id": "tamim-iqbal",
+    "name": "Tamim Iqbal",
+    "aliases": [],
+    "country": "Bangladesh",
+    "role": "Batter",
+    "battingHand": "Left",
+    "bowlingType": "None",
+    "debutYear": 2007,
+    "intlMatches": 391,
+    "active": false,
+    "difficulty": 1
+  },
+  {
+    "id": "taskin-ahmed",
+    "name": "Taskin Ahmed",
+    "aliases": [],
+    "country": "Bangladesh",
+    "role": "Bowler",
+    "battingHand": "Left",
+    "bowlingType": "Right-arm fast",
+    "debutYear": 2014,
+    "intlMatches": 204,
+    "active": true,
+    "difficulty": 2
+  },
+  {
+    "id": "tatenda-taibu",
+    "name": "Tatenda Taibu",
+    "aliases": [],
+    "country": "Zimbabwe",
+    "role": "Wicketkeeper-Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm medium",
+    "debutYear": 2001,
+    "intlMatches": 195,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "temba-bavuma",
+    "name": "Temba Bavuma",
+    "aliases": [],
+    "country": "South Africa",
+    "role": "Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm medium",
+    "debutYear": 2014,
+    "intlMatches": 162,
+    "active": true,
+    "difficulty": 2
+  },
+  {
+    "id": "thilan-samaraweera",
+    "name": "Thilan Samaraweera",
+    "aliases": [],
+    "country": "Sri Lanka",
+    "role": "Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm off-spin",
+    "debutYear": 1998,
+    "intlMatches": 134,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "thisara-perera",
+    "name": "Thisara Perera",
+    "aliases": [],
+    "country": "Sri Lanka",
+    "role": "All-rounder",
+    "battingHand": "Left",
+    "bowlingType": "Right-arm medium",
+    "debutYear": 2009,
+    "intlMatches": 256,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "tilak-varma",
+    "name": "Tilak Varma",
+    "aliases": [],
+    "country": "India",
+    "role": "All-rounder",
+    "battingHand": "Left",
+    "bowlingType": "Right-arm off-spin",
+    "debutYear": 2023,
+    "intlMatches": 77,
+    "active": true,
+    "difficulty": 2
+  },
+  {
+    "id": "tillakaratne-dilshan",
+    "name": "Tillakaratne Dilshan",
+    "aliases": [
+      "Dilscoop"
+    ],
+    "country": "Sri Lanka",
+    "role": "Wicketkeeper-Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm off-spin",
+    "debutYear": 1999,
+    "intlMatches": 497,
+    "active": false,
+    "difficulty": 1
+  },
+  {
+    "id": "tim-bresnan",
+    "name": "Tim Bresnan",
+    "aliases": [
+      "Bres"
+    ],
+    "country": "England",
+    "role": "All-rounder",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm fast",
+    "debutYear": 2006,
+    "intlMatches": 142,
+    "active": false,
+    "difficulty": 3
+  },
+  {
+    "id": "tim-david",
+    "name": "Tim David",
+    "aliases": [],
+    "country": "Australia",
+    "role": "Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm off-spin",
+    "debutYear": 2019,
+    "intlMatches": 78,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "tim-paine",
+    "name": "Tim Paine",
+    "aliases": [],
+    "country": "Australia",
+    "role": "Wicketkeeper-Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm medium",
+    "debutYear": 2009,
+    "intlMatches": 82,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "tim-southee",
+    "name": "Tim Southee",
+    "aliases": [],
+    "country": "New Zealand",
+    "role": "Bowler",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm medium",
+    "debutYear": 2008,
+    "intlMatches": 394,
+    "active": false,
+    "difficulty": 1
+  },
+  {
+    "id": "tom-latham",
+    "name": "Tom Latham",
+    "aliases": [],
+    "country": "New Zealand",
+    "role": "Wicketkeeper-Batter",
+    "battingHand": "Left",
+    "bowlingType": "Right-arm medium",
+    "debutYear": 2012,
+    "intlMatches": 295,
+    "active": true,
+    "difficulty": 2
+  },
+  {
+    "id": "towhid-hridoy",
+    "name": "Towhid Hridoy",
+    "aliases": [],
+    "country": "Bangladesh",
+    "role": "Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm off-spin",
+    "debutYear": 2023,
+    "intlMatches": 117,
+    "active": true,
+    "difficulty": 3
   },
   {
     "id": "travis-head",
@@ -830,6 +6562,140 @@
     "bowlingType": "Left-arm fast",
     "debutYear": 2011,
     "intlMatches": 253,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "trent-johnston",
+    "name": "Trent Johnston",
+    "aliases": [],
+    "country": "Ireland",
+    "role": "All-rounder",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm fast",
+    "debutYear": 2006,
+    "intlMatches": 97,
+    "active": false,
+    "difficulty": 3
+  },
+  {
+    "id": "tristan-stubbs",
+    "name": "Tristan Stubbs",
+    "aliases": [],
+    "country": "South Africa",
+    "role": "Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm off-spin",
+    "debutYear": 2022,
+    "intlMatches": 84,
+    "active": true,
+    "difficulty": 3
+  },
+  {
+    "id": "umar-akmal",
+    "name": "Umar Akmal",
+    "aliases": [],
+    "country": "Pakistan",
+    "role": "Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm off-spin",
+    "debutYear": 2009,
+    "intlMatches": 221,
+    "active": false,
+    "difficulty": 3
+  },
+  {
+    "id": "umar-gul",
+    "name": "Umar Gul",
+    "aliases": [],
+    "country": "Pakistan",
+    "role": "Bowler",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm fast",
+    "debutYear": 2003,
+    "intlMatches": 237,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "umesh-yadav",
+    "name": "Umesh Yadav",
+    "aliases": [],
+    "country": "India",
+    "role": "Bowler",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm fast",
+    "debutYear": 2010,
+    "intlMatches": 141,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "upul-tharanga",
+    "name": "Upul Tharanga",
+    "aliases": [],
+    "country": "Sri Lanka",
+    "role": "Batter",
+    "battingHand": "Left",
+    "bowlingType": "None",
+    "debutYear": 2005,
+    "intlMatches": 292,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "usman-khawaja",
+    "name": "Usman Khawaja",
+    "aliases": [
+      "Uzzie"
+    ],
+    "country": "Australia",
+    "role": "Batter",
+    "battingHand": "Left",
+    "bowlingType": "Right-arm off-spin",
+    "debutYear": 2011,
+    "intlMatches": 137,
+    "active": false,
+    "difficulty": 1
+  },
+  {
+    "id": "varun-chakravarthy",
+    "name": "Varun Chakravarthy",
+    "aliases": [],
+    "country": "India",
+    "role": "Bowler",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm leg-spin",
+    "debutYear": 2021,
+    "intlMatches": 52,
+    "active": true,
+    "difficulty": 2
+  },
+  {
+    "id": "venkatesh-prasad",
+    "name": "Venkatesh Prasad",
+    "aliases": [],
+    "country": "India",
+    "role": "Bowler",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm medium",
+    "debutYear": 1994,
+    "intlMatches": 194,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "vernon-philander",
+    "name": "Vernon Philander",
+    "aliases": [
+      "Vern"
+    ],
+    "country": "South Africa",
+    "role": "All-rounder",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm fast",
+    "debutYear": 2007,
+    "intlMatches": 101,
     "active": false,
     "difficulty": 2
   },
@@ -866,6 +6732,94 @@
     "difficulty": 1
   },
   {
+    "id": "viv-richards",
+    "name": "Viv Richards",
+    "aliases": [
+      "Master Blaster",
+      "Sir Viv"
+    ],
+    "country": "West Indies",
+    "role": "All-rounder",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm medium",
+    "debutYear": 1974,
+    "intlMatches": 308,
+    "active": false,
+    "difficulty": 1
+  },
+  {
+    "id": "vvs-laxman",
+    "name": "VVS Laxman",
+    "aliases": [
+      "Very Very Special",
+      "Laxman"
+    ],
+    "country": "India",
+    "role": "Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm off-spin",
+    "debutYear": 1996,
+    "intlMatches": 220,
+    "active": false,
+    "difficulty": 1
+  },
+  {
+    "id": "wahab-riaz",
+    "name": "Wahab Riaz",
+    "aliases": [],
+    "country": "Pakistan",
+    "role": "Bowler",
+    "battingHand": "Right",
+    "bowlingType": "Left-arm fast",
+    "debutYear": 2008,
+    "intlMatches": 154,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "wanindu-hasaranga",
+    "name": "Wanindu Hasaranga",
+    "aliases": [],
+    "country": "Sri Lanka",
+    "role": "All-rounder",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm leg-spin",
+    "debutYear": 2017,
+    "intlMatches": 173,
+    "active": true,
+    "difficulty": 2
+  },
+  {
+    "id": "waqar-younis",
+    "name": "Waqar Younis",
+    "aliases": [
+      "Burewala Express"
+    ],
+    "country": "Pakistan",
+    "role": "Bowler",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm fast",
+    "debutYear": 1989,
+    "intlMatches": 349,
+    "active": false,
+    "difficulty": 1
+  },
+  {
+    "id": "washington-sundar",
+    "name": "Washington Sundar",
+    "aliases": [
+      "Washi"
+    ],
+    "country": "India",
+    "role": "All-rounder",
+    "battingHand": "Left",
+    "bowlingType": "Right-arm off-spin",
+    "debutYear": 2017,
+    "intlMatches": 108,
+    "active": true,
+    "difficulty": 2
+  },
+  {
     "id": "wasim-akram",
     "name": "Wasim Akram",
     "aliases": [
@@ -879,6 +6833,110 @@
     "intlMatches": 460,
     "active": false,
     "difficulty": 1
+  },
+  {
+    "id": "wavell-hinds",
+    "name": "Wavell Hinds",
+    "aliases": [],
+    "country": "West Indies",
+    "role": "Batter",
+    "battingHand": "Left",
+    "bowlingType": "Right-arm medium",
+    "debutYear": 1999,
+    "intlMatches": 169,
+    "active": false,
+    "difficulty": 3
+  },
+  {
+    "id": "wayne-parnell",
+    "name": "Wayne Parnell",
+    "aliases": [],
+    "country": "South Africa",
+    "role": "Bowler",
+    "battingHand": "Left",
+    "bowlingType": "Left-arm medium",
+    "debutYear": 2009,
+    "intlMatches": 135,
+    "active": false,
+    "difficulty": 3
+  },
+  {
+    "id": "william-porterfield",
+    "name": "William Porterfield",
+    "aliases": [],
+    "country": "Ireland",
+    "role": "Batter",
+    "battingHand": "Left",
+    "bowlingType": "Right-arm off-spin",
+    "debutYear": 2006,
+    "intlMatches": 212,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "wriddhiman-saha",
+    "name": "Wriddhiman Saha",
+    "aliases": [],
+    "country": "India",
+    "role": "Wicketkeeper-Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm off-spin",
+    "debutYear": 2010,
+    "intlMatches": 49,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "yashasvi-jaiswal",
+    "name": "Yashasvi Jaiswal",
+    "aliases": [],
+    "country": "India",
+    "role": "Batter",
+    "battingHand": "Left",
+    "bowlingType": "Right-arm leg-spin",
+    "debutYear": 2023,
+    "intlMatches": 59,
+    "active": true,
+    "difficulty": 1
+  },
+  {
+    "id": "yasir-shah",
+    "name": "Yasir Shah",
+    "aliases": [],
+    "country": "Pakistan",
+    "role": "Bowler",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm leg-spin",
+    "debutYear": 2011,
+    "intlMatches": 75,
+    "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "younis-khan",
+    "name": "Younis Khan",
+    "aliases": [],
+    "country": "Pakistan",
+    "role": "Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm medium",
+    "debutYear": 2000,
+    "intlMatches": 408,
+    "active": false,
+    "difficulty": 1
+  },
+  {
+    "id": "yusuf-pathan",
+    "name": "Yusuf Pathan",
+    "aliases": [],
+    "country": "India",
+    "role": "All-rounder",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm off-spin",
+    "debutYear": 2007,
+    "intlMatches": 79,
+    "active": false,
+    "difficulty": 2
   },
   {
     "id": "yuvraj-singh",
@@ -896,6 +6954,36 @@
     "difficulty": 1
   },
   {
+    "id": "yuzvendra-chahal",
+    "name": "Yuzvendra Chahal",
+    "aliases": [
+      "Yuzi"
+    ],
+    "country": "India",
+    "role": "Bowler",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm leg-spin",
+    "debutYear": 2016,
+    "intlMatches": 152,
+    "active": false,
+    "difficulty": 1
+  },
+  {
+    "id": "zaheer-abbas",
+    "name": "Zaheer Abbas",
+    "aliases": [
+      "Asian Bradman"
+    ],
+    "country": "Pakistan",
+    "role": "Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm off-spin",
+    "debutYear": 1969,
+    "intlMatches": 140,
+    "active": false,
+    "difficulty": 2
+  },
+  {
     "id": "zaheer-khan",
     "name": "Zaheer Khan",
     "aliases": [
@@ -908,6 +6996,19 @@
     "debutYear": 2000,
     "intlMatches": 309,
     "active": false,
+    "difficulty": 2
+  },
+  {
+    "id": "zak-crawley",
+    "name": "Zak Crawley",
+    "aliases": [],
+    "country": "England",
+    "role": "Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm off-spin",
+    "debutYear": 2019,
+    "intlMatches": 73,
+    "active": true,
     "difficulty": 2
   }
 ]

@@ -128,14 +128,34 @@ describe('mappers', () => {
 describe('findListRowMatches', () => {
   it('reads the match count from a one-line row', () => {
     const page = `|-\n| 2\n! {{sortname|Adam|Gilchrist}}\n| 2005 || 2008 || 13 || {{sort|0272|272}} ||<ref>{{cite web |url=https://www.espncricinfo.com/cricketers/adam-gilchrist-5390 }}</ref>\n|-`
-    expect(findListRowMatches(page, '5390')).toBe(13)
+    expect(findListRowMatches(page, { cricinfoId: '5390' })).toBe(13)
   })
 
   it('reads the match count from a one-cell-per-line row with hidden sort keys', () => {
     const page = `|-\n| 11\n! scope="row" | {{sortname|Sachin|Tendulkar}}\n|| 2006<span style="display: none">9.2</span> || 2006 || 1 || 10 || <ref>{{cite web|url=http://www.espncricinfo.com/ci/content/player/35320.html}}</ref>\n|- align=center\n| 9\n! scope="row" | {{sortname||Shoaib Akhtar}}\n| 2006\n| 2010\n| {{sort|015|15}}\n| x\n|<ref>{{cite web |url=http://www.espncricinfo.com/pakistan/content/player/42655.html}}</ref>`
-    expect(findListRowMatches(page, '35320')).toBe(1)
-    expect(findListRowMatches(page, '42655')).toBe(15)
-    expect(findListRowMatches(page, '99999')).toBeNull()
+    expect(findListRowMatches(page, { cricinfoId: '35320' })).toBe(1)
+    expect(findListRowMatches(page, { cricinfoId: '42655' })).toBe(15)
+    expect(findListRowMatches(page, { cricinfoId: '99999' })).toBeNull()
+  })
+
+  it('falls back to the linked article title', () => {
+    const page = `|-
+|200||[[Nayan Mongia]]||1994||2001||44||1442
+|-
+|201||[[Sunil Joshi (cricketer)|Sunil Joshi]]||1996||2000||15||352`
+    expect(findListRowMatches(page, { title: 'Nayan Mongia' })).toBe(44)
+    expect(findListRowMatches(page, { title: 'Sunil Joshi (cricketer)' })).toBe(15)
+    expect(findListRowMatches(page, { title: 'Sunil Joshi' })).toBeNull()
+  })
+
+  it('matches {{sortname}} rows by the article they link to', () => {
+    const page = `|- align="center"
+| 25 || !scope="row" align="left"| {{sortname|Daniel|Vettori}} {{double-dagger}} || 2007 || 2014 || 34 || 205
+|- align="center"
+| 9 || {{sortname|Mark|Wood|Mark Wood (cricketer)}} || 2015 || 2024 || 20 || 1`
+    expect(findListRowMatches(page, { title: 'Daniel Vettori' })).toBe(34)
+    expect(findListRowMatches(page, { title: 'Mark Wood (cricketer)' })).toBe(20)
+    expect(findListRowMatches(page, { title: 'Mark Wood' })).toBeNull()
   })
 })
 

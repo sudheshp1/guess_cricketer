@@ -15,6 +15,7 @@ import {
   mapBattingHand,
   mapBowlingType,
   mapRole,
+  mapRoleFromText,
   parseInfoboxFields,
   readInfobox,
   spanIsOpen,
@@ -94,7 +95,11 @@ export function resolvePlayer(
     enumOverride(row.country, COUNTRIES, 'country', errors) ?? mapCountry(facts.country)
   if (!country) errors.push(`country not recognised from infobox: "${facts.country ?? ''}"`)
 
-  const role = enumOverride(row.role, ROLES, 'role', errors) ?? mapRole(facts.role)
+  let role = enumOverride(row.role, ROLES, 'role', errors) ?? mapRole(facts.role)
+  if (!role && row.role === '' && wiki.lead) {
+    role = mapRoleFromText(wiki.lead)
+    if (role) notes.push(`infobox has no usable role; "${role}" taken from the article lead`)
+  }
   if (!role) errors.push(`role not recognised from infobox: "${facts.role ?? ''}"`)
 
   const battingHand =
@@ -135,7 +140,7 @@ export function resolvePlayer(
       : null
     let total = 0
     for (const f of FORMATS) {
-      const w = facts.matches[f] ?? (f === 't20i' ? wiki.t20iFromList?.matches : undefined)
+      const w = facts.matches[f] ?? wiki.fromLists?.[f]?.matches
       const c = csByFormat?.[f] ?? 0
       const playedFormat = w !== undefined || c > 0 || facts.debutYears[f] !== undefined
       if (!playedFormat) continue
@@ -177,7 +182,14 @@ export function resolvePlayer(
       active = daysBetween(cricsheet.lastDate, asOf) <= ACTIVE_WINDOW_DAYS
       notes.push(`no international span; active=${active} from last match ${cricsheet.lastDate}`)
     } else {
-      errors.push('cannot determine active status')
+      const lastYear = Math.max(...Object.values(facts.lastYears))
+      const asOfYear = Number(asOf.slice(0, 4))
+      if (Number.isFinite(lastYear) && asOfYear - lastYear >= 2) {
+        active = false
+        notes.push(`no international span; retired (last international ${lastYear} per infobox)`)
+      } else {
+        errors.push('cannot determine active status')
+      }
     }
   }
 
