@@ -1,5 +1,5 @@
-import { MAX_GUESSES, STORAGE_KEYS } from '../config'
-import type { SavedGame, Stats } from '../types'
+import { MAX_CLUES, RECENT_ANSWER_MEMORY, STORAGE_KEYS } from '../config'
+import type { PlayerPool, Round, Stats } from '../types'
 import { emptyStats } from './stats'
 
 /** The subset of the Storage API we use; injectable for tests. */
@@ -38,29 +38,27 @@ function writeJson(key: string, value: unknown, store: KeyValueStore | null): bo
   }
 }
 
-function isSavedGame(v: unknown): v is SavedGame {
+function isRound(v: unknown): v is Round {
   if (typeof v !== 'object' || v === null) return false
-  const g = v as Record<string, unknown>
+  const r = v as Record<string, unknown>
   return (
-    typeof g.puzzleNumber === 'number' &&
-    Array.isArray(g.guesses) &&
-    g.guesses.every((id) => typeof id === 'string') &&
-    (g.status === 'playing' || g.status === 'won' || g.status === 'lost')
+    typeof r.roundId === 'string' &&
+    typeof r.answerId === 'string' &&
+    Array.isArray(r.guesses) &&
+    r.guesses.every((id) => typeof id === 'string') &&
+    typeof r.cluesRevealed === 'number' &&
+    (r.status === 'playing' || r.status === 'won' || r.status === 'lost') &&
+    typeof r.gaveUp === 'boolean'
   )
 }
 
-/** The saved game for this puzzle, or null if there is none (or it's for another day). */
-export function loadGame(
-  puzzleNumber: number,
-  store: KeyValueStore | null = defaultStore(),
-): SavedGame | null {
-  const saved = readJson(STORAGE_KEYS.game, store)
-  if (!isSavedGame(saved) || saved.puzzleNumber !== puzzleNumber) return null
-  return saved
+export function loadRound(store: KeyValueStore | null = defaultStore()): Round | null {
+  const saved = readJson(STORAGE_KEYS.round, store)
+  return isRound(saved) ? saved : null
 }
 
-export function saveGame(game: SavedGame, store: KeyValueStore | null = defaultStore()): boolean {
-  return writeJson(STORAGE_KEYS.game, game, store)
+export function saveRound(round: Round, store: KeyValueStore | null = defaultStore()): boolean {
+  return writeJson(STORAGE_KEYS.round, round, store)
 }
 
 function isStats(v: unknown): v is Stats {
@@ -71,20 +69,48 @@ function isStats(v: unknown): v is Stats {
     nums.every((k) => typeof s[k] === 'number' && Number.isFinite(s[k])) &&
     Array.isArray(s.distribution) &&
     s.distribution.every((n) => typeof n === 'number') &&
-    (s.lastCompletedPuzzle === null || typeof s.lastCompletedPuzzle === 'number')
+    (s.lastRoundId === null || typeof s.lastRoundId === 'string')
   )
 }
 
 export function loadStats(store: KeyValueStore | null = defaultStore()): Stats {
   const saved = readJson(STORAGE_KEYS.stats, store)
   if (!isStats(saved)) return emptyStats()
-  // Normalise the distribution length in case MAX_GUESSES changed.
-  const distribution = Array.from({ length: MAX_GUESSES }, (_, i) => saved.distribution[i] ?? 0)
+  // Normalise the distribution length in case MAX_CLUES changed.
+  const distribution = Array.from({ length: MAX_CLUES }, (_, i) => saved.distribution[i] ?? 0)
   return { ...saved, distribution }
 }
 
 export function saveStats(stats: Stats, store: KeyValueStore | null = defaultStore()): boolean {
   return writeJson(STORAGE_KEYS.stats, stats, store)
+}
+
+/** Most recent answer ids, newest last. */
+export function loadRecent(store: KeyValueStore | null = defaultStore()): string[] {
+  const saved = readJson(STORAGE_KEYS.recent, store)
+  return Array.isArray(saved) ? saved.filter((id): id is string => typeof id === 'string') : []
+}
+
+/** Append an answer to the recent list, keeping only the last RECENT_ANSWER_MEMORY ids. */
+export function rememberAnswer(
+  recent: readonly string[],
+  answerId: string,
+  store: KeyValueStore | null = defaultStore(),
+): string[] {
+  const next = [...recent.filter((id) => id !== answerId), answerId].slice(-RECENT_ANSWER_MEMORY)
+  writeJson(STORAGE_KEYS.recent, next, store)
+  return next
+}
+
+const POOLS: readonly PlayerPool[] = ['famous', 'regular', 'all']
+
+export function loadPool(store: KeyValueStore | null = defaultStore()): PlayerPool {
+  const saved = readJson(STORAGE_KEYS.pool, store)
+  return POOLS.includes(saved as PlayerPool) ? (saved as PlayerPool) : 'regular'
+}
+
+export function savePool(pool: PlayerPool, store: KeyValueStore | null = defaultStore()): boolean {
+  return writeJson(STORAGE_KEYS.pool, pool, store)
 }
 
 export function hasSeenHelp(store: KeyValueStore | null = defaultStore()): boolean {

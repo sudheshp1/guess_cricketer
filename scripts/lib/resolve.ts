@@ -133,6 +133,7 @@ export function resolvePlayer(
 
   // International matches, per format: Wikipedia can lag behind or omit a format column (the
   // infobox shows at most four columns); Cricsheet can only miss matches. Use the larger.
+  const formatMatches: Partial<Record<FormatKey, number>> = {}
   let intlMatches: number | null = row.intlMatches !== '' ? Number(row.intlMatches) : null
   if (intlMatches === null) {
     const csByFormat: Record<FormatKey, number> | null = cricsheet
@@ -140,6 +141,7 @@ export function resolvePlayer(
       : null
     let total = 0
     for (const f of FORMATS) {
+      formatMatches[f] = 0
       const w = facts.matches[f] ?? wiki.fromLists?.[f]?.matches
       const c = csByFormat?.[f] ?? 0
       const playedFormat = w !== undefined || c > 0 || facts.debutYears[f] !== undefined
@@ -157,7 +159,8 @@ export function resolvePlayer(
       } else if (w - c >= 10 && cricsheet && wikiDebut >= CRICSHEET_COMPLETE_FROM) {
         notes.push(`${f}: infobox ${w} vs Cricsheet ${c} (large Cricsheet gap)`)
       }
-      total += Math.max(w ?? 0, c)
+      formatMatches[f] = Math.max(w ?? 0, c)
+      total += formatMatches[f]
     }
     if (total === 0) errors.push('no international match counts found')
     else intlMatches = total
@@ -212,6 +215,27 @@ export function resolvePlayer(
     return { player: null, errors, notes }
   }
 
+  const stats: Player['stats'] = {}
+  for (const f of FORMATS) {
+    const matches = formatMatches[f] ?? facts.matches[f] ?? 0
+    if (matches <= 0) continue
+    const c = facts.career[f]
+    stats[f] = {
+      matches,
+      runs: c?.runs ?? null,
+      highScore: c?.highScore ?? null,
+      hundreds: c?.hundreds ?? null,
+      fifties: c?.fifties ?? null,
+      wickets: c?.wickets ?? null,
+      bestBowling: c?.bestBowling ?? null,
+    }
+  }
+  const lastYears = [
+    ...Object.values(facts.lastYears),
+    ...(cricsheet ? [Number(cricsheet.lastDate.slice(0, 4))] : []),
+  ]
+  const lastYear = lastYears.length ? Math.max(...lastYears) : null
+
   return {
     player: {
       id: row.id,
@@ -227,7 +251,10 @@ export function resolvePlayer(
       debutYear,
       intlMatches,
       active,
+      lastYear,
       difficulty: difficulty as Difficulty,
+      stats,
+      statsAsOf: facts.statsDate,
     },
     errors,
     notes,

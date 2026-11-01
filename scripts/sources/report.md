@@ -24,7 +24,7 @@ None.
 
 - **kapil-dev**: no Cricsheet record; values from Wikipedia only
 - **ravindra-jadeja**: test: Cricsheet 90 > infobox 89 (infobox stats dated 18 January 2026); using Cricsheet
-- **rishabh-pant**: test: Cricsheet 51 > infobox 48 (infobox stats dated 8 November); using Cricsheet
+- **rishabh-pant**: test: Cricsheet 51 > infobox 48 (infobox stats dated 8 November 2025); using Cricsheet
 - **hardik-pandya**: t20i: Cricsheet 136 > infobox 131 (infobox stats dated 24 January 2026); using Cricsheet
 - **adam-gilchrist**: infobox has no bowling style; using None
 - **ben-stokes**: span "2011–2026" is closed but played on 2026-06-25
@@ -37,14 +37,14 @@ None.
 - **rashid-khan**: t20i: infobox 115 vs Cricsheet 1 (large Cricsheet gap)
 - **bhuvneshwar-kumar**: t20i: Cricsheet 89 > infobox 87 (infobox stats dated 15 November 2025); using Cricsheet
 - **kuldeep-yadav**: test: Cricsheet 18 > infobox 17 (infobox stats dated 26 September 2026); using Cricsheet
-- **axar-patel**: odi: Cricsheet 74 > infobox 71 (infobox stats dated 26 February); using Cricsheet
-- **axar-patel**: t20i: Cricsheet 107 > infobox 91 (infobox stats dated 26 February); using Cricsheet
+- **axar-patel**: odi: Cricsheet 74 > infobox 71 (infobox stats dated 26 February 2026); using Cricsheet
+- **axar-patel**: t20i: Cricsheet 107 > infobox 91 (infobox stats dated 26 February 2026); using Cricsheet
 - **washington-sundar**: odi: Cricsheet 31 > infobox 29 (infobox stats dated 24 January 2026); using Cricsheet
 - **washington-sundar**: t20i: Cricsheet 60 > infobox 58 (infobox stats dated 24 January 2026); using Cricsheet
 - **mohammed-siraj**: test: Cricsheet 47 > infobox 46 (infobox stats dated 8 June 2026); using Cricsheet
-- **arshdeep-singh**: odi: Cricsheet 16 > infobox 15 (infobox stats dated 21 March); using Cricsheet
-- **arshdeep-singh**: t20i: Cricsheet 94 > infobox 84 (infobox stats dated 21 March); using Cricsheet
-- **yashasvi-jaiswal**: test: Cricsheet 30 > infobox 28 (infobox stats dated 30 March); using Cricsheet
+- **arshdeep-singh**: odi: Cricsheet 16 > infobox 15 (infobox stats dated 21 March 2026); using Cricsheet
+- **arshdeep-singh**: t20i: Cricsheet 94 > infobox 84 (infobox stats dated 21 March 2026); using Cricsheet
+- **yashasvi-jaiswal**: test: Cricsheet 30 > infobox 28 (infobox stats dated 30 March 2026); using Cricsheet
 - **venkatesh-prasad**: no Cricsheet record; values from Wikipedia only
 - **mohammad-azharuddin**: no Cricsheet record; values from Wikipedia only
 - **sunil-gavaskar**: infobox has no bowling style; using None
@@ -65,14 +65,14 @@ None.
 - **shivam-dube**: odi: Cricsheet 6 > infobox 4 (infobox stats dated 1 July 2026); using Cricsheet
 - **shivam-dube**: t20i: Cricsheet 73 > infobox 66 (infobox stats dated 1 July 2026); using Cricsheet
 - **dhruv-jurel**: infobox has no bowling style; using None
-- **dhruv-jurel**: test: Cricsheet 11 > infobox 6 (infobox stats dated 24 December); using Cricsheet
+- **dhruv-jurel**: test: Cricsheet 11 > infobox 6 (infobox stats dated 24 December 2025); using Cricsheet
 - **varun-chakravarthy**: t20i: Cricsheet 48 > infobox 45 (infobox stats dated 8 March 2026); using Cricsheet
-- **prasidh-krishna**: test: Cricsheet 8 > infobox 7 (infobox stats dated 28 July); using Cricsheet
+- **prasidh-krishna**: test: Cricsheet 8 > infobox 7 (infobox stats dated 28 July 2026); using Cricsheet
 - **mark-waugh**: no Cricsheet record; values from Wikipedia only
 - **allan-border**: no Cricsheet record; values from Wikipedia only
 - **dean-jones**: no Cricsheet record; values from Wikipedia only
 - **alex-carey**: infobox has no bowling style; using None
-- **tim-paine**: t20i: Cricsheet 12 > infobox 10 (infobox stats dated 3 November); using Cricsheet
+- **tim-paine**: t20i: Cricsheet 12 > infobox 10 (infobox stats dated 3 November 2022); using Cricsheet
 - **josh-inglis**: infobox has no bowling style; using None
 - **ryan-harris**: t20i: not in infobox or list page; using Cricsheet count 3
 - **damien-fleming**: no Cricsheet record; values from Wikipedia only
@@ -94,7 +94,7 @@ None.
 - **graham-gooch**: no Cricsheet record; values from Wikipedia only
 - **ian-botham**: no Cricsheet record; values from Wikipedia only
 - **david-gower**: no Cricsheet record; values from Wikipedia only
-- **paul-collingwood**: t20i: Cricsheet 36 > infobox 35 (infobox stats dated 27 September); using Cricsheet
+- **paul-collingwood**: t20i: Cricsheet 36 > infobox 35 (infobox stats dated 27 September 2018); using Cricsheet
 - **matt-prior**: infobox has no bowling style; using None
 - **matt-prior**: t20i: not in infobox or list page; using Cricsheet count 10
 - **eoin-morgan**: infobox has no bowling style; using None
@@ -128,7 +128,7 @@ None.
 - **aamer-sohail**: no Cricsheet record; values from Wikipedia only
 - **hansie-cronje**: no international span; retired (last international 2000 per infobox)
 - **hansie-cronje**: no Cricsheet record; values from Wikipedia only
-- **morne-morkel**: t20i: Cricsheet 43 > infobox 41 (infobox stats dated 19 August); using Cricsheet
+- **morne-morkel**: t20i: Cricsheet 43 > infobox 41 (infobox stats dated 19 August 2020); using Cricsheet
 - **neil-mckenzie**: infobox has no usable role; "Batter" taken from the article lead
 - **gerald-coetzee**: no international span; active=true from last match 2026-09-30
 - **daryll-cullinan**: infobox has no usable role; "Batter" taken from the article lead
@@ -152,7 +152,7 @@ None.
 - **kusal-mendis**: test: Cricsheet 74 > infobox 73 (infobox stats dated 28 September 2025); using Cricsheet
 - **kusal-mendis**: t20i: Cricsheet 105 > infobox 90 (infobox stats dated 28 September 2025); using Cricsheet
 - **kusal-perera**: t20i: Cricsheet 92 > infobox 88 (infobox stats dated 28 September 2025); using Cricsheet
-- **dasun-shanaka**: t20i: Cricsheet 132 > infobox 131 (infobox stats dated 28 September); using Cricsheet
+- **dasun-shanaka**: t20i: Cricsheet 132 > infobox 131 (infobox stats dated 28 September 2025); using Cricsheet
 - **pathum-nissanka**: infobox has no bowling style; using None
 - **pathum-nissanka**: test: Cricsheet 19 > infobox 18 (infobox stats dated 29 June 2025); using Cricsheet
 - **charith-asalanka**: t20i: Cricsheet 73 > infobox 72 (infobox stats dated 24 January 2026); using Cricsheet
@@ -168,8 +168,8 @@ None.
 - **matheesha-pathirana**: t20i: Cricsheet 24 > infobox 21 (infobox stats dated 28 September 2025); using Cricsheet
 - **dhananjaya-de-silva**: test: Cricsheet 68 > infobox 67 (infobox stats dated 8 July 2026); using Cricsheet
 - **dhananjaya-de-silva**: odi: infobox 93 vs Cricsheet 82 (large Cricsheet gap)
-- **kamindu-mendis**: odi: Cricsheet 33 > infobox 29 (infobox stats dated 27 August); using Cricsheet
-- **kamindu-mendis**: t20i: Cricsheet 50 > infobox 46 (infobox stats dated 27 August); using Cricsheet
+- **kamindu-mendis**: odi: Cricsheet 33 > infobox 29 (infobox stats dated 27 August 2026); using Cricsheet
+- **kamindu-mendis**: t20i: Cricsheet 50 > infobox 46 (infobox stats dated 27 August 2026); using Cricsheet
 - **viv-richards**: no Cricsheet record; values from Wikipedia only
 - **curtly-ambrose**: no Cricsheet record; values from Wikipedia only
 - **courtney-walsh**: no Cricsheet record; values from Wikipedia only
@@ -194,14 +194,14 @@ None.
 - **ridley-jacobs**: infobox has no bowling style; using None
 - **ridley-jacobs**: no Cricsheet record; values from Wikipedia only
 - **rovman-powell**: t20i: Cricsheet 121 > infobox 107 (infobox stats dated 13 November 2025); using Cricsheet
-- **shamar-joseph**: test: Cricsheet 15 > infobox 11 (infobox stats dated 4 January); using Cricsheet
-- **shamar-joseph**: odi: Cricsheet 9 > infobox 6 (infobox stats dated 4 January); using Cricsheet
-- **shamar-joseph**: t20i: Cricsheet 28 > infobox 12 (infobox stats dated 4 January); using Cricsheet
+- **shamar-joseph**: test: Cricsheet 15 > infobox 11 (infobox stats dated 4 January 2026); using Cricsheet
+- **shamar-joseph**: odi: Cricsheet 9 > infobox 6 (infobox stats dated 4 January 2026); using Cricsheet
+- **shamar-joseph**: t20i: Cricsheet 28 > infobox 12 (infobox stats dated 4 January 2026); using Cricsheet
 - **garfield-sobers**: no Cricsheet record; values from Wikipedia only
 - **romario-shepherd**: debut: infobox 2019, Cricsheet first match 2020
 - **romario-shepherd**: t20i: Cricsheet 85 > infobox 78 (infobox stats dated 26 February 2026); using Cricsheet
 - **brandon-king**: infobox has no bowling style; using None
-- **brandon-king**: test: Cricsheet 10 > infobox 8 (infobox stats dated 9 July); using Cricsheet
+- **brandon-king**: test: Cricsheet 10 > infobox 8 (infobox stats dated 9 July 2026); using Cricsheet
 - **tamim-iqbal**: infobox has no bowling style; using None
 - **tamim-iqbal**: odi: infobox 243 vs Cricsheet 218 (large Cricsheet gap)
 - **mahmudullah**: odi: infobox 239 vs Cricsheet 215 (large Cricsheet gap)
@@ -214,7 +214,7 @@ None.
 - **najmul-hossain-shanto**: odi: infobox 70 vs Cricsheet 59 (large Cricsheet gap)
 - **khaled-mashud**: infobox has no bowling style; using None
 - **towhid-hridoy**: test: not in infobox or list page; using Cricsheet count 1
-- **towhid-hridoy**: t20i: Cricsheet 63 > infobox 62 (infobox stats dated 20 June); using Cricsheet
+- **towhid-hridoy**: t20i: Cricsheet 63 > infobox 62 (infobox stats dated 20 June 2026); using Cricsheet
 - **mohammad-nabi**: no Cricsheet record; values from Wikipedia only
 - **mujeeb-ur-rahman**: no Cricsheet record; values from Wikipedia only
 - **rahmanullah-gurbaz**: infobox has no bowling style; using None

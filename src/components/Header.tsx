@@ -2,12 +2,13 @@ import { GAME_NAME } from '../config'
 import { HelpIcon, StatsIcon } from './Icons'
 
 interface Props {
-  puzzleNumber: number
+  /** Short line under the title, e.g. the current streak. */
+  subtitle: string
   onHelp?: () => void
   onStats?: () => void
 }
 
-export function Header({ puzzleNumber, onHelp, onStats }: Props) {
+export function Header({ subtitle, onHelp, onStats }: Props) {
   const button =
     'flex h-11 w-11 items-center justify-center rounded-full text-gray-700 hover:bg-gray-100 dark:text-gray-300 focus-visible:outline-2 focus-visible:outline-green-700 dark:hover:bg-gray-800'
   return (
@@ -21,9 +22,7 @@ export function Header({ puzzleNumber, onHelp, onStats }: Props) {
       </div>
       <h1 className="text-center">
         <span className="block text-2xl font-extrabold tracking-tight">{GAME_NAME}</span>
-        <span className="block text-xs text-gray-600 dark:text-gray-400">
-          Puzzle #{puzzleNumber}
-        </span>
+        <span className="block text-xs text-gray-600 dark:text-gray-400">{subtitle}</span>
       </h1>
       <div className="flex w-20 justify-end">
         {onStats && (

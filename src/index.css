@@ -17,24 +17,24 @@ body {
   @apply bg-white text-gray-900 antialiased dark:bg-gray-950 dark:text-gray-100;
 }
 
-/* Cells flip in one by one; the delay is set inline per cell. */
-@keyframes cell-flip {
+/* Each newly revealed clue fades and slides in. */
+@keyframes clue-in {
   from {
-    transform: rotateX(90deg);
-    opacity: 0.2;
+    transform: translateY(6px);
+    opacity: 0;
   }
   to {
-    transform: rotateX(0deg);
+    transform: none;
     opacity: 1;
   }
 }
 
-.cell-flip {
-  animation: cell-flip 400ms ease-out both;
+.clue-in {
+  animation: clue-in 250ms ease-out both;
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .cell-flip {
+  .clue-in {
     animation: none;
   }
 }

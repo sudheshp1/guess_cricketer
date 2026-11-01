@@ -11,7 +11,7 @@
     "test:watch": "vitest",
     "lint": "oxlint && prettier --check .",
     "format": "prettier --write .",
-    "data": "tsx scripts/build-players.ts && tsx scripts/validate-players.ts && tsx scripts/build-schedule.ts",
+    "data": "tsx scripts/build-players.ts && tsx scripts/validate-players.ts",
     "typecheck": "tsc -b",
     "data:fetch": "tsx scripts/fetch-sources.ts",
     "test:coverage": "vitest run --coverage"

@@ -8,31 +8,33 @@
   body {
     font-family: 'Segoe UI', system-ui, -apple-system, Roboto, sans-serif;
     background: linear-gradient(135deg, #052e16 0%, #14532d 55%, #166534 100%);
-    color: #fff; display: flex; flex-direction: column; justify-content: center; padding: 0 90px; box-sizing: border-box;
+    color: #fff; display: flex; align-items: center; justify-content: space-between;
+    padding: 0 80px; box-sizing: border-box;
   }
-  h1 { font-size: 132px; margin: 0; letter-spacing: -4px; font-weight: 900; }
-  p { font-size: 44px; margin: 8px 0 48px; color: #dcfce7; font-weight: 600; }
-  .row { display: flex; gap: 14px; }
-  .c { width: 112px; height: 112px; border-radius: 16px; display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: 30px; font-weight: 800; }
-  .g { background: #15803d; box-shadow: inset 0 0 0 3px #22c55e55; }
-  .a { background: #fbbf24; color: #111827; }
-  .w { background: #6b7280; }
-  .arrow { font-size: 34px; line-height: 1; }
-  .tag { position: absolute; right: 90px; top: 70px; font-size: 30px; color: #bbf7d0; font-weight: 700; }
+  h1 { font-size: 124px; margin: 0; letter-spacing: -4px; font-weight: 900; }
+  p { font-size: 40px; margin: 8px 0 0; color: #dcfce7; font-weight: 600; line-height: 1.25; }
+  .tag { margin-top: 36px; font-size: 28px; color: #bbf7d0; font-weight: 700; }
+  .clues { display: flex; flex-direction: column; gap: 14px; width: 470px; }
+  .clue { display: flex; align-items: center; gap: 16px; background: #fff; color: #111827;
+    border-radius: 18px; padding: 16px 20px; font-size: 28px; font-weight: 700; }
+  .n { width: 44px; height: 44px; border-radius: 50%; background: #6b7280; color: #fff;
+    display: flex; align-items: center; justify-content: center; font-size: 24px; flex-shrink: 0; }
+  .clue.latest { outline: 5px solid #fbbf24; }
+  .clue.latest .n { background: #15803d; }
+  .locked { border: 3px dashed #86efac; background: transparent; color: #dcfce7; justify-content: center; font-weight: 600; }
 </style>
 </head>
 <body>
-  <div class="tag">Daily · 8 guesses</div>
-  <h1>Cricdle</h1>
-  <p>Guess the mystery cricketer</p>
-  <div class="row">
-    <div class="c g">IND</div>
-    <div class="c a">AR</div>
-    <div class="c g">RHB</div>
-    <div class="c w">SLA</div>
-    <div class="c a">2009<span class="arrow">↑</span></div>
-    <div class="c w">374<span class="arrow">↓</span></div>
-    <div class="c g">Active</div>
+  <div>
+    <h1>Cricdle</h1>
+    <p>Who is this cricketer?</p>
+    <div class="tag">Endless rounds · 10 clues</div>
+  </div>
+  <div class="clues">
+    <div class="clue"><span class="n">1</span>Batter</div>
+    <div class="clue"><span class="n">2</span>India</div>
+    <div class="clue latest"><span class="n">3</span>Right-handed batter</div>
+    <div class="clue locked">7 more clues locked</div>
   </div>
 </body>
 </html>

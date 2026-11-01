@@ -1,6 +1,8 @@
 # CLAUDE.md — Cricket Stats Guessing Game ("Cricdle")
 
 > Working title: **Cricdle** (rename freely). This file is the complete spec and build plan.
+> **Current design: endless clue mode** (Section 2). The original daily-puzzle design (v1) was
+> replaced; see Section 9, Phase 8.
 > Claude Code: read this whole file before writing code, then build phase by phase (Section 9).
 > After each phase, run the app, check the acceptance criteria, and stop for review.
 
@@ -8,63 +10,64 @@
 
 ## 1. Product summary
 
-A daily web game where players guess a mystery cricketer. Everyone gets the **same player each day**.
-After each guess, the game compares the guessed player with the answer across several attributes and
-colour-codes each one. Players get **8 guesses**. At the end, they can share an emoji grid result
-(no spoilers) to WhatsApp, X, etc.
+An endless web game where players identify a mystery international cricketer from clues. Each round
+starts with one vague clue; every wrong guess (or a skip) reveals the next, more specific clue.
+There are **10 clues** per round, and players can play as many rounds as they like. They can share
+a spoiler-free emoji summary of a round to WhatsApp, X, etc.
 
 **Goals**
 - Fast: loads in under 2 seconds on a mid-range Android phone over 4G.
 - Mobile-first: most players will use phones.
 - No login. Stats and progress are stored in the browser.
-- Static site: no backend needed for v1. Cheap or free to host.
+- Static site: no backend needed. Cheap or free to host.
 
-**Non-goals for v1**
+**Non-goals for now**
 - Accounts, leaderboards, multiplayer, ads, payments.
 
 ---
 
 ## 2. Game rules
 
-1. A new puzzle unlocks every day at **00:00 IST (Asia/Kolkata)** for all users worldwide.
-2. The player types a cricketer's name. An autocomplete dropdown suggests matching players from the
-   player database. Only players from the database can be submitted.
-3. The same player cannot be guessed twice in one game.
-4. After each guess, a row appears showing the guessed player and one coloured cell per attribute.
-5. The game ends when the player guesses correctly (win) or uses all 8 guesses (loss).
-6. On loss, reveal the answer.
-7. After the game ends, show a results modal: answer, guesses used, share button, stats, and a
-   countdown to the next puzzle.
-8. If the user reloads the page, their in-progress or finished game for today is restored.
+1. A round picks a random answer from the chosen **player pool** (2.2), avoiding the last 50
+   answers when possible.
+2. Clue 1 is shown at the start. The player types a cricketer's name; an autocomplete dropdown
+   suggests players from the database. Only players from the database can be submitted, and the
+   same player can't be guessed twice in a round.
+3. A wrong guess reveals the next clue. **Another clue** reveals the next clue without guessing.
+   **Give up** ends the round.
+4. A correct guess wins; the score is the clue number it was solved on (lower is better). A wrong
+   guess while all 10 clues are showing loses the round.
+5. When a round ends, show the answer, a **Next player** button, a **Share** button, and the clues
+   that weren't revealed.
+6. Reloading restores the round in progress (or the finished round, until Next player).
 
-### 2.1 Attributes compared (columns)
+### 2.1 Clues (in order, vaguest first)
 
-| Column | Field | Type | Feedback |
-|---|---|---|---|
-| Country | `country` | category | 🟩 exact match, ⬜ otherwise |
-| Role | `role` | category | 🟩 exact, 🟨 "related" (see 2.2), ⬜ otherwise |
-| Batting | `battingHand` | `"Right"` / `"Left"` | 🟩 / ⬜ |
-| Bowling | `bowlingType` | category | 🟩 exact, 🟨 same family (pace vs spin), ⬜ otherwise |
-| Debut | `debutYear` | number | 🟩 exact, 🟨 within ±3 years, ⬜ otherwise; plus arrow ⬆️/⬇️ |
-| Intl matches | `intlMatches` | number | 🟩 exact, 🟨 within ±25, ⬜ otherwise; plus arrow |
-| Status | `active` | boolean | 🟩 / ⬜ |
+| # | Clue | Example |
+|---|---|---|
+| 1 | Role | Batter |
+| 2 | Country (neutral wording; must not hint at retirement) | India |
+| 3 | Batting hand + bowling style | Right-handed batter, bowls right-arm medium |
+| 4 | International debut year | International debut in 2008 |
+| 5 | Status | Still playing international cricket / Retired · last international match in 2013 |
+| 6 | International matches, split by format | 563 international matches (123 Tests, 315 ODIs, 125 T20Is) |
+| 7 | Runs by format + highest score | Runs: 9,230 in Tests, … · Highest score 254* (Test) |
+| 8 | Wickets by format + best bowling | Wickets: 0 in Tests, 5 in ODIs, … · Best 1/13 (ODI) |
+| 9 | Hundreds and fifties | 86 international hundreds (30 Test, 55 ODI, 1 T20I) · 148 fifties |
+| 10 | Name shape: first letters + word lengths | V____  K____ |
 
-Arrow rule: ⬆️ means "the answer is **higher** than your guess", ⬇️ means "lower".
-No arrow when the value matches exactly.
+Clues 7–9 carry a note "Career figures from Wikipedia, as of <date>". No clue before the last may
+contain the player's name. Clue text lives in `src/lib/clues.ts` (pure, unit-tested).
 
-### 2.2 Category definitions
+### 2.2 Player pools
 
-**Roles:** `Batter`, `Wicketkeeper-Batter`, `All-rounder`, `Bowler`.
-"Related" (🟨) pairs:
-- `Batter` ↔ `Wicketkeeper-Batter`
-- `All-rounder` ↔ `Batter`
-- `All-rounder` ↔ `Bowler`
+| Pool | Answers drawn from |
+|---|---|
+| Famous | `difficulty` 1 |
+| Regular (default) | `difficulty` 1–2 |
+| All | every player |
 
-**Bowling types:** `Right-arm fast`, `Right-arm medium`, `Left-arm fast`, `Left-arm medium`,
-`Right-arm off-spin`, `Right-arm leg-spin`, `Left-arm orthodox`, `Left-arm wrist-spin`, `None`.
-Families: **pace** = fast + medium variants; **spin** = the four spin types; `None` matches only `None`.
-
-All thresholds (±3 years, ±25 matches) live in one config file (`src/config.ts`) so they can be tuned.
+Changing the pool applies from the next round. Any player can always be *guessed*.
 
 ---
 
@@ -95,6 +98,10 @@ All thresholds (±3 years, ±25 matches) live in one config file (`src/config.ts
 - `debutYear`: year of first international match in any format.
 - `intlMatches`: total international matches across Tests + ODIs + T20Is.
 - `difficulty`: 1 = household name, 2 = known to regular fans, 3 = deep cut.
+- `stats`: per-format (`test`, `odi`, `t20i`) career figures: `matches`, `runs`, `highScore`
+  (e.g. `"254*"`), `hundreds`, `fifties`, `wickets`, `bestBowling` (e.g. `"5/23"`); null where the
+  source shows none. Only formats the player played are present.
+- `lastYear`: year of the last international match, if known. `statsAsOf`: the infobox "as of" date.
 - **The example above uses placeholder numbers.** All real values must be filled from a verified
   source (see 3.2). Never invent stats.
 
@@ -119,21 +126,16 @@ Fail the build if:
 
 - **Phase 1:** 40–60 well-known players (mostly difficulty 1–2) so the game is playable.
 - **Launch:** 300+ players across all major teams, so guesses are useful and the autocomplete feels complete.
-- **Answer pool:** only players with `difficulty` 1 or 2 can be the daily answer. All players can be guessed.
+- **Answer pools:** see 2.2. All players can be guessed.
 
 ---
 
-## 4. Daily puzzle selection
+## 4. Round selection
 
-- Compute the puzzle number = days since launch date (`LAUNCH_DATE` in `src/config.ts`), using the
-  **Asia/Kolkata** date, not the user's local date.
-- Pick the answer deterministically:
-  - Preferred: a pre-shuffled schedule file `src/data/schedule.json` (array of player ids, one per day).
-    The schedule is generated by `scripts/build-schedule.ts` using a fixed seed and must not repeat an
-    answer within 365 days.
-  - The app uses `schedule[puzzleNumber % schedule.length]`.
-- Note: answers are visible to anyone who reads the JS bundle. That's acceptable for v1. (A later
-  version can serve only today's answer hash from an edge function.)
+- `pickAnswer(players, pool, recentIds, random)` in `src/lib/round.ts` picks uniformly from the pool,
+  excluding the last `RECENT_ANSWER_MEMORY` (50) answers unless that empties the pool.
+- `random` is injectable so tests are deterministic.
+- Answers are visible to anyone who reads the JS bundle. That's acceptable.
 
 ---
 
@@ -151,48 +153,34 @@ Fail the build if:
 ## 6. Project structure
 
 ```
-cricdle/
 ├── CLAUDE.md
-├── index.html
-├── package.json
-├── vite.config.ts
-├── tailwind.config.js
-├── public/
-│   ├── favicon.svg
-│   └── og-image.png
+├── index.html                 # meta + Open Graph tags (%VITE_SITE_URL%)
+├── vercel.json
+├── public/                    # favicon.svg, apple-touch-icon.png, og-image.png, robots.txt
 ├── scripts/
-│   ├── players-seed.csv
-│   ├── build-players.ts
+│   ├── players-seed.csv       # curated list: id, name, Wikipedia title, aliases, difficulty, overrides
+│   ├── fetch-sources.ts       # network: snapshot Wikipedia + Cricsheet into scripts/sources/
+│   ├── build-players.ts       # offline: seed + snapshots -> src/data/players.json + report.md
 │   ├── validate-players.ts
-│   └── build-schedule.ts
+│   ├── assets/                # HTML sources for og-image.png and apple-touch-icon.png
+│   ├── sources/               # committed snapshots + build report
+│   └── lib/                   # csv, infobox parsing, resolve (merge rules), validate
 └── src/
-    ├── main.tsx
     ├── App.tsx
-    ├── config.ts              # thresholds, LAUNCH_DATE, MAX_GUESSES
-    ├── types.ts               # Player, Feedback, GameState types
-    ├── data/
-    │   ├── players.json
-    │   └── schedule.json
+    ├── config.ts              # MAX_CLUES, RECENT_ANSWER_MEMORY, storage keys, SITE_URL
+    ├── types.ts               # Player, FormatStats, Round, Clue, Stats
+    ├── data/players.json
     ├── lib/
-    │   ├── date.ts            # IST date + puzzle number + countdown
-    │   ├── puzzle.ts          # get today's answer
-    │   ├── compare.ts         # guess vs answer -> feedback per attribute
+    │   ├── clues.ts           # player -> 10 clues
+    │   ├── round.ts           # pickAnswer, newRound, guess, revealClue, giveUp
+    │   ├── stats.ts           # recordRound (once per round), win %, average clues
     │   ├── search.ts          # autocomplete matching (name + aliases, accent-insensitive)
-    │   ├── share.ts           # build emoji share text
-    │   └── storage.ts         # load/save game + stats safely
-    ├── hooks/
-    │   └── useGame.ts         # game state machine
-    └── components/
-        ├── Header.tsx
-        ├── GuessInput.tsx     # input + autocomplete dropdown, keyboard navigation
-        ├── GuessGrid.tsx      # header row + guess rows
-        ├── GuessRow.tsx
-        ├── FeedbackCell.tsx   # colour + value + arrow, with flip animation
-        ├── ResultModal.tsx
-        ├── StatsModal.tsx
-        ├── HowToPlayModal.tsx
-        ├── Countdown.tsx
-        └── Footer.tsx         # Cricsheet attribution, disclaimer
+    │   ├── share.ts           # emoji share text + Web Share / clipboard
+    │   ├── storage.ts         # load/save round, stats, recent answers, pool, help-seen
+    │   └── players.ts         # bundled player data
+    ├── hooks/useGame.ts       # round state machine + persistence
+    └── components/            # Header, ClueList, GuessInput, RoundResult, PoolPicker,
+                               # StatsModal/StatsPanel, HowToPlayModal, Modal, Toast, Footer, Icons
 ```
 
 ---
@@ -202,82 +190,70 @@ cricdle/
 ### 7.1 Types (`src/types.ts`)
 
 ```ts
-export type Match = "correct" | "close" | "wrong";
-export type Direction = "up" | "down" | null;
-
-export interface CellFeedback {
-  key: "country" | "role" | "battingHand" | "bowlingType" | "debutYear" | "intlMatches" | "active";
-  value: string | number | boolean;   // the guessed player's value, displayed in the cell
-  match: Match;
-  direction: Direction;               // only for numeric fields
-}
-
-export interface GuessResult {
-  playerId: string;
-  cells: CellFeedback[];
-  isCorrect: boolean;
-}
-
-export interface SavedGame {
-  puzzleNumber: number;
-  guesses: string[];                  // player ids, in order
-  status: "playing" | "won" | "lost";
+export interface Round {
+  roundId: string           // unique; guards against double-counting stats
+  answerId: string
+  guesses: string[]         // player ids, in order
+  cluesRevealed: number     // 1..MAX_CLUES
+  status: 'playing' | 'won' | 'lost'
+  gaveUp: boolean
 }
 
 export interface Stats {
-  played: number;
-  wins: number;
-  currentStreak: number;
-  maxStreak: number;
-  distribution: number[];             // length MAX_GUESSES; wins by guess count
-  lastCompletedPuzzle: number | null;
+  played: number
+  wins: number
+  currentStreak: number     // rounds won in a row
+  maxStreak: number
+  distribution: number[]    // length MAX_CLUES; wins by clue number solved on
+  lastRoundId: string | null
 }
 ```
 
-### 7.2 `compare(guess, answer)`
-Pure function, no side effects, fully unit-tested. Implements Section 2.1 and 2.2 exactly.
+### 7.2 Round rules (`round.ts`)
+- `guess`: correct -> `won`; wrong -> next clue, or `lost` if all clues were showing. Repeats and
+  guesses after the round ends are no-ops (return the same object).
+- `revealClue`: next clue without guessing; no-op at `MAX_CLUES`. `giveUp`: `lost`, `gaveUp: true`.
 
-### 7.3 Streak rules
-- Win: `currentStreak += 1` if `lastCompletedPuzzle === puzzleNumber - 1`, otherwise `currentStreak = 1`.
-- Loss: `currentStreak = 0`.
-- Update stats only once per puzzle (guard against double-counting on reload).
+### 7.3 Stats rules
+- Win: `currentStreak += 1`; record the clue number in `distribution`. Loss or give-up: streak = 0.
+- Record each round once (`lastRoundId` guard), including after a reload.
 
 ### 7.4 Search (`search.ts`)
 - Case-insensitive, accent-insensitive, matches the start of any word in `name` or any `alias`.
-- Exclude already-guessed players.
-- Return at most 8 results. Rank exact-prefix matches on the full name first.
+- Exclude already-guessed players. At most 8 results; exact-prefix matches on the full name first.
 
 ### 7.5 Share text (`share.ts`)
 
 ```
-Cricdle #42 4/8 🏏
-⬜🟨🟩⬜🟨⬜🟩
-🟩🟨🟩🟨⬜🟨🟩
-🟩🟩🟩🟩🟨🟩🟩
-🟩🟩🟩🟩🟩🟩🟩
+Cricdle 🏏 3/10 clues
+🟥🟥🟩⬜⬜⬜⬜⬜⬜⬜
+🔥 4 in a row
 https://your-domain.com
 ```
 
-- On a win show `N/8` (guesses used); on a loss show `✖/8`.
-- Use the Web Share API (`navigator.share`) when available, otherwise copy to clipboard and show a toast.
-- Never include player names in the share text.
+- One square per clue: 🟥 used before the answer, 🟩 the clue it was solved on, ⬜ not needed.
+  A loss shows `✖/10` and red squares for the clues revealed. The streak line appears for streaks > 1.
+- Web Share API when available, otherwise copy to clipboard and show a toast. Never include names.
 
 ---
 
 ## 8. UI and UX
 
-- **Layout:** single column, max width ~640px, centred. Header (title, ? help, 📊 stats), input,
-  grid, footer.
-- **Grid on mobile:** 7 attribute columns + name won't fit at 360px. Show the player name as a row
-  label above its cells, and keep cells compact (≈44px squares, small text). Allow horizontal scroll
-  inside the grid only if unavoidable; never on the page.
-- **Colours:** green = correct, amber = close, grey = wrong. Also show the value and arrow inside each
-  cell so the game works for colour-blind users. Add a high-contrast mode toggle (orange/blue) in v1.1.
-- **Animation:** cells flip in one by one (~150ms apart) on each guess. Respect `prefers-reduced-motion`.
+- **Layout:** single column, max width ~640px, centred. Header (title, ? help, stats), "Who is this
+  cricketer?" with "Clue N of 10", revealed clues (newest highlighted), then the guess input with
+  **Another clue** / **Give up**, the player's wrong guesses, and the player-pool picker.
+- **Round over:** the result card replaces the input (so it stays on screen on phones); clues that
+  weren't revealed are listed below it.
+- **Animation:** each new clue slides in. Respect `prefers-reduced-motion`. Modals shown on page
+  load don't animate.
 - **Dark mode:** follow system preference.
 - **Keyboard:** ↑/↓ to move through suggestions, Enter to submit, Esc to close the dropdown.
-- **First visit:** show How to Play modal automatically once.
-- **Accessibility:** proper labels, focus management in modals, aria-live announcement of each guess result.
+  The input is focused when a new round starts.
+- **First visit:** show How to Play once.
+- **Accessibility:** proper labels, focus management in modals, aria-live announcement of each
+  guess result and newly revealed clue.
+
+---
 
 ### Legal/branding
 - Do **not** use official team logos, board logos, or league names (e.g. "IPL") in branding or assets.
@@ -287,6 +263,9 @@ https://your-domain.com
 ---
 
 ## 9. Build plan (phases)
+
+Phases 1–7 built the original **daily** game and are kept for history. Phase 8 replaced the daily
+puzzle with endless clue mode; where they conflict, Sections 1–8 (current design) win.
 
 Build in order. Each phase ends with working, tested code. Stop after each phase for review.
 
@@ -332,9 +311,17 @@ Build in order. Each phase ends with working, tested code. Stop after each phase
 
 ---
 
-## 10. Future ideas (not in v1)
+### Phase 8 — Endless clue mode (done)
+- Replace the daily puzzle, schedule, countdown and comparison grid with endless rounds of 10
+  progressive clues, player pools, and per-round stats.
+- Extend the data pipeline with per-format career figures (runs, high score, 100s/50s, wickets,
+  best bowling) from the Wikipedia infobox snapshots, plus `lastYear` and `statsAsOf`.
 
-- Practice / unlimited mode with random players.
+---
+
+## 10. Future ideas
+
+- A daily challenge alongside endless mode (same player for everyone each day).
 - Themed modes: "Legends only", "Women's cricket", "World Cup squads".
 - Alternative formats: guess-the-stat-line, guess-the-scorecard, connections-style grouping.
 - Hindi / Kannada / Tamil UI translations.
