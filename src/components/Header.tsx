@@ -17,16 +17,12 @@ export function Header({ streak, onHelp, onStats }: Props) {
           <h1 className="text-2xl leading-none font-extrabold tracking-tight sm:text-3xl">
             Cric<span className="text-gold">dle</span>
           </h1>
-          <p className="mt-1 flex items-center gap-1 text-xs font-medium text-muted sm:text-sm">
-            {streak > 0 ? (
-              <>
-                <Flame className="h-3.5 w-3.5 text-gold" aria-hidden="true" />
-                <span>Win streak: {streak}</span>
-              </>
-            ) : (
-              <span>Endless mode</span>
-            )}
-          </p>
+          {streak > 0 && (
+            <p className="mt-1 flex items-center gap-1 text-xs font-medium text-muted sm:text-sm">
+              <Flame className="h-3.5 w-3.5 text-gold" aria-hidden="true" />
+              <span>Win streak: {streak}</span>
+            </p>
+          )}
         </div>
       </div>
       <nav className="flex items-center gap-2" aria-label="Game menu">
