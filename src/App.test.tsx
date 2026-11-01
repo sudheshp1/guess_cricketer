@@ -1,22 +1,24 @@
 import { render, screen, within } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
-import { beforeEach, describe, expect, it } from 'vitest'
+import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
 import App from './App'
-import { STORAGE_KEYS } from './config'
-import { getPuzzleNumber } from './lib/date'
+import { MAX_CLUES, STORAGE_KEYS } from './config'
 import { PLAYERS } from './lib/players'
-import { getAnswer } from './lib/puzzle'
+import { pickAnswer } from './lib/round'
 
-const NOW = new Date('2026-11-05T06:00:00Z')
-const now = () => NOW
-const answer = getAnswer(getPuzzleNumber(NOW))
-const wrongPlayers = PLAYERS.filter((p) => p.id !== answer.id)
+// random() === 0 always picks the first eligible player that isn't recent.
+const random = () => 0
+const answer = pickAnswer(PLAYERS, 'regular', [], random)
+const secondAnswer = pickAnswer(PLAYERS, 'regular', [answer.id], random)
+const wrongPlayers = PLAYERS.filter((p) => p.id !== answer.id && p.id !== secondAnswer.id)
 
 function renderApp() {
-  return render(<App now={now} />)
+  return render(<App random={random} />)
 }
 
-async function guess(user: ReturnType<typeof userEvent.setup>, name: string) {
+type User = ReturnType<typeof userEvent.setup>
+
+async function guess(user: User, name: string) {
   const input = screen.getByRole('combobox')
   await user.clear(input)
   await user.type(input, name)
@@ -27,122 +29,167 @@ async function guess(user: ReturnType<typeof userEvent.setup>, name: string) {
   await user.click(option)
 }
 
-const guessNames = () =>
-  within(screen.getByRole('list', { name: /your guesses/i }))
+const clueItems = () =>
+  within(screen.getByRole('list', { name: 'Clues' }))
     .getAllByRole('listitem')
-    .map((li) => li.querySelector('.font-semibold')?.textContent)
+    .filter((li) => !/locked/.test(li.textContent ?? ''))
 
 beforeEach(() => {
   window.localStorage.clear()
-  // Skip the first-visit help modal; it has its own tests.
+  // Skip the first-visit help modal; it has its own test.
   window.localStorage.setItem(STORAGE_KEYS.seenHelp, 'true')
 })
 
+afterEach(() => {
+  vi.unstubAllGlobals()
+})
+
 describe('App', () => {
-  it('renders the title and an empty board', () => {
+  it('starts a round with one clue showing', () => {
     renderApp()
-    expect(screen.getByRole('heading', { name: /cricdle/i })).toBeInTheDocument()
-    expect(screen.getByText(/make your first guess/i)).toBeInTheDocument()
+    expect(screen.getByRole('heading', { name: /who is this cricketer/i })).toBeInTheDocument()
+    expect(screen.getByText(`Clue 1 of ${MAX_CLUES}`)).toBeInTheDocument()
+    expect(clueItems()).toHaveLength(1)
+    expect(screen.getByText(`${MAX_CLUES - 1} more clues locked`)).toBeInTheDocument()
   })
 
-  it('suggests players as you type and adds a row per guess, newest first', async () => {
-    const user = userEvent.setup()
-    renderApp()
-    const [first, second] = wrongPlayers
-    await guess(user, first!.name)
-    await guess(user, second!.name)
-    expect(guessNames()).toEqual([second!.name, first!.name])
-  })
-
-  it('does not suggest a player you already guessed', async () => {
-    const user = userEvent.setup()
-    renderApp()
-    const p = wrongPlayers[0]!
-    await guess(user, p.name)
-    await user.type(screen.getByRole('combobox'), p.name)
-    expect(screen.queryAllByRole('option').map((o) => o.textContent)).not.toContain(
-      `${p.name}${p.country}`,
-    )
-  })
-
-  it('supports arrow keys, Enter and Escape', async () => {
-    const user = userEvent.setup()
-    renderApp()
-    const input = screen.getByRole('combobox')
-    await user.type(input, 'a')
-    const options = screen.getAllByRole('option')
-    expect(options.length).toBeGreaterThan(1)
-    expect(options[0]).toHaveAttribute('aria-selected', 'true')
-    await user.keyboard('{ArrowDown}')
-    expect(screen.getAllByRole('option')[1]).toHaveAttribute('aria-selected', 'true')
-    await user.keyboard('{ArrowUp}{ArrowUp}')
-    const last = screen.getAllByRole('option').at(-1)!
-    expect(last).toHaveAttribute('aria-selected', 'true')
-    await user.keyboard('{Escape}')
-    expect(input).toHaveAttribute('aria-expanded', 'false')
-    // Reopening with ArrowDown starts again at the first suggestion.
-    await user.keyboard('{ArrowDown}')
-    expect(input).toHaveAttribute('aria-expanded', 'true')
-    const first = screen.getAllByRole('option')[0]!
-    expect(first).toHaveAttribute('aria-selected', 'true')
-    const pickedName = first.querySelector('span')!.textContent
-    await user.keyboard('{Enter}')
-    expect(guessNames()).toEqual([pickedName])
-  })
-
-  it('wins when the answer is guessed and disables input', async () => {
+  it('reveals the next clue after each wrong guess', async () => {
     const user = userEvent.setup()
     renderApp()
     await guess(user, wrongPlayers[0]!.name)
-    await guess(user, answer.name)
-    expect(screen.getByRole('heading', { name: /you got it in 2\/8/i })).toBeInTheDocument()
-    expect(screen.getByRole('combobox')).toBeDisabled()
-  })
-
-  it('loses after 8 wrong guesses and reveals the answer', async () => {
-    const user = userEvent.setup()
-    renderApp()
-    for (const p of wrongPlayers.slice(0, 8)) await guess(user, p.name)
-    expect(screen.getByRole('heading', { name: /out of guesses/i })).toBeInTheDocument()
-    expect(screen.getByText(answer.name, { selector: 'strong' })).toBeInTheDocument()
-    expect(screen.getByRole('combobox')).toBeDisabled()
-  })
-
-  it('restores an in-progress game after a reload', async () => {
-    const user = userEvent.setup()
-    const first = renderApp()
-    await guess(user, wrongPlayers[0]!.name)
+    expect(clueItems()).toHaveLength(2)
+    expect(screen.getByText(`Clue 2 of ${MAX_CLUES}`)).toBeInTheDocument()
     await guess(user, wrongPlayers[1]!.name)
-    first.unmount()
-
-    renderApp()
-    expect(guessNames()).toEqual([wrongPlayers[1]!.name, wrongPlayers[0]!.name])
-    expect(screen.getByRole('combobox')).toBeEnabled()
-    // Restored rows are not re-animated.
-    expect(document.querySelectorAll('.cell-flip')).toHaveLength(0)
+    expect(clueItems()).toHaveLength(3)
+    const guesses = within(screen.getByRole('region', { name: /your guesses/i }))
+    expect(guesses.getByText(wrongPlayers[0]!.name)).toBeInTheDocument()
   })
 
-  it('restores a finished game and counts stats only once', async () => {
+  it('reveals a clue on demand without guessing', async () => {
+    const user = userEvent.setup()
+    renderApp()
+    await user.click(screen.getByRole('button', { name: /another clue/i }))
+    expect(clueItems()).toHaveLength(2)
+    expect(screen.queryByRole('region', { name: /your guesses/i })).not.toBeInTheDocument()
+  })
+
+  it('wins when the answer is guessed, then starts a new round', async () => {
+    const user = userEvent.setup()
+    renderApp()
+    await guess(user, wrongPlayers[0]!.name)
+    await guess(user, answer.name)
+    expect(screen.getByRole('heading', { name: /got it on clue 2/i })).toBeInTheDocument()
+    expect(screen.getByText(answer.name, { selector: 'strong' })).toBeInTheDocument()
+    // The remaining clues are listed once the round is over.
+    expect(
+      within(screen.getByRole('list', { name: 'Remaining clues' })).getAllByRole('listitem'),
+    ).toHaveLength(MAX_CLUES - 2)
+    expect(screen.getByText('Win streak: 1')).toBeInTheDocument()
+
+    await user.click(screen.getByRole('button', { name: /next player/i }))
+    expect(clueItems()).toHaveLength(1)
+    expect(screen.getByRole('combobox')).toHaveFocus()
+    // The new round has a different answer.
+    await guess(user, secondAnswer.name)
+    expect(screen.getByRole('heading', { name: /first clue/i })).toBeInTheDocument()
+    expect(screen.getByText('Win streak: 2')).toBeInTheDocument()
+  })
+
+  it('loses after a wrong guess on the last clue', async () => {
+    const user = userEvent.setup()
+    renderApp()
+    const more = screen.getByRole('button', { name: /another clue/i })
+    for (let i = 1; i < MAX_CLUES; i++) await user.click(more)
+    expect(more).toBeDisabled()
+    await guess(user, wrongPlayers[0]!.name)
+    expect(screen.getByRole('heading', { name: /out of clues/i })).toBeInTheDocument()
+    expect(screen.getByText(answer.name, { selector: 'strong' })).toBeInTheDocument()
+  })
+
+  it('can give up and reveal the answer', async () => {
+    const user = userEvent.setup()
+    renderApp()
+    await user.click(screen.getByRole('button', { name: /give up/i }))
+    expect(screen.getByRole('heading', { name: /you gave up/i })).toBeInTheDocument()
+    expect(screen.getByText(answer.name, { selector: 'strong' })).toBeInTheDocument()
+    const stats = JSON.parse(window.localStorage.getItem(STORAGE_KEYS.stats)!)
+    expect(stats).toMatchObject({ played: 1, wins: 0, currentStreak: 0 })
+  })
+
+  it('restores the current round after a reload', async () => {
+    const user = userEvent.setup()
+    const first = renderApp()
+    await guess(user, wrongPlayers[0]!.name)
+    first.unmount()
+    renderApp()
+    expect(clueItems()).toHaveLength(2)
+    expect(screen.getByText(wrongPlayers[0]!.name)).toBeInTheDocument()
+  })
+
+  it('restores a finished round and counts it once', async () => {
     const user = userEvent.setup()
     const first = renderApp()
     await guess(user, answer.name)
     first.unmount()
     renderApp()
-    expect(screen.getByRole('heading', { name: /you got it in 1\/8/i })).toBeInTheDocument()
-    // The results modal reopens on reload.
-    expect(screen.getByRole('dialog', { name: /well played/i })).toBeInTheDocument()
+    expect(screen.getByRole('button', { name: /next player/i })).toBeInTheDocument()
     const stats = JSON.parse(window.localStorage.getItem(STORAGE_KEYS.stats)!)
-    expect(stats.played).toBe(1)
-    expect(stats.wins).toBe(1)
+    expect(stats).toMatchObject({ played: 1, wins: 1 })
   })
 
-  it('announces each guess result for screen readers', async () => {
+  it('changes the player pool for the next round', async () => {
+    const user = userEvent.setup()
+    renderApp()
+    await user.click(screen.getByRole('radio', { name: 'Famous' }))
+    expect(window.localStorage.getItem(STORAGE_KEYS.pool)).toBe('"famous"')
+    await user.click(screen.getByRole('button', { name: /give up/i }))
+    await user.click(screen.getByRole('button', { name: /next player/i }))
+    const round = JSON.parse(window.localStorage.getItem(STORAGE_KEYS.round)!)
+    const next = PLAYERS.find((p) => p.id === round.answerId)!
+    expect(next.difficulty).toBe(1)
+  })
+
+  it('shows How to play on the first visit only', async () => {
+    window.localStorage.clear()
+    const user = userEvent.setup()
+    const first = renderApp()
+    const dialog = screen.getByRole('dialog', { name: /how to play/i })
+    await user.click(within(dialog).getByRole('button', { name: /close/i }))
+    first.unmount()
+    renderApp()
+    expect(screen.queryByRole('dialog')).not.toBeInTheDocument()
+  })
+
+  it('opens stats with the solved-on-clue chart', async () => {
+    const user = userEvent.setup()
+    renderApp()
+    await guess(user, answer.name)
+    await user.click(screen.getByRole('button', { name: /statistics/i }))
+    const dialog = screen.getByRole('dialog', { name: /statistics/i })
+    expect(within(dialog).getByText('Clue 1: 1 win')).toBeInTheDocument()
+    await user.keyboard('{Escape}')
+    expect(screen.queryByRole('dialog')).not.toBeInTheDocument()
+  })
+
+  it('copies a spoiler-free result when Web Share is missing', async () => {
+    const user = userEvent.setup()
+    const writeText = vi.fn().mockResolvedValue(undefined)
+    vi.stubGlobal('navigator', { share: undefined, clipboard: { writeText } })
+    renderApp()
+    await guess(user, answer.name)
+    await user.click(screen.getByRole('button', { name: /share/i }))
+    const text = writeText.mock.calls[0]![0] as string
+    expect(text.split('\n')[0]).toBe(`Cricdle 🏏 1/${MAX_CLUES} clues`)
+    expect(text).not.toContain(answer.name)
+    expect(await screen.findByText(/copied to clipboard/i)).toBeInTheDocument()
+  })
+
+  it('announces new clues for screen readers', async () => {
     const user = userEvent.setup()
     renderApp()
     await guess(user, wrongPlayers[0]!.name)
-    const live = document.querySelector('[aria-live="polite"]')!
-    expect(live.textContent).toContain(wrongPlayers[0]!.name)
-    expect(live.textContent).toMatch(/Country: /)
+    const live = document.querySelector('[aria-live="polite"][aria-atomic="true"]')!
+    expect(live.textContent).toMatch(new RegExp(`Not ${wrongPlayers[0]!.name}\\. Clue 2`))
   })
 
   it('still plays when localStorage is unavailable', async () => {
@@ -156,8 +203,10 @@ describe('App', () => {
     })
     try {
       renderApp()
+      // Help modal shows (nothing could be stored); close it and play.
+      await user.keyboard('{Escape}')
       await guess(user, answer.name)
-      expect(screen.getByRole('heading', { name: /you got it/i })).toBeInTheDocument()
+      expect(screen.getByRole('heading', { name: /first clue/i })).toBeInTheDocument()
     } finally {
       Object.defineProperty(window, 'localStorage', original)
     }

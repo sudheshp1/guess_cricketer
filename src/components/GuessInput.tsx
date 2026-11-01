@@ -6,8 +6,8 @@ interface Props {
   players: readonly Player[]
   guessedIds: readonly string[]
   disabled?: boolean
-  guessNumber: number
-  maxGuesses: number
+  placeholder: string
+  autoFocus?: boolean
   onGuess: (playerId: string) => void
 }
 
@@ -16,8 +16,8 @@ export function GuessInput({
   players,
   guessedIds,
   disabled,
-  guessNumber,
-  maxGuesses,
+  placeholder,
+  autoFocus,
   onGuess,
 }: Props) {
   const [query, setQuery] = useState('')
@@ -83,9 +83,8 @@ export function GuessInput({
         enterKeyHint="go"
         disabled={disabled}
         value={query}
-        placeholder={
-          disabled ? 'Game over' : `Guess ${guessNumber} of ${maxGuesses}: type a player's name`
-        }
+        placeholder={placeholder}
+        autoFocus={autoFocus}
         onChange={(e) => {
           setQuery(e.target.value)
           setOpen(true)

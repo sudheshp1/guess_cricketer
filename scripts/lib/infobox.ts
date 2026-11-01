@@ -203,7 +203,40 @@ export interface InfoboxFacts {
   debutYears: Partial<Record<FormatKey, number>>
   lastYears: Partial<Record<FormatKey, number>>
   matches: Partial<Record<FormatKey, number>>
+  career: Partial<Record<FormatKey, InfoboxCareer>>
   statsDate: string | null
+}
+
+/** Career figures for one format as printed in the infobox; null where shown as a dash. */
+export interface InfoboxCareer {
+  runs: number | null
+  highScore: string | null
+  hundreds: number | null
+  fifties: number | null
+  wickets: number | null
+  bestBowling: string | null
+}
+
+/** "254*" -> "254*"; anything else (dashes, blanks) -> null. */
+export function parseHighScore(value: string | undefined): string | null {
+  if (!value) return null
+  const s = stripMarkup(value).replace(/\s/g, '')
+  return /^\d+\*?$/.test(s) ? s : null
+}
+
+/** "5/23" -> "5/23"; dashes -> null. */
+export function parseBestBowling(value: string | undefined): string | null {
+  if (!value) return null
+  const s = stripMarkup(value).replace(/\s/g, '')
+  return /^\d+\/\d+$/.test(s) ? s : null
+}
+
+/** "30/31" -> [30, 31]; dashes count as null. */
+export function parseHundredsFifties(value: string | undefined): [number | null, number | null] {
+  if (!value) return [null, null]
+  const parts = stripMarkup(value).split('/')
+  const n = (s: string | undefined) => (s && /^\s*\d+\s*$/.test(s) ? Number(s) : null)
+  return [n(parts[0]), n(parts[1])]
 }
 
 /** Pull the facts the game needs out of a parsed infobox. */
@@ -227,6 +260,7 @@ export function readInfobox(fields: Record<string, string>): InfoboxFacts {
   }
 
   const matches: InfoboxFacts['matches'] = {}
+  const career: InfoboxFacts['career'] = {}
   for (let n = 1; n <= 6; n++) {
     const label = get(`column${n}`)
     if (!label) continue
@@ -234,7 +268,21 @@ export function readInfobox(fields: Record<string, string>): InfoboxFacts {
     if (!fmt) continue
     const count = parseCount(get(`matches${n}`))
     if (count !== null) matches[fmt] = count
+    const [hundreds, fifties] = parseHundredsFifties(get(`100s/50s${n}`))
+    career[fmt] = {
+      runs: parseCount(get(`runs${n}`)),
+      highScore: parseHighScore(get(`top score${n}`)),
+      hundreds,
+      fifties,
+      wickets: parseCount(get(`wickets${n}`)),
+      bestBowling: parseBestBowling(get(`best bowling${n}`)),
+    }
   }
+
+  // "date = 4 February" with "year = 2006" in a separate field.
+  let statsDate = text('date')
+  const statsYear = text('year')
+  if (statsDate && statsYear && !/\d{4}/.test(statsDate)) statsDate = `${statsDate} ${statsYear}`
 
   return {
     name: text('name'),
@@ -246,7 +294,8 @@ export function readInfobox(fields: Record<string, string>): InfoboxFacts {
     debutYears,
     lastYears,
     matches,
-    statsDate: text('date'),
+    career,
+    statsDate,
   }
 }
 

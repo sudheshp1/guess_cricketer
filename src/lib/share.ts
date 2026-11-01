@@ -1,27 +1,33 @@
-import { GAME_NAME, MAX_GUESSES, SITE_URL } from '../config'
-import type { GuessResult, Match } from '../types'
-
-const EMOJI: Record<Match, string> = { correct: '🟩', close: '🟨', wrong: '⬜' }
+import { GAME_NAME, MAX_CLUES, SITE_URL } from '../config'
+import type { Round } from '../types'
 
 export interface ShareInput {
-  puzzleNumber: number
-  results: readonly GuessResult[]
-  won: boolean
-  maxGuesses?: number
+  round: Pick<Round, 'status' | 'cluesRevealed'>
+  streak: number
+  maxClues?: number
   siteUrl?: string
 }
 
-/** Spoiler-free share text: header, one emoji row per guess, link. Never contains names. */
+/**
+ * Spoiler-free share text. One square per clue: red for clues used before the answer, green for
+ * the clue it was solved on, white for clues never needed. Never contains names.
+ */
 export function buildShareText({
-  puzzleNumber,
-  results,
-  won,
-  maxGuesses = MAX_GUESSES,
+  round,
+  streak,
+  maxClues = MAX_CLUES,
   siteUrl = SITE_URL,
 }: ShareInput): string {
-  const score = won ? String(results.length) : '✖'
-  const rows = results.map((r) => r.cells.map((c) => EMOJI[c.match]).join(''))
-  return [`${GAME_NAME} #${puzzleNumber} ${score}/${maxGuesses} 🏏`, ...rows, siteUrl].join('\n')
+  const won = round.status === 'won'
+  const squares = Array.from({ length: maxClues }, (_, i) => {
+    if (!won) return i < round.cluesRevealed ? '🟥' : '⬜'
+    if (i < round.cluesRevealed - 1) return '🟥'
+    return i === round.cluesRevealed - 1 ? '🟩' : '⬜'
+  }).join('')
+  const score = won ? `${round.cluesRevealed}/${maxClues}` : `✖/${maxClues}`
+  const header = `${GAME_NAME} 🏏 ${score} clues`
+  const streakLine = won && streak > 1 ? `🔥 ${streak} in a row` : null
+  return [header, squares, ...(streakLine ? [streakLine] : []), siteUrl].join('\n')
 }
 
 export type ShareOutcome = 'shared' | 'copied' | 'cancelled' | 'failed'

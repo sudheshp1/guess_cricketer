@@ -1,104 +1,129 @@
-import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
-import { MAX_GUESSES } from '../config'
-import { compare } from '../lib/compare'
-import { msUntilNextPuzzle } from '../lib/date'
-import { newGame, sanitizeGame, submitGuess } from '../lib/game'
-import { PLAYERS_BY_ID } from '../lib/players'
-import { getTodaysPuzzle, type Puzzle } from '../lib/puzzle'
-import { applyGameResult } from '../lib/stats'
-import { loadGame, loadStats, saveGame, saveStats } from '../lib/storage'
-import type { GuessResult, Player, SavedGame, Stats } from '../types'
+import { useCallback, useMemo, useState } from 'react'
+import { buildClues } from '../lib/clues'
+import { PLAYERS, PLAYERS_BY_ID } from '../lib/players'
+import { giveUp, guess, isValidRound, newRound, pickAnswer, revealClue } from '../lib/round'
+import { recordRound } from '../lib/stats'
+import {
+  loadPool,
+  loadRecent,
+  loadRound,
+  loadStats,
+  rememberAnswer,
+  savePool,
+  saveRound,
+  saveStats,
+} from '../lib/storage'
+import type { Clue, Player, PlayerPool, Round, Stats } from '../types'
 
 export interface UseGameOptions {
-  /** Injectable clock for tests. */
-  now?: () => Date
+  /** Injectable randomness for tests; returns [0, 1). */
+  random?: () => number
 }
 
 export interface GameView {
-  puzzleNumber: number
+  round: Round
   answer: Player
-  status: SavedGame['status']
+  clues: Clue[]
   guesses: Player[]
-  results: GuessResult[]
-  guessesLeft: number
-  /** Number of guesses that were restored from storage (not animated). */
-  restoredCount: number
   stats: Stats
-  submit: (playerId: string) => GuessResult | null
+  pool: PlayerPool
+  /** Number of rounds started this session (used to reset per-round UI). */
+  roundKey: string
+  submitGuess: (playerId: string) => 'correct' | 'wrong' | 'ignored'
+  nextClue: () => void
+  surrender: () => void
+  nextRound: () => void
+  setPool: (pool: PlayerPool) => void
 }
 
-function loadToday(puzzle: Puzzle): SavedGame {
-  const saved = loadGame(puzzle.puzzleNumber)
-  if (!saved) return newGame(puzzle.puzzleNumber)
-  return sanitizeGame(saved, puzzle.answer.id, (id) => PLAYERS_BY_ID.has(id))
+function makeRoundId(random: () => number): string {
+  return `${Date.now().toString(36)}-${Math.floor(random() * 1e9).toString(36)}`
 }
 
-/** Record a finished game in stats exactly once; returns the (possibly unchanged) stats. */
-function recordIfFinished(game: SavedGame, stats: Stats): Stats {
-  if (game.status === 'playing') return stats
-  const next = applyGameResult(stats, game.puzzleNumber, game.status === 'won', game.guesses.length)
-  if (next !== stats) saveStats(next)
-  return next
+interface State {
+  round: Round
+  stats: Stats
+  recent: string[]
+  pool: PlayerPool
 }
 
-export function useGame({ now = () => new Date() }: UseGameOptions = {}): GameView {
-  const nowRef = useRef(now)
-  useEffect(() => {
-    nowRef.current = now
-  })
+function startRound(state: Omit<State, 'round'>, random: () => number): State {
+  const answer = pickAnswer(PLAYERS, state.pool, state.recent, random)
+  const round = newRound(answer.id, makeRoundId(random))
+  saveRound(round)
+  return { ...state, round, recent: rememberAnswer(state.recent, answer.id) }
+}
 
-  const [puzzle, setPuzzle] = useState<Puzzle>(() => getTodaysPuzzle(now()))
-  const [game, setGame] = useState<SavedGame>(() => loadToday(puzzle))
-  const [restoredCount, setRestoredCount] = useState(() => game.guesses.length)
-  // Covers a finished game whose stats were never written (e.g. the tab closed mid-save).
-  const [stats, setStats] = useState<Stats>(() => recordIfFinished(game, loadStats()))
+function initialState(random: () => number): State {
+  const pool = loadPool()
+  const recent = loadRecent()
+  const saved = loadRound()
+  const stats = loadStats()
+  if (saved && isValidRound(saved, (id) => PLAYERS_BY_ID.has(id))) {
+    // Covers a finished round whose stats were never written (e.g. the tab closed mid-save).
+    const recorded = recordRound(stats, saved)
+    if (recorded !== stats) saveStats(recorded)
+    return { round: saved, stats: recorded, recent, pool }
+  }
+  return startRound({ stats, recent, pool }, random)
+}
 
-  // Switch to the new puzzle when IST midnight passes while the page is open.
-  useEffect(() => {
-    const timer = window.setTimeout(
-      () => {
-        const next = getTodaysPuzzle(nowRef.current())
-        if (next.puzzleNumber !== puzzle.puzzleNumber) {
-          const nextGame = loadToday(next)
-          setPuzzle(next)
-          setGame(nextGame)
-          setRestoredCount(nextGame.guesses.length)
-        }
-      },
-      msUntilNextPuzzle(nowRef.current()) + 1000,
-    )
-    return () => window.clearTimeout(timer)
-  }, [puzzle.puzzleNumber])
+export function useGame({ random = Math.random }: UseGameOptions = {}): GameView {
+  const [state, setState] = useState<State>(() => initialState(random))
 
-  const submit = useCallback(
-    (playerId: string): GuessResult | null => {
-      const guess = PLAYERS_BY_ID.get(playerId)
-      if (!guess) return null
-      const next = submitGuess(game, playerId, puzzle.answer.id, MAX_GUESSES)
-      if (next === game) return null
-      setGame(next)
-      saveGame(next)
-      setStats((s) => recordIfFinished(next, s))
-      return compare(guess, puzzle.answer)
+  /** Apply a round update, persist it, and record stats if it just finished. */
+  const update = useCallback((next: Round) => {
+    setState((s) => {
+      if (next === s.round) return s
+      saveRound(next)
+      const stats = recordRound(s.stats, next)
+      if (stats !== s.stats) saveStats(stats)
+      return { ...s, round: next, stats }
+    })
+  }, [])
+
+  const submitGuess = useCallback(
+    (playerId: string): 'correct' | 'wrong' | 'ignored' => {
+      if (!PLAYERS_BY_ID.has(playerId)) return 'ignored'
+      const next = guess(state.round, playerId)
+      if (next === state.round) return 'ignored'
+      update(next)
+      return next.status === 'won' ? 'correct' : 'wrong'
     },
-    [game, puzzle.answer],
+    [state.round, update],
   )
 
+  const nextClue = useCallback(() => update(revealClue(state.round)), [state.round, update])
+  const surrender = useCallback(() => update(giveUp(state.round)), [state.round, update])
+
+  const nextRound = useCallback(() => {
+    setState((s) => startRound({ stats: s.stats, recent: s.recent, pool: s.pool }, random))
+  }, [random])
+
+  const setPool = useCallback((pool: PlayerPool) => {
+    savePool(pool)
+    setState((s) => ({ ...s, pool }))
+  }, [])
+
+  const answer = PLAYERS_BY_ID.get(state.round.answerId)!
+  const clues = useMemo(() => buildClues(answer), [answer])
   const guesses = useMemo(
-    () => game.guesses.map((id) => PLAYERS_BY_ID.get(id)).filter((p): p is Player => !!p),
-    [game.guesses],
+    () => state.round.guesses.map((id) => PLAYERS_BY_ID.get(id)).filter((p): p is Player => !!p),
+    [state.round.guesses],
   )
-  const results = useMemo(() => guesses.map((g) => compare(g, puzzle.answer)), [guesses, puzzle])
 
   return {
-    puzzleNumber: puzzle.puzzleNumber,
-    answer: puzzle.answer,
-    status: game.status,
+    round: state.round,
+    answer,
+    clues,
     guesses,
-    results,
-    guessesLeft: MAX_GUESSES - game.guesses.length,
-    restoredCount,
-    stats,
-    submit,
+    stats: state.stats,
+    pool: state.pool,
+    roundKey: state.round.roundId,
+    submitGuess,
+    nextClue,
+    surrender,
+    nextRound,
+    setPool,
   }
 }

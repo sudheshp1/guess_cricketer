@@ -39,6 +39,20 @@ export type BowlingType = (typeof BOWLING_TYPES)[number]
 
 export type Difficulty = 1 | 2 | 3
 
+export const FORMATS = ['test', 'odi', 't20i'] as const
+export type Format = (typeof FORMATS)[number]
+
+/** Career figures in one international format. Null where the source shows none. */
+export interface FormatStats {
+  matches: number
+  runs: number | null
+  highScore: string | null
+  hundreds: number | null
+  fifties: number | null
+  wickets: number | null
+  bestBowling: string | null
+}
+
 export interface Player {
   id: string
   name: string
@@ -50,45 +64,60 @@ export interface Player {
   debutYear: number
   intlMatches: number
   active: boolean
+  /** Year of the last international match, if known (for retired players). */
+  lastYear: number | null
   difficulty: Difficulty
+  /** Per-format career figures, only for formats the player played. */
+  stats: Partial<Record<Format, FormatStats>>
+  /** "As of" date of the career figures (from the Wikipedia infobox), if stated. */
+  statsAsOf: string | null
 }
 
-export type Match = 'correct' | 'close' | 'wrong'
-export type Direction = 'up' | 'down' | null
+/** Which players can be the answer: famous only, regular fans' level, or everyone. */
+export type PlayerPool = 'famous' | 'regular' | 'all'
 
-export type AttributeKey =
-  'country' | 'role' | 'battingHand' | 'bowlingType' | 'debutYear' | 'intlMatches' | 'active'
+export type RoundStatus = 'playing' | 'won' | 'lost'
 
-export interface CellFeedback {
-  key: AttributeKey
-  /** The guessed player's value, displayed in the cell. */
-  value: string | number | boolean
-  match: Match
-  /** Only set for numeric fields. */
-  direction: Direction
-}
-
-export interface GuessResult {
-  playerId: string
-  cells: CellFeedback[]
-  isCorrect: boolean
-}
-
-export type GameStatus = 'playing' | 'won' | 'lost'
-
-export interface SavedGame {
-  puzzleNumber: number
-  /** Player ids, in order. */
+export interface Round {
+  /** Unique per round; guards against recording stats twice. */
+  roundId: string
+  answerId: string
+  /** Player ids guessed, in order. */
   guesses: string[]
-  status: GameStatus
+  /** How many clues are visible (1..MAX_CLUES). */
+  cluesRevealed: number
+  status: RoundStatus
+  /** True if the player gave up instead of running out of clues. */
+  gaveUp: boolean
 }
+
+export interface Clue {
+  key: ClueKey
+  title: string
+  text: string
+  /** Optional small print, e.g. where the figures come from. */
+  note?: string
+}
+
+export type ClueKey =
+  | 'role'
+  | 'country'
+  | 'style'
+  | 'debut'
+  | 'status'
+  | 'matches'
+  | 'batting'
+  | 'bowling'
+  | 'milestones'
+  | 'initials'
 
 export interface Stats {
   played: number
   wins: number
   currentStreak: number
   maxStreak: number
-  /** Length MAX_GUESSES; wins by guess count. */
+  /** Length MAX_CLUES; wins by the clue number they were solved on. */
   distribution: number[]
-  lastCompletedPuzzle: number | null
+  /** roundId of the last round recorded, to avoid double counting. */
+  lastRoundId: string | null
 }

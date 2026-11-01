@@ -13,8 +13,7 @@ import {
   spanIsOpen,
   stripMarkup,
 } from './infobox.ts'
-import { seededShuffle } from './shuffle.ts'
-import { validatePlayers, validateSchedule } from './validate.ts'
+import { validatePlayers } from './validate.ts'
 
 const SAMPLE = `Intro {{Use dmy dates}}
 {{Infobox cricketer
@@ -34,6 +33,16 @@ const SAMPLE = `Intro {{Use dmy dates}}
 | matches1 = 123
 | column2 = [[One Day International|ODI]]
 | matches2 = 1,315
+| runs1 = 9,230
+| top score1 = 254*
+| 100s/50s1 = 30/31
+| wickets1 = 0
+| best bowling1 = –
+| runs2 = 15,080
+| top score2 = 183
+| 100s/50s2 = 55/79
+| wickets2 = 5
+| best bowling2 = 1/13
 | column3 = [[First-class cricket|FC]]
 | matches3 = 156
 }}
@@ -61,6 +70,37 @@ describe('infobox parsing', () => {
 
   it('only counts international format columns', () => {
     expect(facts.matches).toEqual({ test: 123, odi: 1315 })
+  })
+
+  it('reads career figures per format, with dashes as null', () => {
+    expect(facts.career).toEqual({
+      test: {
+        runs: 9230,
+        highScore: '254*',
+        hundreds: 30,
+        fifties: 31,
+        wickets: 0,
+        bestBowling: null,
+      },
+      odi: {
+        runs: 15080,
+        highScore: '183',
+        hundreds: 55,
+        fifties: 79,
+        wickets: 5,
+        bestBowling: '1/13',
+      },
+    })
+  })
+
+  it('joins a stats date with a separate year field', () => {
+    const f = readInfobox(
+      parseInfoboxFields(
+        ['{{Infobox cricketer', '| date = 4 February', '| year = 2006', '}}'].join('\n'),
+      ),
+    )
+    expect(f.statsDate).toBe('4 February 2006')
+    expect(facts.statsDate).toBe('28 September 2026')
   })
 
   it('finds the ESPNcricinfo id from the source field', () => {
@@ -181,7 +221,20 @@ describe('validatePlayers', () => {
     debutYear: 2000,
     intlMatches: 10,
     active: false,
+    lastYear: 2010,
     difficulty: 1,
+    stats: {
+      test: {
+        matches: 10,
+        runs: 500,
+        highScore: '120*',
+        hundreds: 1,
+        fifties: 3,
+        wickets: null,
+        bestBowling: null,
+      },
+    },
+    statsAsOf: '1 January 2020',
   }
 
   it('accepts valid data', () => {
@@ -205,24 +258,17 @@ describe('validatePlayers', () => {
     expect(validatePlayers([{ ...good, debutYear: 1877 }], 2026)).toEqual([])
   })
 
+  it('rejects malformed career stats', () => {
+    const bad = (stats: unknown) => validatePlayers([{ ...good, stats }], 2026)
+    expect(bad({ test: { ...good.stats.test, highScore: '12x' } })[0]).toMatch(/highScore/)
+    expect(bad({ test: { ...good.stats.test, bestBowling: '5-20' } })[0]).toMatch(/bestBowling/)
+    expect(bad({ test: { ...good.stats.test, runs: -1 } })[0]).toMatch(/runs/)
+    expect(bad({ test: { ...good.stats.test, matches: 0 } })[0]).toMatch(/matches/)
+    expect(bad({ fc: good.stats.test })[0]).toMatch(/unknown format/)
+    expect(bad(null)[0]).toMatch(/stats must be an object/)
+  })
+
   it('rejects negative match counts', () => {
     expect(validatePlayers([{ ...good, intlMatches: -1 }], 2026)[0]).toMatch(/negative/)
-  })
-})
-
-describe('schedule', () => {
-  const players = ['a', 'b', 'c', 'd'].map((id) => ({ id, difficulty: 1 }))
-
-  it('shuffles deterministically', () => {
-    const ids = players.map((p) => p.id)
-    expect(seededShuffle(ids, 'seed')).toEqual(seededShuffle(ids, 'seed'))
-    expect([...seededShuffle(ids, 'seed')].sort()).toEqual(ids)
-  })
-
-  it('rejects unknown ids, hard players, and repeats inside the gap', () => {
-    expect(validateSchedule(['a', 'b', 'c', 'd'], players, 365)).toEqual([])
-    expect(validateSchedule(['a', 'z'], players, 365)[0]).toMatch(/unknown/)
-    expect(validateSchedule(['a'], [{ id: 'a', difficulty: 3 }], 365)[0]).toMatch(/difficulty/)
-    expect(validateSchedule(['a', 'b', 'a', 'c'], players, 365).length).toBeGreaterThan(0)
   })
 })

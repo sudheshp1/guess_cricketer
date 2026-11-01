@@ -7,23 +7,15 @@ interface Props {
   animate?: boolean
   onClose: () => void
   stats: Stats
-  puzzleNumber: number
-  highlightGuesses?: number
+  highlightClue?: number
 }
 
-export function StatsModal({
-  open,
-  animate,
-  onClose,
-  stats,
-  puzzleNumber,
-  highlightGuesses,
-}: Props) {
+export function StatsModal({ open, animate, onClose, stats, highlightClue }: Props) {
   return (
     <Modal title="Statistics" open={open} onClose={onClose} animate={animate}>
-      <StatsPanel stats={stats} puzzleNumber={puzzleNumber} highlightGuesses={highlightGuesses} />
+      <StatsPanel stats={stats} highlightClue={highlightClue} />
       <p className="mt-4 text-xs text-gray-600 dark:text-gray-400">
-        Stats are saved in this browser only.
+        Stats are saved in this browser only. A streak counts rounds won in a row.
       </p>
     </Modal>
   )

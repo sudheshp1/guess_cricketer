@@ -1,4 +1,4 @@
-import { BATTING_HANDS, BOWLING_TYPES, COUNTRIES, ROLES } from '../../src/types.ts'
+import { BATTING_HANDS, BOWLING_TYPES, COUNTRIES, FORMATS, ROLES } from '../../src/types.ts'
 
 const REQUIRED = [
   'id',
@@ -69,35 +69,40 @@ export function validatePlayers(data: unknown, currentYear = new Date().getFullY
     if (p.difficulty !== undefined && ![1, 2, 3].includes(p.difficulty as number)) {
       errors.push(`${label}: difficulty must be 1, 2 or 3`)
     }
-  })
-  return errors
-}
-
-/** Every schedule entry must be a known player eligible to be an answer (difficulty 1-2). */
-export function validateSchedule(
-  schedule: unknown,
-  players: { id: string; difficulty: number }[],
-  minRepeatGap: number,
-): string[] {
-  const errors: string[] = []
-  if (!Array.isArray(schedule) || schedule.length === 0)
-    return ['schedule must be a non-empty array']
-  const byId = new Map(players.map((p) => [p.id, p]))
-  schedule.forEach((id: unknown, day) => {
-    const p = typeof id === 'string' ? byId.get(id) : undefined
-    if (!p) errors.push(`day ${day}: unknown player "${String(id)}"`)
-    else if (p.difficulty > 2) errors.push(`day ${day}: "${p.id}" has difficulty ${p.difficulty}`)
-  })
-  // The app cycles through the schedule, so check gaps across the wrap-around too.
-  const n = schedule.length
-  const gap = Math.min(minRepeatGap, n)
-  for (let day = 0; day < n; day++) {
-    for (let k = 1; k < gap; k++) {
-      if (schedule[(day + k) % n] === schedule[day]) {
-        errors.push(`"${String(schedule[day])}" repeats within ${gap} days (day ${day})`)
-        break
+    if (p.lastYear !== null && p.lastYear !== undefined && !Number.isInteger(p.lastYear)) {
+      errors.push(`${label}: lastYear must be an integer or null`)
+    }
+    if (p.statsAsOf !== null && p.statsAsOf !== undefined && typeof p.statsAsOf !== 'string') {
+      errors.push(`${label}: statsAsOf must be a string or null`)
+    }
+    if (typeof p.stats !== 'object' || p.stats === null || Array.isArray(p.stats)) {
+      errors.push(`${label}: stats must be an object`)
+    } else {
+      for (const [format, raw] of Object.entries(p.stats as Record<string, unknown>)) {
+        if (!(FORMATS as readonly string[]).includes(format)) {
+          errors.push(`${label}: stats has unknown format "${format}"`)
+          continue
+        }
+        const s = raw as Record<string, unknown>
+        if (!Number.isInteger(s.matches) || (s.matches as number) <= 0) {
+          errors.push(`${label}: stats.${format}.matches must be a positive integer`)
+        }
+        for (const k of ['runs', 'hundreds', 'fifties', 'wickets'] as const) {
+          const v = s[k]
+          if (v !== null && (!Number.isInteger(v) || (v as number) < 0)) {
+            errors.push(`${label}: stats.${format}.${k} must be a non-negative integer or null`)
+          }
+        }
+        if (s.highScore !== null && !/^\d+\*?$/.test(String(s.highScore))) {
+          errors.push(`${label}: stats.${format}.highScore "${String(s.highScore)}" is malformed`)
+        }
+        if (s.bestBowling !== null && !/^\d+\/\d+$/.test(String(s.bestBowling))) {
+          errors.push(
+            `${label}: stats.${format}.bestBowling "${String(s.bestBowling)}" is malformed`,
+          )
+        }
       }
     }
-  }
+  })
   return errors
 }
