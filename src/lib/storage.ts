@@ -1,5 +1,5 @@
 import { MAX_CLUES, RECENT_ANSWER_MEMORY, STORAGE_KEYS } from '../config'
-import type { PlayerPool, Round, Stats } from '../types'
+import type { GameMode, PlayerPool, Round, Stats } from '../types'
 import { emptyStats } from './stats'
 
 /** The subset of the Storage API we use; injectable for tests. */
@@ -119,4 +119,24 @@ export function hasSeenHelp(store: KeyValueStore | null = defaultStore()): boole
 
 export function markHelpSeen(store: KeyValueStore | null = defaultStore()): boolean {
   return writeJson(STORAGE_KEYS.seenHelp, true, store)
+}
+
+export function loadMode(store: KeyValueStore | null = defaultStore()): GameMode {
+  return readJson(STORAGE_KEYS.mode, store) === 'mind' ? 'mind' : 'clues'
+}
+
+export function saveMode(mode: GameMode, store: KeyValueStore | null = defaultStore()): boolean {
+  return writeJson(STORAGE_KEYS.mode, mode, store)
+}
+
+/** The saved Mind Reader round, unvalidated (the hook checks it against the engine). */
+export function loadMindRound(store: KeyValueStore | null = defaultStore()): unknown {
+  return readJson(STORAGE_KEYS.mindRound, store)
+}
+
+export function saveMindRound(
+  round: unknown,
+  store: KeyValueStore | null = defaultStore(),
+): boolean {
+  return writeJson(STORAGE_KEYS.mindRound, round, store)
 }

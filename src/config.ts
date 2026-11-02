@@ -23,6 +23,8 @@ export const STORAGE_KEYS = {
   recent: 'cricdle:recent:v2',
   pool: 'cricdle:pool:v2',
   seenHelp: 'cricdle:seenHelp:v2',
+  mode: 'cricdle:mode:v1',
+  mindRound: 'cricdle:mind:round:v1',
 } as const
 
 // ---- Mind Reader mode ----
