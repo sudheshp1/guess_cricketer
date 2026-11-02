@@ -34,10 +34,10 @@ export const MIND_MAX_QUESTIONS = 10
 export const MIND_MAX_GUESSES = 3
 
 /** Guess once the leading player holds at least this share of the total score. */
-export const MIND_GUESS_THRESHOLD = 0.6
+export const MIND_GUESS_THRESHOLD = 0.5
 
 /** Chance that an answer disagrees with the data (user mistake or stale figures). */
-export const MIND_ERROR_RATE = 0.05
+export const MIND_ERROR_RATE = 0.1
 
 /** Starting weight per difficulty: people mostly think of famous players. */
 export const MIND_PRIOR_WEIGHTS = { 1: 4, 2: 2, 3: 1 } as const
