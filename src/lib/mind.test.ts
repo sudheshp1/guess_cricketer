@@ -188,8 +188,16 @@ describe('round rules', () => {
   })
 })
 
-/** Play a full round against the real data, answering truthfully except at `flipAt` (0-based). */
-function play(e: MindEngine, target: Player, flipAt = -1): MindRound {
+/**
+ * Play a full round against the real data, answering truthfully except at `flipAt` (0-based).
+ * `unsure(question)` lets a simulated user say "not sure" instead of answering.
+ */
+function play(
+  e: MindEngine,
+  target: Player,
+  flipAt = -1,
+  unsure: (q: Question) => boolean = () => false,
+): MindRound {
   let r = newMindRound('sim')
   let asked = 0
   for (let step = 0; step < 50 && r.status === 'playing'; step++) {
@@ -202,6 +210,7 @@ function play(e: MindEngine, target: Player, flipAt = -1): MindRound {
     const truth = move.question.test(target)
     let answer: MindAnswer = truth === null ? 'unsure' : truth ? 'yes' : 'no'
     if (asked++ === flipAt && answer !== 'unsure') answer = answer === 'yes' ? 'no' : 'yes'
+    if (unsure(move.question)) answer = 'unsure'
     r = answerQuestion(e, r, move.question.id, answer)
   }
   return r
@@ -234,5 +243,16 @@ describe('simulation against the real player data', () => {
     const rate = pct(sample.map((p, i) => play(real, p, (i * 5) % 8)))
     console.info(`Mind Reader, one wrong answer: ${rate.toFixed(1)}% won`)
     expect(rate).toBeGreaterThanOrEqual(45)
+  }, 60_000)
+
+  it('copes with users who often aren’t sure about the numbers', () => {
+    // Deterministic "fan": not sure on 80% of hard and 30% of medium questions.
+    let seed = 7
+    const rnd = () => (seed = (seed * 16807) % 2147483647) / 2147483647
+    const unsure = (q: Question) =>
+      (q.difficulty === 'hard' && rnd() < 0.8) || (q.difficulty === 'medium' && rnd() < 0.3)
+    const rate = pct(regular.map((p) => play(real, p, -1, unsure)))
+    console.info(`Mind Reader, unsure about numbers: ${rate.toFixed(1)}% won`)
+    expect(rate).toBeGreaterThanOrEqual(90)
   }, 60_000)
 })
