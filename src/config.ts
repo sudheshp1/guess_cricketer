@@ -25,6 +25,7 @@ export const STORAGE_KEYS = {
   seenHelp: 'cricdle:seenHelp:v2',
   mode: 'cricdle:mode:v1',
   mindRound: 'cricdle:mind:round:v1',
+  mindStats: 'cricdle:mind:stats:v1',
 } as const
 
 // ---- Mind Reader mode ----

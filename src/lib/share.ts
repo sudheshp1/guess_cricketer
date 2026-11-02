@@ -1,5 +1,6 @@
-import { GAME_NAME, MAX_CLUES, SITE_URL } from '../config'
+import { GAME_NAME, MAX_CLUES, MIND_MAX_QUESTIONS, SITE_URL } from '../config'
 import type { Round } from '../types'
+import type { MindRound } from './mind'
 
 export interface ShareInput {
   round: Pick<Round, 'status' | 'cluesRevealed'>
@@ -28,6 +29,32 @@ export function buildShareText({
   const header = `${GAME_NAME} 🏏 ${score} clues`
   const streakLine = won && streak > 1 ? `🔥 ${streak} in a row` : null
   return [header, squares, ...(streakLine ? [streakLine] : []), siteUrl].join('\n')
+}
+
+export interface MindShareInput {
+  round: Pick<MindRound, 'status' | 'turns'>
+  maxQuestions?: number
+  siteUrl?: string
+}
+
+/**
+ * Spoiler-free Mind Reader share text: one square per question (🟨 asked, ⬜ not needed), then
+ * one mark per guess (❌ wrong, ✅ right). Never contains names.
+ */
+export function buildMindShareText({
+  round,
+  maxQuestions = MIND_MAX_QUESTIONS,
+  siteUrl = SITE_URL,
+}: MindShareInput): string {
+  const asked = round.turns.filter((t) => t.kind === 'question').length
+  const guesses = round.turns.flatMap((t) => (t.kind === 'guess' ? [t.correct ? '✅' : '❌'] : []))
+  const squares = Array.from({ length: maxQuestions }, (_, i) => (i < asked ? '🟨' : '⬜')).join('')
+  const won = round.status === 'won'
+  const header = won
+    ? `${GAME_NAME} Mind Reader 🧠 read my mind in ${asked}/${maxQuestions} questions`
+    : `${GAME_NAME} Mind Reader 🧠 I beat it!`
+  const marks = guesses.length > 0 ? ` ${guesses.join('')}` : ''
+  return [header, squares + marks, siteUrl].join('\n')
 }
 
 export type ShareOutcome = 'shared' | 'copied' | 'cancelled' | 'failed'

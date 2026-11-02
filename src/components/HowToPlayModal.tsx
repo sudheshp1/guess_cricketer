@@ -1,5 +1,5 @@
-import { Flag, Lightbulb } from 'lucide-react'
-import { MAX_CLUES } from '../config'
+import { Brain, Flag, Lightbulb } from 'lucide-react'
+import { MAX_CLUES, MIND_MAX_GUESSES, MIND_MAX_QUESTIONS } from '../config'
 import type { ClueKey } from '../types'
 import { CLUE_ICONS } from './clueIcons'
 import { Modal } from './Modal'
@@ -69,6 +69,35 @@ export function HowToPlayModal({ open, onClose, animate }: Props) {
             </span>
           </li>
         </ul>
+
+        <section
+          aria-labelledby="mind-help-heading"
+          className="rounded-2xl border border-line bg-surface-2 p-4"
+        >
+          <h3 id="mind-help-heading" className="flex items-center gap-2 font-bold">
+            <Brain className="h-4.5 w-4.5 text-brand" aria-hidden="true" />
+            Mind Reader mode
+          </h3>
+          <p className="mt-1.5 text-sm">
+            Swap roles: <strong>you</strong> think of a cricketer and I ask up to{' '}
+            {MIND_MAX_QUESTIONS} yes/no questions, then name them in {MIND_MAX_GUESSES} guesses or
+            fewer. Answer <strong>Not sure</strong> when you don&apos;t know. One wrong answer
+            won&apos;t always throw me off.
+          </p>
+          <ol className="mt-2.5 space-y-1 text-sm text-muted" aria-label="Example round">
+            <li>
+              <span className="font-semibold text-ink">Does your player bowl spin?</span> No
+            </li>
+            <li>
+              <span className="font-semibold text-ink">Is your player from an Asian team?</span> Yes
+            </li>
+            <li>&hellip;</li>
+            <li>
+              <span className="font-semibold text-ink">Is your player Virat Kohli?</span> Yes,
+              that&apos;s right!
+            </li>
+          </ol>
+        </section>
 
         <p className="text-xs text-muted">
           Player details come from Wikipedia and Cricsheet. Career figures are as of the date shown

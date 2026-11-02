@@ -141,3 +141,14 @@ export type MindAnswer = 'yes' | 'no' | 'unsure'
 
 /** Which game is on screen: guess from clues, or the game reads the user's mind. */
 export type GameMode = 'clues' | 'mind'
+
+/** Mind Reader stats: how often the game reads the user's mind. */
+export interface MindStats {
+  played: number
+  /** Rounds the game guessed correctly. */
+  gameWins: number
+  /** Length MIND_MAX_QUESTIONS; game wins by questions asked (0 counts as 1). */
+  distribution: number[]
+  /** roundId of the last round recorded, to avoid double counting. */
+  lastRoundId: string | null
+}
