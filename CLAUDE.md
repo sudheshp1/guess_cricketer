@@ -399,13 +399,14 @@ own logic, state, storage keys and stats.
   100% with 9.6 questions on average, and ~58% with one wrong answer.
 - **Done when:** all tests pass and the simulation success rates are reported in the test output.
 
-#### Phase 11 — Mind Reader UI
+#### Phase 11 — Mind Reader UI (done)
 - Add `hooks/useMindReader.ts` (state machine + persistence), and the components
   `MindQuestionCard` (question and three large buttons), `MindHistory` (questions and answers so
   far), `MindResult` ("Got it in 7!" / "You beat me", Play again, Share), and `MindReveal` ("Who
   was it?" using `GuessInput`).
 - Add a mode switch to the header: *Guess the player* / *Mind Reader*. Remember the chosen mode
-  in storage.
+  in storage. (Built as `ModeSwitch` under the header; `MindHero` shows question and guess pips;
+  the result and reveal live in `MindResult`; the engine instance is `MIND_ENGINE` in the hook.)
 - Follow Section 8: same tokens and component classes, phone and desktop layouts, slide-in
   animation respecting reduced motion, Y / N / ? keyboard shortcuts, aria-live for each new
   question and guess, focus moves to the answer buttons each turn.

@@ -138,3 +138,6 @@ export interface Question {
 }
 
 export type MindAnswer = 'yes' | 'no' | 'unsure'
+
+/** Which game is on screen: guess from clues, or the game reads the user's mind. */
+export type GameMode = 'clues' | 'mind'
