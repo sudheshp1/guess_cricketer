@@ -413,15 +413,15 @@ own logic, state, storage keys and stats.
 - **Done when:** you can play a full Mind Reader round in the browser at 360px / 768px / 1280px,
   switch modes without losing either mode's round, and reload mid-round without losing progress.
 
-#### Phase 12 — Stats, sharing, How to Play
+#### Phase 12 — Stats, sharing, How to Play (done)
 - Storage: new keys `cricdle:mind:round:v1`, `cricdle:mind:stats:v1`, `cricdle:mode:v1`
   (try/catch like the rest).
 - Mind stats: rounds played, game win %, questions-used distribution for wins. Record each round
   once (`roundId` guard). Show them in the stats modal under a Mind Reader tab.
 - Share text with no names, e.g. `Cricdle Mind Reader 🧠 guessed me in 7/10` / `… I beat it!`.
 - Add a Mind Reader section to How to Play with a short worked example.
-- Optional: keep a local list of revealed "beat the game" players to help pick future questions
-  and data fixes (never sent anywhere).
+- Optional (not built yet): keep a local list of revealed "beat the game" players to guide future
+  questions and data fixes (never sent anywhere).
 - Tests: stats recording, share text on win and loss, storage failure fallback, the App switching
   modes.
 - **Done when:** stats update correctly, sharing works on mobile and desktop, and all tests and

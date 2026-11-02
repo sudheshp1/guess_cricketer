@@ -1,5 +1,6 @@
-import { MAX_CLUES, RECENT_ANSWER_MEMORY, STORAGE_KEYS } from '../config'
-import type { GameMode, PlayerPool, Round, Stats } from '../types'
+import { MAX_CLUES, MIND_MAX_QUESTIONS, RECENT_ANSWER_MEMORY, STORAGE_KEYS } from '../config'
+import type { GameMode, MindStats, PlayerPool, Round, Stats } from '../types'
+import { emptyMindStats } from './mindStats'
 import { emptyStats } from './stats'
 
 /** The subset of the Storage API we use; injectable for tests. */
@@ -139,4 +140,36 @@ export function saveMindRound(
   store: KeyValueStore | null = defaultStore(),
 ): boolean {
   return writeJson(STORAGE_KEYS.mindRound, round, store)
+}
+
+function isMindStats(v: unknown): v is MindStats {
+  if (typeof v !== 'object' || v === null) return false
+  const s = v as Record<string, unknown>
+  return (
+    typeof s.played === 'number' &&
+    Number.isFinite(s.played) &&
+    typeof s.gameWins === 'number' &&
+    Number.isFinite(s.gameWins) &&
+    Array.isArray(s.distribution) &&
+    s.distribution.every((n) => typeof n === 'number') &&
+    (s.lastRoundId === null || typeof s.lastRoundId === 'string')
+  )
+}
+
+export function loadMindStats(store: KeyValueStore | null = defaultStore()): MindStats {
+  const saved = readJson(STORAGE_KEYS.mindStats, store)
+  if (!isMindStats(saved)) return emptyMindStats()
+  // Normalise the distribution length in case MIND_MAX_QUESTIONS changed.
+  const distribution = Array.from(
+    { length: MIND_MAX_QUESTIONS },
+    (_, i) => saved.distribution[i] ?? 0,
+  )
+  return { ...saved, distribution }
+}
+
+export function saveMindStats(
+  stats: MindStats,
+  store: KeyValueStore | null = defaultStore(),
+): boolean {
+  return writeJson(STORAGE_KEYS.mindStats, stats, store)
 }

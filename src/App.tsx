@@ -16,7 +16,7 @@ import { MAX_CLUES } from './config'
 import { useGame, type UseGameOptions } from './hooks/useGame'
 import { useMindReader } from './hooks/useMindReader'
 import { PLAYERS, PLAYERS_BY_ID } from './lib/players'
-import { buildShareText, shareText } from './lib/share'
+import { buildMindShareText, buildShareText, shareText } from './lib/share'
 import { hasSeenHelp, loadMode, markHelpSeen, saveMode } from './lib/storage'
 import type { GameMode } from './types'
 
@@ -95,12 +95,14 @@ function App(props: UseGameOptions = {}) {
     setAnnouncement('New player. Clue 1 is showing.')
   }
 
-  const handleShare = async () => {
-    const text = buildShareText({ round, streak: game.stats.currentStreak })
+  const share = async (text: string) => {
     const outcome = await shareText(text)
     if (outcome === 'copied') showToast('Result copied to clipboard')
     else if (outcome === 'failed') showToast("Couldn't share. Try copying manually.")
   }
+
+  const handleShare = () => share(buildShareText({ round, streak: game.stats.currentStreak }))
+  const handleMindShare = () => void share(buildMindShareText({ round: mind.round }))
 
   return (
     <div className="flex min-h-dvh w-full flex-col px-4 sm:px-6 lg:px-10 2xl:px-16">
@@ -111,7 +113,7 @@ function App(props: UseGameOptions = {}) {
       />
       <ModeSwitch mode={mode} onChange={setMode} />
       {mode === 'mind' ? (
-        <MindReader mind={mind} />
+        <MindReader mind={mind} onShare={handleMindShare} />
       ) : (
         /*
         Phones/tablets: one full-width column (clues, then the panel, then leftover clues).
@@ -237,10 +239,14 @@ function App(props: UseGameOptions = {}) {
         animate={animateModal}
       />
       <StatsModal
+        key={modal === 'stats' ? mode : 'closed'}
         open={modal === 'stats'}
         onClose={() => setModalState(null)}
         stats={game.stats}
+        mindStats={mind.stats}
+        initialTab={mode}
         highlightClue={round.status === 'won' ? round.cluesRevealed : undefined}
+        highlightQuestions={mind.round.status === 'won' ? mind.questionsAsked : undefined}
         animate={animateModal}
       />
       <Toast message={toast} />

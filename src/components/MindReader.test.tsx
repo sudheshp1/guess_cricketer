@@ -1,6 +1,6 @@
 import { render, screen, within } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
-import { beforeEach, describe, expect, it } from 'vitest'
+import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
 import App from '../App'
 import { STORAGE_KEYS } from '../config'
 import { PLAYERS } from '../lib/players'
@@ -14,6 +14,10 @@ const target = PLAYERS.find((p) => p.difficulty === 1)!
 beforeEach(() => {
   window.localStorage.clear()
   window.localStorage.setItem(STORAGE_KEYS.seenHelp, 'true')
+})
+
+afterEach(() => {
+  vi.unstubAllGlobals()
 })
 
 function renderApp() {
@@ -147,5 +151,41 @@ describe('Mind Reader', () => {
     await user.click(option)
     expect(screen.getByText(/one answer didn.t match my data/i)).toBeInTheDocument()
     expect(screen.getByText(q.text, { exact: false, selector: 'li' })).toBeInTheDocument()
+  })
+
+  it('records stats, opens them on the Mind Reader tab, and shares without names', async () => {
+    // userEvent.setup() installs its own clipboard, so stub after it.
+    const user = userEvent.setup()
+    const writeText = vi.fn(() => Promise.resolve())
+    vi.stubGlobal('navigator', { share: undefined, clipboard: { writeText } })
+    renderApp()
+    await openMindReader(user)
+    await user.click(screen.getByRole('button', { name: /start/i }))
+    await playTruthfully(user)
+
+    await user.click(screen.getByRole('button', { name: 'Share' }))
+    expect(await screen.findByText(/copied to clipboard/i)).toBeInTheDocument()
+    const text = (writeText.mock.calls[0] as unknown as [string])[0]
+    expect(text).toMatch(/^Cricdle Mind Reader 🧠 read my mind in \d+\/10 questions/)
+    expect(text).not.toContain(target.name)
+
+    await user.click(screen.getByRole('button', { name: 'Statistics' }))
+    const dialog = screen.getByRole('dialog')
+    expect(within(dialog).getByRole('tab', { name: 'Mind Reader' })).toHaveAttribute(
+      'aria-selected',
+      'true',
+    )
+    const played = within(dialog).getByText('Played').parentElement!
+    expect(played).toHaveTextContent('1')
+    expect(within(dialog).getByText('I guessed').parentElement).toHaveTextContent('1')
+    await user.click(within(dialog).getByRole('tab', { name: 'Guess the player' }))
+    expect(within(dialog).getByText(/a streak counts rounds won in a row/i)).toBeInTheDocument()
+  }, 30_000)
+
+  it('explains Mind Reader in How to play', async () => {
+    const user = userEvent.setup()
+    renderApp()
+    await user.click(screen.getByRole('button', { name: 'How to play' }))
+    expect(screen.getByRole('heading', { name: /mind reader mode/i })).toBeInTheDocument()
   })
 })

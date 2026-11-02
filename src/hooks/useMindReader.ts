@@ -17,8 +17,9 @@ import {
 } from '../lib/mind'
 import { PLAYERS, PLAYERS_BY_ID } from '../lib/players'
 import { QUESTIONS_BY_ID, QUESTIONS } from '../lib/questions'
-import { loadMindRound, saveMindRound } from '../lib/storage'
-import type { MindAnswer, Player } from '../types'
+import { recordMindRound } from '../lib/mindStats'
+import { loadMindRound, loadMindStats, saveMindRound, saveMindStats } from '../lib/storage'
+import type { MindAnswer, MindStats, Player } from '../types'
 
 /** Built once: the answer matrix for every player and question. */
 export const MIND_ENGINE = createEngine(PLAYERS, QUESTIONS)
@@ -30,6 +31,7 @@ export type MindHistoryItem =
 
 export interface MindReaderView {
   round: MindRound
+  stats: MindStats
   /** What the game wants to know now (null when the round is over). */
   move: MindMove
   history: MindHistoryItem[]
@@ -56,19 +58,34 @@ function makeRoundId(random: () => number): string {
   return `m-${Date.now().toString(36)}-${Math.floor(random() * 1e9).toString(36)}`
 }
 
-function initialRound(random: () => number): MindRound {
+interface State {
+  round: MindRound
+  stats: MindStats
+}
+
+function initialState(random: () => number): State {
   const saved = loadMindRound()
-  return isValidMindRound(saved, MIND_ENGINE) ? saved : newMindRound(makeRoundId(random))
+  const stats = loadMindStats()
+  if (!isValidMindRound(saved, MIND_ENGINE)) {
+    return { round: newMindRound(makeRoundId(random)), stats }
+  }
+  // Covers a finished round whose stats were never written (e.g. the tab closed mid-save).
+  const recorded = recordMindRound(stats, saved)
+  if (recorded !== stats) saveMindStats(recorded)
+  return { round: saved, stats: recorded }
 }
 
 export function useMindReader({ random = Math.random }: UseMindReaderOptions = {}): MindReaderView {
-  const [round, setRound] = useState<MindRound>(() => initialRound(random))
+  const [{ round, stats }, setState] = useState<State>(() => initialState(random))
 
+  /** Apply a round update, persist it, and record stats if it just finished. */
   const update = useCallback((next: MindRound) => {
-    setRound((current) => {
-      if (next === current) return current
+    setState((s) => {
+      if (next === s.round) return s
       saveMindRound(next)
-      return next
+      const recorded = recordMindRound(s.stats, next)
+      if (recorded !== s.stats) saveMindStats(recorded)
+      return { round: next, stats: recorded }
     })
   }, [])
 
@@ -100,7 +117,7 @@ export function useMindReader({ random = Math.random }: UseMindReaderOptions = {
   const newRound = useCallback(() => {
     const next = newMindRound(makeRoundId(random))
     saveMindRound(next)
-    setRound(next)
+    setState((s) => ({ ...s, round: next }))
   }, [random])
 
   const history = useMemo<MindHistoryItem[]>(
@@ -124,6 +141,7 @@ export function useMindReader({ random = Math.random }: UseMindReaderOptions = {
 
   return {
     round,
+    stats,
     move,
     history,
     questionsAsked: questionsAsked(round),
