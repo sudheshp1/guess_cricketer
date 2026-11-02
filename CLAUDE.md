@@ -335,6 +335,102 @@ Build in order. Each phase ends with working, tested code. Stop after each phase
 
 ---
 
+### Phases 9–13 — "Mind Reader" mode (planned, not started)
+
+A second mode where the roles swap: the **user thinks of a cricketer** and the game asks yes/no
+questions until it guesses who it is. The existing clue mode stays as it is; Mind Reader gets its
+own logic, state, storage keys and stats.
+
+**Round rules (proposed defaults; confirm before Phase 9)**
+1. The user thinks of any player in the database and presses **Start**.
+2. The game asks one question at a time; the user answers **Yes / No / Not sure**.
+3. When confident, the game asks "Is it **<name>**?". Yes → the game wins. No → that player is
+   ruled out and questioning continues.
+4. Budget: **10 questions plus up to 3 "Is it X?" guesses**. (A simulation over the 508-player
+   data, with perfect answers, needed about 9 questions on average. Counting guesses inside the 10
+   gave only ~93–95% success.)
+5. If the budget runs out, or every player has been ruled out, the game says it's beaten and asks
+   "Who was it?" (existing autocomplete). If the answers contradict the player's data, it says so
+   gently ("one of the answers didn't match my data").
+6. The user may think of **any** player; famous (`difficulty` 1) players are favoured.
+7. Reloading restores the round in progress.
+
+**Key design points**
+- **Soft scoring, not hard elimination:** each candidate has a score. A contradicting answer
+  multiplies it by a small factor (e.g. 0.05) instead of deleting it, so one wrong answer doesn't
+  ruin the round. "Not sure" changes nothing.
+- **Prior:** start scores weighted by difficulty (e.g. 1 → 4, 2 → 2, 3 → 1).
+- **Question choice:** the unasked question with the highest expected information gain over the
+  current scores. Ties go to the easier question.
+- **When to guess:** when the top candidate holds ≥ 60% of the total score, or when the question
+  budget is used up.
+- **Questions must be easy for a fan to answer:** round thresholds ("100+ Tests", "debut before
+  2000"), never odd numbers. A question whose data is missing for a player counts as "unknown" for
+  that player, never as a contradiction.
+- Answers are visible in the bundle, as in clue mode. That's acceptable.
+
+#### Phase 9 — Question bank (no UI) (done)
+- Add `src/lib/questions.ts`: about 60–70 `Question` objects (`id`, `text`, `difficulty: easy |
+  medium | hard`, `test(player) => boolean | null`). Cover role, country, region (Asia / SENA /
+  other), batting hand, pace / spin / left-arm, still playing, debut and last-match eras,
+  international and per-format match counts, career runs / wickets / hundreds thresholds.
+- Add any types needed to `types.ts` and constants to `config.ts` (`MIND_MAX_QUESTIONS = 10`,
+  `MIND_MAX_GUESSES = 3`, `MIND_GUESS_THRESHOLD`, `MIND_CONTRADICTION_FACTOR`, difficulty weights).
+- Make sure no two players give the same answers (the final 84-question bank separates all 508).
+- Tests: every question gives a boolean or null for every player; ids are unique; no question text
+  names a player; every pair of players differs on at least one question.
+- **Done when:** `npm test` passes and a test confirms that every player has a unique answer pattern.
+
+#### Phase 10 — Guessing engine (no UI)
+- Add `src/lib/mind.ts` with pure functions: `newMindRound(random)`, `scores(round, players)`,
+  `nextQuestion(round, players)`, `answerQuestion(round, answer)`, `shouldGuess(round, players)`,
+  `nextGuess(round, players)`, `answerGuess(round, yes)`, `reveal(round, playerId)`.
+- `MindRound` state: `roundId`, an ordered `history` of `{ questionId, answer }` and
+  `{ guessId, correct }`, `status: 'asking' | 'guessing' | 'won' | 'lost'`, `revealedId`.
+  Repeated actions and actions after the round ends are no-ops (return the same object).
+- Tests: scoring with yes/no/not sure, soft contradiction, prior weighting, question choice,
+  guess threshold, budget limits, the "all ruled out" path, no-op rules.
+- **Simulation test:** for every player in the regular pool, play a full round with perfect
+  answers, then with one random wrong answer. Require ≥ 95% (perfect) and a recorded minimum
+  (one wrong answer) of wins within budget, so data growth can't silently break the game.
+- **Done when:** all tests pass and the simulation success rates are reported in the test output.
+
+#### Phase 11 — Mind Reader UI
+- Add `hooks/useMindReader.ts` (state machine + persistence), and the components
+  `MindQuestionCard` (question and three large buttons), `MindHistory` (questions and answers so
+  far), `MindResult` ("Got it in 7!" / "You beat me", Play again, Share), and `MindReveal` ("Who
+  was it?" using `GuessInput`).
+- Add a mode switch to the header: *Guess the player* / *Mind Reader*. Remember the chosen mode
+  in storage.
+- Follow Section 8: same tokens and component classes, phone and desktop layouts, slide-in
+  animation respecting reduced motion, Y / N / ? keyboard shortcuts, aria-live for each new
+  question and guess, focus moves to the answer buttons each turn.
+- **Done when:** you can play a full Mind Reader round in the browser at 360px / 768px / 1280px,
+  switch modes without losing either mode's round, and reload mid-round without losing progress.
+
+#### Phase 12 — Stats, sharing, How to Play
+- Storage: new keys `cricdle:mind:round:v1`, `cricdle:mind:stats:v1`, `cricdle:mode:v1`
+  (try/catch like the rest).
+- Mind stats: rounds played, game win %, questions-used distribution for wins. Record each round
+  once (`roundId` guard). Show them in the stats modal under a Mind Reader tab.
+- Share text with no names, e.g. `Cricdle Mind Reader 🧠 guessed me in 7/10` / `… I beat it!`.
+- Add a Mind Reader section to How to Play with a short worked example.
+- Optional: keep a local list of revealed "beat the game" players to help pick future questions
+  and data fixes (never sent anywhere).
+- Tests: stats recording, share text on win and loss, storage failure fallback, the App switching
+  modes.
+- **Done when:** stats update correctly, sharing works on mobile and desktop, and all tests and
+  lint pass.
+
+#### Phase 13 — Tuning and docs
+- Play-test with real users: adjust thresholds, question wording, the contradiction factor and the
+  guess threshold. Re-run the simulation test after each change.
+- Re-check Lighthouse (≥ 90 on Performance, Accessibility, Best Practices on mobile).
+- Move Mind Reader from this section into Sections 2, 6, 7 and 8 as current design.
+- **Done when:** the simulation targets hold and the docs describe both modes.
+
+---
+
 ## 10. Future ideas
 
 - A daily challenge alongside endless mode (same player for everyone each day).
