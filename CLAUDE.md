@@ -435,7 +435,7 @@ section keeps the build history and the reasoning behind it.
   international and per-format match counts, career runs / wickets / hundreds thresholds.
 - Add any types needed to `types.ts` and constants to `config.ts` (`MIND_MAX_QUESTIONS = 10`,
   `MIND_MAX_GUESSES = 3`, `MIND_GUESS_THRESHOLD`, `MIND_ERROR_RATE`, `MIND_PRIOR_WEIGHTS`).
-- Make sure no two players give the same answers (the final 84-question bank separates all 508).
+- Make sure no two players give the same answers (the 84-question bank separates every player; a test enforces it as the data grows).
 - Tests: every question gives a boolean or null for every player; ids are unique; no question text
   names a player; every pair of players differs on at least one question.
 - **Done when:** `npm test` passes and a test confirms that every player has a unique answer pattern.

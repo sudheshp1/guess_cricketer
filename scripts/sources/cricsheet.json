@@ -1,5 +1,5 @@
 {
- "fetchedAt": "2026-11-01",
+ "fetchedAt": "2026-11-02",
  "latestMatch": "2026-10-25",
  "players": {
   "aaron-finch": {
@@ -715,6 +715,17 @@
     "West Indies"
    ]
   },
+  "chris-harris": {
+   "cricsheetId": "582e9baa",
+   "tests": 0,
+   "odis": 23,
+   "t20is": 0,
+   "firstDate": "2003-01-08",
+   "lastDate": "2004-12-08",
+   "teams": [
+    "New Zealand"
+   ]
+  },
   "chris-jordan": {
    "cricsheetId": "ffe699c0",
    "tests": 8,
@@ -1188,6 +1199,17 @@
     "South Africa"
    ]
   },
+  "gary-wilson": {
+   "cricsheetId": "05de1a5a",
+   "tests": 2,
+   "odis": 61,
+   "t20is": 61,
+   "firstDate": "2007-06-23",
+   "lastDate": "2020-01-19",
+   "teams": [
+    "Ireland"
+   ]
+  },
   "gautam-gambhir": {
    "cricsheetId": "bb345e0b",
    "tests": 51,
@@ -1263,6 +1285,19 @@
    "lastDate": "2026-10-24",
    "teams": [
     "New Zealand"
+   ]
+  },
+  "graeme-smith": {
+   "cricsheetId": "72861603",
+   "tests": 94,
+   "odis": 155,
+   "t20is": 31,
+   "firstDate": "2002-12-26",
+   "lastDate": "2014-03-01",
+   "teams": [
+    "Africa XI",
+    "ICC World XI",
+    "South Africa"
    ]
   },
   "graeme-swann": {
@@ -2045,6 +2080,17 @@
     "West Indies"
    ]
   },
+  "kl-rahul": {
+   "cricsheetId": "b17e2f24",
+   "tests": 68,
+   "odis": 96,
+   "t20is": 69,
+   "firstDate": "2014-12-26",
+   "lastDate": "2026-10-03",
+   "teams": [
+    "India"
+   ]
+  },
   "kraigg-brathwaite": {
    "cricsheetId": "7d5af2ea",
    "tests": 99,
@@ -2290,6 +2336,17 @@
     "Bangladesh"
    ]
   },
+  "majid-haq": {
+   "cricsheetId": "27159c6a",
+   "tests": 0,
+   "odis": 20,
+   "t20is": 9,
+   "firstDate": "2007-02-04",
+   "lastDate": "2015-03-05",
+   "teams": [
+    "Scotland"
+   ]
+  },
   "makhaya-ntini": {
    "cricsheetId": "20a941bb",
    "tests": 57,
@@ -2357,6 +2414,17 @@
     "Africa XI",
     "ICC World XI",
     "South Africa"
+   ]
+  },
+  "mark-richardson": {
+   "cricsheetId": "48322f1f",
+   "tests": 6,
+   "odis": 0,
+   "t20is": 0,
+   "firstDate": "2003-10-16",
+   "lastDate": "2004-11-26",
+   "teams": [
+    "New Zealand"
    ]
   },
   "mark-watt": {
@@ -3141,6 +3209,17 @@
     "Netherlands"
    ]
   },
+  "peter-borren": {
+   "cricsheetId": "91052c96",
+   "tests": 0,
+   "odis": 21,
+   "t20is": 30,
+   "firstDate": "2006-12-01",
+   "lastDate": "2017-01-18",
+   "teams": [
+    "Netherlands"
+   ]
+  },
   "peter-siddle": {
    "cricsheetId": "bd93fea4",
    "tests": 67,
@@ -3360,6 +3439,17 @@
    "lastDate": "2026-09-30",
    "teams": [
     "India"
+   ]
+  },
+  "ray-price": {
+   "cricsheetId": "67af6f81",
+   "tests": 7,
+   "odis": 78,
+   "t20is": 12,
+   "firstDate": "2003-04-05",
+   "lastDate": "2013-03-12",
+   "teams": [
+    "Zimbabwe"
    ]
   },
   "reeza-hendricks": {

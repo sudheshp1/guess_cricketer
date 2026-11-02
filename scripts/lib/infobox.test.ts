@@ -148,7 +148,18 @@ describe('mappers', () => {
     ['Bowler', 'Bowler'],
     ['Opening batsman', 'Batter'],
     ['Top-order batter', 'Batter'],
+    ['Batsman, occasional [[wicket-keeper]]', 'Batter'],
+    ['Batsman, part-time bowler', 'Batter'],
+    ['[[Batsman (cricket)|Batsman]], [[Wicket-keeper]]', 'Wicketkeeper-Batter'],
   ])('role %s -> %s', (input, expected) => {
+    expect(mapRole(input)).toBe(expected)
+  })
+
+  it('leaves a role that is only an occasional duty for the article lead to decide', () => {
+    expect(mapRole('Occasional [[wicket-keeper]]')).toBeNull()
+  })
+
+  it.each([['Wicketkeeper', 'Wicketkeeper-Batter']])('role %s -> %s', (input, expected) => {
     expect(mapRole(input)).toBe(expected)
   })
 

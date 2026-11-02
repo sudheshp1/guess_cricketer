@@ -40,7 +40,7 @@ earliest international debut in the infobox. "Active" means Wikipedia's internat
 Match data from [Cricsheet](https://cricsheet.org) (ODC-By). Not affiliated with any cricket board
 or league.
 
-Current data: 508 players from 14 teams, with per-format career figures (runs, highest score,
+Current data: 540 players from 14 teams, with per-format career figures (runs, highest score,
 100s/50s, wickets, best bowling) from Wikipedia infoboxes. `scripts/sources/report.md` lists every
 source disagreement and every manual override.
 
