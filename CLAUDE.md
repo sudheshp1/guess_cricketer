@@ -357,13 +357,13 @@ own logic, state, storage keys and stats.
 
 **Key design points**
 - **Soft scoring, not hard elimination:** each candidate has a score. A contradicting answer
-  multiplies it by a small factor (e.g. 0.05) instead of deleting it, so one wrong answer doesn't
-  ruin the round. "Not sure" changes nothing.
+  multiplies it by `MIND_ERROR_RATE` (0.1) instead of deleting it, so one wrong answer doesn't
+  ruin the round. "Not sure" changes nothing; unknown data counts as a coin flip.
 - **Prior:** start scores weighted by difficulty (e.g. 1 → 4, 2 → 2, 3 → 1).
 - **Question choice:** the unasked question with the highest expected information gain over the
   current scores. Ties go to the easier question.
-- **When to guess:** when the top candidate holds ≥ 60% of the total score, or when the question
-  budget is used up.
+- **When to guess:** when the top candidate holds ≥ 50% (`MIND_GUESS_THRESHOLD`) of the total
+  score, when no question is worth asking, or when the question budget is used up.
 - **Questions must be easy for a fan to answer:** round thresholds ("100+ Tests", "debut before
   2000"), never odd numbers. A question whose data is missing for a player counts as "unknown" for
   that player, never as a contradiction.
@@ -375,24 +375,28 @@ own logic, state, storage keys and stats.
   other), batting hand, pace / spin / left-arm, still playing, debut and last-match eras,
   international and per-format match counts, career runs / wickets / hundreds thresholds.
 - Add any types needed to `types.ts` and constants to `config.ts` (`MIND_MAX_QUESTIONS = 10`,
-  `MIND_MAX_GUESSES = 3`, `MIND_GUESS_THRESHOLD`, `MIND_CONTRADICTION_FACTOR`, difficulty weights).
+  `MIND_MAX_GUESSES = 3`, `MIND_GUESS_THRESHOLD`, `MIND_ERROR_RATE`, `MIND_PRIOR_WEIGHTS`).
 - Make sure no two players give the same answers (the final 84-question bank separates all 508).
 - Tests: every question gives a boolean or null for every player; ids are unique; no question text
   names a player; every pair of players differs on at least one question.
 - **Done when:** `npm test` passes and a test confirms that every player has a unique answer pattern.
 
-#### Phase 10 — Guessing engine (no UI)
-- Add `src/lib/mind.ts` with pure functions: `newMindRound(random)`, `scores(round, players)`,
-  `nextQuestion(round, players)`, `answerQuestion(round, answer)`, `shouldGuess(round, players)`,
-  `nextGuess(round, players)`, `answerGuess(round, yes)`, `reveal(round, playerId)`.
-- `MindRound` state: `roundId`, an ordered `history` of `{ questionId, answer }` and
-  `{ guessId, correct }`, `status: 'asking' | 'guessing' | 'won' | 'lost'`, `revealedId`.
-  Repeated actions and actions after the round ends are no-ops (return the same object).
+#### Phase 10 — Guessing engine (no UI) (done)
+- `src/lib/mind.ts`, pure functions over a `MindEngine` built once by `createEngine(players,
+  questions, options?)` (precomputed answer matrix): `newMindRound(roundId)`, `scores`, `ranking`,
+  `bestQuestion`, `nextMove` (question, guess or null), `answerQuestion`, `answerGuess`,
+  `concede`, `reveal`, `mismatches` (answers that disagree with a player's data),
+  `isValidMindRound`.
+- `MindRound` state: `roundId`, ordered `turns` (`{ kind: 'question', questionId, answer }` |
+  `{ kind: 'guess', playerId, correct }`), `status: 'playing' | 'won' | 'lost'`, `revealedId`.
+  The next move is recomputed from the turns, so nothing else needs saving. Repeated actions and
+  actions after the round ends are no-ops (return the same object).
 - Tests: scoring with yes/no/not sure, soft contradiction, prior weighting, question choice,
   guess threshold, budget limits, the "all ruled out" path, no-op rules.
 - **Simulation test:** for every player in the regular pool, play a full round with perfect
-  answers, then with one random wrong answer. Require ≥ 95% (perfect) and a recorded minimum
-  (one wrong answer) of wins within budget, so data growth can't silently break the game.
+  answers, then with one random wrong answer. Require ≥ 95% (perfect) and ≥ 45% (one wrong answer)
+  of wins within budget, so data growth can't silently break the game. At the time of writing:
+  100% with 9.6 questions on average, and ~58% with one wrong answer.
 - **Done when:** all tests pass and the simulation success rates are reported in the test output.
 
 #### Phase 11 — Mind Reader UI
