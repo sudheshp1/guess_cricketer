@@ -49,15 +49,22 @@ export interface MindEngine {
   errorRate: number
   /** Guess once the leader holds this share of the total score. */
   guessThreshold: number
+  /** Bits subtracted from a question's score, by difficulty. */
+  difficultyPenalty: Record<QuestionDifficulty, number>
 }
 
 export interface EngineOptions {
   errorRate?: number
   guessThreshold?: number
+  difficultyPenalty?: Record<QuestionDifficulty, number>
 }
 
 /** Small preference for questions people can answer confidently. */
-const DIFFICULTY_PENALTY: Record<QuestionDifficulty, number> = { easy: 0, medium: 0.02, hard: 0.05 }
+export const DIFFICULTY_PENALTY: Record<QuestionDifficulty, number> = {
+  easy: 0,
+  medium: 0.1,
+  hard: 0.3,
+}
 
 /** Questions expected to teach less than this (in bits) aren't worth a turn. */
 const MIN_INFORMATION = 0.02
@@ -65,7 +72,11 @@ const MIN_INFORMATION = 0.02
 export function createEngine(
   players: readonly Player[],
   questions: readonly Question[],
-  { errorRate = MIND_ERROR_RATE, guessThreshold = MIND_GUESS_THRESHOLD }: EngineOptions = {},
+  {
+    errorRate = MIND_ERROR_RATE,
+    guessThreshold = MIND_GUESS_THRESHOLD,
+    difficultyPenalty = DIFFICULTY_PENALTY,
+  }: EngineOptions = {},
 ): MindEngine {
   const answers = new Int8Array(questions.length * players.length)
   questions.forEach((question, qi) => {
@@ -83,6 +94,7 @@ export function createEngine(
     prior: Float64Array.from(players, (p) => MIND_PRIOR_WEIGHTS[p.difficulty]),
     errorRate,
     guessThreshold,
+    difficultyPenalty,
   }
 }
 
@@ -167,7 +179,7 @@ export function bestQuestion(engine: MindEngine, round: MindRound): Question | n
     if (asked.has(question.id)) return
     const info = information(engine, qi, w, total)
     if (info < MIN_INFORMATION) return
-    const score = info - DIFFICULTY_PENALTY[question.difficulty]
+    const score = info - engine.difficultyPenalty[question.difficulty]
     if (score > bestScore) {
       bestScore = score
       best = question
