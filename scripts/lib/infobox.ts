@@ -341,7 +341,8 @@ export function mapBowlingType(bowling: string | null): BowlingType | null {
 /** Map an infobox role description to the game's four roles. */
 export function mapRole(role: string | null): Role | null {
   if (!role) return null
-  const s = role.toLowerCase()
+  // "Batsman, occasional wicket-keeper" is a batter: drop occasional / part-time duties first.
+  const s = role.toLowerCase().replace(/\b(?:occasional|part[ -]time)\b[^,;/]*/g, '')
   if (/wicket[ -]?keeper|keeper/.test(s)) return 'Wicketkeeper-Batter'
   if (/all[ -]?rounder/.test(s)) return 'All-rounder'
   if (/bowler/.test(s)) return 'Bowler'

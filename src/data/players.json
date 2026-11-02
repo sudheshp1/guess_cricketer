@@ -739,6 +739,34 @@
     "statsAsOf": "14 October 2026"
   },
   {
+    "id": "alan-davidson",
+    "name": "Alan Davidson",
+    "aliases": [
+      "Davo"
+    ],
+    "country": "Australia",
+    "role": "All-rounder",
+    "battingHand": "Left",
+    "bowlingType": "Left-arm fast",
+    "debutYear": 1953,
+    "intlMatches": 44,
+    "active": false,
+    "lastYear": 1963,
+    "difficulty": 2,
+    "stats": {
+      "test": {
+        "matches": 44,
+        "runs": 1328,
+        "highScore": "80",
+        "hundreds": 0,
+        "fifties": 5,
+        "wickets": 186,
+        "bestBowling": "7/93"
+      }
+    },
+    "statsAsOf": "26 December 2008"
+  },
+  {
     "id": "alastair-cook",
     "name": "Alastair Cook",
     "aliases": [
@@ -1099,6 +1127,43 @@
       }
     },
     "statsAsOf": "30 November 2009"
+  },
+  {
+    "id": "alvin-kallicharran",
+    "name": "Alvin Kallicharran",
+    "aliases": [
+      "Kalli"
+    ],
+    "country": "West Indies",
+    "role": "Batter",
+    "battingHand": "Left",
+    "bowlingType": "Right-arm off-spin",
+    "debutYear": 1972,
+    "intlMatches": 97,
+    "active": false,
+    "lastYear": 1981,
+    "difficulty": 3,
+    "stats": {
+      "test": {
+        "matches": 66,
+        "runs": 4399,
+        "highScore": "187",
+        "hundreds": 12,
+        "fifties": 21,
+        "wickets": 4,
+        "bestBowling": "2/16"
+      },
+      "odi": {
+        "matches": 31,
+        "runs": 826,
+        "highScore": "78",
+        "hundreds": 0,
+        "fifties": 6,
+        "wickets": 3,
+        "bestBowling": "2/10"
+      }
+    },
+    "statsAsOf": "2 July 2013"
   },
   {
     "id": "alzarri-joseph",
@@ -3137,6 +3202,41 @@
     "statsAsOf": "6 November 2021"
   },
   {
+    "id": "chris-harris",
+    "name": "Chris Harris",
+    "aliases": [],
+    "country": "New Zealand",
+    "role": "All-rounder",
+    "battingHand": "Left",
+    "bowlingType": "Right-arm off-spin",
+    "debutYear": 1990,
+    "intlMatches": 273,
+    "active": false,
+    "lastYear": 2004,
+    "difficulty": 3,
+    "stats": {
+      "test": {
+        "matches": 23,
+        "runs": 777,
+        "highScore": "71",
+        "hundreds": 0,
+        "fifties": 5,
+        "wickets": 15,
+        "bestBowling": "2/16"
+      },
+      "odi": {
+        "matches": 250,
+        "runs": 4379,
+        "highScore": "130",
+        "hundreds": 1,
+        "fifties": 16,
+        "wickets": 203,
+        "bestBowling": "5/42"
+      }
+    },
+    "statsAsOf": "1 May 2017"
+  },
+  {
     "id": "chris-jordan",
     "name": "Chris Jordan",
     "aliases": [
@@ -3292,6 +3392,32 @@
       }
     },
     "statsAsOf": "24 January 2009"
+  },
+  {
+    "id": "clyde-walcott",
+    "name": "Clyde Walcott",
+    "aliases": [],
+    "country": "West Indies",
+    "role": "Wicketkeeper-Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm fast",
+    "debutYear": 1948,
+    "intlMatches": 44,
+    "active": false,
+    "lastYear": 1960,
+    "difficulty": 2,
+    "stats": {
+      "test": {
+        "matches": 44,
+        "runs": 3798,
+        "highScore": "220",
+        "hundreds": 15,
+        "fifties": 14,
+        "wickets": 11,
+        "bestBowling": "3/50"
+      }
+    },
+    "statsAsOf": "8 January 2009"
   },
   {
     "id": "colin-de-grandhomme",
@@ -3503,6 +3629,41 @@
       }
     },
     "statsAsOf": "7 August 2025"
+  },
+  {
+    "id": "craig-mcdermott",
+    "name": "Craig McDermott",
+    "aliases": [],
+    "country": "Australia",
+    "role": "Bowler",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm fast",
+    "debutYear": 1984,
+    "intlMatches": 209,
+    "active": false,
+    "lastYear": 1996,
+    "difficulty": 2,
+    "stats": {
+      "test": {
+        "matches": 71,
+        "runs": 940,
+        "highScore": "42*",
+        "hundreds": 0,
+        "fifties": 0,
+        "wickets": 291,
+        "bestBowling": "8/97"
+      },
+      "odi": {
+        "matches": 138,
+        "runs": 432,
+        "highScore": "37",
+        "hundreds": 0,
+        "fifties": 0,
+        "wickets": 203,
+        "bestBowling": "5/44"
+      }
+    },
+    "statsAsOf": "19 July 2005"
   },
   {
     "id": "craig-mcmillan",
@@ -4076,6 +4237,43 @@
     "statsAsOf": "28 September 2025"
   },
   {
+    "id": "dave-houghton",
+    "name": "Dave Houghton",
+    "aliases": [
+      "David Houghton"
+    ],
+    "country": "Zimbabwe",
+    "role": "Wicketkeeper-Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm off-spin",
+    "debutYear": 1983,
+    "intlMatches": 85,
+    "active": false,
+    "lastYear": 1997,
+    "difficulty": 2,
+    "stats": {
+      "test": {
+        "matches": 22,
+        "runs": 1464,
+        "highScore": "266",
+        "hundreds": 4,
+        "fifties": 4,
+        "wickets": 0,
+        "bestBowling": null
+      },
+      "odi": {
+        "matches": 63,
+        "runs": 1530,
+        "highScore": "142",
+        "hundreds": 1,
+        "fifties": 12,
+        "wickets": 1,
+        "bestBowling": "1/19"
+      }
+    },
+    "statsAsOf": "2 October 2018"
+  },
+  {
     "id": "david-boon",
     "name": "David Boon",
     "aliases": [
@@ -4461,6 +4659,43 @@
       }
     },
     "statsAsOf": "14 January 2009"
+  },
+  {
+    "id": "derek-underwood",
+    "name": "Derek Underwood",
+    "aliases": [
+      "Deadly"
+    ],
+    "country": "England",
+    "role": "Bowler",
+    "battingHand": "Right",
+    "bowlingType": "Left-arm orthodox",
+    "debutYear": 1966,
+    "intlMatches": 112,
+    "active": false,
+    "lastYear": 1982,
+    "difficulty": 2,
+    "stats": {
+      "test": {
+        "matches": 86,
+        "runs": 937,
+        "highScore": "45*",
+        "hundreds": 0,
+        "fifties": 0,
+        "wickets": 297,
+        "bestBowling": "8/51"
+      },
+      "odi": {
+        "matches": 26,
+        "runs": 53,
+        "highScore": "17",
+        "hundreds": 0,
+        "fifties": 0,
+        "wickets": 32,
+        "bestBowling": "4/44"
+      }
+    },
+    "statsAsOf": "25 March 2008"
   },
   {
     "id": "desmond-haynes",
@@ -4897,6 +5132,35 @@
     "statsAsOf": "27 August 2017"
   },
   {
+    "id": "don-bradman",
+    "name": "Don Bradman",
+    "aliases": [
+      "Donald Bradman",
+      "The Don"
+    ],
+    "country": "Australia",
+    "role": "Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm leg-spin",
+    "debutYear": 1928,
+    "intlMatches": 52,
+    "active": false,
+    "lastYear": 1948,
+    "difficulty": 1,
+    "stats": {
+      "test": {
+        "matches": 52,
+        "runs": 6996,
+        "highScore": "334",
+        "hundreds": 29,
+        "fifties": 13,
+        "wickets": 2,
+        "bestBowling": "1/8"
+      }
+    },
+    "statsAsOf": "4 December 2014"
+  },
+  {
     "id": "dushmantha-chameera",
     "name": "Dushmantha Chameera",
     "aliases": [],
@@ -5031,6 +5295,41 @@
     "statsAsOf": "12 June 2019"
   },
   {
+    "id": "eddo-brandes",
+    "name": "Eddo Brandes",
+    "aliases": [],
+    "country": "Zimbabwe",
+    "role": "All-rounder",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm fast",
+    "debutYear": 1987,
+    "intlMatches": 69,
+    "active": false,
+    "lastYear": 1999,
+    "difficulty": 3,
+    "stats": {
+      "test": {
+        "matches": 10,
+        "runs": 121,
+        "highScore": "39",
+        "hundreds": 0,
+        "fifties": 0,
+        "wickets": 26,
+        "bestBowling": "3/45"
+      },
+      "odi": {
+        "matches": 59,
+        "runs": 404,
+        "highScore": "55",
+        "hundreds": 0,
+        "fifties": 2,
+        "wickets": 70,
+        "bestBowling": "5/28"
+      }
+    },
+    "statsAsOf": "11 November 2009"
+  },
+  {
     "id": "elton-chigumbura",
     "name": "Elton Chigumbura",
     "aliases": [],
@@ -5121,6 +5420,32 @@
     "statsAsOf": "29 November 2023"
   },
   {
+    "id": "everton-weekes",
+    "name": "Everton Weekes",
+    "aliases": [],
+    "country": "West Indies",
+    "role": "Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm leg-spin",
+    "debutYear": 1948,
+    "intlMatches": 48,
+    "active": false,
+    "lastYear": 1958,
+    "difficulty": 2,
+    "stats": {
+      "test": {
+        "matches": 48,
+        "runs": 4455,
+        "highScore": "207",
+        "hundreds": 15,
+        "fifties": 19,
+        "wickets": 1,
+        "bestBowling": "1/8"
+      }
+    },
+    "statsAsOf": "1 July 2020"
+  },
+  {
     "id": "evin-lewis",
     "name": "Evin Lewis",
     "aliases": [],
@@ -5154,6 +5479,41 @@
       }
     },
     "statsAsOf": "15 June 2025"
+  },
+  {
+    "id": "ewen-chatfield",
+    "name": "Ewen Chatfield",
+    "aliases": [],
+    "country": "New Zealand",
+    "role": "Bowler",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm medium",
+    "debutYear": 1975,
+    "intlMatches": 157,
+    "active": false,
+    "lastYear": 1989,
+    "difficulty": 3,
+    "stats": {
+      "test": {
+        "matches": 43,
+        "runs": 180,
+        "highScore": "21*",
+        "hundreds": 0,
+        "fifties": 0,
+        "wickets": 123,
+        "bestBowling": "6/73"
+      },
+      "odi": {
+        "matches": 114,
+        "runs": 118,
+        "highScore": "19*",
+        "hundreds": 0,
+        "fifties": 0,
+        "wickets": 140,
+        "bestBowling": "5/34"
+      }
+    },
+    "statsAsOf": "18 December 2011"
   },
   {
     "id": "faf-du-plessis",
@@ -5404,6 +5764,32 @@
     "statsAsOf": "10 July 2021"
   },
   {
+    "id": "frank-worrell",
+    "name": "Frank Worrell",
+    "aliases": [],
+    "country": "West Indies",
+    "role": "Batter",
+    "battingHand": "Right",
+    "bowlingType": "Left-arm orthodox",
+    "debutYear": 1948,
+    "intlMatches": 51,
+    "active": false,
+    "lastYear": 1963,
+    "difficulty": 2,
+    "stats": {
+      "test": {
+        "matches": 51,
+        "runs": 3860,
+        "highScore": "261",
+        "hundreds": 9,
+        "fifties": 22,
+        "wickets": 69,
+        "bestBowling": "7/70"
+      }
+    },
+    "statsAsOf": "8 January 2009"
+  },
+  {
     "id": "fred-trueman",
     "name": "Fred Trueman",
     "aliases": [
@@ -5505,6 +5891,50 @@
       }
     },
     "statsAsOf": "28 December 2009"
+  },
+  {
+    "id": "gary-wilson",
+    "name": "Gary Wilson",
+    "aliases": [],
+    "country": "Ireland",
+    "role": "Wicketkeeper-Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm medium",
+    "debutYear": 2007,
+    "intlMatches": 188,
+    "active": false,
+    "lastYear": 2020,
+    "difficulty": 3,
+    "stats": {
+      "test": {
+        "matches": 2,
+        "runs": 45,
+        "highScore": "33*",
+        "hundreds": 0,
+        "fifties": 0,
+        "wickets": null,
+        "bestBowling": null
+      },
+      "odi": {
+        "matches": 105,
+        "runs": 2072,
+        "highScore": "113",
+        "hundreds": 1,
+        "fifties": 12,
+        "wickets": null,
+        "bestBowling": null
+      },
+      "t20i": {
+        "matches": 81,
+        "runs": 1268,
+        "highScore": "65*",
+        "hundreds": 0,
+        "fifties": 3,
+        "wickets": null,
+        "bestBowling": null
+      }
+    },
+    "statsAsOf": "21 April 2020"
   },
   {
     "id": "gautam-gambhir",
@@ -5851,6 +6281,41 @@
     "statsAsOf": "30 October 2026"
   },
   {
+    "id": "glenn-turner",
+    "name": "Glenn Turner",
+    "aliases": [],
+    "country": "New Zealand",
+    "role": "Batter",
+    "battingHand": "Right",
+    "bowlingType": "None",
+    "debutYear": 1969,
+    "intlMatches": 82,
+    "active": false,
+    "lastYear": 1983,
+    "difficulty": 2,
+    "stats": {
+      "test": {
+        "matches": 41,
+        "runs": 2991,
+        "highScore": "259",
+        "hundreds": 7,
+        "fifties": 14,
+        "wickets": 0,
+        "bestBowling": null
+      },
+      "odi": {
+        "matches": 41,
+        "runs": 1598,
+        "highScore": "171*",
+        "hundreds": 3,
+        "fifties": 9,
+        "wickets": 0,
+        "bestBowling": null
+      }
+    },
+    "statsAsOf": "25 August 2010"
+  },
+  {
     "id": "gordon-greenidge",
     "name": "Gordon Greenidge",
     "aliases": [],
@@ -5884,6 +6349,52 @@
       }
     },
     "statsAsOf": "24 January 2009"
+  },
+  {
+    "id": "graeme-smith",
+    "name": "Graeme Smith",
+    "aliases": [
+      "Biff"
+    ],
+    "country": "South Africa",
+    "role": "Batter",
+    "battingHand": "Left",
+    "bowlingType": "Right-arm off-spin",
+    "debutYear": 2002,
+    "intlMatches": 347,
+    "active": false,
+    "lastYear": 2014,
+    "difficulty": 1,
+    "stats": {
+      "test": {
+        "matches": 117,
+        "runs": 9265,
+        "highScore": "277",
+        "hundreds": 27,
+        "fifties": 38,
+        "wickets": 8,
+        "bestBowling": "2/145"
+      },
+      "odi": {
+        "matches": 197,
+        "runs": 6989,
+        "highScore": "141",
+        "hundreds": 10,
+        "fifties": 47,
+        "wickets": 18,
+        "bestBowling": "3/30"
+      },
+      "t20i": {
+        "matches": 33,
+        "runs": 982,
+        "highScore": "89*",
+        "hundreds": 0,
+        "fifties": 5,
+        "wickets": 0,
+        "bestBowling": null
+      }
+    },
+    "statsAsOf": "18 May 2014"
   },
   {
     "id": "graeme-swann",
@@ -6304,6 +6815,32 @@
       }
     },
     "statsAsOf": "20 September 2019"
+  },
+  {
+    "id": "hanif-mohammad",
+    "name": "Hanif Mohammad",
+    "aliases": [],
+    "country": "Pakistan",
+    "role": "Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm off-spin",
+    "debutYear": 1952,
+    "intlMatches": 55,
+    "active": false,
+    "lastYear": 1969,
+    "difficulty": 2,
+    "stats": {
+      "test": {
+        "matches": 55,
+        "runs": 3915,
+        "highScore": "337",
+        "hundreds": 12,
+        "fifties": 15,
+        "wickets": 1,
+        "bestBowling": "1/1"
+      }
+    },
+    "statsAsOf": "3 August 2008"
   },
   {
     "id": "hansie-cronje",
@@ -7451,7 +7988,7 @@
     "name": "Imrul Kayes",
     "aliases": [],
     "country": "Bangladesh",
-    "role": "Wicketkeeper-Batter",
+    "role": "Batter",
     "battingHand": "Left",
     "bowlingType": "Left-arm orthodox",
     "debutYear": 2008,
@@ -8299,6 +8836,43 @@
       }
     },
     "statsAsOf": "10 March 2009"
+  },
+  {
+    "id": "jeff-dujon",
+    "name": "Jeff Dujon",
+    "aliases": [
+      "Jeffrey Dujon"
+    ],
+    "country": "West Indies",
+    "role": "Wicketkeeper-Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm medium",
+    "debutYear": 1981,
+    "intlMatches": 250,
+    "active": false,
+    "lastYear": 1991,
+    "difficulty": 2,
+    "stats": {
+      "test": {
+        "matches": 81,
+        "runs": 3322,
+        "highScore": "139",
+        "hundreds": 5,
+        "fifties": 16,
+        "wickets": null,
+        "bestBowling": null
+      },
+      "odi": {
+        "matches": 169,
+        "runs": 1945,
+        "highScore": "82*",
+        "hundreds": 0,
+        "fifties": 6,
+        "wickets": null,
+        "bestBowling": null
+      }
+    },
+    "statsAsOf": "18 October 2010"
   },
   {
     "id": "jeff-thomson",
@@ -9285,7 +9859,7 @@
     "name": "Kedar Jadhav",
     "aliases": [],
     "country": "India",
-    "role": "Wicketkeeper-Batter",
+    "role": "All-rounder",
     "battingHand": "Right",
     "bowlingType": "Right-arm off-spin",
     "debutYear": 2014,
@@ -9314,6 +9888,34 @@
       }
     },
     "statsAsOf": "8 February 2024"
+  },
+  {
+    "id": "keith-miller",
+    "name": "Keith Miller",
+    "aliases": [
+      "Nugget"
+    ],
+    "country": "Australia",
+    "role": "All-rounder",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm fast",
+    "debutYear": 1946,
+    "intlMatches": 55,
+    "active": false,
+    "lastYear": 1956,
+    "difficulty": 2,
+    "stats": {
+      "test": {
+        "matches": 55,
+        "runs": 2958,
+        "highScore": "147",
+        "hundreds": 7,
+        "fifties": 13,
+        "wickets": 170,
+        "bestBowling": "7/60"
+      }
+    },
+    "statsAsOf": "19 December 2007"
   },
   {
     "id": "kemar-roach",
@@ -9566,6 +10168,53 @@
       }
     },
     "statsAsOf": "26 July 2026"
+  },
+  {
+    "id": "kl-rahul",
+    "name": "KL Rahul",
+    "aliases": [
+      "Lokesh Rahul",
+      "Rahul"
+    ],
+    "country": "India",
+    "role": "Wicketkeeper-Batter",
+    "battingHand": "Right",
+    "bowlingType": "None",
+    "debutYear": 2014,
+    "intlMatches": 243,
+    "active": true,
+    "lastYear": 2026,
+    "difficulty": 1,
+    "stats": {
+      "test": {
+        "matches": 70,
+        "runs": 4288,
+        "highScore": "199",
+        "hundreds": 12,
+        "fifties": 21,
+        "wickets": null,
+        "bestBowling": null
+      },
+      "odi": {
+        "matches": 101,
+        "runs": 3541,
+        "highScore": "129*",
+        "hundreds": 9,
+        "fifties": 20,
+        "wickets": null,
+        "bestBowling": null
+      },
+      "t20i": {
+        "matches": 72,
+        "runs": 2265,
+        "highScore": "110*",
+        "hundreds": 2,
+        "fifties": 22,
+        "wickets": null,
+        "bestBowling": null
+      }
+    },
+    "statsAsOf": "18 January 2026"
   },
   {
     "id": "kraigg-brathwaite",
@@ -10011,6 +10660,41 @@
     "statsAsOf": "12 March 2022"
   },
   {
+    "id": "lance-gibbs",
+    "name": "Lance Gibbs",
+    "aliases": [],
+    "country": "West Indies",
+    "role": "Bowler",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm off-spin",
+    "debutYear": 1958,
+    "intlMatches": 82,
+    "active": false,
+    "lastYear": 1976,
+    "difficulty": 2,
+    "stats": {
+      "test": {
+        "matches": 79,
+        "runs": 488,
+        "highScore": "25",
+        "hundreds": 0,
+        "fifties": 0,
+        "wickets": 309,
+        "bestBowling": "8/38"
+      },
+      "odi": {
+        "matches": 3,
+        "runs": 0,
+        "highScore": "0*",
+        "hundreds": 0,
+        "fifties": 0,
+        "wickets": 2,
+        "bestBowling": "1/12"
+      }
+    },
+    "statsAsOf": "7 January 2009"
+  },
+  {
     "id": "lance-klusener",
     "name": "Lance Klusener",
     "aliases": [
@@ -10187,7 +10871,10 @@
   {
     "id": "litton-das",
     "name": "Litton Das",
-    "aliases": [],
+    "aliases": [
+      "Liton Das",
+      "Liton Kumar Das"
+    ],
     "country": "Bangladesh",
     "role": "Wicketkeeper-Batter",
     "battingHand": "Right",
@@ -10530,6 +11217,41 @@
     "statsAsOf": "12 March 2025"
   },
   {
+    "id": "majid-haq",
+    "name": "Majid Haq",
+    "aliases": [],
+    "country": "Scotland",
+    "role": "All-rounder",
+    "battingHand": "Left",
+    "bowlingType": "Right-arm off-spin",
+    "debutYear": 2006,
+    "intlMatches": 75,
+    "active": false,
+    "lastYear": 2015,
+    "difficulty": 3,
+    "stats": {
+      "odi": {
+        "matches": 54,
+        "runs": 566,
+        "highScore": "71",
+        "hundreds": 0,
+        "fifties": 3,
+        "wickets": 60,
+        "bestBowling": "5/54"
+      },
+      "t20i": {
+        "matches": 21,
+        "runs": 64,
+        "highScore": "21*",
+        "hundreds": 0,
+        "fifties": 0,
+        "wickets": 28,
+        "bestBowling": "3/20"
+      }
+    },
+    "statsAsOf": "29 March 2016"
+  },
+  {
     "id": "makhaya-ntini",
     "name": "Makhaya Ntini",
     "aliases": [],
@@ -10815,6 +11537,41 @@
       }
     },
     "statsAsOf": "10 September 2017"
+  },
+  {
+    "id": "mark-richardson",
+    "name": "Mark Richardson",
+    "aliases": [],
+    "country": "New Zealand",
+    "role": "Batter",
+    "battingHand": "Left",
+    "bowlingType": "Left-arm orthodox",
+    "debutYear": 2000,
+    "intlMatches": 42,
+    "active": false,
+    "lastYear": 2004,
+    "difficulty": 3,
+    "stats": {
+      "test": {
+        "matches": 38,
+        "runs": 2776,
+        "highScore": "145",
+        "hundreds": 4,
+        "fifties": 19,
+        "wickets": 1,
+        "bestBowling": "1/16"
+      },
+      "odi": {
+        "matches": 4,
+        "runs": 42,
+        "highScore": "26",
+        "hundreds": 0,
+        "fifties": 0,
+        "wickets": null,
+        "bestBowling": null
+      }
+    },
+    "statsAsOf": "29 April 2017"
   },
   {
     "id": "mark-taylor",
@@ -13061,6 +13818,41 @@
     "statsAsOf": "30 March 2025"
   },
   {
+    "id": "mudassar-nazar",
+    "name": "Mudassar Nazar",
+    "aliases": [],
+    "country": "Pakistan",
+    "role": "All-rounder",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm medium",
+    "debutYear": 1976,
+    "intlMatches": 198,
+    "active": false,
+    "lastYear": 1989,
+    "difficulty": 3,
+    "stats": {
+      "test": {
+        "matches": 76,
+        "runs": 4114,
+        "highScore": "231*",
+        "hundreds": 10,
+        "fifties": 17,
+        "wickets": 66,
+        "bestBowling": "6/38"
+      },
+      "odi": {
+        "matches": 122,
+        "runs": 2653,
+        "highScore": "95",
+        "hundreds": 0,
+        "fifties": 16,
+        "wickets": 111,
+        "bestBowling": "5/29"
+      }
+    },
+    "statsAsOf": "10 November 2017"
+  },
+  {
     "id": "mujeeb-ur-rahman",
     "name": "Mujeeb Ur Rahman",
     "aliases": [
@@ -13804,6 +14596,32 @@
     "statsAsOf": "4 February 2006"
   },
   {
+    "id": "neil-harvey",
+    "name": "Neil Harvey",
+    "aliases": [],
+    "country": "Australia",
+    "role": "Batter",
+    "battingHand": "Left",
+    "bowlingType": "Right-arm off-spin",
+    "debutYear": 1948,
+    "intlMatches": 79,
+    "active": false,
+    "lastYear": 1963,
+    "difficulty": 2,
+    "stats": {
+      "test": {
+        "matches": 79,
+        "runs": 6149,
+        "highScore": "205",
+        "hundreds": 21,
+        "fifties": 24,
+        "wickets": 3,
+        "bestBowling": "1/8"
+      }
+    },
+    "statsAsOf": "29 February 2008"
+  },
+  {
     "id": "neil-johnson",
     "name": "Neil Johnson",
     "aliases": [],
@@ -14519,6 +15337,41 @@
       }
     },
     "statsAsOf": "18 February 2026"
+  },
+  {
+    "id": "peter-borren",
+    "name": "Peter Borren",
+    "aliases": [],
+    "country": "Netherlands",
+    "role": "All-rounder",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm medium",
+    "debutYear": 2006,
+    "intlMatches": 101,
+    "active": false,
+    "lastYear": 2017,
+    "difficulty": 3,
+    "stats": {
+      "odi": {
+        "matches": 58,
+        "runs": 1004,
+        "highScore": "96",
+        "hundreds": 0,
+        "fifties": 5,
+        "wickets": 46,
+        "bestBowling": "4/32"
+      },
+      "t20i": {
+        "matches": 43,
+        "runs": 638,
+        "highScore": "57",
+        "hundreds": 0,
+        "fifties": 1,
+        "wickets": 18,
+        "bestBowling": "2/19"
+      }
+    },
+    "statsAsOf": "17 March 2018"
   },
   {
     "id": "peter-siddle",
@@ -15585,6 +16438,76 @@
     "statsAsOf": "18 January 2026"
   },
   {
+    "id": "ray-lindwall",
+    "name": "Ray Lindwall",
+    "aliases": [],
+    "country": "Australia",
+    "role": "All-rounder",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm fast",
+    "debutYear": 1946,
+    "intlMatches": 61,
+    "active": false,
+    "lastYear": 1960,
+    "difficulty": 2,
+    "stats": {
+      "test": {
+        "matches": 61,
+        "runs": 1502,
+        "highScore": "118",
+        "hundreds": 2,
+        "fifties": 5,
+        "wickets": 228,
+        "bestBowling": "7/38"
+      }
+    },
+    "statsAsOf": "27 December 2007"
+  },
+  {
+    "id": "ray-price",
+    "name": "Ray Price",
+    "aliases": [],
+    "country": "Zimbabwe",
+    "role": "Bowler",
+    "battingHand": "Right",
+    "bowlingType": "Left-arm orthodox",
+    "debutYear": 1999,
+    "intlMatches": 140,
+    "active": false,
+    "lastYear": 2013,
+    "difficulty": 3,
+    "stats": {
+      "test": {
+        "matches": 22,
+        "runs": 261,
+        "highScore": "36",
+        "hundreds": 0,
+        "fifties": 0,
+        "wickets": 80,
+        "bestBowling": "6/73"
+      },
+      "odi": {
+        "matches": 102,
+        "runs": 406,
+        "highScore": "46",
+        "hundreds": 0,
+        "fifties": 0,
+        "wickets": 100,
+        "bestBowling": "4/22"
+      },
+      "t20i": {
+        "matches": 16,
+        "runs": 15,
+        "highScore": "7*",
+        "hundreds": 0,
+        "fifties": 0,
+        "wickets": 13,
+        "bestBowling": "2/6"
+      }
+    },
+    "statsAsOf": "14 March 2013"
+  },
+  {
     "id": "reeza-hendricks",
     "name": "Reeza Hendricks",
     "aliases": [],
@@ -15655,6 +16578,32 @@
       }
     },
     "statsAsOf": "1 September 2007"
+  },
+  {
+    "id": "richie-benaud",
+    "name": "Richie Benaud",
+    "aliases": [],
+    "country": "Australia",
+    "role": "All-rounder",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm leg-spin",
+    "debutYear": 1952,
+    "intlMatches": 63,
+    "active": false,
+    "lastYear": 1964,
+    "difficulty": 2,
+    "stats": {
+      "test": {
+        "matches": 63,
+        "runs": 2201,
+        "highScore": "122",
+        "hundreds": 3,
+        "fifties": 9,
+        "wickets": 248,
+        "bestBowling": "7/72"
+      }
+    },
+    "statsAsOf": "22 December 2007"
   },
   {
     "id": "richie-berrington",
@@ -15922,6 +16871,43 @@
     "statsAsOf": "28 May 2022"
   },
   {
+    "id": "rod-marsh",
+    "name": "Rod Marsh",
+    "aliases": [
+      "Bacchus"
+    ],
+    "country": "Australia",
+    "role": "Wicketkeeper-Batter",
+    "battingHand": "Left",
+    "bowlingType": "Right-arm off-spin",
+    "debutYear": 1970,
+    "intlMatches": 188,
+    "active": false,
+    "lastYear": 1984,
+    "difficulty": 2,
+    "stats": {
+      "test": {
+        "matches": 96,
+        "runs": 3633,
+        "highScore": "132",
+        "hundreds": 3,
+        "fifties": 16,
+        "wickets": 0,
+        "bestBowling": null
+      },
+      "odi": {
+        "matches": 92,
+        "runs": 1225,
+        "highScore": "66",
+        "hundreds": 0,
+        "fifties": 4,
+        "wickets": null,
+        "bestBowling": null
+      }
+    },
+    "statsAsOf": "20 November 2008"
+  },
+  {
     "id": "roelof-van-der-merwe",
     "name": "Roelof van der Merwe",
     "aliases": [],
@@ -15955,6 +16941,41 @@
       }
     },
     "statsAsOf": "31 July 2026"
+  },
+  {
+    "id": "rohan-kanhai",
+    "name": "Rohan Kanhai",
+    "aliases": [],
+    "country": "West Indies",
+    "role": "Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm medium",
+    "debutYear": 1957,
+    "intlMatches": 86,
+    "active": false,
+    "lastYear": 1975,
+    "difficulty": 2,
+    "stats": {
+      "test": {
+        "matches": 79,
+        "runs": 6227,
+        "highScore": "256",
+        "hundreds": 15,
+        "fifties": 28,
+        "wickets": 0,
+        "bestBowling": null
+      },
+      "odi": {
+        "matches": 7,
+        "runs": 164,
+        "highScore": "55",
+        "hundreds": 0,
+        "fifties": 2,
+        "wickets": null,
+        "bestBowling": null
+      }
+    },
+    "statsAsOf": "31 October 2009"
   },
   {
     "id": "rohit-sharma",
@@ -16559,6 +17580,43 @@
     "statsAsOf": "15 August 2026"
   },
   {
+    "id": "salim-malik",
+    "name": "Salim Malik",
+    "aliases": [
+      "Saleem Malik"
+    ],
+    "country": "Pakistan",
+    "role": "Batter",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm off-spin",
+    "debutYear": 1982,
+    "intlMatches": 386,
+    "active": false,
+    "lastYear": 1999,
+    "difficulty": 2,
+    "stats": {
+      "test": {
+        "matches": 103,
+        "runs": 5768,
+        "highScore": "237",
+        "hundreds": 15,
+        "fifties": 29,
+        "wickets": 5,
+        "bestBowling": "1/3"
+      },
+      "odi": {
+        "matches": 283,
+        "runs": 7170,
+        "highScore": "140",
+        "hundreds": 5,
+        "fifties": 47,
+        "wickets": 89,
+        "bestBowling": "5/35"
+      }
+    },
+    "statsAsOf": "8 February 2010"
+  },
+  {
     "id": "sam-curran",
     "name": "Sam Curran",
     "aliases": [],
@@ -16841,6 +17899,41 @@
       }
     },
     "statsAsOf": "14 October 2026"
+  },
+  {
+    "id": "sarfraz-nawaz",
+    "name": "Sarfraz Nawaz",
+    "aliases": [],
+    "country": "Pakistan",
+    "role": "Bowler",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm fast",
+    "debutYear": 1969,
+    "intlMatches": 100,
+    "active": false,
+    "lastYear": 1984,
+    "difficulty": 2,
+    "stats": {
+      "test": {
+        "matches": 55,
+        "runs": 1045,
+        "highScore": "90",
+        "hundreds": 0,
+        "fifties": 4,
+        "wickets": 177,
+        "bestBowling": "9/86"
+      },
+      "odi": {
+        "matches": 45,
+        "runs": 221,
+        "highScore": "34*",
+        "hundreds": 0,
+        "fifties": 0,
+        "wickets": 63,
+        "bestBowling": "4/27"
+      }
+    },
+    "statsAsOf": "10 May 2009"
   },
   {
     "id": "saud-shakeel",
