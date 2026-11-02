@@ -121,3 +121,20 @@ export interface Stats {
   /** roundId of the last round recorded, to avoid double counting. */
   lastRoundId: string | null
 }
+
+// ---- Mind Reader mode: the user thinks of a player, the game asks yes/no questions. ----
+
+/** How hard a question is for a typical fan to answer confidently. */
+export type QuestionDifficulty = 'easy' | 'medium' | 'hard'
+
+export interface Question {
+  /** Stable, kebab-case; stored in saved rounds, so never rename one. */
+  id: string
+  /** Asked about "your player"; never names anyone. */
+  text: string
+  difficulty: QuestionDifficulty
+  /** The true answer for a player, or null if the data can't say. */
+  test: (player: Player) => boolean | null
+}
+
+export type MindAnswer = 'yes' | 'no' | 'unsure'

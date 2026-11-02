@@ -24,3 +24,20 @@ export const STORAGE_KEYS = {
   pool: 'cricdle:pool:v2',
   seenHelp: 'cricdle:seenHelp:v2',
 } as const
+
+// ---- Mind Reader mode ----
+
+/** Yes/no questions the game may ask per round. */
+export const MIND_MAX_QUESTIONS = 10
+
+/** "Is it X?" guesses the game may make per round, on top of the questions. */
+export const MIND_MAX_GUESSES = 3
+
+/** Guess once the leading player holds at least this share of the total score. */
+export const MIND_GUESS_THRESHOLD = 0.6
+
+/** Chance that an answer disagrees with the data (user mistake or stale figures). */
+export const MIND_ERROR_RATE = 0.05
+
+/** Starting weight per difficulty: people mostly think of famous players. */
+export const MIND_PRIOR_WEIGHTS = { 1: 4, 2: 2, 3: 1 } as const
