@@ -142,6 +142,8 @@ describe('Mind Reader', () => {
     const truth = q.test(target)
     await user.click(screen.getByRole('button', { name: truth ? 'No' : 'Yes' }))
     await user.click(screen.getByRole('button', { name: /end round/i }))
+    expect(screen.queryByRole('heading', { name: /you beat me/i })).not.toBeInTheDocument()
+    await user.click(screen.getByRole('button', { name: /tap again to end round/i }))
     expect(screen.getByRole('heading', { name: /you beat me/i })).toBeInTheDocument()
 
     await user.type(screen.getByRole('combobox'), target.name)

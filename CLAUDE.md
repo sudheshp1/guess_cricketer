@@ -315,6 +315,9 @@ https://your-domain.com
 - **Animation:** each new clue slides in. Respect `prefers-reduced-motion`. Modals shown on page
   load don't animate.
 - **Dark mode:** follow system preference.
+- **Ending a round early:** **Give up** and Mind Reader's **End round** take two taps (`ConfirmButton`):
+  the first changes the label ("Really give up?" / "Tap again to end round"); a second tap within
+  3 seconds confirms. It disarms after the timeout, on blur, or after a new clue, guess or question.
 - **Keyboard:** ↑/↓ to move through suggestions, Enter to submit, Esc to close the dropdown.
   The input is focused when a new round starts.
 - **First visit:** show How to Play once. It also explains Mind Reader, with an example.

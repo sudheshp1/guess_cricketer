@@ -1,6 +1,7 @@
 import { Check, CircleHelp, Flag, X } from 'lucide-react'
 import { useEffect, useRef } from 'react'
 import type { MindMove } from '../lib/mind'
+import { ConfirmButton } from './ConfirmButton'
 import type { MindAnswer } from '../types'
 
 interface Props {
@@ -120,14 +121,23 @@ export function MindQuestionCard({
             </>
           )}
         </span>
-        <button
-          type="button"
-          onClick={onGiveUp}
+        <ConfirmButton
+          // Each new question or guess disarms it.
+          key={move.kind === 'guess' ? `guess-${move.player.id}` : `q-${move.question.id}`}
+          onConfirm={onGiveUp}
           className="inline-flex items-center gap-1.5 rounded-full px-2 py-1 font-semibold hover:text-ink focus-visible:outline-3 focus-visible:outline-gold-fill"
+          armedClassName="text-danger! hover:text-danger!"
+          armedLabel={
+            <>
+              <Flag className="h-3.5 w-3.5" aria-hidden="true" />
+              Tap again to end round
+            </>
+          }
+          armedAnnouncement="Tap End round again to end the round."
         >
           <Flag className="h-3.5 w-3.5" aria-hidden="true" />
           End round
-        </button>
+        </ConfirmButton>
       </div>
     </section>
   )

@@ -1,6 +1,7 @@
 import { Check, Flag, Lightbulb, X } from 'lucide-react'
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { ClueList } from './components/ClueList'
+import { ConfirmButton } from './components/ConfirmButton'
 import { Footer } from './components/Footer'
 import { GuessInput } from './components/GuessInput'
 import { Header } from './components/Header'
@@ -158,10 +159,18 @@ function App(props: UseGameOptions = {}) {
                     <Lightbulb className="h-4.5 w-4.5 text-gold" aria-hidden="true" />
                     Another clue
                   </button>
-                  <button type="button" onClick={handleGiveUp} className="btn btn-ghost">
+                  <ConfirmButton
+                    // A new clue or guess disarms it.
+                    key={`${game.roundKey}-${round.cluesRevealed}-${round.guesses.length}`}
+                    onConfirm={handleGiveUp}
+                    className="btn btn-ghost"
+                    armedClassName="border-danger! text-danger whitespace-nowrap"
+                    armedLabel="Really give up?"
+                    armedAnnouncement="Really give up? Press the button again to end the round."
+                  >
                     <Flag className="h-4.5 w-4.5 text-muted" aria-hidden="true" />
                     Give up
-                  </button>
+                  </ConfirmButton>
                 </div>
               </div>
             ) : (
