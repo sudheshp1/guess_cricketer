@@ -10924,6 +10924,53 @@
     "wikipedia": "Lahiru Thirimanne"
   },
   {
+    "id": "lakshmipathy-balaji",
+    "name": "Lakshmipathy Balaji",
+    "aliases": [
+      "L Balaji"
+    ],
+    "country": "India",
+    "role": "Bowler",
+    "battingHand": "Right",
+    "bowlingType": "Right-arm fast",
+    "debutYear": 2002,
+    "intlMatches": 43,
+    "active": false,
+    "lastYear": 2012,
+    "difficulty": 3,
+    "stats": {
+      "test": {
+        "matches": 8,
+        "runs": 51,
+        "highScore": "35",
+        "hundreds": 0,
+        "fifties": 0,
+        "wickets": 27,
+        "bestBowling": "5/76"
+      },
+      "odi": {
+        "matches": 30,
+        "runs": 120,
+        "highScore": "21*",
+        "hundreds": 0,
+        "fifties": 0,
+        "wickets": 34,
+        "bestBowling": "4/48"
+      },
+      "t20i": {
+        "matches": 5,
+        "runs": null,
+        "highScore": null,
+        "hundreds": null,
+        "fifties": null,
+        "wickets": 10,
+        "bestBowling": "3/19"
+      }
+    },
+    "statsAsOf": "5 May 2024",
+    "wikipedia": "Lakshmipathy Balaji"
+  },
+  {
     "id": "lance-gibbs",
     "name": "Lance Gibbs",
     "aliases": [],
