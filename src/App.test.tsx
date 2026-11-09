@@ -109,11 +109,27 @@ describe('App', () => {
   it('can give up and reveal the answer', async () => {
     const user = userEvent.setup()
     renderApp()
-    await user.click(screen.getByRole('button', { name: /give up/i }))
+    const giveUp = screen.getByRole('button', { name: /give up/i })
+    await user.click(giveUp)
+    // The first tap only asks for confirmation.
+    expect(giveUp).toHaveTextContent(/really give up\?/i)
+    expect(screen.queryByRole('heading', { name: /you gave up/i })).not.toBeInTheDocument()
+    await user.click(giveUp)
     expect(screen.getByRole('heading', { name: /you gave up/i })).toBeInTheDocument()
     expect(screen.getByText(answer.name, { selector: 'strong' })).toBeInTheDocument()
     const stats = JSON.parse(window.localStorage.getItem(STORAGE_KEYS.stats)!)
     expect(stats).toMatchObject({ played: 1, wins: 0, currentStreak: 0 })
+  })
+
+  it('disarms Give up when another clue is revealed', async () => {
+    const user = userEvent.setup()
+    renderApp()
+    await user.click(screen.getByRole('button', { name: /give up/i }))
+    await user.click(screen.getByRole('button', { name: /another clue/i }))
+    const giveUp = screen.getByRole('button', { name: /give up/i })
+    expect(giveUp).not.toHaveTextContent(/really/i)
+    await user.click(giveUp)
+    expect(screen.queryByRole('heading', { name: /you gave up/i })).not.toBeInTheDocument()
   })
 
   it('restores the current round after a reload', async () => {
@@ -142,6 +158,7 @@ describe('App', () => {
     renderApp()
     await user.click(screen.getByRole('radio', { name: 'Famous' }))
     expect(window.localStorage.getItem(STORAGE_KEYS.pool)).toBe('"famous"')
+    await user.click(screen.getByRole('button', { name: /give up/i }))
     await user.click(screen.getByRole('button', { name: /give up/i }))
     await user.click(screen.getByRole('button', { name: /next player/i }))
     const round = JSON.parse(window.localStorage.getItem(STORAGE_KEYS.round)!)
