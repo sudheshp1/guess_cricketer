@@ -120,6 +120,8 @@ Changing the pool applies from the next round. Any player can always be *guessed
   (e.g. `"254*"`), `hundreds`, `fifties`, `wickets`, `bestBowling` (e.g. `"5/23"`); null where the
   source shows none. Only formats the player played are present.
 - `lastYear`: year of the last international match, if known. `statsAsOf`: the infobox "as of" date.
+- `wikipedia`: title of the English Wikipedia article the figures were read from (after redirects).
+  The round-result card links to it.
 - **The example above uses placeholder numbers.** All real values must be filled from a verified
   source (see 3.2). Never invent stats.
 

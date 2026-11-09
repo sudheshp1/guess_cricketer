@@ -71,6 +71,8 @@ export interface Player {
   stats: Partial<Record<Format, FormatStats>>
   /** "As of" date of the career figures (from the Wikipedia infobox), if stated. */
   statsAsOf: string | null
+  /** Title of the English Wikipedia article the figures come from, e.g. "Steve Smith (cricketer)". */
+  wikipedia: string
 }
 
 /** Which players can be the answer: famous only, regular fans' level, or everyone. */

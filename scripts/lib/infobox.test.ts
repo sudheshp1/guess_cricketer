@@ -246,6 +246,7 @@ describe('validatePlayers', () => {
       },
     },
     statsAsOf: '1 January 2020',
+    wikipedia: 'Test Player',
   }
 
   it('accepts valid data', () => {
@@ -257,6 +258,11 @@ describe('validatePlayers', () => {
     expect(validatePlayers([noRole], 2026)).toContain('test-player: missing role')
     expect(validatePlayers([{ ...good, country: 'Narnia' }], 2026)[0]).toMatch(/country/)
     expect(validatePlayers([{ ...good, bowlingType: 'Fast' }], 2026)[0]).toMatch(/bowlingType/)
+    const { wikipedia: _wikipedia, ...noWikipedia } = good
+    expect(validatePlayers([noWikipedia], 2026)).toContain('test-player: missing wikipedia')
+    expect(validatePlayers([{ ...good, wikipedia: 42 }], 2026)).toContain(
+      'test-player: wikipedia must be a string',
+    )
   })
 
   it('rejects duplicate ids', () => {

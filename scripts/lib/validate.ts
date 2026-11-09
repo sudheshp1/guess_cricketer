@@ -12,6 +12,7 @@ const REQUIRED = [
   'intlMatches',
   'active',
   'difficulty',
+  'wikipedia',
 ] as const
 
 /** Returns a list of problems; empty means the data is valid. */
@@ -71,6 +72,9 @@ export function validatePlayers(data: unknown, currentYear = new Date().getFullY
     }
     if (p.lastYear !== null && p.lastYear !== undefined && !Number.isInteger(p.lastYear)) {
       errors.push(`${label}: lastYear must be an integer or null`)
+    }
+    if (p.wikipedia !== undefined && typeof p.wikipedia !== 'string') {
+      errors.push(`${label}: wikipedia must be a string`)
     }
     if (p.statsAsOf !== null && p.statsAsOf !== undefined && typeof p.statsAsOf !== 'string') {
       errors.push(`${label}: statsAsOf must be a string or null`)

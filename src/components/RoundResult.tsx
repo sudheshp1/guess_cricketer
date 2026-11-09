@@ -1,6 +1,7 @@
-import { ArrowRight, Share2 } from 'lucide-react'
+import { ArrowRight, ExternalLink, Share2 } from 'lucide-react'
 import type { CSSProperties } from 'react'
 import { MAX_CLUES } from '../config'
+import { wikipediaUrl } from '../lib/wikipedia'
 import type { Player, Round } from '../types'
 
 interface Props {
@@ -89,6 +90,17 @@ export function RoundResult({ round, answer, onNext, onShare }: Props) {
           </div>
         ))}
       </dl>
+
+      <a
+        href={wikipediaUrl(answer)}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="relative mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-brand underline-offset-4 hover:underline"
+      >
+        Read about {answer.name} on Wikipedia
+        <ExternalLink className="h-3.5 w-3.5" aria-hidden="true" />
+        <span className="sr-only">(opens in a new tab)</span>
+      </a>
 
       <div className="relative mt-5 flex gap-2">
         <button

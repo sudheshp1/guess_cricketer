@@ -35,6 +35,7 @@ export function makePlayer(overrides: Partial<Player> = {}): Player {
       },
     },
     statsAsOf: '1 October 2026',
+    wikipedia: 'Answer Player',
     ...overrides,
   }
 }
