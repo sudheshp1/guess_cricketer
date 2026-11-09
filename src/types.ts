@@ -95,6 +95,8 @@ export interface Clue {
   key: ClueKey
   title: string
   text: string
+  /** Optional decorative emoji shown before the text (hidden from screen readers). */
+  emoji?: string
   /** Optional small print, e.g. where the figures come from. */
   note?: string
 }

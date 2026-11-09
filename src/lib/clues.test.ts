@@ -1,7 +1,8 @@
 import { describe, expect, it } from 'vitest'
 import { MAX_CLUES } from '../config'
 import { makePlayer } from '../test/fixtures'
-import { buildClues, nameShape } from './clues'
+import { COUNTRIES } from '../types'
+import { buildClues, COUNTRY_FLAGS, nameShape } from './clues'
 
 const text = (player = makePlayer()) =>
   Object.fromEntries(buildClues(player).map((c) => [c.key, c.text]))
@@ -29,6 +30,24 @@ describe('buildClues', () => {
     expect(t.style).toBe('Right-handed batter, bowls right-arm off-spin')
     expect(t.debut).toBe('International debut in 2010')
     expect(t.status).toBe('Still playing international cricket')
+  })
+
+  it('adds a flag emoji to the country clue, but not to its text', () => {
+    const clue = (country: (typeof COUNTRIES)[number]) =>
+      buildClues(makePlayer({ country })).find((c) => c.key === 'country')!
+    expect(clue('India')).toMatchObject({ text: 'India', emoji: '🇮🇳' })
+    expect(clue('South Africa').emoji).toBe('🇿🇦')
+    expect(clue('England').emoji).toBe('🏴󠁧󠁢󠁥󠁮󠁧󠁿')
+    expect(clue('West Indies')).toMatchObject({ text: 'West Indies', emoji: undefined })
+    expect(
+      buildClues(makePlayer())
+        .filter((c) => c.emoji)
+        .map((c) => c.key),
+    ).toEqual(['country'])
+  })
+
+  it('has a flag entry for every country', () => {
+    expect(Object.keys(COUNTRY_FLAGS).sort()).toEqual([...COUNTRIES].sort())
   })
 
   it('handles retired players and non-bowlers', () => {
