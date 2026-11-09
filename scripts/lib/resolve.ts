@@ -255,6 +255,8 @@ export function resolvePlayer(
       difficulty: difficulty as Difficulty,
       stats,
       statsAsOf: facts.statsDate,
+      // The page actually read (after redirects), so the link matches the source of the figures.
+      wikipedia: wiki.title,
     },
     errors,
     notes,

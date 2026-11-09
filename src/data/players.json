@@ -32,7 +32,8 @@
         "bestBowling": "4/22"
       }
     },
-    "statsAsOf": "30 March 2010"
+    "statsAsOf": "30 March 2010",
+    "wikipedia": "Aamer Sohail"
   },
   {
     "id": "aaron-finch",
@@ -78,7 +79,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "7 February 2023"
+    "statsAsOf": "7 February 2023",
+    "wikipedia": "Aaron Finch"
   },
   {
     "id": "ab-de-villiers",
@@ -125,7 +127,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "8 December 2023"
+    "statsAsOf": "8 December 2023",
+    "wikipedia": "AB de Villiers"
   },
   {
     "id": "abdul-qadir",
@@ -160,7 +163,8 @@
         "bestBowling": "5/44"
       }
     },
-    "statsAsOf": "9 January 2019"
+    "statsAsOf": "9 January 2019",
+    "wikipedia": "Abdul Qadir (cricketer)"
   },
   {
     "id": "abdul-razzaq",
@@ -204,7 +208,8 @@
         "bestBowling": "3/13"
       }
     },
-    "statsAsOf": "12 March 2023"
+    "statsAsOf": "12 March 2023",
+    "wikipedia": "Abdul Razzaq (cricketer)"
   },
   {
     "id": "abdullah-shafique",
@@ -248,7 +253,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "12 September 2026"
+    "statsAsOf": "12 September 2026",
+    "wikipedia": "Abdullah Shafique"
   },
   {
     "id": "abdur-razzak",
@@ -292,7 +298,8 @@
         "bestBowling": "4/16"
       }
     },
-    "statsAsOf": "12 March 2023"
+    "statsAsOf": "12 March 2023",
+    "wikipedia": "Abdur Razzak (cricketer)"
   },
   {
     "id": "abhishek-sharma",
@@ -318,7 +325,8 @@
         "bestBowling": "3/17"
       }
     },
-    "statsAsOf": "27 October 2026"
+    "statsAsOf": "27 October 2026",
+    "wikipedia": "Abhishek Sharma"
   },
   {
     "id": "adam-gilchrist",
@@ -365,7 +373,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "4 December 2013"
+    "statsAsOf": "4 December 2013",
+    "wikipedia": "Adam Gilchrist"
   },
   {
     "id": "adam-zampa",
@@ -400,7 +409,8 @@
         "bestBowling": "5/19"
       }
     },
-    "statsAsOf": "30 September 2026"
+    "statsAsOf": "30 September 2026",
+    "wikipedia": "Adam Zampa"
   },
   {
     "id": "adil-rashid",
@@ -444,7 +454,8 @@
         "bestBowling": "4/2"
       }
     },
-    "statsAsOf": "29 October 2026"
+    "statsAsOf": "29 October 2026",
+    "wikipedia": "Adil Rashid"
   },
   {
     "id": "ahmed-shehzad",
@@ -488,7 +499,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "28 July 2022"
+    "statsAsOf": "28 July 2022",
+    "wikipedia": "Ahmad Shahzad"
   },
   {
     "id": "aiden-markram",
@@ -532,7 +544,8 @@
         "bestBowling": "3/21"
       }
     },
-    "statsAsOf": "1 November 2026"
+    "statsAsOf": "1 November 2026",
+    "wikipedia": "Aiden Markram"
   },
   {
     "id": "ajantha-mendis",
@@ -576,7 +589,8 @@
         "bestBowling": "6/8"
       }
     },
-    "statsAsOf": "26 December 2016"
+    "statsAsOf": "26 December 2016",
+    "wikipedia": "Ajantha Mendis"
   },
   {
     "id": "ajay-jadeja",
@@ -611,7 +625,8 @@
         "bestBowling": "3/3"
       }
     },
-    "statsAsOf": "9 January 2018"
+    "statsAsOf": "9 January 2018",
+    "wikipedia": "Ajay Jadeja"
   },
   {
     "id": "ajinkya-rahane",
@@ -657,7 +672,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "25 September 2026"
+    "statsAsOf": "25 September 2026",
+    "wikipedia": "Ajinkya Rahane"
   },
   {
     "id": "ajit-agarkar",
@@ -701,7 +717,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "13 September 2022"
+    "statsAsOf": "13 September 2022",
+    "wikipedia": "Ajit Agarkar"
   },
   {
     "id": "akeal-hosein",
@@ -736,7 +753,8 @@
         "bestBowling": "5/11"
       }
     },
-    "statsAsOf": "14 October 2026"
+    "statsAsOf": "14 October 2026",
+    "wikipedia": "Akeal Hosein"
   },
   {
     "id": "alan-davidson",
@@ -764,7 +782,8 @@
         "bestBowling": "7/93"
       }
     },
-    "statsAsOf": "26 December 2008"
+    "statsAsOf": "26 December 2008",
+    "wikipedia": "Alan Davidson (cricketer, born 1929)"
   },
   {
     "id": "alastair-cook",
@@ -811,7 +830,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "29 September 2023"
+    "statsAsOf": "29 September 2023",
+    "wikipedia": "Alastair Cook"
   },
   {
     "id": "albie-morkel",
@@ -855,7 +875,8 @@
         "bestBowling": "3/12"
       }
     },
-    "statsAsOf": "2 December 2021"
+    "statsAsOf": "2 December 2021",
+    "wikipedia": "Albie Morkel"
   },
   {
     "id": "alec-stewart",
@@ -892,7 +913,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "14 October 2007"
+    "statsAsOf": "14 October 2007",
+    "wikipedia": "Alec Stewart"
   },
   {
     "id": "alex-carey",
@@ -936,7 +958,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "1 November 2026"
+    "statsAsOf": "1 November 2026",
+    "wikipedia": "Alex Carey"
   },
   {
     "id": "alex-hales",
@@ -980,7 +1003,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "16 October 2024"
+    "statsAsOf": "16 October 2024",
+    "wikipedia": "Alex Hales"
   },
   {
     "id": "alistair-campbell",
@@ -1015,7 +1039,8 @@
         "bestBowling": "2/20"
       }
     },
-    "statsAsOf": "10 July 2017"
+    "statsAsOf": "10 July 2017",
+    "wikipedia": "Alistair Campbell (cricketer)"
   },
   {
     "id": "allan-border",
@@ -1052,7 +1077,8 @@
         "bestBowling": "3/20"
       }
     },
-    "statsAsOf": "13 January 2008"
+    "statsAsOf": "13 January 2008",
+    "wikipedia": "Allan Border"
   },
   {
     "id": "allan-donald",
@@ -1089,7 +1115,8 @@
         "bestBowling": "6/23"
       }
     },
-    "statsAsOf": "4 July 2009"
+    "statsAsOf": "4 July 2009",
+    "wikipedia": "Allan Donald"
   },
   {
     "id": "allan-lamb",
@@ -1126,7 +1153,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "30 November 2009"
+    "statsAsOf": "30 November 2009",
+    "wikipedia": "Allan Lamb"
   },
   {
     "id": "alvin-kallicharran",
@@ -1163,7 +1191,8 @@
         "bestBowling": "2/10"
       }
     },
-    "statsAsOf": "2 July 2013"
+    "statsAsOf": "2 July 2013",
+    "wikipedia": "Alvin Kallicharran"
   },
   {
     "id": "alzarri-joseph",
@@ -1207,7 +1236,8 @@
         "bestBowling": "5/40"
       }
     },
-    "statsAsOf": "16 July 2026"
+    "statsAsOf": "16 July 2026",
+    "wikipedia": "Alzarri Joseph"
   },
   {
     "id": "ambati-rayudu",
@@ -1242,7 +1272,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "5 November 2022"
+    "statsAsOf": "5 November 2022",
+    "wikipedia": "Ambati Rayudu"
   },
   {
     "id": "amit-mishra",
@@ -1286,7 +1317,8 @@
         "bestBowling": "3/24"
       }
     },
-    "statsAsOf": "4 October 2024"
+    "statsAsOf": "4 October 2024",
+    "wikipedia": "Amit Mishra"
   },
   {
     "id": "andre-russell",
@@ -1332,7 +1364,8 @@
         "bestBowling": "3/19"
       }
     },
-    "statsAsOf": "22 July 2025"
+    "statsAsOf": "22 July 2025",
+    "wikipedia": "Andre Russell"
   },
   {
     "id": "andrew-balbirnie",
@@ -1376,7 +1409,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "3 June 2026"
+    "statsAsOf": "3 June 2026",
+    "wikipedia": "Andrew Balbirnie"
   },
   {
     "id": "andrew-caddick",
@@ -1411,7 +1445,8 @@
         "bestBowling": "4/19"
       }
     },
-    "statsAsOf": "4 August 2017"
+    "statsAsOf": "4 August 2017",
+    "wikipedia": "Andy Caddick"
   },
   {
     "id": "andrew-flintoff",
@@ -1458,7 +1493,8 @@
         "bestBowling": "2/23"
       }
     },
-    "statsAsOf": "23 April 2020"
+    "statsAsOf": "23 April 2020",
+    "wikipedia": "Andrew Flintoff"
   },
   {
     "id": "andrew-strauss",
@@ -1504,7 +1540,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "30 October 2017"
+    "statsAsOf": "30 October 2017",
+    "wikipedia": "Andrew Strauss"
   },
   {
     "id": "andrew-symonds",
@@ -1550,7 +1587,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "15 May 2022"
+    "statsAsOf": "15 May 2022",
+    "wikipedia": "Andrew Symonds"
   },
   {
     "id": "andy-flower",
@@ -1585,7 +1623,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "13 November 2007"
+    "statsAsOf": "13 November 2007",
+    "wikipedia": "Andy Flower"
   },
   {
     "id": "andy-roberts",
@@ -1620,7 +1659,8 @@
         "bestBowling": "5/22"
       }
     },
-    "statsAsOf": "12 January 2009"
+    "statsAsOf": "12 January 2009",
+    "wikipedia": "Andy Roberts (cricketer)"
   },
   {
     "id": "angelo-mathews",
@@ -1664,7 +1704,8 @@
         "bestBowling": "3/16"
       }
     },
-    "statsAsOf": "27 December 2025"
+    "statsAsOf": "27 December 2025",
+    "wikipedia": "Angelo Mathews"
   },
   {
     "id": "angus-fraser",
@@ -1701,7 +1742,8 @@
         "bestBowling": "4/22"
       }
     },
-    "statsAsOf": "11 April 2008"
+    "statsAsOf": "11 April 2008",
+    "wikipedia": "Angus Fraser"
   },
   {
     "id": "anil-kumble",
@@ -1738,7 +1780,8 @@
         "bestBowling": "6/12"
       }
     },
-    "statsAsOf": "8 November 2016"
+    "statsAsOf": "8 November 2016",
+    "wikipedia": "Anil Kumble"
   },
   {
     "id": "anrich-nortje",
@@ -1782,7 +1825,8 @@
         "bestBowling": "4/7"
       }
     },
-    "statsAsOf": "22 October 2026"
+    "statsAsOf": "22 October 2026",
+    "wikipedia": "Anrich Nortje"
   },
   {
     "id": "aravinda-de-silva",
@@ -1817,7 +1861,8 @@
         "bestBowling": "4/30"
       }
     },
-    "statsAsOf": "25 August 2007"
+    "statsAsOf": "25 August 2007",
+    "wikipedia": "Aravinda de Silva"
   },
   {
     "id": "arjuna-ranatunga",
@@ -1852,7 +1897,8 @@
         "bestBowling": "4/14"
       }
     },
-    "statsAsOf": "8 September 2015"
+    "statsAsOf": "8 September 2015",
+    "wikipedia": "Arjuna Ranatunga"
   },
   {
     "id": "arshdeep-singh",
@@ -1887,7 +1933,8 @@
         "bestBowling": "5/51"
       }
     },
-    "statsAsOf": "21 March 2026"
+    "statsAsOf": "21 March 2026",
+    "wikipedia": "Arshdeep Singh"
   },
   {
     "id": "asad-shafiq",
@@ -1931,7 +1978,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "21 August 2020"
+    "statsAsOf": "21 August 2020",
+    "wikipedia": "Asad Shafiq"
   },
   {
     "id": "asghar-afghan",
@@ -1977,7 +2025,8 @@
         "bestBowling": "1/4"
       }
     },
-    "statsAsOf": "21 July 2022"
+    "statsAsOf": "21 July 2022",
+    "wikipedia": "Asghar Afghan"
   },
   {
     "id": "ashish-nehra",
@@ -2021,7 +2070,8 @@
         "bestBowling": "3/19"
       }
     },
-    "statsAsOf": "04 September 2022"
+    "statsAsOf": "04 September 2022",
+    "wikipedia": "Ashish Nehra"
   },
   {
     "id": "axar-patel",
@@ -2067,7 +2117,8 @@
         "bestBowling": "3/9"
       }
     },
-    "statsAsOf": "26 February 2026"
+    "statsAsOf": "26 February 2026",
+    "wikipedia": "Axar Patel"
   },
   {
     "id": "azhar-ali",
@@ -2102,7 +2153,8 @@
         "bestBowling": "2/26"
       }
     },
-    "statsAsOf": "1 October 2023"
+    "statsAsOf": "1 October 2023",
+    "wikipedia": "Azhar Ali"
   },
   {
     "id": "azmatullah-omarzai",
@@ -2146,7 +2198,8 @@
         "bestBowling": "4/9"
       }
     },
-    "statsAsOf": "19 July 2026"
+    "statsAsOf": "19 July 2026",
+    "wikipedia": "Azmatullah Omarzai"
   },
   {
     "id": "babar-azam",
@@ -2190,7 +2243,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "18 October 2026"
+    "statsAsOf": "18 October 2026",
+    "wikipedia": "Babar Azam"
   },
   {
     "id": "bas-de-leede",
@@ -2225,7 +2279,8 @@
         "bestBowling": "3/17"
       }
     },
-    "statsAsOf": "31 July 2026"
+    "statsAsOf": "31 July 2026",
+    "wikipedia": "Bas de Leede"
   },
   {
     "id": "ben-duckett",
@@ -2269,7 +2324,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "29 October 2026"
+    "statsAsOf": "29 October 2026",
+    "wikipedia": "Ben Duckett"
   },
   {
     "id": "ben-stokes",
@@ -2315,7 +2371,8 @@
         "bestBowling": "3/26"
       }
     },
-    "statsAsOf": "27 September 2026"
+    "statsAsOf": "27 September 2026",
+    "wikipedia": "Ben Stokes"
   },
   {
     "id": "bhuvneshwar-kumar",
@@ -2361,7 +2418,8 @@
         "bestBowling": "5/4"
       }
     },
-    "statsAsOf": "15 November 2025"
+    "statsAsOf": "15 November 2025",
+    "wikipedia": "Bhuvneshwar Kumar"
   },
   {
     "id": "bishan-singh-bedi",
@@ -2396,7 +2454,8 @@
         "bestBowling": "2/44"
       }
     },
-    "statsAsOf": "9 November 2014"
+    "statsAsOf": "9 November 2014",
+    "wikipedia": "Bishan Singh Bedi"
   },
   {
     "id": "bj-watling",
@@ -2440,7 +2499,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "23 June 2021"
+    "statsAsOf": "23 June 2021",
+    "wikipedia": "BJ Watling"
   },
   {
     "id": "blessing-muzarabani",
@@ -2484,7 +2544,8 @@
         "bestBowling": "4/17"
       }
     },
-    "statsAsOf": "26 February 2026"
+    "statsAsOf": "26 February 2026",
+    "wikipedia": "Blessing Muzarabani"
   },
   {
     "id": "bob-willis",
@@ -2519,7 +2580,8 @@
         "bestBowling": "4/11"
       }
     },
-    "statsAsOf": "7 December 2007"
+    "statsAsOf": "7 December 2007",
+    "wikipedia": "Bob Willis"
   },
   {
     "id": "boyd-rankin",
@@ -2563,7 +2625,8 @@
         "bestBowling": "3/16"
       }
     },
-    "statsAsOf": "23 April 2020"
+    "statsAsOf": "23 April 2020",
+    "wikipedia": "Boyd Rankin"
   },
   {
     "id": "brad-haddin",
@@ -2607,7 +2670,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "9 September 2015"
+    "statsAsOf": "9 September 2015",
+    "wikipedia": "Brad Haddin"
   },
   {
     "id": "brad-hogg",
@@ -2653,7 +2717,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "11 October 2017"
+    "statsAsOf": "11 October 2017",
+    "wikipedia": "Brad Hogg"
   },
   {
     "id": "brandon-king",
@@ -2697,7 +2762,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "9 July 2026"
+    "statsAsOf": "9 July 2026",
+    "wikipedia": "Brandon King (cricketer)"
   },
   {
     "id": "brendan-taylor",
@@ -2741,7 +2807,8 @@
         "bestBowling": "2/36"
       }
     },
-    "statsAsOf": "20 September 2026"
+    "statsAsOf": "20 September 2026",
+    "wikipedia": "Brendan Taylor"
   },
   {
     "id": "brendon-mccullum",
@@ -2787,7 +2854,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "7 November 2021"
+    "statsAsOf": "7 November 2021",
+    "wikipedia": "Brendon McCullum"
   },
   {
     "id": "brett-lee",
@@ -2833,7 +2901,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "18 February 2017"
+    "statsAsOf": "18 February 2017",
+    "wikipedia": "Brett Lee"
   },
   {
     "id": "brian-lara",
@@ -2868,7 +2937,8 @@
         "bestBowling": "2/5"
       }
     },
-    "statsAsOf": "4 February 2012"
+    "statsAsOf": "4 February 2012",
+    "wikipedia": "Brian Lara"
   },
   {
     "id": "calum-macleod",
@@ -2903,7 +2973,8 @@
         "bestBowling": "2/17"
       }
     },
-    "statsAsOf": "26 October 2022"
+    "statsAsOf": "26 October 2022",
+    "wikipedia": "Calum MacLeod (cricketer)"
   },
   {
     "id": "cameron-green",
@@ -2949,7 +3020,8 @@
         "bestBowling": "3/35"
       }
     },
-    "statsAsOf": "1 November 2026"
+    "statsAsOf": "1 November 2026",
+    "wikipedia": "Cameron Green"
   },
   {
     "id": "carl-hooper",
@@ -2984,7 +3056,8 @@
         "bestBowling": "4/34"
       }
     },
-    "statsAsOf": "29 December 2008"
+    "statsAsOf": "29 December 2008",
+    "wikipedia": "Carl Hooper"
   },
   {
     "id": "chaminda-vaas",
@@ -3028,7 +3101,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "24 December 2016"
+    "statsAsOf": "24 December 2016",
+    "wikipedia": "Chaminda Vaas"
   },
   {
     "id": "charith-asalanka",
@@ -3072,7 +3146,8 @@
         "bestBowling": "3/50"
       }
     },
-    "statsAsOf": "24 January 2026"
+    "statsAsOf": "24 January 2026",
+    "wikipedia": "Charith Asalanka"
   },
   {
     "id": "cheteshwar-pujara",
@@ -3109,7 +3184,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "25 March 2025"
+    "statsAsOf": "25 March 2025",
+    "wikipedia": "Cheteshwar Pujara"
   },
   {
     "id": "chris-cairns",
@@ -3153,7 +3229,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "26 November 2008"
+    "statsAsOf": "26 November 2008",
+    "wikipedia": "Chris Cairns"
   },
   {
     "id": "chris-gayle",
@@ -3199,7 +3276,8 @@
         "bestBowling": "2/15"
       }
     },
-    "statsAsOf": "6 November 2021"
+    "statsAsOf": "6 November 2021",
+    "wikipedia": "Chris Gayle"
   },
   {
     "id": "chris-harris",
@@ -3234,7 +3312,8 @@
         "bestBowling": "5/42"
       }
     },
-    "statsAsOf": "1 May 2017"
+    "statsAsOf": "1 May 2017",
+    "wikipedia": "Chris Harris (cricketer)"
   },
   {
     "id": "chris-jordan",
@@ -3280,7 +3359,8 @@
         "bestBowling": "4/6"
       }
     },
-    "statsAsOf": "20 July 2024"
+    "statsAsOf": "20 July 2024",
+    "wikipedia": "Chris Jordan (cricketer)"
   },
   {
     "id": "chris-rogers",
@@ -3308,7 +3388,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "22 September 2016"
+    "statsAsOf": "22 September 2016",
+    "wikipedia": "Chris Rogers (cricketer)"
   },
   {
     "id": "chris-woakes",
@@ -3354,7 +3435,8 @@
         "bestBowling": "3/4"
       }
     },
-    "statsAsOf": "26 September 2026"
+    "statsAsOf": "26 September 2026",
+    "wikipedia": "Chris Woakes"
   },
   {
     "id": "clive-lloyd",
@@ -3391,7 +3473,8 @@
         "bestBowling": "2/4"
       }
     },
-    "statsAsOf": "24 January 2009"
+    "statsAsOf": "24 January 2009",
+    "wikipedia": "Clive Lloyd"
   },
   {
     "id": "clyde-walcott",
@@ -3417,7 +3500,8 @@
         "bestBowling": "3/50"
       }
     },
-    "statsAsOf": "8 January 2009"
+    "statsAsOf": "8 January 2009",
+    "wikipedia": "Clyde Walcott"
   },
   {
     "id": "colin-de-grandhomme",
@@ -3461,7 +3545,8 @@
         "bestBowling": "2/22"
       }
     },
-    "statsAsOf": "20 December 2022"
+    "statsAsOf": "20 December 2022",
+    "wikipedia": "Colin de Grandhomme"
   },
   {
     "id": "colin-munro",
@@ -3505,7 +3590,8 @@
         "bestBowling": "1/12"
       }
     },
-    "statsAsOf": "15 September 2026"
+    "statsAsOf": "15 September 2026",
+    "wikipedia": "Colin Munro"
   },
   {
     "id": "corey-anderson",
@@ -3549,7 +3635,8 @@
         "bestBowling": "2/17"
       }
     },
-    "statsAsOf": "August 18, 2024"
+    "statsAsOf": "August 18, 2024",
+    "wikipedia": "Corey Anderson (cricketer)"
   },
   {
     "id": "courtney-walsh",
@@ -3584,7 +3671,8 @@
         "bestBowling": "5/1"
       }
     },
-    "statsAsOf": "21 August 2008"
+    "statsAsOf": "21 August 2008",
+    "wikipedia": "Courtney Walsh"
   },
   {
     "id": "craig-ervine",
@@ -3628,7 +3716,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "7 August 2025"
+    "statsAsOf": "7 August 2025",
+    "wikipedia": "Craig Ervine"
   },
   {
     "id": "craig-mcdermott",
@@ -3663,7 +3752,8 @@
         "bestBowling": "5/44"
       }
     },
-    "statsAsOf": "19 July 2005"
+    "statsAsOf": "19 July 2005",
+    "wikipedia": "Craig McDermott"
   },
   {
     "id": "craig-mcmillan",
@@ -3707,7 +3797,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "20 April 2017"
+    "statsAsOf": "20 April 2017",
+    "wikipedia": "Craig McMillan"
   },
   {
     "id": "curtly-ambrose",
@@ -3742,7 +3833,8 @@
         "bestBowling": "5/17"
       }
     },
-    "statsAsOf": "24 October 2012"
+    "statsAsOf": "24 October 2012",
+    "wikipedia": "Curtly Ambrose"
   },
   {
     "id": "dale-steyn",
@@ -3788,7 +3880,8 @@
         "bestBowling": "4/9"
       }
     },
-    "statsAsOf": "21 February 2020"
+    "statsAsOf": "21 February 2020",
+    "wikipedia": "Dale Steyn"
   },
   {
     "id": "damien-fleming",
@@ -3823,7 +3916,8 @@
         "bestBowling": "5/36"
       }
     },
-    "statsAsOf": "12 December 2005"
+    "statsAsOf": "12 December 2005",
+    "wikipedia": "Damien Fleming"
   },
   {
     "id": "damien-martyn",
@@ -3867,7 +3961,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "12 May 2019"
+    "statsAsOf": "12 May 2019",
+    "wikipedia": "Damien Martyn"
   },
   {
     "id": "daniel-vettori",
@@ -3913,7 +4008,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "13 February 2016"
+    "statsAsOf": "13 February 2016",
+    "wikipedia": "Daniel Vettori"
   },
   {
     "id": "danish-kaneria",
@@ -3948,7 +4044,8 @@
         "bestBowling": "3/31"
       }
     },
-    "statsAsOf": "21 February 2014"
+    "statsAsOf": "21 February 2014",
+    "wikipedia": "Danish Kaneria"
   },
   {
     "id": "danny-morrison",
@@ -3983,7 +4080,8 @@
         "bestBowling": "5/34"
       }
     },
-    "statsAsOf": "4 May 2017"
+    "statsAsOf": "4 May 2017",
+    "wikipedia": "Danny Morrison (cricketer)"
   },
   {
     "id": "darren-gough",
@@ -4030,7 +4128,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "19 February 2017"
+    "statsAsOf": "19 February 2017",
+    "wikipedia": "Darren Gough"
   },
   {
     "id": "darren-lehmann",
@@ -4067,7 +4166,8 @@
         "bestBowling": "4/7"
       }
     },
-    "statsAsOf": "12 June 2017"
+    "statsAsOf": "12 June 2017",
+    "wikipedia": "Darren Lehmann"
   },
   {
     "id": "darren-sammy",
@@ -4111,7 +4211,8 @@
         "bestBowling": "5/26"
       }
     },
-    "statsAsOf": "19 March 2019"
+    "statsAsOf": "19 March 2019",
+    "wikipedia": "Daren Sammy"
   },
   {
     "id": "daryl-mitchell",
@@ -4155,7 +4256,8 @@
         "bestBowling": "2/27"
       }
     },
-    "statsAsOf": "30 October 2026"
+    "statsAsOf": "30 October 2026",
+    "wikipedia": "Daryl Mitchell (New Zealand cricketer)"
   },
   {
     "id": "daryll-cullinan",
@@ -4190,7 +4292,8 @@
         "bestBowling": "2/30"
       }
     },
-    "statsAsOf": "2 June 2008"
+    "statsAsOf": "2 June 2008",
+    "wikipedia": "Daryll Cullinan"
   },
   {
     "id": "dasun-shanaka",
@@ -4234,7 +4337,8 @@
         "bestBowling": "3/16"
       }
     },
-    "statsAsOf": "28 September 2025"
+    "statsAsOf": "28 September 2025",
+    "wikipedia": "Dasun Shanaka"
   },
   {
     "id": "dave-houghton",
@@ -4271,7 +4375,8 @@
         "bestBowling": "1/19"
       }
     },
-    "statsAsOf": "2 October 2018"
+    "statsAsOf": "2 October 2018",
+    "wikipedia": "David Houghton (cricketer)"
   },
   {
     "id": "david-boon",
@@ -4308,7 +4413,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "9 December 2009"
+    "statsAsOf": "9 December 2009",
+    "wikipedia": "David Boon"
   },
   {
     "id": "david-gower",
@@ -4345,7 +4451,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "1 September 2007"
+    "statsAsOf": "1 September 2007",
+    "wikipedia": "David Gower"
   },
   {
     "id": "david-miller",
@@ -4382,7 +4489,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "27 September 2026"
+    "statsAsOf": "27 September 2026",
+    "wikipedia": "David Miller (South African cricketer)"
   },
   {
     "id": "david-warner",
@@ -4428,7 +4536,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "24 June 2024"
+    "statsAsOf": "24 June 2024",
+    "wikipedia": "David Warner (cricketer)"
   },
   {
     "id": "dawid-malan",
@@ -4472,7 +4581,8 @@
         "bestBowling": "1/27"
       }
     },
-    "statsAsOf": "26 July 2025"
+    "statsAsOf": "26 July 2025",
+    "wikipedia": "Dawid Malan"
   },
   {
     "id": "dean-elgar",
@@ -4507,7 +4617,8 @@
         "bestBowling": "1/11"
       }
     },
-    "statsAsOf": "27 September 2026"
+    "statsAsOf": "27 September 2026",
+    "wikipedia": "Dean Elgar"
   },
   {
     "id": "dean-jones",
@@ -4544,7 +4655,8 @@
         "bestBowling": "2/34"
       }
     },
-    "statsAsOf": "26 January 2009"
+    "statsAsOf": "26 January 2009",
+    "wikipedia": "Dean Jones (cricketer)"
   },
   {
     "id": "deepak-chahar",
@@ -4579,7 +4691,8 @@
         "bestBowling": "6/7"
       }
     },
-    "statsAsOf": "7 December 2022"
+    "statsAsOf": "7 December 2022",
+    "wikipedia": "Deepak Chahar"
   },
   {
     "id": "denesh-ramdin",
@@ -4623,7 +4736,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "25 April 2023"
+    "statsAsOf": "25 April 2023",
+    "wikipedia": "Denesh Ramdin"
   },
   {
     "id": "dennis-lillee",
@@ -4658,7 +4772,8 @@
         "bestBowling": "5/34"
       }
     },
-    "statsAsOf": "14 January 2009"
+    "statsAsOf": "14 January 2009",
+    "wikipedia": "Dennis Lillee"
   },
   {
     "id": "derek-underwood",
@@ -4695,7 +4810,8 @@
         "bestBowling": "4/44"
       }
     },
-    "statsAsOf": "25 March 2008"
+    "statsAsOf": "25 March 2008",
+    "wikipedia": "Derek Underwood"
   },
   {
     "id": "desmond-haynes",
@@ -4730,7 +4846,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "4 February 2010"
+    "statsAsOf": "4 February 2010",
+    "wikipedia": "Desmond Haynes"
   },
   {
     "id": "devon-conway",
@@ -4774,7 +4891,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "29 June 2026"
+    "statsAsOf": "29 June 2026",
+    "wikipedia": "Devon Conway"
   },
   {
     "id": "devon-malcolm",
@@ -4809,7 +4927,8 @@
         "bestBowling": "3/40"
       }
     },
-    "statsAsOf": "11 November 2009"
+    "statsAsOf": "11 November 2009",
+    "wikipedia": "Devon Malcolm"
   },
   {
     "id": "dhananjaya-de-silva",
@@ -4853,7 +4972,8 @@
         "bestBowling": "2/22"
       }
     },
-    "statsAsOf": "8 July 2026"
+    "statsAsOf": "8 July 2026",
+    "wikipedia": "Dhananjaya de Silva"
   },
   {
     "id": "dhruv-jurel",
@@ -4888,7 +5008,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "24 December 2025"
+    "statsAsOf": "24 December 2025",
+    "wikipedia": "Dhruv Jurel"
   },
   {
     "id": "dilhara-fernando",
@@ -4932,7 +5053,8 @@
         "bestBowling": "3/19"
       }
     },
-    "statsAsOf": "11 March 2023"
+    "statsAsOf": "11 March 2023",
+    "wikipedia": "Dilhara Fernando"
   },
   {
     "id": "dilip-vengsarkar",
@@ -4969,7 +5091,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "7 February 2010"
+    "statsAsOf": "7 February 2010",
+    "wikipedia": "Dilip Vengsarkar"
   },
   {
     "id": "dimuth-karunaratne",
@@ -5004,7 +5127,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "29 March 2025"
+    "statsAsOf": "29 March 2025",
+    "wikipedia": "Dimuth Karunaratne"
   },
   {
     "id": "dinesh-chandimal",
@@ -5048,7 +5172,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "8 July 2026"
+    "statsAsOf": "8 July 2026",
+    "wikipedia": "Dinesh Chandimal"
   },
   {
     "id": "dinesh-karthik",
@@ -5094,7 +5219,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "8 December 2025"
+    "statsAsOf": "8 December 2025",
+    "wikipedia": "Dinesh Karthik"
   },
   {
     "id": "dinesh-mongia",
@@ -5129,7 +5255,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "27 August 2017"
+    "statsAsOf": "27 August 2017",
+    "wikipedia": "Dinesh Mongia"
   },
   {
     "id": "don-bradman",
@@ -5158,7 +5285,8 @@
         "bestBowling": "1/8"
       }
     },
-    "statsAsOf": "4 December 2014"
+    "statsAsOf": "4 December 2014",
+    "wikipedia": "Don Bradman"
   },
   {
     "id": "dushmantha-chameera",
@@ -5202,7 +5330,8 @@
         "bestBowling": "4/17"
       }
     },
-    "statsAsOf": "28 September 2025"
+    "statsAsOf": "28 September 2025",
+    "wikipedia": "Dushmantha Chameera"
   },
   {
     "id": "dwayne-bravo",
@@ -5248,7 +5377,8 @@
         "bestBowling": "4/19"
       }
     },
-    "statsAsOf": "7 January 2024"
+    "statsAsOf": "7 January 2024",
+    "wikipedia": "Dwayne Bravo"
   },
   {
     "id": "ed-joyce",
@@ -5292,7 +5422,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "12 June 2019"
+    "statsAsOf": "12 June 2019",
+    "wikipedia": "Ed Joyce"
   },
   {
     "id": "eddo-brandes",
@@ -5327,7 +5458,8 @@
         "bestBowling": "5/28"
       }
     },
-    "statsAsOf": "11 November 2009"
+    "statsAsOf": "11 November 2009",
+    "wikipedia": "Eddo Brandes"
   },
   {
     "id": "elton-chigumbura",
@@ -5371,7 +5503,8 @@
         "bestBowling": "4/31"
       }
     },
-    "statsAsOf": "11 February 2024"
+    "statsAsOf": "11 February 2024",
+    "wikipedia": "Elton Chigumbura"
   },
   {
     "id": "eoin-morgan",
@@ -5417,7 +5550,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "29 November 2023"
+    "statsAsOf": "29 November 2023",
+    "wikipedia": "Eoin Morgan"
   },
   {
     "id": "everton-weekes",
@@ -5443,7 +5577,8 @@
         "bestBowling": "1/8"
       }
     },
-    "statsAsOf": "1 July 2020"
+    "statsAsOf": "1 July 2020",
+    "wikipedia": "Everton Weekes"
   },
   {
     "id": "evin-lewis",
@@ -5478,7 +5613,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "15 June 2025"
+    "statsAsOf": "15 June 2025",
+    "wikipedia": "Evin Lewis"
   },
   {
     "id": "ewen-chatfield",
@@ -5513,7 +5649,8 @@
         "bestBowling": "5/34"
       }
     },
-    "statsAsOf": "18 December 2011"
+    "statsAsOf": "18 December 2011",
+    "wikipedia": "Ewen Chatfield"
   },
   {
     "id": "faf-du-plessis",
@@ -5559,7 +5696,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "7 March 2025"
+    "statsAsOf": "7 March 2025",
+    "wikipedia": "Faf du Plessis"
   },
   {
     "id": "fakhar-zaman",
@@ -5603,7 +5741,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "8 March 2026"
+    "statsAsOf": "8 March 2026",
+    "wikipedia": "Fakhar Zaman (cricketer)"
   },
   {
     "id": "fanie-de-villiers",
@@ -5638,7 +5777,8 @@
         "bestBowling": "4/27"
       }
     },
-    "statsAsOf": "22 December 2008"
+    "statsAsOf": "22 December 2008",
+    "wikipedia": "Fanie de Villiers"
   },
   {
     "id": "farveez-maharoof",
@@ -5682,7 +5822,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "5 July 2017"
+    "statsAsOf": "5 July 2017",
+    "wikipedia": "Farveez Maharoof"
   },
   {
     "id": "fazalhaq-farooqi",
@@ -5717,7 +5858,8 @@
         "bestBowling": "5/9"
       }
     },
-    "statsAsOf": "6 July 2026"
+    "statsAsOf": "6 July 2026",
+    "wikipedia": "Fazalhaq Farooqi"
   },
   {
     "id": "fidel-edwards",
@@ -5761,7 +5903,8 @@
         "bestBowling": "3/23"
       }
     },
-    "statsAsOf": "10 July 2021"
+    "statsAsOf": "10 July 2021",
+    "wikipedia": "Fidel Edwards"
   },
   {
     "id": "frank-worrell",
@@ -5787,7 +5930,8 @@
         "bestBowling": "7/70"
       }
     },
-    "statsAsOf": "8 January 2009"
+    "statsAsOf": "8 January 2009",
+    "wikipedia": "Frank Worrell"
   },
   {
     "id": "fred-trueman",
@@ -5815,7 +5959,8 @@
         "bestBowling": "8/31"
       }
     },
-    "statsAsOf": "18 March 2018"
+    "statsAsOf": "18 March 2018",
+    "wikipedia": "Fred Trueman"
   },
   {
     "id": "garfield-sobers",
@@ -5853,7 +5998,8 @@
         "bestBowling": "1/31"
       }
     },
-    "statsAsOf": "13 September 2007"
+    "statsAsOf": "13 September 2007",
+    "wikipedia": "Garfield Sobers"
   },
   {
     "id": "gary-kirsten",
@@ -5890,7 +6036,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "28 December 2009"
+    "statsAsOf": "28 December 2009",
+    "wikipedia": "Gary Kirsten"
   },
   {
     "id": "gary-wilson",
@@ -5934,7 +6081,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "21 April 2020"
+    "statsAsOf": "21 April 2020",
+    "wikipedia": "Gary Wilson (cricketer)"
   },
   {
     "id": "gautam-gambhir",
@@ -5980,7 +6128,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "29 January 2017"
+    "statsAsOf": "29 January 2017",
+    "wikipedia": "Gautam Gambhir"
   },
   {
     "id": "geoffrey-boycott",
@@ -6018,7 +6167,8 @@
         "bestBowling": "2/14"
       }
     },
-    "statsAsOf": "7 December 2008"
+    "statsAsOf": "7 December 2008",
+    "wikipedia": "Geoffrey Boycott"
   },
   {
     "id": "george-dockrell",
@@ -6062,7 +6212,8 @@
         "bestBowling": "4/20"
       }
     },
-    "statsAsOf": "25 September 2026"
+    "statsAsOf": "25 September 2026",
+    "wikipedia": "George Dockrell"
   },
   {
     "id": "george-munsey",
@@ -6097,7 +6248,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "18 August 2026"
+    "statsAsOf": "18 August 2026",
+    "wikipedia": "George Munsey"
   },
   {
     "id": "gerald-coetzee",
@@ -6141,7 +6293,8 @@
         "bestBowling": "3/31"
       }
     },
-    "statsAsOf": "1 November 2026"
+    "statsAsOf": "1 November 2026",
+    "wikipedia": "Gerald Coetzee"
   },
   {
     "id": "glenn-maxwell",
@@ -6188,7 +6341,8 @@
         "bestBowling": "3/10"
       }
     },
-    "statsAsOf": "25 February 2025"
+    "statsAsOf": "25 February 2025",
+    "wikipedia": "Glenn Maxwell"
   },
   {
     "id": "glenn-mcgrath",
@@ -6234,7 +6388,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "2 August 2017"
+    "statsAsOf": "2 August 2017",
+    "wikipedia": "Glenn McGrath"
   },
   {
     "id": "glenn-phillips",
@@ -6278,7 +6433,8 @@
         "bestBowling": "3/6"
       }
     },
-    "statsAsOf": "30 October 2026"
+    "statsAsOf": "30 October 2026",
+    "wikipedia": "Glenn Phillips (cricketer)"
   },
   {
     "id": "glenn-turner",
@@ -6313,7 +6469,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "25 August 2010"
+    "statsAsOf": "25 August 2010",
+    "wikipedia": "Glenn Turner"
   },
   {
     "id": "gordon-greenidge",
@@ -6348,7 +6505,8 @@
         "bestBowling": "1/21"
       }
     },
-    "statsAsOf": "24 January 2009"
+    "statsAsOf": "24 January 2009",
+    "wikipedia": "Gordon Greenidge"
   },
   {
     "id": "graeme-smith",
@@ -6394,7 +6552,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "18 May 2014"
+    "statsAsOf": "18 May 2014",
+    "wikipedia": "Graeme Smith"
   },
   {
     "id": "graeme-swann",
@@ -6440,7 +6599,8 @@
         "bestBowling": "3/13"
       }
     },
-    "statsAsOf": "22 December 2013"
+    "statsAsOf": "22 December 2013",
+    "wikipedia": "Graeme Swann"
   },
   {
     "id": "graham-gooch",
@@ -6477,7 +6637,8 @@
         "bestBowling": "3/19"
       }
     },
-    "statsAsOf": "7 December 2007"
+    "statsAsOf": "7 December 2007",
+    "wikipedia": "Graham Gooch"
   },
   {
     "id": "graham-thorpe",
@@ -6514,7 +6675,8 @@
         "bestBowling": "2/15"
       }
     },
-    "statsAsOf": "29 November 2007"
+    "statsAsOf": "29 November 2007",
+    "wikipedia": "Graham Thorpe"
   },
   {
     "id": "grant-flower",
@@ -6549,7 +6711,8 @@
         "bestBowling": "4/32"
       }
     },
-    "statsAsOf": "6 January 2022"
+    "statsAsOf": "6 January 2022",
+    "wikipedia": "Grant Flower"
   },
   {
     "id": "greg-chappell",
@@ -6584,7 +6747,8 @@
         "bestBowling": "5/15"
       }
     },
-    "statsAsOf": "14 November 2007"
+    "statsAsOf": "14 November 2007",
+    "wikipedia": "Greg Chappell"
   },
   {
     "id": "gulbadin-naib",
@@ -6619,7 +6783,8 @@
         "bestBowling": "4/20"
       }
     },
-    "statsAsOf": "17 May 2025"
+    "statsAsOf": "17 May 2025",
+    "wikipedia": "Gulbadin Naib"
   },
   {
     "id": "gundappa-viswanath",
@@ -6656,7 +6821,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "4 February 2006"
+    "statsAsOf": "4 February 2006",
+    "wikipedia": "Gundappa Viswanath"
   },
   {
     "id": "gus-atkinson",
@@ -6700,7 +6866,8 @@
         "bestBowling": "4/20"
       }
     },
-    "statsAsOf": "29 October 2026"
+    "statsAsOf": "29 October 2026",
+    "wikipedia": "Gus Atkinson"
   },
   {
     "id": "habibul-bashar",
@@ -6735,7 +6902,8 @@
         "bestBowling": "1/31"
       }
     },
-    "statsAsOf": "25 January 2019"
+    "statsAsOf": "25 January 2019",
+    "wikipedia": "Habibul Bashar"
   },
   {
     "id": "hamid-hassan",
@@ -6770,7 +6938,8 @@
         "bestBowling": "4/22"
       }
     },
-    "statsAsOf": "21 July 2022"
+    "statsAsOf": "21 July 2022",
+    "wikipedia": "Hamid Hassan"
   },
   {
     "id": "hamilton-masakadza",
@@ -6814,7 +6983,8 @@
         "bestBowling": "1/4"
       }
     },
-    "statsAsOf": "20 September 2019"
+    "statsAsOf": "20 September 2019",
+    "wikipedia": "Hamilton Masakadza"
   },
   {
     "id": "hanif-mohammad",
@@ -6840,7 +7010,8 @@
         "bestBowling": "1/1"
       }
     },
-    "statsAsOf": "3 August 2008"
+    "statsAsOf": "3 August 2008",
+    "wikipedia": "Hanif Mohammad"
   },
   {
     "id": "hansie-cronje",
@@ -6875,7 +7046,8 @@
         "bestBowling": "5/32"
       }
     },
-    "statsAsOf": "22 August 2007"
+    "statsAsOf": "22 August 2007",
+    "wikipedia": "Hansie Cronje"
   },
   {
     "id": "hanuma-vihari",
@@ -6901,7 +7073,8 @@
         "bestBowling": "3/37"
       }
     },
-    "statsAsOf": "26 August 2025"
+    "statsAsOf": "26 August 2025",
+    "wikipedia": "Hanuma Vihari"
   },
   {
     "id": "harbhajan-singh",
@@ -6948,7 +7121,8 @@
         "bestBowling": "4/12"
       }
     },
-    "statsAsOf": "17 April 2019"
+    "statsAsOf": "17 April 2019",
+    "wikipedia": "Harbhajan Singh"
   },
   {
     "id": "hardik-pandya",
@@ -6994,7 +7168,8 @@
         "bestBowling": "4/16"
       }
     },
-    "statsAsOf": "24 January 2026"
+    "statsAsOf": "24 January 2026",
+    "wikipedia": "Hardik Pandya"
   },
   {
     "id": "haris-rauf",
@@ -7038,7 +7213,8 @@
         "bestBowling": "4/18"
       }
     },
-    "statsAsOf": "1 September 2026"
+    "statsAsOf": "1 September 2026",
+    "wikipedia": "Haris Rauf"
   },
   {
     "id": "harry-brook",
@@ -7082,7 +7258,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "29 October 2026"
+    "statsAsOf": "29 October 2026",
+    "wikipedia": "Harry Brook"
   },
   {
     "id": "harry-tector",
@@ -7126,7 +7303,8 @@
         "bestBowling": "2/17"
       }
     },
-    "statsAsOf": "25 September 2026"
+    "statsAsOf": "25 September 2026",
+    "wikipedia": "Harry Tector"
   },
   {
     "id": "harshit-rana",
@@ -7170,7 +7348,8 @@
         "bestBowling": "3/24"
       }
     },
-    "statsAsOf": "8 February 2026"
+    "statsAsOf": "8 February 2026",
+    "wikipedia": "Harshit Rana"
   },
   {
     "id": "hasan-ali",
@@ -7214,7 +7393,8 @@
         "bestBowling": "5/30"
       }
     },
-    "statsAsOf": "9 July 2026"
+    "statsAsOf": "9 July 2026",
+    "wikipedia": "Hasan Ali (cricketer)"
   },
   {
     "id": "hashan-tillakaratne",
@@ -7249,7 +7429,8 @@
         "bestBowling": "1/3"
       }
     },
-    "statsAsOf": "9 February 2006"
+    "statsAsOf": "9 February 2006",
+    "wikipedia": "Hashan Tillakaratne"
   },
   {
     "id": "hashim-amla",
@@ -7293,7 +7474,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "5 February 2023"
+    "statsAsOf": "5 February 2023",
+    "wikipedia": "Hashim Amla"
   },
   {
     "id": "hashmatullah-shahidi",
@@ -7337,7 +7519,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "19 July 2026"
+    "statsAsOf": "19 July 2026",
+    "wikipedia": "Hashmatullah Shahidi"
   },
   {
     "id": "heath-streak",
@@ -7372,7 +7555,8 @@
         "bestBowling": "5/32"
       }
     },
-    "statsAsOf": "24 December 2018"
+    "statsAsOf": "24 December 2018",
+    "wikipedia": "Heath Streak"
   },
   {
     "id": "heinrich-klaasen",
@@ -7416,7 +7600,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "22 December 2024"
+    "statsAsOf": "22 December 2024",
+    "wikipedia": "Heinrich Klaasen"
   },
   {
     "id": "hemang-badani",
@@ -7451,7 +7636,8 @@
         "bestBowling": "1/7"
       }
     },
-    "statsAsOf": "1 September 2023"
+    "statsAsOf": "1 September 2023",
+    "wikipedia": "Hemang Badani"
   },
   {
     "id": "henry-nicholls",
@@ -7495,7 +7681,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "27 September 2026"
+    "statsAsOf": "27 September 2026",
+    "wikipedia": "Henry Nicholls (cricketer)"
   },
   {
     "id": "henry-olonga",
@@ -7530,7 +7717,8 @@
         "bestBowling": "6/19"
       }
     },
-    "statsAsOf": "4 December 2016"
+    "statsAsOf": "4 December 2016",
+    "wikipedia": "Henry Olonga"
   },
   {
     "id": "herschelle-gibbs",
@@ -7576,7 +7764,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "4 August 2017"
+    "statsAsOf": "4 August 2017",
+    "wikipedia": "Herschelle Gibbs"
   },
   {
     "id": "ian-bell",
@@ -7622,7 +7811,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "10 September 2020"
+    "statsAsOf": "10 September 2020",
+    "wikipedia": "Ian Bell"
   },
   {
     "id": "ian-bishop",
@@ -7657,7 +7847,8 @@
         "bestBowling": "5/25"
       }
     },
-    "statsAsOf": "20 October 2010"
+    "statsAsOf": "20 October 2010",
+    "wikipedia": "Ian Bishop (cricketer)"
   },
   {
     "id": "ian-botham",
@@ -7694,7 +7885,8 @@
         "bestBowling": "4/31"
       }
     },
-    "statsAsOf": "22 August 2007"
+    "statsAsOf": "22 August 2007",
+    "wikipedia": "Ian Botham"
   },
   {
     "id": "ian-chappell",
@@ -7731,7 +7923,8 @@
         "bestBowling": "2/14"
       }
     },
-    "statsAsOf": "13 November 2007"
+    "statsAsOf": "13 November 2007",
+    "wikipedia": "Ian Chappell"
   },
   {
     "id": "ian-healy",
@@ -7768,7 +7961,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "30 March 2017"
+    "statsAsOf": "30 March 2017",
+    "wikipedia": "Ian Healy"
   },
   {
     "id": "ibrahim-zadran",
@@ -7812,7 +8006,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "23 October 2026"
+    "statsAsOf": "23 October 2026",
+    "wikipedia": "Ibrahim Zadran"
   },
   {
     "id": "iftikhar-ahmed",
@@ -7856,7 +8051,8 @@
         "bestBowling": "3/24"
       }
     },
-    "statsAsOf": "14 March 2025"
+    "statsAsOf": "14 March 2025",
+    "wikipedia": "Iftikhar Ahmed (cricketer)"
   },
   {
     "id": "imam-ul-haq",
@@ -7900,7 +8096,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "31 August 2026"
+    "statsAsOf": "31 August 2026",
+    "wikipedia": "Imam-ul-Haq"
   },
   {
     "id": "imran-khan",
@@ -7937,7 +8134,8 @@
         "bestBowling": "6/14"
       }
     },
-    "statsAsOf": "5 November 2014"
+    "statsAsOf": "5 November 2014",
+    "wikipedia": "Imran Khan"
   },
   {
     "id": "imran-tahir",
@@ -7981,7 +8179,8 @@
         "bestBowling": "5/23"
       }
     },
-    "statsAsOf": "24 July 2019"
+    "statsAsOf": "24 July 2019",
+    "wikipedia": "Imran Tahir"
   },
   {
     "id": "imrul-kayes",
@@ -8025,7 +8224,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "14 June 2025"
+    "statsAsOf": "14 June 2025",
+    "wikipedia": "Imrul Kayes"
   },
   {
     "id": "inzamam-ul-haq",
@@ -8072,7 +8272,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "20 September 2008"
+    "statsAsOf": "20 September 2008",
+    "wikipedia": "Inzamam-ul-Haq"
   },
   {
     "id": "irfan-pathan",
@@ -8116,7 +8317,8 @@
         "bestBowling": "3/16"
       }
     },
-    "statsAsOf": "27 October 2025"
+    "statsAsOf": "27 October 2025",
+    "wikipedia": "Irfan Pathan"
   },
   {
     "id": "ish-sodhi",
@@ -8160,7 +8362,8 @@
         "bestBowling": "4/12"
       }
     },
-    "statsAsOf": null
+    "statsAsOf": null,
+    "wikipedia": "Ish Sodhi"
   },
   {
     "id": "ishan-kishan",
@@ -8204,7 +8407,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "1 November 2026"
+    "statsAsOf": "1 November 2026",
+    "wikipedia": "Ishan Kishan"
   },
   {
     "id": "ishant-sharma",
@@ -8250,7 +8454,8 @@
         "bestBowling": "2/34"
       }
     },
-    "statsAsOf": "25 March 2025"
+    "statsAsOf": "25 March 2025",
+    "wikipedia": "Ishant Sharma"
   },
   {
     "id": "jack-leach",
@@ -8278,7 +8483,8 @@
         "bestBowling": "5/66"
       }
     },
-    "statsAsOf": "27 September 2026"
+    "statsAsOf": "27 September 2026",
+    "wikipedia": "Jack Leach"
   },
   {
     "id": "jacob-oram",
@@ -8322,7 +8528,8 @@
         "bestBowling": "3/33"
       }
     },
-    "statsAsOf": "29 April 2022"
+    "statsAsOf": "29 April 2022",
+    "wikipedia": "Jacob Oram"
   },
   {
     "id": "jacques-kallis",
@@ -8368,7 +8575,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "14 February 2016"
+    "statsAsOf": "14 February 2016",
+    "wikipedia": "Jacques Kallis"
   },
   {
     "id": "jacques-rudolph",
@@ -8412,7 +8620,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "28 September 2017"
+    "statsAsOf": "28 September 2017",
+    "wikipedia": "Jacques Rudolph"
   },
   {
     "id": "jake-fraser-mcgurk",
@@ -8449,7 +8658,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "19 September 2026"
+    "statsAsOf": "19 September 2026",
+    "wikipedia": "Jake Fraser-McGurk"
   },
   {
     "id": "james-anderson",
@@ -8496,7 +8706,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "27 September 2026"
+    "statsAsOf": "27 September 2026",
+    "wikipedia": "James Anderson (cricketer)"
   },
   {
     "id": "james-faulkner",
@@ -8540,7 +8751,8 @@
         "bestBowling": "5/27"
       }
     },
-    "statsAsOf": "19 February 2022"
+    "statsAsOf": "19 February 2022",
+    "wikipedia": "James Faulkner (cricketer)"
   },
   {
     "id": "james-vince",
@@ -8584,7 +8796,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "28 September 2024"
+    "statsAsOf": "28 September 2024",
+    "wikipedia": "James Vince"
   },
   {
     "id": "jason-gillespie",
@@ -8630,7 +8843,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "17 November 2025"
+    "statsAsOf": "17 November 2025",
+    "wikipedia": "Jason Gillespie"
   },
   {
     "id": "jason-holder",
@@ -8674,7 +8888,8 @@
         "bestBowling": "5/27"
       }
     },
-    "statsAsOf": "1 March 2026"
+    "statsAsOf": "1 March 2026",
+    "wikipedia": "Jason Holder"
   },
   {
     "id": "jason-roy",
@@ -8718,7 +8933,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "26 May 2025"
+    "statsAsOf": "26 May 2025",
+    "wikipedia": "Jason Roy"
   },
   {
     "id": "jasprit-bumrah",
@@ -8765,7 +8981,8 @@
         "bestBowling": "4/15"
       }
     },
-    "statsAsOf": "5 October 2026"
+    "statsAsOf": "5 October 2026",
+    "wikipedia": "Jasprit Bumrah"
   },
   {
     "id": "javagal-srinath",
@@ -8800,7 +9017,8 @@
         "bestBowling": "5/23"
       }
     },
-    "statsAsOf": "29 December 2022"
+    "statsAsOf": "29 December 2022",
+    "wikipedia": "Javagal Srinath"
   },
   {
     "id": "javed-miandad",
@@ -8835,7 +9053,8 @@
         "bestBowling": "2/22"
       }
     },
-    "statsAsOf": "10 March 2009"
+    "statsAsOf": "10 March 2009",
+    "wikipedia": "Javed Miandad"
   },
   {
     "id": "jeff-dujon",
@@ -8872,7 +9091,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "18 October 2010"
+    "statsAsOf": "18 October 2010",
+    "wikipedia": "Jeff Dujon"
   },
   {
     "id": "jeff-thomson",
@@ -8909,7 +9129,8 @@
         "bestBowling": "4/67"
       }
     },
-    "statsAsOf": "4 November 2008"
+    "statsAsOf": "4 November 2008",
+    "wikipedia": "Jeff Thomson"
   },
   {
     "id": "jerome-taylor",
@@ -8953,7 +9174,8 @@
         "bestBowling": "3/6"
       }
     },
-    "statsAsOf": "3 March 2023"
+    "statsAsOf": "3 March 2023",
+    "wikipedia": "Jerome Taylor"
   },
   {
     "id": "jesse-ryder",
@@ -8997,7 +9219,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "10 January 2019"
+    "statsAsOf": "10 January 2019",
+    "wikipedia": "Jesse Ryder"
   },
   {
     "id": "jim-laker",
@@ -9023,7 +9246,8 @@
         "bestBowling": "10/53"
       }
     },
-    "statsAsOf": "28 April 2018"
+    "statsAsOf": "28 April 2018",
+    "wikipedia": "Jim Laker"
   },
   {
     "id": "jimmy-adams",
@@ -9058,7 +9282,8 @@
         "bestBowling": "5/37"
       }
     },
-    "statsAsOf": "26 September 2007"
+    "statsAsOf": "26 September 2007",
+    "wikipedia": "Jimmy Adams"
   },
   {
     "id": "jimmy-neesham",
@@ -9104,7 +9329,8 @@
         "bestBowling": "5/22"
       }
     },
-    "statsAsOf": "27 June 2026"
+    "statsAsOf": "27 June 2026",
+    "wikipedia": "James Neesham"
   },
   {
     "id": "joe-root",
@@ -9150,7 +9376,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "29 October 2026"
+    "statsAsOf": "29 October 2026",
+    "wikipedia": "Joe Root"
   },
   {
     "id": "joel-garner",
@@ -9187,7 +9414,8 @@
         "bestBowling": "5/31"
       }
     },
-    "statsAsOf": "13 September 2009"
+    "statsAsOf": "13 September 2009",
+    "wikipedia": "Joel Garner"
   },
   {
     "id": "jofra-archer",
@@ -9231,7 +9459,8 @@
         "bestBowling": "4/33"
       }
     },
-    "statsAsOf": "27 September 2026"
+    "statsAsOf": "27 September 2026",
+    "wikipedia": "Jofra Archer"
   },
   {
     "id": "john-wright",
@@ -9266,7 +9495,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "4 November 2016"
+    "statsAsOf": "4 November 2016",
+    "wikipedia": "John Wright (cricketer, born 1954)"
   },
   {
     "id": "jonny-bairstow",
@@ -9312,7 +9542,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "26 September 2026"
+    "statsAsOf": "26 September 2026",
+    "wikipedia": "Jonny Bairstow"
   },
   {
     "id": "jonty-rhodes",
@@ -9347,7 +9578,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "19 July 2009"
+    "statsAsOf": "19 July 2009",
+    "wikipedia": "Jonty Rhodes"
   },
   {
     "id": "jos-buttler",
@@ -9393,7 +9625,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "25 September 2026"
+    "statsAsOf": "25 September 2026",
+    "wikipedia": "Jos Buttler"
   },
   {
     "id": "josh-hazlewood",
@@ -9439,7 +9672,8 @@
         "bestBowling": "4/12"
       }
     },
-    "statsAsOf": "1 November 2026"
+    "statsAsOf": "1 November 2026",
+    "wikipedia": "Josh Hazlewood"
   },
   {
     "id": "josh-inglis",
@@ -9483,7 +9717,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "1 November 2026"
+    "statsAsOf": "1 November 2026",
+    "wikipedia": "Josh Inglis"
   },
   {
     "id": "josh-little",
@@ -9518,7 +9753,8 @@
         "bestBowling": "4/23"
       }
     },
-    "statsAsOf": "19 February 2026"
+    "statsAsOf": "19 February 2026",
+    "wikipedia": "Josh Little"
   },
   {
     "id": "jp-duminy",
@@ -9562,7 +9798,8 @@
         "bestBowling": "3/18"
       }
     },
-    "statsAsOf": "14 April 2020"
+    "statsAsOf": "14 April 2020",
+    "wikipedia": "JP Duminy"
   },
   {
     "id": "justin-langer",
@@ -9599,7 +9836,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "28 September 2009"
+    "statsAsOf": "28 September 2009",
+    "wikipedia": "Justin Langer"
   },
   {
     "id": "kagiso-rabada",
@@ -9646,7 +9884,8 @@
         "bestBowling": "3/18"
       }
     },
-    "statsAsOf": "1 November 2026"
+    "statsAsOf": "1 November 2026",
+    "wikipedia": "Kagiso Rabada"
   },
   {
     "id": "kamindu-mendis",
@@ -9690,7 +9929,8 @@
         "bestBowling": "1/14"
       }
     },
-    "statsAsOf": "27 August 2026"
+    "statsAsOf": "27 August 2026",
+    "wikipedia": "Kamindu Mendis"
   },
   {
     "id": "kamran-akmal",
@@ -9734,7 +9974,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "5 September 2022"
+    "statsAsOf": "5 September 2022",
+    "wikipedia": "Kamran Akmal"
   },
   {
     "id": "kane-richardson",
@@ -9769,7 +10010,8 @@
         "bestBowling": "4/30"
       }
     },
-    "statsAsOf": "5 April 2024"
+    "statsAsOf": "5 April 2024",
+    "wikipedia": "Kane Richardson"
   },
   {
     "id": "kane-williamson",
@@ -9815,7 +10057,8 @@
         "bestBowling": "2/16"
       }
     },
-    "statsAsOf": "7 June 2026"
+    "statsAsOf": "7 June 2026",
+    "wikipedia": "Kane Williamson"
   },
   {
     "id": "kapil-dev",
@@ -9852,7 +10095,8 @@
         "bestBowling": "5/43"
       }
     },
-    "statsAsOf": "24 January 2008"
+    "statsAsOf": "24 January 2008",
+    "wikipedia": "Kapil Dev"
   },
   {
     "id": "kedar-jadhav",
@@ -9887,7 +10131,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "8 February 2024"
+    "statsAsOf": "8 February 2024",
+    "wikipedia": "Kedar Jadhav"
   },
   {
     "id": "keith-miller",
@@ -9915,7 +10160,8 @@
         "bestBowling": "7/60"
       }
     },
-    "statsAsOf": "19 December 2007"
+    "statsAsOf": "19 December 2007",
+    "wikipedia": "Keith Miller"
   },
   {
     "id": "kemar-roach",
@@ -9959,7 +10205,8 @@
         "bestBowling": "2/25"
       }
     },
-    "statsAsOf": "29 June 2026"
+    "statsAsOf": "29 June 2026",
+    "wikipedia": "Kemar Roach"
   },
   {
     "id": "keshav-maharaj",
@@ -10005,7 +10252,8 @@
         "bestBowling": "3/24"
       }
     },
-    "statsAsOf": "13 October 2026"
+    "statsAsOf": "13 October 2026",
+    "wikipedia": "Keshav Maharaj"
   },
   {
     "id": "kevin-o-brien",
@@ -10049,7 +10297,8 @@
         "bestBowling": "4/45"
       }
     },
-    "statsAsOf": "23 February 2022"
+    "statsAsOf": "23 February 2022",
+    "wikipedia": "Kevin O'Brien (cricketer)"
   },
   {
     "id": "kevin-pietersen",
@@ -10095,7 +10344,8 @@
         "bestBowling": "1/27"
       }
     },
-    "statsAsOf": "4 May 2019"
+    "statsAsOf": "4 May 2019",
+    "wikipedia": "Kevin Pietersen"
   },
   {
     "id": "khaled-mashud",
@@ -10130,7 +10380,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "21 November 2008"
+    "statsAsOf": "21 November 2008",
+    "wikipedia": "Khaled Mashud"
   },
   {
     "id": "kieron-pollard",
@@ -10167,7 +10418,8 @@
         "bestBowling": "4/25"
       }
     },
-    "statsAsOf": "26 July 2026"
+    "statsAsOf": "26 July 2026",
+    "wikipedia": "Kieron Pollard"
   },
   {
     "id": "kl-rahul",
@@ -10214,7 +10466,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "18 January 2026"
+    "statsAsOf": "18 January 2026",
+    "wikipedia": "KL Rahul"
   },
   {
     "id": "kraigg-brathwaite",
@@ -10249,7 +10502,8 @@
         "bestBowling": "1/56"
       }
     },
-    "statsAsOf": "7 July 2025"
+    "statsAsOf": "7 July 2025",
+    "wikipedia": "Kraigg Brathwaite"
   },
   {
     "id": "kris-srikkanth",
@@ -10286,7 +10540,8 @@
         "bestBowling": "5/27"
       }
     },
-    "statsAsOf": "10 November 2014"
+    "statsAsOf": "10 November 2014",
+    "wikipedia": "Krishnamachari Srikkanth"
   },
   {
     "id": "krunal-pandya",
@@ -10321,7 +10576,8 @@
         "bestBowling": "4/36"
       }
     },
-    "statsAsOf": "3 January 2026"
+    "statsAsOf": "3 January 2026",
+    "wikipedia": "Krunal Pandya"
   },
   {
     "id": "kuldeep-yadav",
@@ -10365,7 +10621,8 @@
         "bestBowling": "5/17"
       }
     },
-    "statsAsOf": "26 September 2026"
+    "statsAsOf": "26 September 2026",
+    "wikipedia": "Kuldeep Yadav"
   },
   {
     "id": "kumar-dharmasena",
@@ -10400,7 +10657,8 @@
         "bestBowling": "4/37"
       }
     },
-    "statsAsOf": "24 November 2023"
+    "statsAsOf": "24 November 2023",
+    "wikipedia": "Kumar Dharmasena"
   },
   {
     "id": "kumar-sangakkara",
@@ -10446,7 +10704,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "19 April 2024"
+    "statsAsOf": "19 April 2024",
+    "wikipedia": "Kumar Sangakkara"
   },
   {
     "id": "kusal-mendis",
@@ -10490,7 +10749,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "28 September 2025"
+    "statsAsOf": "28 September 2025",
+    "wikipedia": "Kusal Mendis"
   },
   {
     "id": "kusal-perera",
@@ -10534,7 +10794,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "28 September 2025"
+    "statsAsOf": "28 September 2025",
+    "wikipedia": "Kusal Perera"
   },
   {
     "id": "kyle-coetzer",
@@ -10569,7 +10830,8 @@
         "bestBowling": "3/25"
       }
     },
-    "statsAsOf": "24 March 2023"
+    "statsAsOf": "24 March 2023",
+    "wikipedia": "Kyle Coetzer"
   },
   {
     "id": "kyle-jamieson",
@@ -10613,7 +10875,8 @@
         "bestBowling": "3/8"
       }
     },
-    "statsAsOf": "27 October 2026"
+    "statsAsOf": "27 October 2026",
+    "wikipedia": "Kyle Jamieson"
   },
   {
     "id": "lahiru-thirimanne",
@@ -10657,7 +10920,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "12 March 2022"
+    "statsAsOf": "12 March 2022",
+    "wikipedia": "Lahiru Thirimanne"
   },
   {
     "id": "lance-gibbs",
@@ -10692,7 +10956,8 @@
         "bestBowling": "1/12"
       }
     },
-    "statsAsOf": "7 January 2009"
+    "statsAsOf": "7 January 2009",
+    "wikipedia": "Lance Gibbs"
   },
   {
     "id": "lance-klusener",
@@ -10729,7 +10994,8 @@
         "bestBowling": "6/49"
       }
     },
-    "statsAsOf": "14 February 2016"
+    "statsAsOf": "14 February 2016",
+    "wikipedia": "Lance Klusener"
   },
   {
     "id": "lasith-malinga",
@@ -10776,7 +11042,8 @@
         "bestBowling": "5/6"
       }
     },
-    "statsAsOf": "6 March 2020"
+    "statsAsOf": "6 March 2020",
+    "wikipedia": "Lasith Malinga"
   },
   {
     "id": "lendl-simmons",
@@ -10820,7 +11087,8 @@
         "bestBowling": "4/19"
       }
     },
-    "statsAsOf": "2019 October 2022"
+    "statsAsOf": "2019 October 2022",
+    "wikipedia": "Lendl Simmons"
   },
   {
     "id": "liam-livingstone",
@@ -10866,7 +11134,8 @@
         "bestBowling": "3/17"
       }
     },
-    "statsAsOf": "21 June 2026"
+    "statsAsOf": "21 June 2026",
+    "wikipedia": "Liam Livingstone"
   },
   {
     "id": "litton-das",
@@ -10913,7 +11182,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "23 August 2026"
+    "statsAsOf": "23 August 2026",
+    "wikipedia": "Litton Das"
   },
   {
     "id": "lockie-ferguson",
@@ -10957,7 +11227,8 @@
         "bestBowling": "5/21"
       }
     },
-    "statsAsOf": "24 October 2026"
+    "statsAsOf": "24 October 2026",
+    "wikipedia": "Lockie Ferguson"
   },
   {
     "id": "logan-van-beek",
@@ -10992,7 +11263,8 @@
         "bestBowling": "4/27"
       }
     },
-    "statsAsOf": "31 July 2026"
+    "statsAsOf": "31 July 2026",
+    "wikipedia": "Logan van Beek"
   },
   {
     "id": "lou-vincent",
@@ -11036,7 +11308,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "18 May 2014"
+    "statsAsOf": "18 May 2014",
+    "wikipedia": "Lou Vincent"
   },
   {
     "id": "lungi-ngidi",
@@ -11080,7 +11353,8 @@
         "bestBowling": "5/39"
       }
     },
-    "statsAsOf": "26 September 2026"
+    "statsAsOf": "26 September 2026",
+    "wikipedia": "Lungi Ngidi"
   },
   {
     "id": "maheesh-theekshana",
@@ -11124,7 +11398,8 @@
         "bestBowling": "3/17"
       }
     },
-    "statsAsOf": "6 June 2026"
+    "statsAsOf": "6 June 2026",
+    "wikipedia": "Maheesh Theekshana"
   },
   {
     "id": "mahela-jayawardene",
@@ -11168,7 +11443,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "17 August 2016"
+    "statsAsOf": "17 August 2016",
+    "wikipedia": "Mahela Jayawardene"
   },
   {
     "id": "mahmudullah",
@@ -11214,7 +11490,8 @@
         "bestBowling": "3/10"
       }
     },
-    "statsAsOf": "12 March 2025"
+    "statsAsOf": "12 March 2025",
+    "wikipedia": "Mahmudullah"
   },
   {
     "id": "majid-haq",
@@ -11249,7 +11526,8 @@
         "bestBowling": "3/20"
       }
     },
-    "statsAsOf": "29 March 2016"
+    "statsAsOf": "29 March 2016",
+    "wikipedia": "Majid Haq"
   },
   {
     "id": "makhaya-ntini",
@@ -11293,7 +11571,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "30 August 2017"
+    "statsAsOf": "30 August 2017",
+    "wikipedia": "Makhaya Ntini"
   },
   {
     "id": "malcolm-marshall",
@@ -11330,7 +11609,8 @@
         "bestBowling": "4/18"
       }
     },
-    "statsAsOf": "11 January 2009"
+    "statsAsOf": "11 January 2009",
+    "wikipedia": "Malcolm Marshall"
   },
   {
     "id": "manish-pandey",
@@ -11365,7 +11645,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "15 November 2025"
+    "statsAsOf": "15 November 2025",
+    "wikipedia": "Manish Pandey"
   },
   {
     "id": "marco-jansen",
@@ -11409,7 +11690,8 @@
         "bestBowling": "4/22"
       }
     },
-    "statsAsOf": "1 November 2026"
+    "statsAsOf": "1 November 2026",
+    "wikipedia": "Marco Jansen"
   },
   {
     "id": "marcus-stoinis",
@@ -11444,7 +11726,8 @@
         "bestBowling": "4/23"
       }
     },
-    "statsAsOf": "20 February 2026"
+    "statsAsOf": "20 February 2026",
+    "wikipedia": "Marcus Stoinis"
   },
   {
     "id": "marcus-trescothick",
@@ -11490,7 +11773,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "6 June 2019"
+    "statsAsOf": "6 June 2019",
+    "wikipedia": "Marcus Trescothick"
   },
   {
     "id": "mark-boucher",
@@ -11536,7 +11820,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "10 September 2017"
+    "statsAsOf": "10 September 2017",
+    "wikipedia": "Mark Boucher"
   },
   {
     "id": "mark-richardson",
@@ -11571,7 +11856,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "29 April 2017"
+    "statsAsOf": "29 April 2017",
+    "wikipedia": "Mark Richardson (cricketer)"
   },
   {
     "id": "mark-taylor",
@@ -11608,7 +11894,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "1 September 2007"
+    "statsAsOf": "1 September 2007",
+    "wikipedia": "Mark Taylor (cricketer)"
   },
   {
     "id": "mark-watt",
@@ -11643,7 +11930,8 @@
         "bestBowling": "5/27"
       }
     },
-    "statsAsOf": "15 August 2026"
+    "statsAsOf": "15 August 2026",
+    "wikipedia": "Mark Watt"
   },
   {
     "id": "mark-waugh",
@@ -11680,7 +11968,8 @@
         "bestBowling": "5/24"
       }
     },
-    "statsAsOf": "19 August 2007"
+    "statsAsOf": "19 August 2007",
+    "wikipedia": "Mark Waugh"
   },
   {
     "id": "mark-wood",
@@ -11726,7 +12015,8 @@
         "bestBowling": "3/9"
       }
     },
-    "statsAsOf": "22 November 2025"
+    "statsAsOf": "22 November 2025",
+    "wikipedia": "Mark Wood (cricketer)"
   },
   {
     "id": "marlon-samuels",
@@ -11770,7 +12060,8 @@
         "bestBowling": "3/23"
       }
     },
-    "statsAsOf": "14 December 2018"
+    "statsAsOf": "14 December 2018",
+    "wikipedia": "Marlon Samuels"
   },
   {
     "id": "marnus-labuschagne",
@@ -11814,7 +12105,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "1 October 2026"
+    "statsAsOf": "1 October 2026",
+    "wikipedia": "Marnus Labuschagne"
   },
   {
     "id": "martin-crowe",
@@ -11851,7 +12143,8 @@
         "bestBowling": "2/9"
       }
     },
-    "statsAsOf": "30 May 2009"
+    "statsAsOf": "30 May 2009",
+    "wikipedia": "Martin Crowe"
   },
   {
     "id": "martin-guptill",
@@ -11897,7 +12190,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "23 September 2025"
+    "statsAsOf": "23 September 2025",
+    "wikipedia": "Martin Guptill"
   },
   {
     "id": "marvan-atapattu",
@@ -11941,7 +12235,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "27 September 2008"
+    "statsAsOf": "27 September 2008",
+    "wikipedia": "Marvan Atapattu"
   },
   {
     "id": "mashrafe-mortaza",
@@ -11987,7 +12282,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "7 January 2024"
+    "statsAsOf": "7 January 2024",
+    "wikipedia": "Mashrafe Mortaza"
   },
   {
     "id": "matheesha-pathirana",
@@ -12024,7 +12320,8 @@
         "bestBowling": "4/24"
       }
     },
-    "statsAsOf": "28 September 2025"
+    "statsAsOf": "28 September 2025",
+    "wikipedia": "Matheesha Pathirana"
   },
   {
     "id": "matt-henry",
@@ -12068,7 +12365,8 @@
         "bestBowling": "3/26"
       }
     },
-    "statsAsOf": "24 October 2026"
+    "statsAsOf": "24 October 2026",
+    "wikipedia": "Matt Henry (cricketer)"
   },
   {
     "id": "matt-prior",
@@ -12112,7 +12410,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "19 February 2014"
+    "statsAsOf": "19 February 2014",
+    "wikipedia": "Matt Prior"
   },
   {
     "id": "matthew-hayden",
@@ -12158,7 +12457,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "17 August 2017"
+    "statsAsOf": "17 August 2017",
+    "wikipedia": "Matthew Hayden"
   },
   {
     "id": "matthew-hoggard",
@@ -12193,7 +12493,8 @@
         "bestBowling": "5/49"
       }
     },
-    "statsAsOf": "7 September 2017"
+    "statsAsOf": "7 September 2017",
+    "wikipedia": "Matthew Hoggard"
   },
   {
     "id": "matthew-wade",
@@ -12237,7 +12538,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "24 June 2024"
+    "statsAsOf": "24 June 2024",
+    "wikipedia": "Matthew Wade"
   },
   {
     "id": "max-o-dowd",
@@ -12272,7 +12574,8 @@
         "bestBowling": "1/7"
       }
     },
-    "statsAsOf": "31 July 2026"
+    "statsAsOf": "31 July 2026",
+    "wikipedia": "Max O'Dowd"
   },
   {
     "id": "mayank-agarwal",
@@ -12307,7 +12610,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "27 September 2026"
+    "statsAsOf": "27 September 2026",
+    "wikipedia": "Mayank Agarwal"
   },
   {
     "id": "mehidy-hasan-miraz",
@@ -12353,7 +12657,8 @@
         "bestBowling": "4/12"
       }
     },
-    "statsAsOf": "16 August 2026"
+    "statsAsOf": "16 August 2026",
+    "wikipedia": "Mehidy Hasan Miraz"
   },
   {
     "id": "merv-hughes",
@@ -12388,7 +12693,8 @@
         "bestBowling": "4/44"
       }
     },
-    "statsAsOf": "26 December 2010"
+    "statsAsOf": "26 December 2010",
+    "wikipedia": "Merv Hughes"
   },
   {
     "id": "michael-atherton",
@@ -12426,7 +12732,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "1 September 2007"
+    "statsAsOf": "1 September 2007",
+    "wikipedia": "Michael Atherton"
   },
   {
     "id": "michael-bevan",
@@ -12461,7 +12768,8 @@
         "bestBowling": "3/36"
       }
     },
-    "statsAsOf": "6 March 2008"
+    "statsAsOf": "6 March 2008",
+    "wikipedia": "Michael Bevan"
   },
   {
     "id": "michael-clarke",
@@ -12507,7 +12815,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "2 April 2019"
+    "statsAsOf": "2 April 2019",
+    "wikipedia": "Michael Clarke (cricketer)"
   },
   {
     "id": "michael-holding",
@@ -12544,7 +12853,8 @@
         "bestBowling": "5/26"
       }
     },
-    "statsAsOf": "24 May 2009"
+    "statsAsOf": "24 May 2009",
+    "wikipedia": "Michael Holding"
   },
   {
     "id": "michael-kasprowicz",
@@ -12590,7 +12900,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "13 September 2017"
+    "statsAsOf": "13 September 2017",
+    "wikipedia": "Michael Kasprowicz"
   },
   {
     "id": "michael-vaughan",
@@ -12636,7 +12947,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "18 September 2017"
+    "statsAsOf": "18 September 2017",
+    "wikipedia": "Michael Vaughan"
   },
   {
     "id": "mike-gatting",
@@ -12673,7 +12985,8 @@
         "bestBowling": "3/32"
       }
     },
-    "statsAsOf": "10 March 2017"
+    "statsAsOf": "10 March 2017",
+    "wikipedia": "Mike Gatting"
   },
   {
     "id": "mike-hussey",
@@ -12720,7 +13033,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "22 December 2016"
+    "statsAsOf": "22 December 2016",
+    "wikipedia": "Michael Hussey"
   },
   {
     "id": "misbah-ul-haq",
@@ -12766,7 +13080,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "12 July 2017"
+    "statsAsOf": "12 July 2017",
+    "wikipedia": "Misbah-ul-Haq"
   },
   {
     "id": "mitchell-johnson",
@@ -12812,7 +13127,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "17 November 2015"
+    "statsAsOf": "17 November 2015",
+    "wikipedia": "Mitchell Johnson"
   },
   {
     "id": "mitchell-marsh",
@@ -12858,7 +13174,8 @@
         "bestBowling": "3/24"
       }
     },
-    "statsAsOf": "30 September 2026"
+    "statsAsOf": "30 September 2026",
+    "wikipedia": "Mitchell Marsh"
   },
   {
     "id": "mitchell-santner",
@@ -12902,7 +13219,8 @@
         "bestBowling": "4/11"
       }
     },
-    "statsAsOf": "30 October 2026"
+    "statsAsOf": "30 October 2026",
+    "wikipedia": "Mitchell Santner"
   },
   {
     "id": "mitchell-starc",
@@ -12948,7 +13266,8 @@
         "bestBowling": "4/20"
       }
     },
-    "statsAsOf": "1 November 2026"
+    "statsAsOf": "1 November 2026",
+    "wikipedia": "Mitchell Starc"
   },
   {
     "id": "moeen-ali",
@@ -12994,7 +13313,8 @@
         "bestBowling": "3/24"
       }
     },
-    "statsAsOf": "20 July 2024"
+    "statsAsOf": "20 July 2024",
+    "wikipedia": "Moeen Ali"
   },
   {
     "id": "mohammad-amir",
@@ -13038,7 +13358,8 @@
         "bestBowling": "4/13"
       }
     },
-    "statsAsOf": "7 January 2024"
+    "statsAsOf": "7 January 2024",
+    "wikipedia": "Mohammad Amir"
   },
   {
     "id": "mohammad-ashraful",
@@ -13082,7 +13403,8 @@
         "bestBowling": "3/42"
       }
     },
-    "statsAsOf": "20 March 2025"
+    "statsAsOf": "20 March 2025",
+    "wikipedia": "Mohammad Ashraful"
   },
   {
     "id": "mohammad-asif",
@@ -13126,7 +13448,8 @@
         "bestBowling": "4/18"
       }
     },
-    "statsAsOf": "21 August 2010"
+    "statsAsOf": "21 August 2010",
+    "wikipedia": "Mohammad Asif (cricketer)"
   },
   {
     "id": "mohammad-azharuddin",
@@ -13163,7 +13486,8 @@
         "bestBowling": "3/19"
       }
     },
-    "statsAsOf": "13 February 2009"
+    "statsAsOf": "13 February 2009",
+    "wikipedia": "Mohammad Azharuddin"
   },
   {
     "id": "mohammad-hafeez",
@@ -13209,7 +13533,8 @@
         "bestBowling": "4/10"
       }
     },
-    "statsAsOf": "4 January 2022"
+    "statsAsOf": "4 January 2022",
+    "wikipedia": "Mohammad Hafeez"
   },
   {
     "id": "mohammad-kaif",
@@ -13244,7 +13569,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "3 April 2023"
+    "statsAsOf": "3 April 2023",
+    "wikipedia": "Mohammad Kaif"
   },
   {
     "id": "mohammad-nabi",
@@ -13290,7 +13616,8 @@
         "bestBowling": "4/7"
       }
     },
-    "statsAsOf": "19 July 2026"
+    "statsAsOf": "19 July 2026",
+    "wikipedia": "Mohammad Nabi"
   },
   {
     "id": "mohammad-rafique",
@@ -13334,7 +13661,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "25 January 2019"
+    "statsAsOf": "25 January 2019",
+    "wikipedia": "Mohammad Rafique (cricketer)"
   },
   {
     "id": "mohammad-rizwan",
@@ -13378,7 +13706,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "31 August 2026"
+    "statsAsOf": "31 August 2026",
+    "wikipedia": "Mohammad Rizwan"
   },
   {
     "id": "mohammad-shahzad",
@@ -13422,7 +13751,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "1 February 2026"
+    "statsAsOf": "1 February 2026",
+    "wikipedia": "Mohammad Shahzad"
   },
   {
     "id": "mohammad-yousuf",
@@ -13468,7 +13798,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "17 February 2018"
+    "statsAsOf": "17 February 2018",
+    "wikipedia": "Mohammad Yousuf (cricketer)"
   },
   {
     "id": "mohammed-shami",
@@ -13514,7 +13845,8 @@
         "bestBowling": "3/15"
       }
     },
-    "statsAsOf": "12 February 2026"
+    "statsAsOf": "12 February 2026",
+    "wikipedia": "Mohammed Shami"
   },
   {
     "id": "mohammed-siraj",
@@ -13560,7 +13892,8 @@
         "bestBowling": "4/17"
       }
     },
-    "statsAsOf": "8 June 2026"
+    "statsAsOf": "8 June 2026",
+    "wikipedia": "Mohammed Siraj"
   },
   {
     "id": "mohinder-amarnath",
@@ -13595,7 +13928,8 @@
         "bestBowling": "3/12"
       }
     },
-    "statsAsOf": "8 October 2009"
+    "statsAsOf": "8 October 2009",
+    "wikipedia": "Mohinder Amarnath"
   },
   {
     "id": "moin-khan",
@@ -13630,7 +13964,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "7 August 2005"
+    "statsAsOf": "7 August 2005",
+    "wikipedia": "Moin Khan"
   },
   {
     "id": "mominul-haque",
@@ -13674,7 +14009,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "16 August 2026"
+    "statsAsOf": "16 August 2026",
+    "wikipedia": "Mominul Haque"
   },
   {
     "id": "monty-panesar",
@@ -13720,7 +14056,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "15 December 2016"
+    "statsAsOf": "15 December 2016",
+    "wikipedia": "Monty Panesar"
   },
   {
     "id": "morne-morkel",
@@ -13766,7 +14103,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "19 August 2020"
+    "statsAsOf": "19 August 2020",
+    "wikipedia": "Morné Morkel"
   },
   {
     "id": "ms-dhoni",
@@ -13815,7 +14153,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "30 March 2025"
+    "statsAsOf": "30 March 2025",
+    "wikipedia": "MS Dhoni"
   },
   {
     "id": "mudassar-nazar",
@@ -13850,7 +14189,8 @@
         "bestBowling": "5/29"
       }
     },
-    "statsAsOf": "10 November 2017"
+    "statsAsOf": "10 November 2017",
+    "wikipedia": "Mudassar Nazar"
   },
   {
     "id": "mujeeb-ur-rahman",
@@ -13896,7 +14236,8 @@
         "bestBowling": "5/20"
       }
     },
-    "statsAsOf": "19 July 2026"
+    "statsAsOf": "19 July 2026",
+    "wikipedia": "Mujeeb Ur Rahman"
   },
   {
     "id": "munaf-patel",
@@ -13940,7 +14281,8 @@
         "bestBowling": "2/25"
       }
     },
-    "statsAsOf": "13 October 2017"
+    "statsAsOf": "13 October 2017",
+    "wikipedia": "Munaf Patel"
   },
   {
     "id": "murali-vijay",
@@ -13984,7 +14326,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "5 October 2024"
+    "statsAsOf": "5 October 2024",
+    "wikipedia": "Murali Vijay"
   },
   {
     "id": "murray-goodwin",
@@ -14019,7 +14362,8 @@
         "bestBowling": "1/12"
       }
     },
-    "statsAsOf": "4 November 2023"
+    "statsAsOf": "4 November 2023",
+    "wikipedia": "Murray Goodwin"
   },
   {
     "id": "mushfiqur-rahim",
@@ -14065,7 +14409,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "23 August 2026"
+    "statsAsOf": "23 August 2026",
+    "wikipedia": "Mushfiqur Rahim"
   },
   {
     "id": "mushtaq-ahmed",
@@ -14100,7 +14445,8 @@
         "bestBowling": "5/36"
       }
     },
-    "statsAsOf": "15 November 2012"
+    "statsAsOf": "15 November 2012",
+    "wikipedia": "Mushtaq Ahmed (cricketer)"
   },
   {
     "id": "mustafizur-rahman",
@@ -14146,7 +14492,8 @@
         "bestBowling": "6/10"
       }
     },
-    "statsAsOf": "21 June 2026"
+    "statsAsOf": "21 June 2026",
+    "wikipedia": "Mustafizur Rahman"
   },
   {
     "id": "muttiah-muralitharan",
@@ -14192,7 +14539,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "8 January 2014"
+    "statsAsOf": "8 January 2014",
+    "wikipedia": "Muttiah Muralitharan"
   },
   {
     "id": "najibullah-zadran",
@@ -14227,7 +14575,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "17 May 2025"
+    "statsAsOf": "17 May 2025",
+    "wikipedia": "Najibullah Zadran"
   },
   {
     "id": "najmul-hossain-shanto",
@@ -14273,7 +14622,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "16 August 2026"
+    "statsAsOf": "16 August 2026",
+    "wikipedia": "Najmul Hossain Shanto"
   },
   {
     "id": "naseem-shah",
@@ -14317,7 +14667,8 @@
         "bestBowling": "3/21"
       }
     },
-    "statsAsOf": "17 October 2026"
+    "statsAsOf": "17 October 2026",
+    "wikipedia": "Naseem Shah"
   },
   {
     "id": "nasser-hussain",
@@ -14352,7 +14703,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "15 October 2007"
+    "statsAsOf": "15 October 2007",
+    "wikipedia": "Nasser Hussain"
   },
   {
     "id": "nathan-astle",
@@ -14396,7 +14748,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "11 November 2008"
+    "statsAsOf": "11 November 2008",
+    "wikipedia": "Nathan Astle"
   },
   {
     "id": "nathan-bracken",
@@ -14440,7 +14793,8 @@
         "bestBowling": "3/11"
       }
     },
-    "statsAsOf": "19 September 2009"
+    "statsAsOf": "19 September 2009",
+    "wikipedia": "Nathan Bracken"
   },
   {
     "id": "nathan-lyon",
@@ -14486,7 +14840,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "1 November 2026"
+    "statsAsOf": "1 November 2026",
+    "wikipedia": "Nathan Lyon"
   },
   {
     "id": "naveen-ul-haq",
@@ -14523,7 +14878,8 @@
         "bestBowling": "4/20"
       }
     },
-    "statsAsOf": "2 April 2024"
+    "statsAsOf": "2 April 2024",
+    "wikipedia": "Naveen-ul-Haq"
   },
   {
     "id": "navjot-singh-sidhu",
@@ -14558,7 +14914,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "1 January 2009"
+    "statsAsOf": "1 January 2009",
+    "wikipedia": "Navjot Singh Sidhu"
   },
   {
     "id": "nayan-mongia",
@@ -14593,7 +14950,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "4 February 2006"
+    "statsAsOf": "4 February 2006",
+    "wikipedia": "Nayan Mongia"
   },
   {
     "id": "neil-harvey",
@@ -14619,7 +14977,8 @@
         "bestBowling": "1/8"
       }
     },
-    "statsAsOf": "29 February 2008"
+    "statsAsOf": "29 February 2008",
+    "wikipedia": "Neil Harvey"
   },
   {
     "id": "neil-johnson",
@@ -14654,7 +15013,8 @@
         "bestBowling": "4/42"
       }
     },
-    "statsAsOf": "5 August 2015"
+    "statsAsOf": "5 August 2015",
+    "wikipedia": "Neil Johnson (cricketer)"
   },
   {
     "id": "neil-mckenzie",
@@ -14698,7 +15058,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "2 December 2021"
+    "statsAsOf": "2 December 2021",
+    "wikipedia": "Neil McKenzie"
   },
   {
     "id": "neil-wagner",
@@ -14724,7 +15085,8 @@
         "bestBowling": "7/39"
       }
     },
-    "statsAsOf": "23 July 2025"
+    "statsAsOf": "23 July 2025",
+    "wikipedia": "Neil Wagner"
   },
   {
     "id": "niall-o-brien",
@@ -14768,7 +15130,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "12 June 2019"
+    "statsAsOf": "12 June 2019",
+    "wikipedia": "Niall O'Brien (cricketer)"
   },
   {
     "id": "nicholas-pooran",
@@ -14803,7 +15166,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "7 September 2026"
+    "statsAsOf": "7 September 2026",
+    "wikipedia": "Nicholas Pooran"
   },
   {
     "id": "nicky-boje",
@@ -14847,7 +15211,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "31 October 2021"
+    "statsAsOf": "31 October 2021",
+    "wikipedia": "Nicky Boje"
   },
   {
     "id": "niroshan-dickwella",
@@ -14891,7 +15256,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "11 March 2025"
+    "statsAsOf": "11 March 2025",
+    "wikipedia": "Niroshan Dickwella"
   },
   {
     "id": "nitish-kumar-reddy",
@@ -14935,7 +15301,8 @@
         "bestBowling": "3/24"
       }
     },
-    "statsAsOf": "1 November 2026"
+    "statsAsOf": "1 November 2026",
+    "wikipedia": "Nitish Kumar Reddy"
   },
   {
     "id": "nuwan-kulasekara",
@@ -14979,7 +15346,8 @@
         "bestBowling": "4/31"
       }
     },
-    "statsAsOf": "24 July 2019"
+    "statsAsOf": "24 July 2019",
+    "wikipedia": "Nuwan Kulasekara"
   },
   {
     "id": "ollie-pope",
@@ -15005,7 +15373,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "27 September 2026"
+    "statsAsOf": "27 September 2026",
+    "wikipedia": "Ollie Pope"
   },
   {
     "id": "parthiv-patel",
@@ -15049,7 +15418,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "9 December 2020"
+    "statsAsOf": "9 December 2020",
+    "wikipedia": "Parthiv Patel"
   },
   {
     "id": "pat-cummins",
@@ -15095,7 +15465,8 @@
         "bestBowling": "3/15"
       }
     },
-    "statsAsOf": "1 November 2026"
+    "statsAsOf": "1 November 2026",
+    "wikipedia": "Pat Cummins"
   },
   {
     "id": "pathum-nissanka",
@@ -15139,7 +15510,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "29 June 2025"
+    "statsAsOf": "29 June 2025",
+    "wikipedia": "Pathum Nissanka"
   },
   {
     "id": "paul-adams",
@@ -15174,7 +15546,8 @@
         "bestBowling": "3/26"
       }
     },
-    "statsAsOf": "30 August 2009"
+    "statsAsOf": "30 August 2009",
+    "wikipedia": "Paul Adams (cricketer)"
   },
   {
     "id": "paul-collingwood",
@@ -15220,7 +15593,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "27 September 2018"
+    "statsAsOf": "27 September 2018",
+    "wikipedia": "Paul Collingwood"
   },
   {
     "id": "paul-stirling",
@@ -15266,7 +15640,8 @@
         "bestBowling": "3/21"
       }
     },
-    "statsAsOf": "27 September 2026"
+    "statsAsOf": "27 September 2026",
+    "wikipedia": "Paul Stirling"
   },
   {
     "id": "paul-strang",
@@ -15301,7 +15676,8 @@
         "bestBowling": "5/21"
       }
     },
-    "statsAsOf": "19 August 2012"
+    "statsAsOf": "19 August 2012",
+    "wikipedia": "Paul Strang"
   },
   {
     "id": "paul-van-meekeren",
@@ -15336,7 +15712,8 @@
         "bestBowling": "4/11"
       }
     },
-    "statsAsOf": "18 February 2026"
+    "statsAsOf": "18 February 2026",
+    "wikipedia": "Paul van Meekeren"
   },
   {
     "id": "peter-borren",
@@ -15371,7 +15748,8 @@
         "bestBowling": "2/19"
       }
     },
-    "statsAsOf": "17 March 2018"
+    "statsAsOf": "17 March 2018",
+    "wikipedia": "Peter Borren"
   },
   {
     "id": "peter-siddle",
@@ -15417,7 +15795,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "2 April 2025"
+    "statsAsOf": "2 April 2025",
+    "wikipedia": "Peter Siddle"
   },
   {
     "id": "phil-salt",
@@ -15452,7 +15831,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "11 July 2026"
+    "statsAsOf": "11 July 2026",
+    "wikipedia": "Phil Salt"
   },
   {
     "id": "phil-tufnell",
@@ -15489,7 +15869,8 @@
         "bestBowling": "4/22"
       }
     },
-    "statsAsOf": "3 January 2008"
+    "statsAsOf": "3 January 2008",
+    "wikipedia": "Phil Tufnell"
   },
   {
     "id": "phillip-hughes",
@@ -15533,7 +15914,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "25 November 2014"
+    "statsAsOf": "25 November 2014",
+    "wikipedia": "Phillip Hughes"
   },
   {
     "id": "piyush-chawla",
@@ -15577,7 +15959,8 @@
         "bestBowling": "2/13"
       }
     },
-    "statsAsOf": "27 March 2025"
+    "statsAsOf": "27 March 2025",
+    "wikipedia": "Piyush Chawla"
   },
   {
     "id": "pragyan-ojha",
@@ -15621,7 +16004,8 @@
         "bestBowling": "4/21"
       }
     },
-    "statsAsOf": "21 February 2020"
+    "statsAsOf": "21 February 2020",
+    "wikipedia": "Pragyan Ojha"
   },
   {
     "id": "prasidh-krishna",
@@ -15665,7 +16049,8 @@
         "bestBowling": "3/41"
       }
     },
-    "statsAsOf": "28 July 2026"
+    "statsAsOf": "28 July 2026",
+    "wikipedia": "Prasidh Krishna"
   },
   {
     "id": "prithvi-shaw",
@@ -15709,7 +16094,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "16 December 2025"
+    "statsAsOf": "16 December 2025",
+    "wikipedia": "Prithvi Shaw"
   },
   {
     "id": "prosper-utseya",
@@ -15753,7 +16139,8 @@
         "bestBowling": "3/25"
       }
     },
-    "statsAsOf": "10 November 2015"
+    "statsAsOf": "10 November 2015",
+    "wikipedia": "Prosper Utseya"
   },
   {
     "id": "quinton-de-kock",
@@ -15800,7 +16187,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "2 October 2026"
+    "statsAsOf": "2 October 2026",
+    "wikipedia": "Quinton de Kock"
   },
   {
     "id": "rachin-ravindra",
@@ -15844,7 +16232,8 @@
         "bestBowling": "4/27"
       }
     },
-    "statsAsOf": "29 June 2026"
+    "statsAsOf": "29 June 2026",
+    "wikipedia": "Rachin Ravindra"
   },
   {
     "id": "rahmanullah-gurbaz",
@@ -15890,7 +16279,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "23 October 2026"
+    "statsAsOf": "23 October 2026",
+    "wikipedia": "Rahmanullah Gurbaz"
   },
   {
     "id": "rahmat-shah",
@@ -15934,7 +16324,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "15 August 2026"
+    "statsAsOf": "15 August 2026",
+    "wikipedia": "Rahmat Shah"
   },
   {
     "id": "rahul-dravid",
@@ -15981,7 +16372,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "30 January 2012"
+    "statsAsOf": "30 January 2012",
+    "wikipedia": "Rahul Dravid"
   },
   {
     "id": "ramiz-raja",
@@ -16016,7 +16408,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "31 January 2006"
+    "statsAsOf": "31 January 2006",
+    "wikipedia": "Ramiz Raja"
   },
   {
     "id": "ramnaresh-sarwan",
@@ -16060,7 +16453,8 @@
         "bestBowling": "2/10"
       }
     },
-    "statsAsOf": "3 December 2021"
+    "statsAsOf": "3 December 2021",
+    "wikipedia": "Ramnaresh Sarwan"
   },
   {
     "id": "rangana-herath",
@@ -16104,7 +16498,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "6 November 2018"
+    "statsAsOf": "6 November 2018",
+    "wikipedia": "Rangana Herath"
   },
   {
     "id": "rashid-khan",
@@ -16148,7 +16543,8 @@
         "bestBowling": "5/3"
       }
     },
-    "statsAsOf": "15 August 2026"
+    "statsAsOf": "15 August 2026",
+    "wikipedia": "Rashid Khan"
   },
   {
     "id": "rashid-latif",
@@ -16183,7 +16579,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "28 August 2017"
+    "statsAsOf": "28 August 2017",
+    "wikipedia": "Rashid Latif"
   },
   {
     "id": "rassie-van-der-dussen",
@@ -16227,7 +16624,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "16 August 2025"
+    "statsAsOf": "16 August 2025",
+    "wikipedia": "Rassie van der Dussen"
   },
   {
     "id": "ravi-bishnoi",
@@ -16262,7 +16660,8 @@
         "bestBowling": "4/13"
       }
     },
-    "statsAsOf": "24 July 2026"
+    "statsAsOf": "24 July 2026",
+    "wikipedia": "Ravi Bishnoi"
   },
   {
     "id": "ravi-bopara",
@@ -16306,7 +16705,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "26 August 2025"
+    "statsAsOf": "26 August 2025",
+    "wikipedia": "Ravi Bopara"
   },
   {
     "id": "ravi-shastri",
@@ -16341,7 +16741,8 @@
         "bestBowling": "5/15"
       }
     },
-    "statsAsOf": "6 September 2008"
+    "statsAsOf": "6 September 2008",
+    "wikipedia": "Ravi Shastri"
   },
   {
     "id": "ravichandran-ashwin",
@@ -16388,7 +16789,8 @@
         "bestBowling": "4/8"
       }
     },
-    "statsAsOf": "27 August 2026"
+    "statsAsOf": "27 August 2026",
+    "wikipedia": "Ravichandran Ashwin"
   },
   {
     "id": "ravindra-jadeja",
@@ -16435,7 +16837,8 @@
         "bestBowling": "3/15"
       }
     },
-    "statsAsOf": "18 January 2026"
+    "statsAsOf": "18 January 2026",
+    "wikipedia": "Ravindra Jadeja"
   },
   {
     "id": "ray-lindwall",
@@ -16461,7 +16864,8 @@
         "bestBowling": "7/38"
       }
     },
-    "statsAsOf": "27 December 2007"
+    "statsAsOf": "27 December 2007",
+    "wikipedia": "Ray Lindwall"
   },
   {
     "id": "ray-price",
@@ -16505,7 +16909,8 @@
         "bestBowling": "2/6"
       }
     },
-    "statsAsOf": "14 March 2013"
+    "statsAsOf": "14 March 2013",
+    "wikipedia": "Ray Price (cricketer)"
   },
   {
     "id": "reeza-hendricks",
@@ -16540,7 +16945,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "11 December 2025"
+    "statsAsOf": "11 December 2025",
+    "wikipedia": "Reeza Hendricks"
   },
   {
     "id": "richard-hadlee",
@@ -16577,7 +16983,8 @@
         "bestBowling": "5/25"
       }
     },
-    "statsAsOf": "1 September 2007"
+    "statsAsOf": "1 September 2007",
+    "wikipedia": "Richard Hadlee"
   },
   {
     "id": "richie-benaud",
@@ -16603,7 +17010,8 @@
         "bestBowling": "7/72"
       }
     },
-    "statsAsOf": "22 December 2007"
+    "statsAsOf": "22 December 2007",
+    "wikipedia": "Richie Benaud"
   },
   {
     "id": "richie-berrington",
@@ -16638,7 +17046,8 @@
         "bestBowling": "3/17"
       }
     },
-    "statsAsOf": "15 August 2026"
+    "statsAsOf": "15 August 2026",
+    "wikipedia": "Richie Berrington"
   },
   {
     "id": "richie-richardson",
@@ -16673,7 +17082,8 @@
         "bestBowling": "1/4"
       }
     },
-    "statsAsOf": "19 October 2010"
+    "statsAsOf": "19 October 2010",
+    "wikipedia": "Richie Richardson"
   },
   {
     "id": "ricky-ponting",
@@ -16719,7 +17129,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "11 July 2013"
+    "statsAsOf": "11 July 2013",
+    "wikipedia": "Ricky Ponting"
   },
   {
     "id": "ridley-jacobs",
@@ -16754,7 +17165,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "22 October 2016"
+    "statsAsOf": "22 October 2016",
+    "wikipedia": "Ridley Jacobs"
   },
   {
     "id": "rinku-singh",
@@ -16789,7 +17201,8 @@
         "bestBowling": "2/3"
       }
     },
-    "statsAsOf": "28 February 2026"
+    "statsAsOf": "28 February 2026",
+    "wikipedia": "Rinku Singh (cricketer)"
   },
   {
     "id": "rishabh-pant",
@@ -16833,7 +17246,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "8 November 2025"
+    "statsAsOf": "8 November 2025",
+    "wikipedia": "Rishabh Pant"
   },
   {
     "id": "robin-uthappa",
@@ -16868,7 +17282,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "28 May 2022"
+    "statsAsOf": "28 May 2022",
+    "wikipedia": "Robin Uthappa"
   },
   {
     "id": "rod-marsh",
@@ -16905,7 +17320,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "20 November 2008"
+    "statsAsOf": "20 November 2008",
+    "wikipedia": "Rod Marsh"
   },
   {
     "id": "roelof-van-der-merwe",
@@ -16940,7 +17356,8 @@
         "bestBowling": "4/35"
       }
     },
-    "statsAsOf": "31 July 2026"
+    "statsAsOf": "31 July 2026",
+    "wikipedia": "Roelof van der Merwe"
   },
   {
     "id": "rohan-kanhai",
@@ -16975,7 +17392,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "31 October 2009"
+    "statsAsOf": "31 October 2009",
+    "wikipedia": "Rohan Kanhai"
   },
   {
     "id": "rohit-sharma",
@@ -17022,7 +17440,8 @@
         "bestBowling": "1/22"
       }
     },
-    "statsAsOf": "3 October 2026"
+    "statsAsOf": "3 October 2026",
+    "wikipedia": "Rohit Sharma"
   },
   {
     "id": "romario-shepherd",
@@ -17057,7 +17476,8 @@
         "bestBowling": "4/31"
       }
     },
-    "statsAsOf": "26 February 2026"
+    "statsAsOf": "26 February 2026",
+    "wikipedia": "Romario Shepherd"
   },
   {
     "id": "romesh-kaluwitharana",
@@ -17094,7 +17514,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "9 February 2016"
+    "statsAsOf": "9 February 2016",
+    "wikipedia": "Romesh Kaluwitharana"
   },
   {
     "id": "roshan-mahanama",
@@ -17129,7 +17550,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "30 November 2015"
+    "statsAsOf": "30 November 2015",
+    "wikipedia": "Roshan Mahanama"
   },
   {
     "id": "ross-taylor",
@@ -17175,7 +17597,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "25 September 2026"
+    "statsAsOf": "25 September 2026",
+    "wikipedia": "Ross Taylor"
   },
   {
     "id": "rovman-powell",
@@ -17210,7 +17633,8 @@
         "bestBowling": "2/31"
       }
     },
-    "statsAsOf": "13 November 2025"
+    "statsAsOf": "13 November 2025",
+    "wikipedia": "Rovman Powell"
   },
   {
     "id": "rp-singh",
@@ -17256,7 +17680,8 @@
         "bestBowling": "4/13"
       }
     },
-    "statsAsOf": "28 October 2017"
+    "statsAsOf": "28 October 2017",
+    "wikipedia": "R. P. Singh"
   },
   {
     "id": "rubel-hossain",
@@ -17300,7 +17725,8 @@
         "bestBowling": "3/31"
       }
     },
-    "statsAsOf": "1 April 2021"
+    "statsAsOf": "1 April 2021",
+    "wikipedia": "Rubel Hossain"
   },
   {
     "id": "ruturaj-gaikwad",
@@ -17335,7 +17761,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "08 June 2026"
+    "statsAsOf": "08 June 2026",
+    "wikipedia": "Ruturaj Gaikwad"
   },
   {
     "id": "ryan-harris",
@@ -17381,7 +17808,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "17 May 2021"
+    "statsAsOf": "17 May 2021",
+    "wikipedia": "Ryan Harris (cricketer)"
   },
   {
     "id": "ryan-ten-doeschate",
@@ -17416,7 +17844,8 @@
         "bestBowling": "3/23"
       }
     },
-    "statsAsOf": "21 September 2022"
+    "statsAsOf": "21 September 2022",
+    "wikipedia": "Ryan ten Doeschate"
   },
   {
     "id": "sachin-tendulkar",
@@ -17463,7 +17892,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "15 November 2013"
+    "statsAsOf": "15 November 2013",
+    "wikipedia": "Sachin Tendulkar"
   },
   {
     "id": "saeed-ajmal",
@@ -17507,7 +17937,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "27 February 2020"
+    "statsAsOf": "27 February 2020",
+    "wikipedia": "Saeed Ajmal"
   },
   {
     "id": "saeed-anwar",
@@ -17542,7 +17973,8 @@
         "bestBowling": "2/9"
       }
     },
-    "statsAsOf": "29 May 2012"
+    "statsAsOf": "29 May 2012",
+    "wikipedia": "Saeed Anwar"
   },
   {
     "id": "safyaan-sharif",
@@ -17577,7 +18009,8 @@
         "bestBowling": "4/24"
       }
     },
-    "statsAsOf": "15 August 2026"
+    "statsAsOf": "15 August 2026",
+    "wikipedia": "Safyaan Sharif"
   },
   {
     "id": "salim-malik",
@@ -17614,7 +18047,8 @@
         "bestBowling": "5/35"
       }
     },
-    "statsAsOf": "8 February 2010"
+    "statsAsOf": "8 February 2010",
+    "wikipedia": "Saleem Malik"
   },
   {
     "id": "sam-curran",
@@ -17658,7 +18092,8 @@
         "bestBowling": "5/10"
       }
     },
-    "statsAsOf": "29 October 2026"
+    "statsAsOf": "29 October 2026",
+    "wikipedia": "Sam Curran"
   },
   {
     "id": "sam-konstas",
@@ -17684,7 +18119,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "25 October 2026"
+    "statsAsOf": "25 October 2026",
+    "wikipedia": "Sam Konstas"
   },
   {
     "id": "samuel-badree",
@@ -17710,7 +18146,8 @@
         "bestBowling": "4/15"
       }
     },
-    "statsAsOf": "11 August 2018"
+    "statsAsOf": "11 August 2018",
+    "wikipedia": "Samuel Badree"
   },
   {
     "id": "sanath-jayasuriya",
@@ -17754,7 +18191,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "15 April 2021"
+    "statsAsOf": "15 April 2021",
+    "wikipedia": "Sanath Jayasuriya"
   },
   {
     "id": "sanju-samson",
@@ -17789,7 +18227,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "23 September 2026"
+    "statsAsOf": "23 September 2026",
+    "wikipedia": "Sanju Samson"
   },
   {
     "id": "saqlain-mushtaq",
@@ -17826,7 +18265,8 @@
         "bestBowling": "5/20"
       }
     },
-    "statsAsOf": "8 December 2009"
+    "statsAsOf": "8 December 2009",
+    "wikipedia": "Saqlain Mushtaq"
   },
   {
     "id": "sarfaraz-ahmed",
@@ -17872,7 +18312,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "22 December 2025"
+    "statsAsOf": "22 December 2025",
+    "wikipedia": "Sarfaraz Ahmed"
   },
   {
     "id": "sarfaraz-khan",
@@ -17898,7 +18339,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "14 October 2026"
+    "statsAsOf": "14 October 2026",
+    "wikipedia": "Sarfaraz Khan (cricketer)"
   },
   {
     "id": "sarfraz-nawaz",
@@ -17933,7 +18375,8 @@
         "bestBowling": "4/27"
       }
     },
-    "statsAsOf": "10 May 2009"
+    "statsAsOf": "10 May 2009",
+    "wikipedia": "Sarfraz Nawaz"
   },
   {
     "id": "saud-shakeel",
@@ -17968,7 +18411,8 @@
         "bestBowling": "1/14"
       }
     },
-    "statsAsOf": "12 September 2026"
+    "statsAsOf": "12 September 2026",
+    "wikipedia": "Saud Shakeel"
   },
   {
     "id": "scott-boland",
@@ -18012,7 +18456,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "22 October 2026"
+    "statsAsOf": "22 October 2026",
+    "wikipedia": "Scott Boland"
   },
   {
     "id": "scott-edwards",
@@ -18047,7 +18492,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "31 July 2026"
+    "statsAsOf": "31 July 2026",
+    "wikipedia": "Scott Edwards (cricketer)"
   },
   {
     "id": "scott-styris",
@@ -18091,7 +18537,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "2 January 2017"
+    "statsAsOf": "2 January 2017",
+    "wikipedia": "Scott Styris"
   },
   {
     "id": "sean-williams",
@@ -18135,7 +18582,8 @@
         "bestBowling": "3/15"
       }
     },
-    "statsAsOf": "7 August 2025"
+    "statsAsOf": "7 August 2025",
+    "wikipedia": "Sean Williams (cricketer)"
   },
   {
     "id": "shadab-khan",
@@ -18179,7 +18627,8 @@
         "bestBowling": "4/8"
       }
     },
-    "statsAsOf": "25 October 2026"
+    "statsAsOf": "25 October 2026",
+    "wikipedia": "Shadab Khan"
   },
   {
     "id": "shaheen-afridi",
@@ -18225,7 +18674,8 @@
         "bestBowling": "4/22"
       }
     },
-    "statsAsOf": "18 October 2026"
+    "statsAsOf": "18 October 2026",
+    "wikipedia": "Shaheen Shah Afridi"
   },
   {
     "id": "shahid-afridi",
@@ -18272,7 +18722,8 @@
         "bestBowling": "4/11"
       }
     },
-    "statsAsOf": "15 October 2025"
+    "statsAsOf": "15 October 2025",
+    "wikipedia": "Shahid Afridi"
   },
   {
     "id": "shai-hope",
@@ -18316,7 +18767,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "10 October 2026"
+    "statsAsOf": "10 October 2026",
+    "wikipedia": "Shai Hope"
   },
   {
     "id": "shakib-al-hasan",
@@ -18362,7 +18814,8 @@
         "bestBowling": "5/20"
       }
     },
-    "statsAsOf": "16 January 2025"
+    "statsAsOf": "16 January 2025",
+    "wikipedia": "Shakib Al Hasan"
   },
   {
     "id": "shamar-joseph",
@@ -18406,7 +18859,8 @@
         "bestBowling": "3/30"
       }
     },
-    "statsAsOf": "4 January 2026"
+    "statsAsOf": "4 January 2026",
+    "wikipedia": "Shamar Joseph"
   },
   {
     "id": "shan-masood",
@@ -18450,7 +18904,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "12 September 2026"
+    "statsAsOf": "12 September 2026",
+    "wikipedia": "Shan Masood"
   },
   {
     "id": "shane-bond",
@@ -18494,7 +18949,8 @@
         "bestBowling": "3/18"
       }
     },
-    "statsAsOf": "10 May 2010"
+    "statsAsOf": "10 May 2010",
+    "wikipedia": "Shane Bond"
   },
   {
     "id": "shane-warne",
@@ -18531,7 +18987,8 @@
         "bestBowling": "5/33"
       }
     },
-    "statsAsOf": "29 March 2008"
+    "statsAsOf": "29 March 2008",
+    "wikipedia": "Shane Warne"
   },
   {
     "id": "shane-watson",
@@ -18577,7 +19034,8 @@
         "bestBowling": "4/15"
       }
     },
-    "statsAsOf": "17 January 2019"
+    "statsAsOf": "17 January 2019",
+    "wikipedia": "Shane Watson"
   },
   {
     "id": "shardul-thakur",
@@ -18623,7 +19081,8 @@
         "bestBowling": "4/27"
       }
     },
-    "statsAsOf": "12 September 2025"
+    "statsAsOf": "12 September 2025",
+    "wikipedia": "Shardul Thakur"
   },
   {
     "id": "shaun-marsh",
@@ -18667,7 +19126,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "21 April 2022"
+    "statsAsOf": "21 April 2022",
+    "wikipedia": "Shaun Marsh"
   },
   {
     "id": "shaun-pollock",
@@ -18713,7 +19173,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "20 September 2016"
+    "statsAsOf": "20 September 2016",
+    "wikipedia": "Shaun Pollock"
   },
   {
     "id": "shaun-tait",
@@ -18757,7 +19218,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "10 May 2019"
+    "statsAsOf": "10 May 2019",
+    "wikipedia": "Shaun Tait"
   },
   {
     "id": "sheldon-cottrell",
@@ -18801,7 +19263,8 @@
         "bestBowling": "4/28"
       }
     },
-    "statsAsOf": "1 May 2023"
+    "statsAsOf": "1 May 2023",
+    "wikipedia": "Sheldon Cottrell"
   },
   {
     "id": "shikhar-dhawan",
@@ -18847,7 +19310,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "15 December 2022"
+    "statsAsOf": "15 December 2022",
+    "wikipedia": "Shikhar Dhawan"
   },
   {
     "id": "shimron-hetmyer",
@@ -18893,7 +19357,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "28 July 2026"
+    "statsAsOf": "28 July 2026",
+    "wikipedia": "Shimron Hetmyer"
   },
   {
     "id": "shivam-dube",
@@ -18928,7 +19393,8 @@
         "bestBowling": "3/4"
       }
     },
-    "statsAsOf": "1 July 2026"
+    "statsAsOf": "1 July 2026",
+    "wikipedia": "Shivam Dube"
   },
   {
     "id": "shivnarine-chanderpaul",
@@ -18974,7 +19440,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "23 August 2018"
+    "statsAsOf": "23 August 2018",
+    "wikipedia": "Shivnarine Chanderpaul"
   },
   {
     "id": "shoaib-akhtar",
@@ -19020,7 +19487,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "8 November 2016"
+    "statsAsOf": "8 November 2016",
+    "wikipedia": "Shoaib Akhtar"
   },
   {
     "id": "shoaib-bashir",
@@ -19046,7 +19514,8 @@
         "bestBowling": "6/81"
       }
     },
-    "statsAsOf": "27 September 2026"
+    "statsAsOf": "27 September 2026",
+    "wikipedia": "Shoaib Bashir"
   },
   {
     "id": "shoaib-malik",
@@ -19090,7 +19559,8 @@
         "bestBowling": "2/7"
       }
     },
-    "statsAsOf": "6 January 2023"
+    "statsAsOf": "6 January 2023",
+    "wikipedia": "Shoaib Malik"
   },
   {
     "id": "shreyas-iyer",
@@ -19134,7 +19604,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "1 November 2026"
+    "statsAsOf": "1 November 2026",
+    "wikipedia": "Shreyas Iyer"
   },
   {
     "id": "shubman-gill",
@@ -19180,7 +19651,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "23 June 2026"
+    "statsAsOf": "23 June 2026",
+    "wikipedia": "Shubman Gill"
   },
   {
     "id": "sikandar-raza",
@@ -19226,7 +19698,8 @@
         "bestBowling": "5/18"
       }
     },
-    "statsAsOf": "20 September 2026"
+    "statsAsOf": "20 September 2026",
+    "wikipedia": "Sikandar Raza"
   },
   {
     "id": "simon-katich",
@@ -19270,7 +19743,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "12 May 2019"
+    "statsAsOf": "12 May 2019",
+    "wikipedia": "Simon Katich"
   },
   {
     "id": "soumya-sarkar",
@@ -19314,7 +19788,8 @@
         "bestBowling": "2/19"
       }
     },
-    "statsAsOf": "27 July 2026"
+    "statsAsOf": "27 July 2026",
+    "wikipedia": "Soumya Sarkar"
   },
   {
     "id": "sourav-ganguly",
@@ -19352,7 +19827,8 @@
         "bestBowling": "5/16"
       }
     },
-    "statsAsOf": "2 January 2013"
+    "statsAsOf": "2 January 2013",
+    "wikipedia": "Sourav Ganguly"
   },
   {
     "id": "sreesanth",
@@ -19398,7 +19874,8 @@
         "bestBowling": "2/12"
       }
     },
-    "statsAsOf": "22 February 2021"
+    "statsAsOf": "22 February 2021",
+    "wikipedia": "S. Sreesanth"
   },
   {
     "id": "stephen-fleming",
@@ -19442,7 +19919,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "4 May 2017"
+    "statsAsOf": "4 May 2017",
+    "wikipedia": "Stephen Fleming"
   },
   {
     "id": "steve-harmison",
@@ -19488,7 +19966,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "30 September 2017"
+    "statsAsOf": "30 September 2017",
+    "wikipedia": "Steve Harmison"
   },
   {
     "id": "steve-smith",
@@ -19535,7 +20014,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "22 October 2026"
+    "statsAsOf": "22 October 2026",
+    "wikipedia": "Steve Smith (cricketer)"
   },
   {
     "id": "steve-waugh",
@@ -19572,7 +20052,8 @@
         "bestBowling": "4/33"
       }
     },
-    "statsAsOf": "31 December 2004"
+    "statsAsOf": "31 December 2004",
+    "wikipedia": "Steve Waugh"
   },
   {
     "id": "steven-finn",
@@ -19616,7 +20097,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "10 August 2023"
+    "statsAsOf": "10 August 2023",
+    "wikipedia": "Steven Finn"
   },
   {
     "id": "stuart-broad",
@@ -19662,7 +20144,8 @@
         "bestBowling": "4/24"
       }
     },
-    "statsAsOf": "31 July 2023"
+    "statsAsOf": "31 July 2023",
+    "wikipedia": "Stuart Broad"
   },
   {
     "id": "stuart-clark",
@@ -19706,7 +20189,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "12 December 2009"
+    "statsAsOf": "12 December 2009",
+    "wikipedia": "Stuart Clark"
   },
   {
     "id": "stuart-macgill",
@@ -19741,7 +20225,8 @@
         "bestBowling": "4/19"
       }
     },
-    "statsAsOf": "20 September 2008"
+    "statsAsOf": "20 September 2008",
+    "wikipedia": "Stuart MacGill"
   },
   {
     "id": "sunil-gavaskar",
@@ -19778,7 +20263,8 @@
         "bestBowling": "1/10"
       }
     },
-    "statsAsOf": "5 September 2008"
+    "statsAsOf": "5 September 2008",
+    "wikipedia": "Sunil Gavaskar"
   },
   {
     "id": "sunil-narine",
@@ -19822,7 +20308,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "7 January 2024"
+    "statsAsOf": "7 January 2024",
+    "wikipedia": "Sunil Narine"
   },
   {
     "id": "suranga-lakmal",
@@ -19866,7 +20353,8 @@
         "bestBowling": "2/26"
       }
     },
-    "statsAsOf": "28 March 2025"
+    "statsAsOf": "28 March 2025",
+    "wikipedia": "Suranga Lakmal"
   },
   {
     "id": "suresh-raina",
@@ -19912,7 +20400,8 @@
         "bestBowling": "2/6"
       }
     },
-    "statsAsOf": "8 December 2025"
+    "statsAsOf": "8 December 2025",
+    "wikipedia": "Suresh Raina"
   },
   {
     "id": "suryakumar-yadav",
@@ -19958,7 +20447,8 @@
         "bestBowling": "2/5"
       }
     },
-    "statsAsOf": "8 March 2026"
+    "statsAsOf": "8 March 2026",
+    "wikipedia": "Suryakumar Yadav"
   },
   {
     "id": "tabraiz-shamsi",
@@ -20002,7 +20492,8 @@
         "bestBowling": "5/24"
       }
     },
-    "statsAsOf": "27 June 2025"
+    "statsAsOf": "27 June 2025",
+    "wikipedia": "Tabraiz Shamsi"
   },
   {
     "id": "taijul-islam",
@@ -20046,7 +20537,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "30 June 2026"
+    "statsAsOf": "30 June 2026",
+    "wikipedia": "Taijul Islam"
   },
   {
     "id": "tamim-iqbal",
@@ -20090,7 +20582,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "28 December 2023"
+    "statsAsOf": "28 December 2023",
+    "wikipedia": "Tamim Iqbal"
   },
   {
     "id": "taskin-ahmed",
@@ -20134,7 +20627,8 @@
         "bestBowling": "4/16"
       }
     },
-    "statsAsOf": "31 July 2026"
+    "statsAsOf": "31 July 2026",
+    "wikipedia": "Taskin Ahmed"
   },
   {
     "id": "tatenda-taibu",
@@ -20178,7 +20672,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "14 September 2017"
+    "statsAsOf": "14 September 2017",
+    "wikipedia": "Tatenda Taibu"
   },
   {
     "id": "temba-bavuma",
@@ -20222,7 +20717,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "1 November 2026"
+    "statsAsOf": "1 November 2026",
+    "wikipedia": "Temba Bavuma"
   },
   {
     "id": "thilan-samaraweera",
@@ -20257,7 +20753,8 @@
         "bestBowling": "3/34"
       }
     },
-    "statsAsOf": "18 August 2014"
+    "statsAsOf": "18 August 2014",
+    "wikipedia": "Thilan Samaraweera"
   },
   {
     "id": "thisara-perera",
@@ -20301,7 +20798,8 @@
         "bestBowling": "3/24"
       }
     },
-    "statsAsOf": "11 March 2023"
+    "statsAsOf": "11 March 2023",
+    "wikipedia": "Thisara Perera"
   },
   {
     "id": "tilak-varma",
@@ -20336,7 +20834,8 @@
         "bestBowling": "1/1"
       }
     },
-    "statsAsOf": "24 October 2026"
+    "statsAsOf": "24 October 2026",
+    "wikipedia": "Tilak Varma"
   },
   {
     "id": "tillakaratne-dilshan",
@@ -20382,7 +20881,8 @@
         "bestBowling": "3/16"
       }
     },
-    "statsAsOf": "9 September 2016"
+    "statsAsOf": "9 September 2016",
+    "wikipedia": "Tillakaratne Dilshan"
   },
   {
     "id": "tim-bresnan",
@@ -20428,7 +20928,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "1 October 2021"
+    "statsAsOf": "1 October 2021",
+    "wikipedia": "Tim Bresnan"
   },
   {
     "id": "tim-david",
@@ -20463,7 +20964,8 @@
         "bestBowling": "1/18"
       }
     },
-    "statsAsOf": "25 October 2026"
+    "statsAsOf": "25 October 2026",
+    "wikipedia": "Tim David"
   },
   {
     "id": "tim-paine",
@@ -20507,7 +21009,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "3 November 2022"
+    "statsAsOf": "3 November 2022",
+    "wikipedia": "Tim Paine"
   },
   {
     "id": "tim-southee",
@@ -20551,7 +21054,8 @@
         "bestBowling": "5/18"
       }
     },
-    "statsAsOf": "19 November 2024"
+    "statsAsOf": "19 November 2024",
+    "wikipedia": "Tim Southee"
   },
   {
     "id": "tom-latham",
@@ -20595,7 +21099,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "21 July 2026"
+    "statsAsOf": "21 July 2026",
+    "wikipedia": "Tom Latham (cricketer)"
   },
   {
     "id": "towhid-hridoy",
@@ -20639,7 +21144,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "20 June 2026"
+    "statsAsOf": "20 June 2026",
+    "wikipedia": "Tawhid Hridoy"
   },
   {
     "id": "travis-head",
@@ -20685,7 +21191,8 @@
         "bestBowling": "1/16"
       }
     },
-    "statsAsOf": "1 November 2026"
+    "statsAsOf": "1 November 2026",
+    "wikipedia": "Travis Head"
   },
   {
     "id": "trent-boult",
@@ -20729,7 +21236,8 @@
         "bestBowling": "4/13"
       }
     },
-    "statsAsOf": "19 June 2024"
+    "statsAsOf": "19 June 2024",
+    "wikipedia": "Trent Boult"
   },
   {
     "id": "trent-johnston",
@@ -20764,7 +21272,8 @@
         "bestBowling": "4/22"
       }
     },
-    "statsAsOf": "13 December 2013"
+    "statsAsOf": "13 December 2013",
+    "wikipedia": "Trent Johnston"
   },
   {
     "id": "tristan-stubbs",
@@ -20808,7 +21317,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "13 October 2026"
+    "statsAsOf": "13 October 2026",
+    "wikipedia": "Tristan Stubbs"
   },
   {
     "id": "umar-akmal",
@@ -20852,7 +21362,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "12 September 2022"
+    "statsAsOf": "12 September 2022",
+    "wikipedia": "Umar Akmal"
   },
   {
     "id": "umar-gul",
@@ -20896,7 +21407,8 @@
         "bestBowling": "5/6"
       }
     },
-    "statsAsOf": "16 October 2020"
+    "statsAsOf": "16 October 2020",
+    "wikipedia": "Umar Gul"
   },
   {
     "id": "umesh-yadav",
@@ -20940,7 +21452,8 @@
         "bestBowling": "2/19"
       }
     },
-    "statsAsOf": "11 April 2025"
+    "statsAsOf": "11 April 2025",
+    "wikipedia": "Umesh Yadav"
   },
   {
     "id": "upul-tharanga",
@@ -20984,7 +21497,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "11 March 2023"
+    "statsAsOf": "11 March 2023",
+    "wikipedia": "Upul Tharanga"
   },
   {
     "id": "usman-khawaja",
@@ -21030,7 +21544,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "23 March 2026"
+    "statsAsOf": "23 March 2026",
+    "wikipedia": "Usman Khawaja"
   },
   {
     "id": "varun-chakravarthy",
@@ -21065,7 +21580,8 @@
         "bestBowling": "5/17"
       }
     },
-    "statsAsOf": "8 March 2026"
+    "statsAsOf": "8 March 2026",
+    "wikipedia": "Varun Chakravarthy"
   },
   {
     "id": "venkatesh-prasad",
@@ -21100,7 +21616,8 @@
         "bestBowling": "5/27"
       }
     },
-    "statsAsOf": "2 September 2017"
+    "statsAsOf": "2 September 2017",
+    "wikipedia": "Venkatesh Prasad"
   },
   {
     "id": "vernon-philander",
@@ -21146,7 +21663,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "28 January 2020"
+    "statsAsOf": "28 January 2020",
+    "wikipedia": "Vernon Philander"
   },
   {
     "id": "virat-kohli",
@@ -21193,7 +21711,8 @@
         "bestBowling": "1/13"
       }
     },
-    "statsAsOf": "28 September 2026"
+    "statsAsOf": "28 September 2026",
+    "wikipedia": "Virat Kohli"
   },
   {
     "id": "virender-sehwag",
@@ -21240,7 +21759,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "6 January 2016"
+    "statsAsOf": "6 January 2016",
+    "wikipedia": "Virender Sehwag"
   },
   {
     "id": "viv-richards",
@@ -21278,7 +21798,8 @@
         "bestBowling": "6/41"
       }
     },
-    "statsAsOf": "4 August 2025"
+    "statsAsOf": "4 August 2025",
+    "wikipedia": "Viv Richards"
   },
   {
     "id": "vvs-laxman",
@@ -21316,7 +21837,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "30 January 2012"
+    "statsAsOf": "30 January 2012",
+    "wikipedia": "VVS Laxman"
   },
   {
     "id": "wahab-riaz",
@@ -21360,7 +21882,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "25 July 2022"
+    "statsAsOf": "25 July 2022",
+    "wikipedia": "Wahab Riaz"
   },
   {
     "id": "wanindu-hasaranga",
@@ -21404,7 +21927,8 @@
         "bestBowling": "4/9"
       }
     },
-    "statsAsOf": "25 August 2026"
+    "statsAsOf": "25 August 2026",
+    "wikipedia": "Wanindu Hasaranga"
   },
   {
     "id": "waqar-younis",
@@ -21441,7 +21965,8 @@
         "bestBowling": "7/36"
       }
     },
-    "statsAsOf": "21 April 2012"
+    "statsAsOf": "21 April 2012",
+    "wikipedia": "Waqar Younis"
   },
   {
     "id": "washington-sundar",
@@ -21487,7 +22012,8 @@
         "bestBowling": "3/3"
       }
     },
-    "statsAsOf": "24 January 2026"
+    "statsAsOf": "24 January 2026",
+    "wikipedia": "Washington Sundar"
   },
   {
     "id": "wasim-akram",
@@ -21524,7 +22050,8 @@
         "bestBowling": "5/15"
       }
     },
-    "statsAsOf": "4 April 2012"
+    "statsAsOf": "4 April 2012",
+    "wikipedia": "Wasim Akram"
   },
   {
     "id": "wavell-hinds",
@@ -21568,7 +22095,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "28 November 2016"
+    "statsAsOf": "28 November 2016",
+    "wikipedia": "Wavell Hinds"
   },
   {
     "id": "wayne-parnell",
@@ -21612,7 +22140,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "27 May 2024"
+    "statsAsOf": "27 May 2024",
+    "wikipedia": "Wayne Parnell"
   },
   {
     "id": "william-porterfield",
@@ -21656,7 +22185,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "16 June 2022"
+    "statsAsOf": "16 June 2022",
+    "wikipedia": "William Porterfield"
   },
   {
     "id": "wriddhiman-saha",
@@ -21691,7 +22221,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "30 May 2022"
+    "statsAsOf": "30 May 2022",
+    "wikipedia": "Wriddhiman Saha"
   },
   {
     "id": "yashasvi-jaiswal",
@@ -21735,7 +22266,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "30 March 2026"
+    "statsAsOf": "30 March 2026",
+    "wikipedia": "Yashasvi Jaiswal"
   },
   {
     "id": "yasir-shah",
@@ -21779,7 +22311,8 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "24 July 2022"
+    "statsAsOf": "24 July 2022",
+    "wikipedia": "Yasir Shah"
   },
   {
     "id": "younis-khan",
@@ -21823,7 +22356,8 @@
         "bestBowling": "3/18"
       }
     },
-    "statsAsOf": "15 May 2017"
+    "statsAsOf": "15 May 2017",
+    "wikipedia": "Younis Khan"
   },
   {
     "id": "yusuf-pathan",
@@ -21858,7 +22392,8 @@
         "bestBowling": "2/22"
       }
     },
-    "statsAsOf": "11 January 2023"
+    "statsAsOf": "11 January 2023",
+    "wikipedia": "Yusuf Pathan"
   },
   {
     "id": "yuvraj-singh",
@@ -21904,7 +22439,8 @@
         "bestBowling": "3/17"
       }
     },
-    "statsAsOf": "28 April 2019"
+    "statsAsOf": "28 April 2019",
+    "wikipedia": "Yuvraj Singh"
   },
   {
     "id": "yuzvendra-chahal",
@@ -21941,7 +22477,8 @@
         "bestBowling": "6/25"
       }
     },
-    "statsAsOf": "27 September 2026"
+    "statsAsOf": "27 September 2026",
+    "wikipedia": "Yuzvendra Chahal"
   },
   {
     "id": "zaheer-abbas",
@@ -21978,7 +22515,8 @@
         "bestBowling": "2/26"
       }
     },
-    "statsAsOf": "6 November 2005"
+    "statsAsOf": "6 November 2005",
+    "wikipedia": "Zaheer Abbas"
   },
   {
     "id": "zaheer-khan",
@@ -22024,7 +22562,8 @@
         "bestBowling": "4/19"
       }
     },
-    "statsAsOf": "25 December 2016"
+    "statsAsOf": "25 December 2016",
+    "wikipedia": "Zaheer Khan"
   },
   {
     "id": "zak-crawley",
@@ -22059,6 +22598,7 @@
         "bestBowling": null
       }
     },
-    "statsAsOf": "27 September 2026"
+    "statsAsOf": "27 September 2026",
+    "wikipedia": "Zak Crawley"
   }
 ]
