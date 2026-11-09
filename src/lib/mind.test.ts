@@ -16,6 +16,8 @@ import {
   questionsAsked,
   ranking,
   reveal,
+  scores,
+  undo,
   type MindEngine,
   type MindRound,
 } from './mind'
@@ -119,6 +121,47 @@ describe('choosing the next move', () => {
     expect(questionsAsked(r)).toBe(MIND_MAX_QUESTIONS)
     expect(nextMove(e, r)?.kind).toBe('guess')
     expect(answerQuestion(e, r, `q${MIND_MAX_QUESTIONS}`, 'yes')).toBe(r)
+  })
+})
+
+describe('undo', () => {
+  it('takes back the last answer so the same question is asked again', () => {
+    const start = newMindRound('r')
+    const first = nextMove(engine, start)
+    expect(first?.kind).toBe('question')
+    if (first?.kind !== 'question') return
+    const answered = answerQuestion(engine, start, first.question.id, 'yes')
+    const back = undo(answered)
+    expect(back.turns).toEqual([])
+    expect(nextMove(engine, back)).toEqual(first)
+    // A different answer is accepted after going back.
+    const fixed = answerQuestion(engine, back, first.question.id, 'no')
+    expect(fixed.turns).toEqual([{ kind: 'question', questionId: first.question.id, answer: 'no' }])
+  })
+
+  it('takes back a wrong guess, so the player is no longer ruled out', () => {
+    const r = answerQuestion(engine, newMindRound('r'), 'batter', 'yes')
+    const guessed = answerGuess(engine, r, 'a', false)
+    expect(scores(engine, guessed)[engine.playerIndex.get('a')!]).toBe(0)
+    const back = undo(guessed)
+    expect(back.turns).toEqual(r.turns)
+    expect(scores(engine, back)[engine.playerIndex.get('a')!]).toBeGreaterThan(0)
+  })
+
+  it('only removes one answer at a time, and does nothing with no answers', () => {
+    let r = answerQuestion(engine, newMindRound('r'), 'batter', 'yes')
+    r = answerQuestion(engine, r, 'india', 'no')
+    expect(undo(r).turns).toHaveLength(1)
+    expect(undo(undo(r)).turns).toHaveLength(0)
+    const empty = newMindRound('r')
+    expect(undo(empty)).toBe(empty)
+  })
+
+  it('does nothing once the round is over (its stats are already recorded)', () => {
+    const won = answerGuess(engine, newMindRound('r'), 'c', true)
+    expect(undo(won)).toBe(won)
+    const conceded = concede(answerQuestion(engine, newMindRound('r'), 'batter', 'yes'))
+    expect(undo(conceded)).toBe(conceded)
   })
 })
 

@@ -11,6 +11,7 @@ import {
   nextMove,
   questionsAsked,
   reveal,
+  undo,
   type MindMove,
   type MindRound,
   type Mismatch,
@@ -46,6 +47,10 @@ export interface MindReaderView {
   answer: (answer: MindAnswer) => void
   respondToGuess: (correct: boolean) => void
   giveUp: () => void
+  /** Take back the last answer while the round is playing. */
+  goBack: () => void
+  /** Whether there is an answer to take back. */
+  canGoBack: boolean
   revealPlayer: (playerId: string) => void
   newRound: () => void
 }
@@ -108,6 +113,7 @@ export function useMindReader({ random = Math.random }: UseMindReaderOptions = {
   )
 
   const giveUp = useCallback(() => update(concede(round)), [round, update])
+  const goBack = useCallback(() => update(undo(round)), [round, update])
 
   const revealPlayer = useCallback(
     (playerId: string) => update(reveal(MIND_ENGINE, round, playerId)),
@@ -152,6 +158,8 @@ export function useMindReader({ random = Math.random }: UseMindReaderOptions = {
     answer,
     respondToGuess,
     giveUp,
+    goBack,
+    canGoBack: undo(round) !== round,
     revealPlayer,
     newRound,
   }

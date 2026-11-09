@@ -241,6 +241,15 @@ export function answerGuess(
   return settle(engine, { ...round, turns })
 }
 
+/**
+ * Take back the last answer (to a question or a guess), so the game asks it again. Only while the
+ * round is playing: a finished round has already been recorded in the stats. No-op with no turns.
+ */
+export function undo(round: MindRound): MindRound {
+  if (round.status !== 'playing' || round.turns.length === 0) return round
+  return { ...round, turns: round.turns.slice(0, -1) }
+}
+
 /** The user stops the round: the game loses. */
 export function concede(round: MindRound): MindRound {
   return round.status === 'playing' ? { ...round, status: 'lost' } : round

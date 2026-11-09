@@ -84,7 +84,9 @@ Changing the pool applies from the next round. Any player can always be *guessed
 5. The game loses when it runs out of guesses (or candidates), or when the player presses **End
    round**. It then asks "Who were you thinking of?" (autocomplete) and lists any answers that
    didn't match its data. The reveal is optional.
-6. Reloading restores the round. The question text lives in `src/lib/questions.ts`. Each question
+6. **Go back** takes back the last answer (to a question or a guess) while the round is playing,
+   so a mis-tap can be fixed. It can be used repeatedly, back to the first question.
+7. Reloading restores the round. The question text lives in `src/lib/questions.ts`. Each question
    uses round, fan-friendly thresholds and returns `null` (unknown) when the data can't answer it.
 
 ---
@@ -279,6 +281,8 @@ https://your-domain.com
   total score, when no question offers ≥ 0.02 bits, or when the questions run out. Otherwise ask
   the unasked question with the highest expected information gain, minus a difficulty penalty
   (`DIFFICULTY_PENALTY`: easy 0, medium 0.1, hard 0.3) that favours questions fans can answer.
+- `undo` drops the last turn while the round is playing (no-op with no turns or once the round is
+  over, since its stats are already recorded); the previous move is then recomputed.
 - Repeats and moves after the round ends are no-ops. `mismatches` lists the answers that disagree
   with a player's data.
 - **Stats (`mindStats.ts`):** `played`, `gameWins`, and a `distribution` of game wins by questions
@@ -327,7 +331,8 @@ https://your-domain.com
 - **Mind Reader screen:** the title with question and guess pips; an intro card with **Start**;
   then a card with the current question (Yes / No / Not sure) or guess (Yes, that's right / No);
   then a "So far" list of questions and answers. On large screens the list sits in the right
-  column. Shortcuts: Y / N / ? (or U). They are ignored while typing or with a modal open. Focus
+  column. **Go back** and **End round** sit under the answer buttons (Go back only after the first
+  answer). Shortcuts: Y / N / ? (or U), Backspace to go back. They are ignored while typing or with a modal open. Focus
   moves to the answer buttons each turn, and an aria-live region reads each question, guess and
   result.
 - **Accessibility:** proper labels, focus management in modals, aria-live announcement of each
