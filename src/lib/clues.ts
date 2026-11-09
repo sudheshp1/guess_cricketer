@@ -1,4 +1,4 @@
-import type { BowlingType, Clue, Format, FormatStats, Player, Role } from '../types'
+import type { BowlingType, Clue, Country, Format, FormatStats, Player, Role } from '../types'
 import { FORMATS } from '../types'
 
 const FORMAT_NAMES: Record<Format, { one: string; many: string }> = {
@@ -12,6 +12,27 @@ const ROLE_TEXT: Record<Role, string> = {
   'Wicketkeeper-Batter': 'Wicketkeeper-batter',
   'All-rounder': 'All-rounder',
   Bowler: 'Bowler',
+}
+
+/**
+ * Flag emoji per team, shown beside the country clue. Null where a team has no flag emoji of its
+ * own (the West Indies is a multi-nation team). Typed as a Record so a new country can't be missed.
+ */
+export const COUNTRY_FLAGS: Record<Country, string | null> = {
+  Afghanistan: '🇦🇫',
+  Australia: '🇦🇺',
+  Bangladesh: '🇧🇩',
+  England: '🏴\u{E0067}\u{E0062}\u{E0065}\u{E006E}\u{E0067}\u{E007F}',
+  India: '🇮🇳',
+  Ireland: '🇮🇪',
+  Netherlands: '🇳🇱',
+  'New Zealand': '🇳🇿',
+  Pakistan: '🇵🇰',
+  Scotland: '🏴\u{E0067}\u{E0062}\u{E0073}\u{E0063}\u{E0074}\u{E007F}',
+  'South Africa': '🇿🇦',
+  'Sri Lanka': '🇱🇰',
+  'West Indies': null,
+  Zimbabwe: '🇿🇼',
 }
 
 const n = (value: number) => value.toLocaleString('en-US')
@@ -117,6 +138,7 @@ export function buildClues(player: Player): Clue[] {
       title: 'Country',
       // Neutral wording: "Played for" would give away retirement before the status clue.
       text: player.country,
+      emoji: COUNTRY_FLAGS[player.country] ?? undefined,
     },
     {
       key: 'style',

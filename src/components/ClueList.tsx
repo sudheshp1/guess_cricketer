@@ -55,6 +55,11 @@ export function ClueList({
                   clue.key === 'initials' ? 'font-mono tracking-[0.2em]' : ''
                 }`}
               >
+                {clue.emoji && (
+                  <span className="mr-1.5" aria-hidden="true">
+                    {clue.emoji}
+                  </span>
+                )}
                 {clue.text}
               </p>
               {clue.note && <p className="mt-1 text-xs text-muted">{clue.note}</p>}
