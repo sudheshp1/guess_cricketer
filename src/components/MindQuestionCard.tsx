@@ -1,4 +1,4 @@
-import { Check, CircleHelp, Flag, X } from 'lucide-react'
+import { Check, CircleHelp, Flag, Undo2, X } from 'lucide-react'
 import { useEffect, useRef } from 'react'
 import type { MindMove } from '../lib/mind'
 import { ConfirmButton } from './ConfirmButton'
@@ -13,6 +13,8 @@ interface Props {
   onAnswer: (answer: MindAnswer) => void
   onGuessResponse: (correct: boolean) => void
   onGiveUp: () => void
+  /** Take back the previous answer; the button is hidden when this is missing. */
+  onGoBack?: () => void
 }
 
 /** The current question (Yes / No / Not sure) or guess (Yes / No). */
@@ -23,6 +25,7 @@ export function MindQuestionCard({
   onAnswer,
   onGuessResponse,
   onGiveUp,
+  onGoBack,
 }: Props) {
   const firstButton = useRef<HTMLButtonElement>(null)
   const isGuess = move.kind === 'guess'
@@ -120,24 +123,43 @@ export function MindQuestionCard({
               · <kbd className="font-bold">?</kbd> not sure
             </>
           )}
-        </span>
-        <ConfirmButton
-          // Each new question or guess disarms it.
-          key={move.kind === 'guess' ? `guess-${move.player.id}` : `q-${move.question.id}`}
-          onConfirm={onGiveUp}
-          className="inline-flex items-center gap-1.5 rounded-full px-2 py-1 font-semibold hover:text-ink focus-visible:outline-3 focus-visible:outline-gold-fill"
-          armedClassName="text-danger! hover:text-danger!"
-          armedLabel={
+          {onGoBack && (
             <>
-              <Flag className="h-3.5 w-3.5" aria-hidden="true" />
-              Tap again to end round
+              {' '}
+              · <kbd className="font-bold">Backspace</kbd> back
             </>
-          }
-          armedAnnouncement="Tap End round again to end the round."
-        >
-          <Flag className="h-3.5 w-3.5" aria-hidden="true" />
-          End round
-        </ConfirmButton>
+          )}
+        </span>
+        <span className="ml-auto flex items-center gap-1">
+          {onGoBack && (
+            <button
+              type="button"
+              onClick={onGoBack}
+              aria-keyshortcuts="Backspace"
+              className="inline-flex items-center gap-1.5 rounded-full px-2 py-1 font-semibold hover:text-ink focus-visible:outline-3 focus-visible:outline-gold-fill"
+            >
+              <Undo2 className="h-3.5 w-3.5" aria-hidden="true" />
+              Go back
+            </button>
+          )}
+          <ConfirmButton
+            // Each new question or guess disarms it.
+            key={move.kind === 'guess' ? `guess-${move.player.id}` : `q-${move.question.id}`}
+            onConfirm={onGiveUp}
+            className="inline-flex items-center gap-1.5 rounded-full px-2 py-1 font-semibold hover:text-ink focus-visible:outline-3 focus-visible:outline-gold-fill"
+            armedClassName="text-danger! hover:text-danger!"
+            armedLabel={
+              <>
+                <Flag className="h-3.5 w-3.5" aria-hidden="true" />
+                Tap again to end round
+              </>
+            }
+            armedAnnouncement="Tap End round again to end the round."
+          >
+            <Flag className="h-3.5 w-3.5" aria-hidden="true" />
+            End round
+          </ConfirmButton>
+        </span>
       </div>
     </section>
   )

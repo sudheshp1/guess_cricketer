@@ -132,6 +132,44 @@ describe('Mind Reader', () => {
     expect(screen.getByRole('region', { name: 'So far' })).toBeInTheDocument()
   })
 
+  it('goes back to the last question to fix a wrong answer', async () => {
+    const user = userEvent.setup()
+    renderApp()
+    await openMindReader(user)
+    await user.click(screen.getByRole('button', { name: /start/i }))
+    // Nothing to take back on the first question.
+    expect(screen.queryByRole('button', { name: /go back/i })).not.toBeInTheDocument()
+
+    const first = currentQuestion()!
+    const truth = first.test(target)
+    await user.click(screen.getByRole('button', { name: truth ? 'No' : 'Yes' }))
+    expect(currentQuestion()).not.toEqual(first)
+    const history = screen.getByRole('region', { name: 'So far' })
+    expect(within(history).getByText(first.text)).toBeInTheDocument()
+
+    await user.click(screen.getByRole('button', { name: /go back/i }))
+    expect(currentQuestion()).toEqual(first)
+    expect(screen.queryByRole('region', { name: 'So far' })).not.toBeInTheDocument()
+    expect(screen.getByRole('button', { name: 'Yes' })).toHaveFocus()
+
+    // Fix the answer, and the game still reads the player's mind.
+    await playTruthfully(user)
+    expect(screen.getByRole('heading', { name: /got it in/i })).toBeInTheDocument()
+  })
+
+  it('goes back with the Backspace key', async () => {
+    const user = userEvent.setup()
+    renderApp()
+    await openMindReader(user)
+    await user.click(screen.getByRole('button', { name: /start/i }))
+    const first = currentQuestion()!
+    await user.keyboard('y')
+    expect(currentQuestion()).not.toEqual(first)
+    await user.keyboard('{Backspace}')
+    expect(currentQuestion()).toEqual(first)
+    expect(JSON.parse(window.localStorage.getItem(STORAGE_KEYS.mindRound)!).turns).toEqual([])
+  })
+
   it('ends the round, takes a reveal and explains mismatches', async () => {
     const user = userEvent.setup()
     renderApp()

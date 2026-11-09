@@ -28,6 +28,8 @@ export function MindReader({ mind, onShare }: Props) {
   const [started, setStarted] = useState(history.length > 0)
   // Focus and announce only after the user has interacted this session (not on page load).
   const [interacted, setInteracted] = useState(false)
+  // True right after "Go back", so the repeated question is announced as such.
+  const [wentBack, setWentBack] = useState(false)
 
   let announcement = ''
   if (interacted) {
@@ -40,23 +42,38 @@ export function MindReader({ mind, onShare }: Props) {
     else if (move?.kind === 'question') {
       announcement = `Question ${mind.questionsAsked + 1}: ${move.question.text}`
     } else if (move) announcement = `My guess: is your player ${move.player.name}?`
+    if (wentBack && playing && move) announcement = `Went back. ${announcement}`
   }
 
   const handleAnswer = (answer: MindAnswer) => {
     setInteracted(true)
+    setWentBack(false)
     mind.answer(answer)
+  }
+  const handleGoBack = () => {
+    setInteracted(true)
+    setWentBack(true)
+    mind.goBack()
   }
   const handleGuessResponse = (correct: boolean) => {
     setInteracted(true)
+    setWentBack(false)
     mind.respondToGuess(correct)
   }
 
-  // Keyboard shortcuts: Y / N / ? (or U) while a question or guess is showing.
+  // Keyboard shortcuts: Y / N / ? (or U) while a question or guess is showing; Backspace goes back.
   useEffect(() => {
     if (!started || !playing || !move) return
     const onKey = (e: KeyboardEvent) => {
       if (e.ctrlKey || e.metaKey || e.altKey || typingIn(e.target)) return
       if (document.querySelector('[role="dialog"]')) return
+      if (e.key === 'Backspace') {
+        e.preventDefault()
+        setInteracted(true)
+        setWentBack(true)
+        mind.goBack()
+        return
+      }
       const key = e.key.toLowerCase()
       if (move.kind === 'question') {
         const answer: MindAnswer | null =
@@ -64,10 +81,12 @@ export function MindReader({ mind, onShare }: Props) {
         if (!answer) return
         e.preventDefault()
         setInteracted(true)
+        setWentBack(false)
         mind.answer(answer)
       } else if (key === 'y' || key === 'n') {
         e.preventDefault()
         setInteracted(true)
+        setWentBack(false)
         mind.respondToGuess(key === 'y')
       }
     }
@@ -136,6 +155,7 @@ export function MindReader({ mind, onShare }: Props) {
               setInteracted(true)
               mind.giveUp()
             }}
+            onGoBack={mind.canGoBack ? handleGoBack : undefined}
           />
         ) : (
           <MindResult
